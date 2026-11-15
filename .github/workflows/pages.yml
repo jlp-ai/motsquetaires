@@ -22,8 +22,8 @@ jobs:
       - name: Assemble the site
         run: |
           mkdir _site
-          cp index.html style.css app.js correction.js speech.js names.js config.js _site/
-          cp -r content audio _site/
+          cp index.html style.css app.js correction.js speech.js names.js config.js manifest.webmanifest _site/
+          cp -r content audio icons _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

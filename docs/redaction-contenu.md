@@ -50,7 +50,7 @@ Star Wars, Harry Potter, KPop Demon Hunters, Les Trois Mousquetaires : écrire d
 
 ## Thèmes de villes
 
-Cherbourg, Montpellier : ne citer que des faits stables et vérifiables (lieux emblématiques, géographie, patrimoine, histoire connue). Pas de chiffres de population, de budget, de classement ni d'événement récent. En cas de doute sur un fait, le retirer.
+**Ancrage local obligatoire** : chaque dictée et chaque phrase à erreur doit être reconnaissable comme venant de la ville, avec au moins un lieu ou un repère célèbre nommé (place de la Comédie, Écusson, Peyrou, Antigone pour Montpellier ; digue, arsenal, Montagne du Roule pour Cherbourg). Une phrase qui pourrait se passer dans n'importe quelle ville du Sud ou de la côte est refusée (ex. « Les platanes donnent de l'ombre sur toute la place »). Les noms de lieux ne sont jamais le piège. Cherbourg, Montpellier : ne citer que des faits stables et vérifiables (lieux emblématiques, géographie, patrimoine, histoire connue). Pas de chiffres de population, de budget, de classement ni d'événement récent. En cas de doute sur un fait, le retirer.
 
 ## Noms propres : mode perso ou commercial
 

@@ -1,0 +1,4 @@
+{
+  "buildCommand": "mkdir -p _site && cp -r index.html style.css app.js correction.js speech.js names.js config.js manifest.webmanifest icons content audio _site/",
+  "outputDirectory": "_site"
+}

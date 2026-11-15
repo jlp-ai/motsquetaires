@@ -24,7 +24,7 @@ const fail = (mode, id, msg) => { bad++; console.log(`ERREUR [${mode}] ${id} : $
 for (const mode of ["perso", "commercial"]) {
   const { themes } = loadContent(mode);
   for (const [id, t] of Object.entries(themes)) {
-    if (t.dictees.length !== 4 || t.erreurs.length !== 8) fail(mode, id, "4 dictées et 8 erreurs attendues");
+    for (const lv of ["apprenti", "compagnon", "maitre", "grand-scribe"]) if (!t.dictees.some((d) => d.level === lv) || t.erreurs.filter((e) => e.level === lv).length < 2) fail(mode, id, `niveau ${lv} : au moins 1 dictée et 2 erreurs attendues`);
     for (const d of t.dictees) {
       const text = d.text.toLowerCase();
       for (const n of d.notes || []) if (!text.includes(n.word.toLowerCase())) fail(mode, id, `note « ${n.word} » absente de la dictée ${d.level}`);

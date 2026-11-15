@@ -5,7 +5,8 @@ Projet personnel (hors OCTO) : spin-off allégé d'Onirologos / Les Motsquetaire
 sans récit, sans univers, sans méta-progression. Deux jeux courts, jouables
 en quelques minutes.
 
-- **Statut** : démarrage, aucun code. Rien n'est tranché côté stack.
+- **Statut (15/11/2026)** : prototype jouable, publié sur `https://github.com/jlp-ai/motsquetaires` (branche `main`, workflow GitHub Pages à activer dans Settings > Pages > source « GitHub Actions »). Fait : deux jeux, quatre niveaux, 15 thèmes en 7 méta-thèmes, textes à trous (Facile, Moyen), clips Azure pré-générés (clé partagée d'Onirologos), mots rares mesurés, mode noms propres perso/commercial, référentiel des programmes (`docs/programme-referentiel.md`).
+- **Reste à faire** : (0) réécrire les phrases à erreur et dictées de `montpellier` et `cherbourg` pour un ancrage local net (lieux célèbres nommés, règle ajoutée dans `docs/redaction-contenu.md`), après la fin de l'agent juge D qui édite les mêmes fichiers ; vérifier ensuite les autres thèmes de lieu ou d'œuvre pour la même généricité ; (1) critère de difficulté orthographique D à côté de la rareté R (un mot rare n'est pas forcément difficile à écrire : « estafette » plus dur que « bretteur »), avec un agent juge sur les mots `rare: true` ; (2) analyse des dictées de Pivot, rapports attendus dans `docs/pivot/` (dossier ignoré par git, droits) ; (3) étiqueter notes et erreurs par identifiant de notion du référentiel, pour une révision ciblée ; (4) vérifier à l'oreille les clips et à l'écran le mode à trous ; (5) thèmes à traiter plus tard, ci-dessous ; (6) skill `proposer-themes` (agent qui propose des thèmes à valider).
 - **Principe directeur** : plus simple qu'Onirologos. Toute fonctionnalité
   qui ressemble à de la méta (sceaux, carnet, carte de mondes, conteurs)
   est hors périmètre.
