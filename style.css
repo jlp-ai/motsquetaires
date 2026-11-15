@@ -244,3 +244,14 @@ p { margin: 0; }
 .badge.on .bi { color: #e6a700; }
 .badge.off { opacity: .6; }
 .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 30; background: var(--accent); color: var(--on-accent); padding: 12px 18px; border-radius: 999px; box-shadow: var(--shadow); animation: enter .3s both; max-width: 90vw; text-align: center; }
+
+/* ---------- Players ---------- */
+.chip { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; padding: 6px 12px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-weight: 700; font-size: .9rem; cursor: pointer; min-height: 40px; }
+.chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--pen); }
+.chip .chev { color: var(--muted); font-size: .8rem; }
+.plist { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; }
+.plist li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 8px 10px; }
+.plist li.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent) inset; }
+.plist .pname { flex: 1 1 90px; text-align: left; background: none; border: 0; font-weight: 800; font-size: 1.05rem; cursor: pointer; min-height: 44px; }
+.plist .btn { min-height: 44px; padding: 6px 10px; font-size: .85rem; }
+.field { flex: 1 1 180px; min-height: 52px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--card); color: var(--ink); padding: 0 14px; font: inherit; }

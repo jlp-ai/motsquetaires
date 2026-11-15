@@ -10,7 +10,7 @@
     manga: "#e8740c", series: "#0b8f94", ia: "#2a8f62"
   };
   var app = document.getElementById("app");
-  var state = { level: load("dictees.level", "apprenti"), game: null, theme: null, streak: 0 };
+  var state = { level: Progress.pref("level", "apprenti"), game: null, theme: null, streak: 0 };
 
   var ICONS = {
     back: "<svg class='ico' viewBox='0 0 24 24'><path d='M15 5l-7 7 7 7'/></svg>",
@@ -57,7 +57,7 @@
     var cur = level(state.level);
     screen({},
       "<div class='logo'>" + ICONS.logo + "<div class='name'><span>Dictées</span></div></div>" +
-      "<p class='tagline'>Deux jeux, quatre niveaux, des thèmes d'aujourd'hui.</p>" + rankStrip() +
+      "<p class='tagline'>Deux jeux, quatre niveaux, des thèmes d'aujourd'hui.</p>" + playerChip() + rankStrip() +
       "<h2>Niveau</h2><div class='levels'>" +
       LEVELS.map(function (l) {
         return "<button class='level lv-" + l.n + "' data-level='" + l.id + "' aria-pressed='" + (l.id === state.level) + "'>" +
@@ -68,12 +68,13 @@
       "<button class='game g-dictee' data-game='dictee'><span class='badge'>" + ICONS.ear + "</span><span><b>Dictée</b><small>Écouter, écrire, être corrigé</small></span></button>" +
       "<button class='game g-erreur' data-game='erreur'><span class='badge'>" + ICONS.search + "</span><span><b>Trouve l'erreur</b><small>Repérer le mot fautif dans la phrase</small></span></button></div>");
     app.querySelectorAll("[data-level]").forEach(function (b) {
-      b.onclick = function () { state.level = b.dataset.level; save("dictees.level", state.level); home(); };
+      b.onclick = function () { state.level = b.dataset.level; Progress.setPref("level", state.level); home(); };
     });
     app.querySelectorAll("[data-game]").forEach(function (b) {
       b.onclick = function () { state.game = b.dataset.game; state.streak = 0; themeMenu(); };
     });
     document.getElementById("carnet").onclick = carnet;
+    document.getElementById("players").onclick = playersScreen;
   }
 
   // Metas actually available: declared metas (existing themes only) plus a
@@ -519,6 +520,46 @@
     app.querySelectorAll("[data-w]").forEach(function (b) {
       b.onclick = function () { startReview([weak[+b.dataset.w].key]); };
     });
+  }
+
+  // ---------- Several players on one device ----------
+  function playerChip() {
+    return "<button class='chip' id='players' aria-label='Changer de joueur'><span class='dot'></span>" + esc(Progress.current().name) + "<span class='chev'>&#9662;</span></button>";
+  }
+
+  function playersScreen() {
+    var cur = Progress.current(), list = Progress.players();
+    screen({ back: home },
+      "<h1>Joueurs</h1><p class='sub'>Chaque joueur garde ses points, ses badges, ses règles à réviser et son niveau.</p>" +
+      "<ul class='plist'>" + list.map(function (p) {
+        return "<li class='" + (p.id === cur.id ? "on" : "") + "'><button class='pname' data-sw='" + p.id + "'>" + (p.id === cur.id ? "&#10003; " : "") + esc(p.name) + "</button>" +
+          "<button class='btn' data-rn='" + p.id + "' aria-label='Renommer'>Renommer</button>" +
+          (list.length > 1 ? "<button class='btn' data-rm='" + p.id + "' aria-label='Supprimer'>Supprimer</button>" : "") + "</li>";
+      }).join("") + "</ul>" +
+      "<h2>Nouveau joueur</h2><div class='row'><input class='field' id='newName' maxlength='20' placeholder='Prénom ou surnom' autocomplete='off'><button class='btn primary' id='addP'>Ajouter</button></div>");
+    app.querySelectorAll("[data-sw]").forEach(function (b) {
+      b.onclick = function () { Progress.switchTo(b.dataset.sw); state.level = Progress.pref("level", "apprenti"); home(); };
+    });
+    app.querySelectorAll("[data-rn]").forEach(function (b) {
+      b.onclick = function () {
+        var p = list.filter(function (x) { return x.id === b.dataset.rn; })[0];
+        var n = window.prompt("Nouveau nom pour ce joueur :", p.name);
+        if (n !== null) { Progress.renamePlayer(p.id, n); playersScreen(); }
+      };
+    });
+    app.querySelectorAll("[data-rm]").forEach(function (b) {
+      b.onclick = function () {
+        var p = list.filter(function (x) { return x.id === b.dataset.rm; })[0];
+        if (window.confirm("Supprimer le joueur « " + p.name + " » et toute sa progression ?")) {
+          Progress.removePlayer(p.id); state.level = Progress.pref("level", "apprenti"); playersScreen();
+        }
+      };
+    });
+    document.getElementById("addP").onclick = function () {
+      Progress.addPlayer(document.getElementById("newName").value);
+      state.level = Progress.pref("level", "apprenti");
+      home();
+    };
   }
 
   Progress.annotate(window.THEMES);

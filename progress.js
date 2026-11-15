@@ -3,7 +3,45 @@
 // item.type || item.rule (Trouve l'erreur). A `type` field on content items, when present, groups
 // different sentences under one error type; without it the rule text is the key.
 (function (root) {
-  var KEY = "dictees.progress";
+  var PKEY = "dictees.profiles", LEGACY = "dictees.progress";
+  function ls(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function lw(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } }
+  var profiles = null;
+  // Several players on one device: each has its own progress, badges, weak points and level.
+  function loadProfiles() {
+    if (profiles) return profiles;
+    try { profiles = JSON.parse(ls(PKEY)); } catch (e) { profiles = null; }
+    if (!profiles || !profiles.list || !profiles.list.length) {
+      profiles = { cur: "p1", list: [{ id: "p1", name: "Joueur 1" }] };
+      var old = ls(LEGACY); if (old) lw(LEGACY + ".p1", old); // the existing progress goes to the first player
+      var lvl = ls("dictees.level"); if (lvl) lw("dictees.pref.p1.level", lvl);
+      lw(PKEY, JSON.stringify(profiles));
+    }
+    return profiles;
+  }
+  function saveProfiles() { lw(PKEY, JSON.stringify(profiles)); }
+  function key() { return LEGACY + "." + loadProfiles().cur; }
+  function current() { var p = loadProfiles(); return p.list.filter(function (x) { return x.id === p.cur; })[0] || p.list[0]; }
+  function players() { return loadProfiles().list; }
+  function cleanName(n, fallback) { return (n || "").replace(/s+/g, " ").trim().slice(0, 20) || fallback; }
+  function addPlayer(name) {
+    var p = loadProfiles(), id = "p" + Date.now().toString(36);
+    p.list.push({ id: id, name: cleanName(name, "Joueur " + (p.list.length + 1)) });
+    p.cur = id; mem = null; saveProfiles();
+  }
+  function switchTo(id) { var p = loadProfiles(); if (p.list.some(function (x) { return x.id === id; })) { p.cur = id; mem = null; saveProfiles(); } }
+  function renamePlayer(id, name) { var p = loadProfiles(); p.list.forEach(function (x) { if (x.id === id) x.name = cleanName(name, x.name); }); saveProfiles(); }
+  function removePlayer(id) {
+    var p = loadProfiles();
+    if (p.list.length < 2) return false;
+    p.list = p.list.filter(function (x) { return x.id !== id; });
+    try { localStorage.removeItem(LEGACY + "." + id); localStorage.removeItem("dictees.pref." + id + ".level"); } catch (e) { /* ignore */ }
+    if (p.cur === id) { p.cur = p.list[0].id; mem = null; }
+    saveProfiles();
+    return true;
+  }
+  function pref(k, def) { return ls("dictees.pref." + loadProfiles().cur + "." + k) || def; }
+  function setPref(k, v) { lw("dictees.pref." + loadProfiles().cur + "." + k, v); }
   var RANKS = [
     { xp: 0, name: "Curieux" }, { xp: 120, name: "Appliqué" }, { xp: 350, name: "Plume sûre" },
     { xp: 800, name: "Érudit" }, { xp: 1600, name: "Grand scribe" }
@@ -25,10 +63,10 @@
   function empty() { return { xp: 0, played: 0, perfect: 0, found: 0, bestStreak: 0, streak: 0, days: [], themes: {}, levels: {}, weak: {}, mastered: 0, badges: {} }; }
   function load() {
     if (mem) return mem;
-    try { mem = JSON.parse(localStorage.getItem(KEY)) || empty(); } catch (e) { mem = empty(); }
+    try { mem = JSON.parse(localStorage.getItem(key())) || empty(); } catch (e) { mem = empty(); }
     return mem;
   }
-  function save() { try { localStorage.setItem(KEY, JSON.stringify(mem)); } catch (e) { /* ignore */ } }
+  function save() { try { localStorage.setItem(key(), JSON.stringify(mem)); } catch (e) { /* ignore */ } }
 
   function hash(s) { var h = 5381; for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return "i" + (h >>> 0).toString(36); }
 
@@ -103,7 +141,7 @@
     return (inLevel.length ? inLevel : all);
   }
 
-  var api = { RANKS: RANKS, BADGES: BADGES, load: load, record: record, annotate: annotate, rankOf: rankOf, weakList: weakList, itemsFor: itemsFor, hash: hash };
+  var api = { current: current, players: players, addPlayer: addPlayer, switchTo: switchTo, renamePlayer: renamePlayer, removePlayer: removePlayer, pref: pref, setPref: setPref, RANKS: RANKS, BADGES: BADGES, load: load, record: record, annotate: annotate, rankOf: rankOf, weakList: weakList, itemsFor: itemsFor, hash: hash };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.Progress = api;
 })(typeof window !== "undefined" ? window : globalThis);
