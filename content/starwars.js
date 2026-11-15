@@ -20,7 +20,7 @@
         { word: "recrutés", rule: "Le COD « que » (les pilotes) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
         { word: "préparés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (les pilotes)." },
         { word: "patiemment", rule: "Adjectif en -ent (patient) : l'adverbe se termine en -emment, qui se prononce « a-man »." },
-        { word: "écoutille", rule: "Ouverture qui permet d'entrer dans un vaisseau ou un navire. Nom féminin en -ille, avec deux l.", rare: true },
+        { word: "écoutille", rule: "Ouverture qui permet d'entrer dans un vaisseau ou un navire. Nom féminin en -ille, avec deux l.", rare: true, d: 2, piege: "é, ill, e final" },
         { word: "propulseur", rule: "Moteur qui fait avancer l'engin. Nom masculin en -eur, sans e final." },
         { word: "élancés", rule: "Verbe pronominal : « se » est COD, accord avec le sujet « ils »." },
         { word: "prêts", rule: "Adjectif accordé avec « ils » (masculin pluriel) ; accent circonflexe sur le e." }
@@ -28,12 +28,12 @@
     },
     {
       level: "maitre",
-      text: "Accoudés au comptoir d'une cantina enfumée, deux contrebandiers comptaient leurs gains. Bien qu'ils n'eussent jamais juré allégeance à quiconque, ils hésitèrent lorsque des rebelles leur proposèrent une cargaison périlleuse. La somme qu'on leur avait promise les convainquit ; ils s'engagèrent sans plus attendre.",
+      text: "Accoudés au comptoir d'une cantina enfumée, deux mercenaires comptaient leurs gains. Bien qu'ils n'eussent jamais juré allégeance à quiconque, ils hésitèrent lorsque des rebelles leur proposèrent une cargaison périlleuse. La somme qu'on leur avait promise les convainquit ; ils s'engagèrent sans plus attendre.",
       notes: [
-        { word: "accoudés", rule: "Participe employé comme adjectif, accordé avec « deux contrebandiers » : masculin pluriel, deux c." },
-        { word: "contrebandiers", rule: "Ceux qui transportent des marchandises interdites. Un seul mot, sans trait d'union : contre + bandier.", rare: true },
+        { word: "accoudés", rule: "Participe employé comme adjectif, accordé avec « deux mercenaires » : masculin pluriel, deux c." },
+        { word: "mercenaires", rule: "Soldats qui combattent pour de l'argent. C devant e, un seul n, finale -aire.", rare: true, d: 2, piege: "c devant e, finale -aires" },
         { word: "eussent", rule: "« Bien que » appelle le subjonctif ; plus-que-parfait du subjonctif, admis après un récit au passé simple." },
-        { word: "allégeance", rule: "Fidélité jurée à un chef ou à une cause. Accent aigu sur le premier e, et e après le g pour garder le son « j » devant a : -geance.", rare: true },
+        { word: "allégeance", rule: "Fidélité jurée à un chef ou à une cause. Accent aigu sur le premier e, et e après le g pour garder le son « j » devant a : -geance.", rare: true, d: 3, piege: "ll, é, -geance" },
         { word: "hésitèrent", rule: "Passé simple, 3e personne du pluriel du 1er groupe : -èrent." },
         { word: "promise", rule: "Le COD « qu' » (la somme) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
         { word: "convainquit", rule: "Passé simple de convaincre : le c devient qu devant i, « il convainquit »." }
@@ -44,13 +44,15 @@
       text: "Des années durant, l'apprenti s'était astreint à une ascèse que peu de chevaliers auraient endurée. Les doutes qui l'avaient assailli, il les avait vaincus un à un ; mais le moindre vacillement de sa lame trahissait une prescience encore imparfaite. Quelque aguerri qu'il parût, il savait que la maîtrise ne s'acquiert qu'au prix d'une longue abnégation.",
       notes: [
         { word: "astreint", rule: "S'astreindre : « se » est COD, accord avec le sujet (l'apprenti, masculin singulier) ; finale -eint." },
-        { word: "ascèse", rule: "Discipline de vie rigoureuse. Groupe sc au milieu du mot, accent grave sur le e, nom féminin.", rare: true },
+        { word: "ascèse", rule: "Discipline de vie rigoureuse. Groupe sc au milieu du mot, accent grave sur le e, nom féminin.", rare: true, d: 3, piege: "sc, è" },
         { word: "endurée", rule: "Le COD « que » (une ascèse) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
         { word: "assailli", rule: "Le COD « l' » (l'apprenti) est placé avant l'auxiliaire : accord au masculin singulier, deux s et deux l." },
         { word: "vaincus", rule: "Le COD « les » (les doutes) est placé avant l'auxiliaire : accord au masculin pluriel." },
-        { word: "vacillement", rule: "Fait de trembler, de perdre son assurance. Un seul c, deux l, suffixe -ement.", rare: true },
-        { word: "prescience", rule: "Connaissance de ce qui va arriver. Pre + science : le groupe sc est conservé et, piège, le e du préfixe ne prend pas d'accent.", rare: true },
+        { word: "vacillement", rule: "Fait de trembler, de perdre son assurance. Un seul c, deux l, suffixe -ement.", rare: true, d: 2, piege: "ill, -ement" },
+        { word: "abnégation", rule: "Renoncement à soi-même. Accent aigu, g, puis -ation avec t : ab-né-ga-tion.", rare: true, d: 3, piege: "bn, é, -gation" },
+        { word: "prescience", rule: "Connaissance de ce qui va arriver. Pre + science : le groupe sc est conservé et, piège, le e du préfixe ne prend pas d'accent.", rare: true, d: 3, piege: "sc (famille science)" },
         { word: "quelque", rule: "Devant un adjectif, « quelque » signifie « si » : adverbe invariable, sans s." },
+        { word: "aguerri", rule: "Endurci par l'expérience. Famille de guerre : gu devant e, deux r ; singulier avec « il ».", rare: true, d: 3, piege: "gu, rr (famille guerre)" },
         { word: "parût", rule: "Subjonctif imparfait après « quelque... que », admis dans un récit à l'imparfait : accent circonflexe, « qu'il parût »." },
         { word: "acquiert", rule: "Présent d'acquérir, 3e personne du singulier : un seul r, « il acquiert »." }
       ]

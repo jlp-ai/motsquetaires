@@ -1,7 +1,7 @@
 // Word rarity measured on Lexique 3.83 (New, Pallier et al., CC BY-SA 4.0, to be credited).
 // Frequency kept: highest of lemma/form frequency (films, books), in occurrences per million.
 //   node tools/rarete.mjs words mot1 mot2 ...   frequency of each word
-//   node tools/rarete.mjs check [theme ...]     rare-word quota per dictation (all themes by default)
+//   node tools/rarete.mjs check [theme ...]     rare-word quota and spelling-difficulty (D) quota per dictation (all themes by default)
 // Lexique TSV is read from ../Onirologos/data/lexique/ (or LEXIQUE_TSV env var); it is not copied here.
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -19,6 +19,11 @@ export const RARE = 5;        // < 5 occ/million : rare
 export const VERY_RARE = 0.5; // < 0.5 occ/million : très rare
 // Minimum per dictation, by level: [rare words, very rare words]
 export const QUOTA = { apprenti: [0, 0], compagnon: [1, 0], maitre: [2, 0], "grand-scribe": [3, 1] };
+
+// Spelling difficulty D (0-4, see Onirologos mesure-difficulte.md), judged per `rare: true` note (fields d and piege).
+// Minimum per dictation, by level: [words with D>=2, words with D>=3]
+export const QUOTA_D = { apprenti: [0, 0], compagnon: [1, 0], maitre: [2, 1], "grand-scribe": [3, 3] };
+// Note: for grand-scribe the 3 words are all D>=3, so the D>=2 minimum is implied.
 
 const freq = new Map();
 const lines = readFileSync(TSV, "utf8").split("\n");
@@ -61,7 +66,7 @@ function main() {
     return;
   }
   if (cmd === "check") {
-    const ids = args.length ? args : readdirSync(join(root, "content")).filter((f) => f.endsWith(".js") && f !== "metas.js").map((f) => f.slice(0, -3));
+    const ids = args.length ? args : readdirSync(join(root, "content")).filter((f) => f.endsWith(".js") && f !== "metas.js" && f !== "pronunciations.js").map((f) => f.slice(0, -3));
     let bad = 0;
     for (const id of ids) {
       const theme = loadTheme(id);
@@ -72,9 +77,16 @@ function main() {
         const [qr, qv] = QUOTA[d.level];
         const flagged = (d.notes || []).filter((n) => n.rare).map((n) => n.word.toLowerCase());
         const flagOk = flagged.every((w) => rare.some((r) => r[0] === w || r[0].includes(w) || w.includes(r[0])));
-        const ok = rare.length >= qr && very.length >= qv && flagged.length >= Math.min(qr, 1) && flagOk;
+        const rareNotes = (d.notes || []).filter((n) => n.rare);
+        const missing = rareNotes.filter((n) => !(Number.isInteger(n.d) && n.d >= 0 && n.d <= 4) || typeof n.piege !== "string" || !n.piege.trim()).map((n) => n.word);
+        const d2 = rareNotes.filter((n) => n.d >= 2).length;
+        const d3 = rareNotes.filter((n) => n.d >= 3).length;
+        const [qd2, qd3] = QUOTA_D[d.level];
+        const okR = rare.length >= qr && very.length >= qv && flagged.length >= Math.min(qr, 1) && flagOk;
+        const okD = !missing.length && d2 >= qd2 && d3 >= qd3;
+        const ok = okR && okD;
         if (!ok) bad++;
-        console.log((ok ? "OK  " : "FAIL") + " " + id.padEnd(16) + d.level.padEnd(13) + "rares " + rare.length + "/" + qr + "  très rares " + very.length + "/" + qv + "  notes rare:true " + flagged.length + (flagOk ? "" : " (mot signalé non rare)") + "  | " + rare.slice(0, 5).map((x) => x[0] + "(" + x[1].toFixed(1) + ")").join(" "));
+        console.log((ok ? "OK  " : "FAIL") + " " + id.padEnd(16) + d.level.padEnd(13) + "rares " + rare.length + "/" + qr + "  très rares " + very.length + "/" + qv + "  D>=2 " + d2 + "/" + qd2 + "  D>=3 " + d3 + "/" + qd3 + "  notes rare:true " + flagged.length + (flagOk ? "" : " (mot signalé non rare)") + (missing.length ? " (d/piege manquant : " + missing.join(", ") + ")" : "") + "  | " + rare.slice(0, 5).map((x) => x[0] + "(" + x[1].toFixed(1) + ")").join(" "));
       }
     }
     process.exitCode = bad ? 1 : 0;

@@ -10,7 +10,7 @@
         { word: "ses", rule: "« Ses » est un déterminant possessif : les abonnés sont à elle (à ne pas confondre avec « ces »)." },
         { word: "gentils", rule: "L'adjectif s'accorde avec le nom « commentaires » : masculin pluriel." },
         { word: "à", rule: "Dans « commence à parler », « à » est une préposition : on ne peut pas le remplacer par « avait »." },
-        { word: "abonnés", rare: true, rule: "Formé sur abonner : deux n, puis -és au masculin pluriel (ses abonnés)." }
+        { word: "abonnés", rare: true, rule: "Formé sur abonner : deux n, puis -és au masculin pluriel (ses abonnés).", d: 1, piege: "un seul n, accord" }
       ]
     },
     {
@@ -18,32 +18,37 @@
       text: "Les vidéos que la créatrice a montées pendant la nuit ont été mises en ligne dès l'aube. Ses abonnés, qui les attendaient impatiemment, se sont précipités pour les regarder. Quant aux miniatures, elles ont été retouchées avec soin.",
       notes: [
         { word: "montées", rule: "Le COD « que » (les vidéos) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "impatiemment", rare: true, rule: "Les adverbes formés sur un adjectif en -ent s'écrivent -emment : impatient, impatiemment." },
+        { word: "impatiemment", rare: true, rule: "Les adverbes formés sur un adjectif en -ent s'écrivent -emment : impatient, impatiemment.", d: 2, piege: "-emment (famille patient), mm" },
         { word: "précipités", rule: "Verbe pronominal dont le « se » est COD : le participe s'accorde avec le sujet (ses abonnés)." },
         { word: "Quant", rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t." },
-        { word: "abonnés", rare: true, rule: "Formé sur abonner : deux n, puis -és au masculin pluriel." }
+        { word: "abonnés", rare: true, rule: "Formé sur abonner : deux n, puis -és au masculin pluriel.", d: 1, piege: "un seul n, accord" }
       ]
     },
     {
       level: "maitre",
-      text: "Quelles que soient les modes, la vidéaste refuse de céder aux sirènes de l'algorithme. Les heures de tournage qu'il a fallu pour cette série, elle ne les a jamais comptées. Les extraits qu'elle a fait traduire ont été bien accueillis à l'étranger.",
+      text: "Quelles que soient les modes, la vidéaste refuse de céder aux sirènes de l'algorithme : seul compte, à ses yeux, un public pérenne. Les heures de tournage qu'il a fallu pour cette série, elle ne les a jamais comptées. Les extraits qu'elle a fait traduire ont été bien accueillis à l'étranger.",
       notes: [
         { word: "Quelles", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (les modes : féminin pluriel)." },
+        { word: "algorithme", rule: "Suite d'instructions qui trie et recommande les vidéos. Th muet, i après le r, finale -me.", rare: true, d: 2, piege: "th muet, i après le r" },
+        { word: "pérenne", rule: "Qui dure longtemps. Deux n, comme dans pérennité : pé-ren-ne, accent aigu.", rare: true, d: 3, piege: "deux n (famille pérennité), é" },
         { word: "fallu", rule: "Le participe passé d'un verbe impersonnel reste toujours invariable : les heures qu'il a fallu." },
         { word: "comptées", rule: "Le COD « les » (les heures) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
         { word: "fait", rule: "« Fait » suivi d'un infinitif reste toujours invariable." },
-        { word: "vidéaste", rare: true, rule: "Personne qui réalise des vidéos. Accent aigu sur le é de vidé-, suffixe -aste avec un e final, au masculin comme au féminin." }
+        { word: "vidéaste", rare: true, rule: "Personne qui réalise des vidéos. Accent aigu sur le é de vidé-, suffixe -aste avec un e final, au masculin comme au féminin.", d: 1, piege: "é, -aste" }
       ]
     },
     {
       level: "grand-scribe",
-      text: "Les vidéastes se sont succédé dans ce studio exigu, quelque aguerris qu'ils soient aux affres du direct. Les scénarios qu'ils avaient cru pouvoir improviser leur ont coûté maintes nuits blanches ; aussi en rient-ils volontiers aujourd'hui.",
+      text: "Les vidéastes se sont succédé dans ce studio exigu, quelque aguerris qu'ils soient aux affres du direct. Les scénarios qu'ils avaient cru pouvoir improviser leur ont coûté maintes nuits blanches et d'interminables tergiversations ; aussi en rient-ils volontiers aujourd'hui.",
       notes: [
         { word: "succédé", rule: "Dans « se succéder », le « se » est COI (succéder à quelqu'un) : le participe reste invariable." },
+        { word: "exigu", rule: "Très petit, étroit. X, g suivi de u, finale -u au masculin singulier.", rare: true, d: 2, piege: "x, gu, finale -u" },
         { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est adverbe (si) et reste invariable." },
+        { word: "aguerris", rule: "Endurcis par l'expérience. Famille de guerre : gu devant e, deux r, accord au masculin pluriel.", rare: true, d: 3, piege: "gu, rr (famille guerre), s du pluriel" },
         { word: "cru", rule: "Le « que » est COD de « improviser » et non de « croire » : le participe reste invariable." },
-        { word: "affres", rare: true, rule: "Tourments, angoisses. Deux f, et ce nom féminin ne s'emploie qu'au pluriel : les affres." },
-        { word: "vidéastes", rare: true, rule: "Personnes qui réalisent des vidéos. Accent aigu sur le é de vidé-, suffixe -aste, et un s au pluriel." }
+        { word: "tergiversations", rule: "Détours et hésitations pour éviter de se décider. Dérivé de tergiverser : g doux, puis -sations avec s.", rare: true, d: 3, piege: "g doux, s et non c (famille tergiverser)" },
+        { word: "affres", rare: true, rule: "Tourments, angoisses. Deux f, et ce nom féminin ne s'emploie qu'au pluriel : les affres.", d: 3, piege: "ff, s (toujours pluriel)" },
+        { word: "vidéastes", rare: true, rule: "Personnes qui réalisent des vidéos. Accent aigu sur le é de vidé-, suffixe -aste, et un s au pluriel.", d: 1, piege: "é, -aste, s" }
       ]
     }
   ],

@@ -25,24 +25,32 @@ Par niveau (`apprenti`, `compagnon`, `maitre`, `grand-scribe`) : 1 dictée (3 à
 7. **Ton** adapté au niveau, jamais infantilisant, jamais moqueur envers le joueur.
 8. **Typographie** : pas de tiret cadratin ni demi-cadratin (— –), pas d'emoji dans les textes (sauf le champ `emoji` du thème). Accents obligatoires. UTF-8 sans BOM.
 
-## Mots rares (par dictée)
+## Mots rares et difficulté (par dictée)
 
-Rareté mesurée sur Lexique 3.83 par `node tools/rarete.mjs words <mots>` ; seuils : rare < 5 occurrences par million, très rare < 0,5. Quota minimum par dictée :
+Deux mesures indépendantes. Un mot rare n'est pas forcément difficile à écrire (« bretteurs » se reconstruit depuis « brette » ; « estafette » cumule s muet, f simple et tt).
 
-| Niveau | Mots rares (< 5) | dont très rares (< 0,5) |
-| --- | --- | --- |
-| `apprenti` | 0 (vocabulaire courant, mots du thème acceptés) | 0 |
-| `compagnon` | 1 | 0 |
-| `maitre` | 2 | 0 |
-| `grand-scribe` | 3 | 1 |
+**Rareté (R)** : mesurée sur Lexique 3.83 par `node tools/rarete.mjs words <mots>` ; seuils : rare < 5 occurrences par million, très rare < 0,5.
+
+**Devinabilité orthographique (D)** : de 0 à 4, jugée par note. Méthode : transcrire en phonèmes, lister les 3 à 5 graphies d'un scripteur, regarder où tombe la bonne. D0 transparent ; D1 une hésitation courante ; D2 piège connu (la bonne graphie est dans les trois premiers essais) ; D3 graphie opaque mais retrouvable (famille de mots, étymologie) ; D4 irréductible (anti-analogie ou cumul d'au moins trois points opaques sans indice). Grille complète : `../Onirologos/.claude/skills/creer-dictee/references/mesure-difficulte.md` ; skill `juger-difficulte`.
+
+Quotas minimum par dictée :
+
+| Niveau | Mots rares (< 5) | dont très rares (< 0,5) | Mots D≥2 | dont D≥3 |
+| --- | --- | --- | --- | --- |
+| `apprenti` | 0 (vocabulaire courant, mots du thème acceptés) | 0 | 0 | 0 |
+| `compagnon` | 1 | 0 | 1 | 0 |
+| `maitre` | 2 | 0 | 2 | 1 |
+| `grand-scribe` | 3 | 1 | 3 | 3 |
 
 - Les mots rares sont **du champ lexical du thème**, jamais du charabia érudit plaqué. Ils portent une difficulté orthographique réelle (doubles consonnes, finale muette, accent, genre, pluriel irrégulier).
-- Chaque mot rare doit figurer dans `notes` avec `rare: true` et une règle qui dit ce qu'il faut retenir (sens en quelques mots si utile, et la difficulté d'écriture).
-- Vérification : `node tools/rarete.mjs check <id>` doit afficher OK sur les quatre dictées du thème.
+- Chaque mot rare figure dans `notes` avec `rare: true`, une `rule` qui dit ce qu'il faut retenir, un champ `d` (nombre de 0 à 4) et un champ `piege` (courte étiquette des points d'hésitation, ex. « s muet, f simple, tt »). Exemple : `{ word: "estafettes", rule: "...", rare: true, d: 3, piege: "s muet, f simple, tt" }`.
+- Un mot transparent (D0, D1) ne fait pas le quota D : le remplacer par un mot du même champ lexical vraiment piégeux, en retouchant minimalement la phrase. Un mot à plusieurs graphies admises ou à graphie douteuse n'est pas un bon piège.
+- Aux niveaux `apprenti` et `compagnon`, les notes sont des mots entiers présents dans le texte (elles servent de trous).
+- Vérification : `node tools/rarete.mjs check <id>` doit afficher OK sur les quatre dictées du thème (par dictée : rares, très rares, mots D≥2 et D≥3 face au quota, champs `d` et `piege` obligatoires).
 
 ## Contrôle automatique avant de rendre
 
-Charger le fichier (`global.window = {}; new Function("window", fs.readFileSync(f, "utf8"))(global.window)`) et vérifier : 4 dictées, 8 erreurs ; `wrong` unique parmi les mots de sa phrase ; `right` dans `choices` ; chaque `notes[].word` (minuscules) sous-chaîne du texte ; `node tools/rarete.mjs check <id>` OK.
+Charger le fichier (`global.window = {}; new Function("window", fs.readFileSync(f, "utf8"))(global.window)`) et vérifier : 4 dictées, 8 erreurs ; `wrong` unique parmi les mots de sa phrase ; `right` dans `choices` ; chaque `notes[].word` (minuscules) sous-chaîne du texte ; `node tools/rarete.mjs check <id>` OK (quotas de rareté et de difficulté).
 
 ## Thèmes tirés d'une œuvre ou d'une saga
 

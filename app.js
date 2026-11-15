@@ -57,7 +57,7 @@
     var cur = level(state.level);
     screen({},
       "<div class='logo'>" + ICONS.logo + "<div class='name'><span>Dictées</span></div></div>" +
-      "<p class='tagline'>Deux jeux, quatre niveaux, des thèmes d'aujourd'hui.</p>" +
+      "<p class='tagline'>Deux jeux, quatre niveaux, des thèmes d'aujourd'hui.</p>" + rankStrip() +
       "<h2>Niveau</h2><div class='levels'>" +
       LEVELS.map(function (l) {
         return "<button class='level lv-" + l.n + "' data-level='" + l.id + "' aria-pressed='" + (l.id === state.level) + "'>" +
@@ -73,6 +73,7 @@
     app.querySelectorAll("[data-game]").forEach(function (b) {
       b.onclick = function () { state.game = b.dataset.game; state.streak = 0; themeMenu(); };
     });
+    document.getElementById("carnet").onclick = carnet;
   }
 
   // Metas actually available: declared metas (existing themes only) plus a
@@ -153,6 +154,13 @@
 
   var last = null;
   function play() {
+    if (state.review) {
+      if (!state.review.length) { state.review = null; carnet(); return; }
+      last = state.review.shift();
+      state.game = last._kind;
+      (last._kind === "dictee" ? dictee : erreur)(last);
+      return;
+    }
     var items = pool();
     if (items.length > 1) items = items.filter(function (it) { return it !== last; });
     if (!items.length) {
@@ -334,7 +342,7 @@
       stopSpeech();
       listen.classList.remove("speaking");
       var out = document.getElementById("result");
-      var html, sc, rules;
+      var html, sc, rules, noteResults;
       if (parts) {
         var gaps = parts.filter(function (p) { return p.gap; }).map(function (p) { return p.gap; });
         var wrongWords = {};
@@ -351,6 +359,7 @@
           return r.ok ? "<span class='w ok'>" + esc(p.gap.word) + "</span>"
             : (r.given ? "<span class='w given'>" + esc(r.given) + "</span> " : "") + "<span class='w ko'>" + esc(p.gap.word) + "</span>";
         }).join("");
+        noteResults = gaps.map(function (g, k) { return { key: g.note.type || g.note.rule, label: g.note.rule, ok: results[k].ok }; });
         sc = { ok: results.filter(function (r) { return r.ok; }).length, total: results.length };
         rules = gaps.filter(function (g) { return wrongWords[g.note.word.toLowerCase()]; }).map(function (g) { return g.note; });
       } else {
@@ -358,9 +367,9 @@
         sc = Correction.score(res);
         var wrong = {};
         res.forEach(function (r) { if (!r.ok && Correction.isWord(r.ref)) wrong[r.ref.toLowerCase()] = true; });
-        rules = (item.notes || []).filter(function (n) {
-          return Object.keys(wrong).some(function (k) { return k.indexOf(n.word.toLowerCase()) >= 0; });
-        });
+        var missed = function (n) { return Object.keys(wrong).some(function (k) { return k.indexOf(n.word.toLowerCase()) >= 0; }); };
+        rules = (item.notes || []).filter(missed);
+        noteResults = (item.notes || []).map(function (n) { return { key: n.type || n.rule, label: n.rule, ok: !missed(n) }; });
         html = res.map(function (r) {
           var cls = r.ok ? "ok" : "ko";
           var s = (r.given ? "<span class='w given'>" + esc(r.given) + "</span> " : "") + "<span class='w " + cls + "'>" + esc(r.ref) + "</span>";
@@ -369,6 +378,7 @@
         }).join("").trim();
       }
       var pct = sc.total ? sc.ok / sc.total : 0;
+      var earned = Progress.record({ kind: "dictee", item: item, ok: pct === 1, perfect: pct === 1, points: sc.ok, notes: noteResults });
       var msg = pct === 1 ? "Sans faute !" : pct >= 0.8 ? "Très bien" : pct >= 0.5 ? "Bon début" : "À retravailler";
       out.innerHTML =
         "<h2>Correction</h2><div class='card score'>" + ring(sc.ok, sc.total) + "<div><b>" + msg + "</b><span class='sub'>" + sc.ok + " mots justes sur " + sc.total + "</span></div></div>" +
@@ -380,6 +390,7 @@
         if (fg) fg.style.strokeDashoffset = fg.dataset.to;
       });
       if (pct === 1) confetti();
+      toastBadges(earned);
       out.scrollIntoView({ behavior: "smooth", block: "start" });
       document.getElementById("next").onclick = play;
       document.getElementById("menu").onclick = home;
@@ -389,6 +400,7 @@
   // ---------- Game 2: find the wrong word ----------
   function erreur(item) {
     var tokens = item.text.split(" ");
+    var failed = false;
     function strip(t) { return t.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, ""); }
 
     function sentence(chosen, fixedIdx) {
@@ -411,6 +423,7 @@
 
     function onPick(i, el) {
       if (strip(tokens[i]) !== item.wrong) {
+        failed = true;
         el.classList.add("nope");
         var h = document.getElementById("hint");
         h.className = "hint bad";
@@ -433,7 +446,10 @@
 
     function onChoice(i, c) {
       var ok = c === item.right;
+      if (!ok) failed = true;
       state.streak = ok ? state.streak + 1 : 0;
+      var firstTry = ok && !failed;
+      var earned = Progress.record({ kind: "erreur", item: item, ok: firstTry, notes: [{ key: item.type || item.rule, label: item.rule, ok: firstTry }] });
       screen({ back: themesBack, streak: true },
         "<h1>Trouve l'erreur</h1><p class='sub'>Niveau " + level(item.level).name.toLowerCase() + "</p>" +
         "<div class='verdict " + (ok ? "good" : "bad") + "' style='margin-top:18px' aria-live='polite'>" + (ok ? ICONS.check + "Bravo !" : ICONS.cross + "Presque : « " + esc(item.right) + " »") + "</div>" +
@@ -441,6 +457,7 @@
         "<h2>À retenir</h2><div class='tip'><span>" + esc(item.rule) + "</span></div>" +
         "<div class='row'><button class='btn primary' id='next'>Phrase suivante</button><button class='btn' id='menu'>Menu</button></div>");
       if (ok) confetti();
+      toastBadges(earned);
       document.getElementById("next").onclick = play;
       document.getElementById("menu").onclick = home;
     }
@@ -448,5 +465,62 @@
     render(null);
   }
 
+  // ---------- Progress: rank strip, carnet (badges, points to review), review ----------
+  function rankStrip() {
+    var p = Progress.load(), r = Progress.rankOf(p.xp);
+    var pct = r.next ? Math.round((p.xp - r.from) / (r.to - r.from) * 100) : 100;
+    var nWeak = Progress.weakList().length;
+    return "<button class='strip' id='carnet'><span class='strip-top'><b>" + esc(r.name) + "</b><span>" + p.xp + " pts" +
+      (nWeak ? " · " + nWeak + " à réviser" : "") + "</span></span><span class='bar'><i style='width:" + pct + "%'></i></span></button>";
+  }
+
+  function toastBadges(list) {
+    if (!list || !list.length) return;
+    var d = document.createElement("div");
+    d.className = "toast";
+    d.innerHTML = "Badge débloqué : <b>" + list.map(function (b) { return esc(b.name); }).join(", ") + "</b>";
+    document.body.appendChild(d);
+    setTimeout(function () { d.remove(); }, 3500);
+  }
+
+  function startReview(keys) {
+    var seen = {}, queue = [];
+    keys.forEach(function (k) {
+      shuffle(Progress.itemsFor(window.THEMES, k, state.level)).slice(0, 3).forEach(function (it) {
+        if (!seen[it._id]) { seen[it._id] = 1; queue.push(it); }
+      });
+    });
+    state.review = queue.slice(0, 8);
+    state.streak = 0;
+    play();
+  }
+
+  function carnet() {
+    var p = Progress.load(), r = Progress.rankOf(p.xp), weak = Progress.weakList();
+    var pct = r.next ? Math.round((p.xp - r.from) / (r.to - r.from) * 100) : 100;
+    var stat = function (n, t) { return "<div class='stat'><b>" + n + "</b><small>" + t + "</small></div>"; };
+    screen({ back: home },
+      "<h1>Mon carnet</h1>" +
+      "<div class='card rank'><b>" + esc(r.name) + "</b><span class='sub'>" + p.xp + " points" + (r.next ? ", prochain rang : " + esc(r.next) : ", rang maximal") + "</span><span class='bar'><i style='width:" + pct + "%'></i></span></div>" +
+      "<div class='stats'>" + stat(p.played, "exercices") + stat(p.perfect, "dictées sans faute") + stat(p.found, "erreurs trouvées") + stat(p.bestStreak, "meilleure série") + "</div>" +
+      "<h2>À réviser</h2>" +
+      (weak.length
+        ? "<button class='btn primary block' id='revAll'>Tout réviser</button><ul class='weak'>" + weak.slice(0, 8).map(function (x, i) {
+          var names = Object.keys(x.w.themes).map(function (t) { return window.THEMES[t] ? window.THEMES[t].name : t; }).join(", ");
+          return "<li><span><b>" + esc(x.w.label) + "</b><small>Manquée " + x.w.count + " fois" + (names ? " · " + esc(names) : "") + "</small></span><button class='btn' data-w='" + i + "'>Réviser</button></li>";
+        }).join("") + "</ul>"
+        : "<p class='sub'>Rien à réviser pour l'instant. Les règles manquées apparaîtront ici ; deux bonnes réponses d'affilée les retirent.</p>") +
+      "<h2>Badges</h2><div class='badges'>" + Progress.BADGES.map(function (b) {
+        var on = !!p.badges[b.id];
+        return "<div class='badge " + (on ? "on" : "off") + "'><span class='bi'>" + (on ? "★" : "☆") + "</span><b>" + esc(b.name) + "</b><small>" + esc(b.how) + "</small></div>";
+      }).join("") + "</div>");
+    var all = document.getElementById("revAll");
+    if (all) all.onclick = function () { startReview(weak.slice(0, 8).map(function (x) { return x.key; })); };
+    app.querySelectorAll("[data-w]").forEach(function (b) {
+      b.onclick = function () { startReview([weak[+b.dataset.w].key]); };
+    });
+  }
+
+  Progress.annotate(window.THEMES);
   home();
 })();

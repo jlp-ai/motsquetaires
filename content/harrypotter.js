@@ -15,39 +15,42 @@
     },
     {
       level: "compagnon",
-      text: "Penchés sur leurs chaudrons, les élèves ont suivi les consignes de leur vieux grimoire. La potion qu'ils avaient préparée a soudain changé de couleur. Quelques fioles se sont brisées sur le carrelage, mais aucun d'eux n'a été blessé.",
+      text: "Penchés sur leurs chaudrons, les élèves ont suivi les consignes de leur vieux grimoire. La potion qu'ils avaient préparée a soudain changé de couleur. Quelques alambics se sont brisés sur le carrelage, mais aucun d'eux n'a été blessé.",
       notes: [
         { word: "penchés", rule: "Le participe employé seul s'accorde avec le nom auquel il se rapporte (les élèves : masculin pluriel)." },
-        { word: "grimoire", rule: "Livre de formules magiques. Nom masculin terminé par -oire, comme « répertoire »." , rare: true },
+        { word: "grimoire", rule: "Livre de formules magiques. Nom masculin terminé par -oire, comme « répertoire ».", rare: true, d: 1, piege: "finale -oire (comme répertoire)" },
         { word: "préparée", rule: "Le COD « qu' » (la potion) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "brisées", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (quelques fioles : féminin pluriel)." },
+        { word: "alambics", rule: "Appareil de verre ou de cuivre servant à distiller. Nom masculin terminé par un c muet, comme dans alambiquer.", rare: true, d: 3, piege: "c final muet (famille alambiquer)" },
+        { word: "brisés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (quelques alambics : masculin pluriel)." },
         { word: "blessé", rule: "« Aucun d'eux » est singulier : le verbe et le participe restent au singulier." }
       ]
     },
     {
       level: "maitre",
-      text: "Penchée sur un parchemin jauni, l'élève recopiait des sortilèges qu'aucun professeur n'avait encore enseignés. Les escaliers, qui changeaient de direction à leur guise, l'obligèrent maintes fois à rebrousser chemin. Quoiqu'elle fût épuisée, elle ne referma son encrier qu'à l'aube.",
+      text: "Penchée sur un parchemin jauni, l'élève recopiait, à la lueur diaphane d'une chandelle, des sortilèges qu'aucun professeur n'avait encore enseignés. Les escaliers, qui changeaient de direction à leur guise, l'obligèrent maintes fois à rebrousser chemin. Quoiqu'elle fût épuisée, elle ne referma son encrier qu'à l'aube.",
       notes: [
-        { word: "parchemin", rule: "Peau préparée pour l'écriture. Finale en -in, nom masculin.", rare: true },
-        { word: "sortilèges", rule: "Formules magiques. Accent grave sur le e, nom masculin malgré sa finale en -ège.", rare: true },
+        { word: "parchemin", rule: "Peau préparée pour l'écriture. Finale en -in, nom masculin.", rare: true, d: 2, piege: "ch pour [ʃ], finale -in" },
+        { word: "diaphane", rule: "Qui laisse passer la lumière sans être transparent. Ph et non f, finale -ane : dia-pha-ne.", rare: true, d: 3, piege: "ph et non f, finale -ane" },
+        { word: "sortilèges", rule: "Formules magiques. Accent grave sur le e, nom masculin malgré sa finale en -ège.", rare: true, d: 2, piege: "è, g doux, -ège masculin" },
         { word: "enseignés", rule: "Le COD « qu' » (des sortilèges) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
         { word: "maintes", rule: "« Maintes fois » : maint s'accorde avec fois, féminin pluriel." },
         { word: "obligèrent", rule: "Passé simple, 3e personne du pluriel du 1er groupe : -èrent." },
         { word: "fût", rule: "« Quoique » appelle le subjonctif ; dans un récit au passé simple, imparfait du subjonctif avec accent circonflexe : fût." },
-        { word: "encrier", rule: "Petit récipient à encre. Dérivé de encre, finale en -ier.", rare: true }
+        { word: "encrier", rule: "Petit récipient à encre. Dérivé de encre, finale en -ier.", rare: true, d: 2, piege: "en- et non an-, finale -ier (famille encre)" }
       ]
     },
     {
       level: "grand-scribe",
-      text: "Des générations de lecteurs se sont succédé sur ces pages, ont rêvé de s'incliner devant un hippogriffe et de rempoter des mandragores aux cris stridents. Quel qu'ait été leur âge, tous se sont plu à imaginer les philtres et les centaures scrutant le ciel ; la plupart s'en sont souvenus bien après avoir refermé le dernier tome.",
+      text: "Des générations de lecteurs se sont succédé sur ces pages, ont rêvé de s'incliner devant un hippogriffe et de rempoter des mandragores aux cris stridents. Quel qu'ait été leur âge, tous se sont plu à imaginer les philtres, un phénix et les centaures scrutant le ciel ; la plupart s'en sont souvenus bien après avoir refermé le dernier tome.",
       notes: [
         { word: "succédé", rule: "On succède à quelqu'un : le « se » est COI, le participe reste invariable." },
-        { word: "hippogriffe", rule: "Créature mi-cheval, mi-aigle. Deux p après hi, deux f, finale en -e.", rare: true },
-        { word: "mandragores", rule: "Plante aux racines de forme humaine. Nom féminin, finale en -ore suivie d'un e.", rare: true },
+        { word: "hippogriffe", rule: "Créature mi-cheval, mi-aigle. Deux p après hi, deux f, finale en -e.", rare: true, d: 3, piege: "pp (comme hippopotame), ff (comme griffe), -e final" },
+        { word: "mandragores", rule: "Plante aux racines de forme humaine. Nom féminin, finale en -ore suivie d'un e.", rare: true, d: 1, piege: "finale -ore" },
         { word: "quel", rule: "« Quel que » + être au subjonctif : quel s'accorde avec le sujet (leur âge : masculin singulier)." },
         { word: "plu", rule: "Le participe passé de se plaire reste invariable (le « se » est COI)." },
-        { word: "philtres", rule: "Breuvages magiques. Ph initial et finale en -tre, comme « filtre » mais avec ph.", rare: true },
-        { word: "centaures", rule: "Êtres mi-hommes, mi-chevaux. Finale en -aure, écrite avec « au ».", rare: true },
+        { word: "philtres", rule: "Breuvages magiques. Ph initial et finale en -tre, comme « filtre » mais avec ph.", rare: true, d: 3, piege: "ph et non f, finale -tre" },
+        { word: "phénix", rule: "Oiseau fabuleux qui renaît de ses cendres. Ph initial, accent aigu, finale en -x ; le mot ne change pas au pluriel.", rare: true, d: 3, piege: "ph, é, x final muet" },
+        { word: "centaures", rule: "Êtres mi-hommes, mi-chevaux. Finale en -aure, écrite avec « au ».", rare: true, d: 2, piege: "c devant e, -au-" },
         { word: "souvenus", rule: "Se souvenir est essentiellement pronominal : le participe s'accorde avec le sujet (la plupart des lecteurs : masculin pluriel)." }
       ]
     }

@@ -16,7 +16,7 @@
       level: "compagnon",
       text: "Les ferrets que la reine avait offerts au duc de Buckingham devaient briller au bal. Le cardinal, qui connaissait ce secret, espérait la compromettre. Les quatre amis se sont mis en route vers l'Angleterre ; trois sont restés en chemin, mais d'Artagnan a rapporté les bijoux à temps.",
       notes: [
-        { word: "ferrets", rule: "Ferret : ici, bijou serti de diamants. Finale en -et, deux r ; pluriel régulier en s.", rare: true },
+        { word: "ferrets", rule: "Ferret : ici, bijou serti de diamants. Finale en -et, deux r ; pluriel régulier en s.", rare: true, d: 2, piege: "rr, t final muet" },
         { word: "offerts", rule: "Le COD « que » (les ferrets) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
         { word: "restés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet « trois » (trois amis) : masculin pluriel." },
         { word: "rapporté", rule: "Le COD « les bijoux » est placé après le verbe : le participe passé avec avoir reste invariable." },
@@ -29,24 +29,26 @@
       notes: [
         { word: "eussent", rule: "« Bien que » appelle le subjonctif : plus-que-parfait du subjonctif, « eussent surpris », admis devant un passé simple." },
         { word: "cédèrent", rule: "Passé simple du 1er groupe à la 3e personne du pluriel : -èrent, avec un accent grave." },
-        { word: "rapières", rule: "Rapière : longue épée de duel. Un seul p, accent grave sur le e ; mot féminin.", rare: true },
+        { word: "rapières", rule: "Rapière : longue épée de duel. Un seul p, accent grave sur le e ; mot féminin.", rare: true, d: 2, piege: "-ière et non -iaire, un seul p" },
         { word: "résolument", rule: "Adverbe formé sur « résolu » : le e de l'adjectif féminin disparaît, résolument sans e ni accent circonflexe." },
-        { word: "ourdît", rule: "Ourdir : tramer en secret. « Quelque... que » appelle le subjonctif ; imparfait du subjonctif, 3e personne : -ît, avec un accent circonflexe.", rare: true },
+        { word: "ourdît", rule: "Ourdir : tramer en secret. « Quelque... que » appelle le subjonctif ; imparfait du subjonctif, 3e personne : -ît, avec un accent circonflexe.", rare: true, d: 3, piege: "ourd-, accent circonflexe de l'imparfait du subjonctif" },
         { word: "démentit", rule: "Passé simple de « se démentir » : il se démentit, sans accent circonflexe (indicatif)." }
       ]
     },
     {
       level: "grand-scribe",
-      text: "Les estafettes qu'on avait aperçues aux abords de La Rochelle annonçaient le siège. Quatre bretteurs, s'étant targués de tenir un bastion exposé, y déjeunèrent sous le feu ennemi. Quels qu'aient été les périls encourus, ils ne se sont jamais départis de leur panache, et les embûches que Milady leur a tendues ont échoué.",
+      text: "Les estafettes qu'on avait aperçues aux abords de La Rochelle annonçaient le siège et les escarmouches. Quatre bretteurs, s'étant targués de tenir un bastion exposé, y bivouaquèrent sous le feu ennemi. Quels qu'aient été les périls encourus, ils ne se sont jamais départis de leur panache, et les embûches que Milady leur a tendues ont échoué.",
       notes: [
-        { word: "estafettes", rule: "Estafette : messager à cheval. Mot féminin, deux t et finale en -ette.", rare: true },
+        { word: "estafettes", rule: "Estafette : messager à cheval. Mot féminin, deux t et finale en -ette.", rare: true, d: 3, piege: "s muet, f simple, tt" },
+        { word: "escarmouches", rule: "Petits combats entre éléments avancés de deux troupes. Es- avec un s muet, puis -carmouche (ou, ch), s au pluriel.", rare: true, d: 3, piege: "s muet, c, -ouche" },
         { word: "aperçues", rule: "Cédille devant u ; le COD « qu' » (les estafettes) précède l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "bretteurs", rule: "Bretteur : homme qui aime se battre à l'épée (de « brette », longue épée). Deux t.", rare: true },
+        { word: "bretteurs", rule: "Bretteur : homme qui aime se battre à l'épée (de « brette », longue épée). Deux t.", rare: true, d: 1, piege: "deux t (famille brette)" },
         { word: "targués", rule: "« Se targuer » est essentiellement pronominal : le participe s'accorde avec le sujet (quatre bretteurs)." },
-        { word: "bastion", rule: "Bastion : ouvrage avancé d'une fortification. Finale en -tion, masculin.", rare: true },
+        { word: "bivouaquèrent", rule: "Bivouaquer : camper en plein air. Famille de bivouac : le c devient qu devant e ; passé simple en -èrent.", rare: true, d: 3, piege: "ou-a, qu (famille bivouac), -èrent" },
+        { word: "bastion", rule: "Bastion : ouvrage avancé d'une fortification. Finale en -tion, masculin.", rare: true, d: 1, piege: "finale -tion" },
         { word: "quels", rule: "« Quel que » + être au subjonctif : « quel » s'accorde avec le sujet inversé (les périls, masculin pluriel)." },
-        { word: "départis", rule: "« Se départir de » : essentiellement pronominal, accord avec le sujet « ils ». Se conjugue comme partir.", rare: true },
-        { word: "embûches", rule: "Embûche : piège. Accent circonflexe sur le u ; mot féminin.", rare: true },
+        { word: "départis", rule: "« Se départir de » : essentiellement pronominal, accord avec le sujet « ils ». Se conjugue comme partir.", rare: true, d: 1, piege: "é, s du pluriel" },
+        { word: "embûches", rule: "Embûche : piège. Accent circonflexe sur le u ; mot féminin.", rare: true, d: 2, piege: "û, s du pluriel" },
         { word: "tendues", rule: "Le COD « que » (les embûches) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
       ]
     }

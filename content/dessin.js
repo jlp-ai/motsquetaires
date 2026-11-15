@@ -17,8 +17,8 @@
       text: "Les esquisses que le professeur avait demandées étaient posées sur les chevalets. Au fusain, chaque élève a tracé des hachures serrées pour suggérer les ombres, puis les a estompées du bout des doigts. Peu à peu, les volumes sont apparus sur le papier.",
       notes: [
         { word: "demandées", rule: "Le COD « que » (les esquisses) est placé avant le verbe : le participe passé s'accorde au féminin pluriel." },
-        { word: "fusain", rule: "Baguette de charbon de bois pour dessiner. Finale en -ain, comme dans « bain ».", rare: true },
-        { word: "hachures", rule: "Traits parallèles qui figurent l'ombre. Le h est aspiré (pas de liaison : des / hachures) et le mot finit en -ure.", rare: true },
+        { word: "fusain", rule: "Baguette de charbon de bois pour dessiner. Finale en -ain, comme dans « bain ».", rare: true, d: 2, piege: "s sonore [z], finale -ain" },
+        { word: "hachures", rule: "Traits parallèles qui figurent l'ombre. Le h est aspiré (pas de liaison : des / hachures) et le mot finit en -ure.", rare: true, d: 2, piege: "h muet, ch pour [ʃ]" },
         { word: "chaque élève a", rule: "« Chaque » est toujours singulier : le verbe se conjugue à la 3e personne du singulier." },
         { word: "estompées", rule: "Le COD « les » (les hachures) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
         { word: "apparus", rule: "Apparaître se conjugue avec être : le participe s'accorde avec le sujet (les volumes : masculin pluriel)." }
@@ -26,27 +26,30 @@
     },
     {
       level: "maitre",
-      text: "Bien que l'aquarelle pardonne rarement les hésitations, elle s'y est essayée tout l'été. Les lavis d'outremer qu'elle a superposés sur le papier humide ont révélé, une fois secs, des transparences inattendues. Jamais elle n'aurait cru que l'eau seule conduirait si docilement le pigment.",
+      text: "Bien que l'aquarelle pardonne rarement les hésitations, elle s'y est essayée tout l'été. Les lavis d'outremer qu'elle a superposés sur le papier humide ont révélé, une fois secs, des transparences inattendues. Jamais elle n'aurait cru que l'eau seule conduirait si docilement le pigment, ni que de simples rehauts de gouache suffiraient à animer l'ensemble.",
       notes: [
         { word: "pardonne", rule: "« Bien que » est suivi du subjonctif : que l'aquarelle pardonne." },
         { word: "essayée", rule: "« S'essayer à » est un verbe pronominal : le participe s'accorde avec le sujet (elle)." },
-        { word: "lavis", rule: "Teinte d'encre ou d'aquarelle étendue d'eau. Le s final est muet et le mot est invariable au pluriel.", rare: true },
-        { word: "outremer", rule: "Bleu tiré à l'origine du lapis-lazuli. Le nom s'écrit en un seul mot, sans trait d'union.", rare: true },
+        { word: "lavis", rule: "Teinte d'encre ou d'aquarelle étendue d'eau. Le s final est muet et le mot est invariable au pluriel.", rare: true, d: 2, piege: "s final muet" },
+        { word: "outremer", rule: "Bleu tiré à l'origine du lapis-lazuli. Le nom s'écrit en un seul mot, sans trait d'union.", rare: true, d: 2, piege: "un seul mot, mer et non mère" },
         { word: "superposés", rule: "Le COD « que » (les lavis) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "pigment", rule: "Matière colorante en poudre. Finale en -ment, avec un g devant le m.", rare: true }
+        { word: "pigment", rule: "Matière colorante en poudre. Finale en -ment, avec un g devant le m.", rare: true, d: 2, piege: "g muet devant m, finale -ent" },
+        { word: "rehauts", rule: "Touches claires posées sur un dessin pour le faire ressortir. Famille de rehausser et de haut : h après re-, -au-, t final muet, s au pluriel.", rare: true, d: 3, piege: "h après re-, au, t final muet (famille haut)" }
       ]
     },
     {
       level: "grand-scribe",
-      text: "Les pochades qu'il a brossées sur le motif, à la sanguine rehaussée de craie, ne sont que des ébauches. Pourtant, quels que soient les repentirs dont elles sont émaillées, l'œil s'y arrête volontiers. Le camaïeu de sépia qu'il a ménagé dans chacune d'elles témoigne d'une sûreté de main peu commune.",
+      text: "Les pochades qu'il a brossées sur le motif, au graphite rehaussé de craie, ne sont que des ébauches. Pourtant, quels que soient les repentirs dont elles sont émaillées, l'œil s'y arrête volontiers. Le camaïeu de sépia qu'il a ménagé dans chacune d'elles, jusque dans les glacis les plus ténus, témoigne d'une sûreté de main peu commune.",
       notes: [
-        { word: "pochades", rule: "Peinture rapide faite sur le vif. Un seul c, finale en -ade.", rare: true },
+        { word: "pochades", rule: "Peinture rapide faite sur le vif. Un seul c, finale en -ade.", rare: true, d: 1, piege: "un seul c, finale -ade" },
+        { word: "graphite", rule: "Carbone cristallisé qui forme la mine des crayons. Écrit avec ph, comme dans graphique et graphie, puis -ite.", rare: true, d: 3, piege: "ph et non f (famille graphie)" },
         { word: "brossées", rule: "Le COD « que » (les pochades) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "rehaussée", rule: "Le participe s'accorde avec « la sanguine » ; rehausser garde le h intérieur et prend deux s." },
+        { word: "rehaussé", rule: "Le participe s'accorde avec « le graphite » (masculin singulier) ; rehausser garde le h intérieur et prend deux s." },
         { word: "quels que soient", rule: "« Quel que » + être au subjonctif : « quel » s'accorde avec le sujet (les repentirs : masculin pluriel)." },
-        { word: "émaillées", rule: "Le participe s'accorde avec « elles » (les pochades) ; émailler (parsemer) s'écrit avec un accent aigu et deux l.", rare: true },
-        { word: "camaïeu", rule: "Peinture en tons d'une seule couleur. Tréma sur le i, finale en -eu.", rare: true },
-        { word: "sépia", rule: "Brun tiré de l'encre de seiche. Accent aigu sur le e, finale en -a.", rare: true },
+        { word: "émaillées", rule: "Le participe s'accorde avec « elles » (les pochades) ; émailler (parsemer) s'écrit avec un accent aigu et deux l.", rare: true, d: 2, piege: "é, ill, accord féminin pluriel" },
+        { word: "camaïeu", rule: "Peinture en tons d'une seule couleur. Tréma sur le i, finale en -eu.", rare: true, d: 3, piege: "tréma sur le i, finale -eu" },
+        { word: "glacis", rule: "Couche de peinture transparente posée sur une couche sèche. Nom masculin : c comme dans glace, s final muet, invariable au pluriel.", rare: true, d: 3, piege: "c (famille glace), s final muet" },
+        { word: "sépia", rule: "Brun tiré de l'encre de seiche. Accent aigu sur le e, finale en -a.", rare: true, d: 2, piege: "é et non e, finale -a" },
         { word: "sûreté", rule: "Le nom garde l'accent circonflexe de « sûr »." }
       ]
     }

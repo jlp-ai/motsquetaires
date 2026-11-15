@@ -17,29 +17,35 @@
       notes: [
         { word: "découverts", rule: "Le COD « que » (ces groupes) est placé avant le verbe : accord au masculin pluriel." },
         { word: "apprises", rule: "Le COD « que » (les chorégraphies) est placé avant le verbe : accord au féminin pluriel." },
-        { word: "chorégraphies", rare: true, rule: "Le « ch » se prononce [k], le son [f] s'écrit « ph », et un seul accent aigu : cho-ré-gra-phies." }
+        { word: "chorégraphies", rare: true, rule: "Le « ch » se prononce [k], le son [f] s'écrit « ph », et un seul accent aigu : cho-ré-gra-phies.", d: 2, piege: "ch pour [k], é, ph pour [f], finale -ies" }
       ]
     },
     {
       level: "maitre",
-      text: "Bien que le succès international de ces formations soit récent, leurs méthodes de recrutement, héritées d'une logique industrielle, ont suscité des débats : on s'est interrogé sur les cadences imposées à des adolescents, quelles que soient leurs motivations.",
+      text: "Bien que l'engouement pour ces formations soit récent, leurs méthodes de recrutement, héritées d'une logique industrielle, ont suscité des débats : on s'est interrogé sur les cadences et la synchronisation imposées à des adolescents, quelles que soient leurs motivations.",
       notes: [
         { word: "soit", rule: "« Bien que » est suivi du subjonctif : soit." },
+        { word: "engouement", rule: "Enthousiasme vif et souvent passager. Formé sur engouer : en- (et non an-), puis -ement avec le e muet.", rare: true, d: 2, piege: "en- et non an-, e muet devant -ment" },
         { word: "interrogé", rule: "« On » a ici un sens indéterminé : le participe de « s'interroger » s'accorde au masculin singulier." },
         { word: "quelles", rule: "« Quel que » + être au subjonctif : « quel » s'accorde avec le sujet (leurs motivations : féminin pluriel)." },
-        { word: "recrutement", rare: true, rule: "Formé sur recruter : aucun accent sur le premier e, et le e muet de recrute se garde devant -ment." },
-        { word: "imposées", rule: "Le participe employé sans auxiliaire s'accorde avec le nom qu'il qualifie (les cadences : féminin pluriel)." }
+        { word: "synchronisation", rule: "Mise en accord de mouvements dans le temps. Famille de synchrone : y après le s, ch prononcé [k], puis -isation avec un s.", rare: true, d: 3, piege: "y, ch pour [k], -isation (famille synchrone)" },
+        { word: "recrutement", rare: true, rule: "Formé sur recruter : aucun accent sur le premier e, et le e muet de recrute se garde devant -ment.", d: 1, piege: "pas d'accent, e muet devant -ment" },
+        { word: "imposées", rule: "Le participe employé sans auxiliaire s'accorde avec les noms qu'il qualifie (les cadences et la synchronisation : féminin pluriel)." }
       ]
     },
     {
       level: "grand-scribe",
-      text: "Phénomène planétaire, la vague coréenne, qu'on eût crue éphémère, s'est imposée au point que même les plus sceptiques, naguère rétifs, se sont piqués d'en fredonner les refrains et d'en imiter les chorégraphies millimétrées ; maints observateurs, perplexes, s'en sont émerveillés.",
+      text: "Phénomène planétaire, la vague coréenne, qu'on eût crue éphémère, s'est imposée au point que même les plus sceptiques, naguère rétifs, se sont piqués d'en fredonner les refrains hypnotiques et d'en imiter les chorégraphies millimétrées ; maints observateurs, longtemps perplexes devant ce foisonnement de talents, se sont répandus en éloges dithyrambiques.",
       notes: [
         { word: "crue", rule: "Le COD « que » (la vague) est placé avant le verbe : accord au féminin singulier." },
         { word: "eût", rule: "« Qu'on eût crue » est un conditionnel passé 2e forme (= qu'on aurait crue), identique au plus-que-parfait du subjonctif : eût, avec un accent circonflexe." },
         { word: "piqués", rule: "« Se piquer de » (se flatter de) est un pronominal à sens figuré : le participe s'accorde avec le sujet (les plus sceptiques)." },
+        { word: "hypnotiques", rule: "Qui exerce une sorte de fascination. Famille d'hypnose : y après le h, puis -ique, avec un s au pluriel.", rare: true, d: 3, piege: "y (famille hypnose), -ique" },
         { word: "naguère", rule: "Adverbe signifiant « il y a peu de temps » ; à ne pas confondre avec « jadis »." },
-        { word: "millimétrées", rare: true, rule: "Réglées avec une précision extrême. Formé sur millimètre : deux l, le è devient é, et l'accord se fait au féminin pluriel (les chorégraphies)." }
+        { word: "millimétrées", rare: true, rule: "Réglées avec une précision extrême. Formé sur millimètre : deux l, le è devient é, et l'accord se fait au féminin pluriel (les chorégraphies).", d: 2, piege: "ll, é (et non è), accord féminin pluriel" },
+        { word: "foisonnement", rule: "Abondance, grand nombre. Dérivé de foisonner : oi, puis deux n devant -ement.", rare: true, d: 3, piege: "oi, nn (famille foisonner)" },
+        { word: "répandus", rule: "Se répandre en éloges : pronominal, le participe s'accorde avec le sujet (maints observateurs : masculin pluriel)." },
+        { word: "dithyrambiques", rule: "Excessivement élogieux. Dérivé de dithyrambe : th, y, puis -ambique, avec -ques au pluriel.", rare: true, d: 3, piege: "th, y, -ambiques" }
       ]
     }
   ],

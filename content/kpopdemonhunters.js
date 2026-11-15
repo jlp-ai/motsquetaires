@@ -16,7 +16,7 @@
       level: "compagnon",
       text: "Avant chaque concert, les chanteuses répètent leurs chorégraphies jusqu'à l'épuisement. Le trac qu'elles ont ressenti ce soir-là ne les a pas empêchées de briller. Leurs fans, qui s'étaient rassemblés devant la scène, ne se doutaient pas qu'un combat se jouait au-dessus de leurs têtes.",
       notes: [
-        { word: "chorégraphies", rare: true, rule: "Chorégraphie : art de régler les danses. Retenir « ch » prononcé [k], l'accent aigu et « ph »." },
+        { word: "chorégraphies", rare: true, rule: "Chorégraphie : art de régler les danses. Retenir « ch » prononcé [k], l'accent aigu et « ph ».", d: 2, piege: "ch pour [k], é, ph pour [f], finale -ies" },
         { word: "ressenti", rule: "Le COD « qu' » reprend « le trac », masculin singulier : ressenti, sans accord visible." },
         { word: "empêchées", rule: "Le COD « les » (les chanteuses) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
         { word: "rassemblés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (leurs fans)." },
@@ -29,23 +29,25 @@
       notes: [
         { word: "eussent", rule: "« Bien que » appelle le subjonctif ; après un passé simple, plus-que-parfait du subjonctif : eussent envahi." },
         { word: "interrompirent", rule: "Passé simple d'interrompre, 3e personne du pluriel : -irent ; deux r." },
-        { word: "unisson", rare: true, rule: "Unisson : nom masculin, deux s. Chanter à l'unisson, c'est chanter la même note ensemble." },
-        { word: "envoûtement", rare: true, rule: "Envoûtement, formé sur envoûter : accent circonflexe sur le u." },
+        { word: "unisson", rare: true, rule: "Unisson : nom masculin, deux s. Chanter à l'unisson, c'est chanter la même note ensemble.", d: 3, piege: "ss et non s : unison est un leurre" },
+        { word: "envoûtement", rare: true, rule: "Envoûtement, formé sur envoûter : accent circonflexe sur le u.", d: 2, piege: "û, e muet devant -ment" },
         { word: "crurent", rule: "Passé simple de croire, 3e personne du pluriel : ils crurent." },
-        { word: "ovation", rare: true, rule: "Ovation : acclamation enthousiaste du public. Nom féminin, finale en -tion." },
+        { word: "ovation", rare: true, rule: "Ovation : acclamation enthousiaste du public. Nom féminin, finale en -tion.", d: 1, piege: "t et non s" },
         { word: "leur", rule: "Pronom personnel COI placé devant le verbe (réserver une ovation aux chanteuses) : « leur » reste invariable." }
       ]
     },
     {
       level: "grand-scribe",
-      text: "Quelque redoutables qu'aient paru les démons, les chasseuses ne se sont jamais départies de leur sang-froid. Entre deux entrechats, sous les gerbes d'une pyrotechnie éblouissante, elles ont conjuré les maléfices que le groupe rival avait ourdis. Les fans, eux, n'y ont vu que du feu.",
+      text: "Quelque redoutables qu'aient paru les démons, les chasseuses ne se sont jamais départies de leur sang-froid. Entre deux entrechats, sous les gerbes d'une pyrotechnie éblouissante, elles ont conjuré, par un exorcisme rythmé, les maléfices que le groupe rival avait ourdis. Les fans, eux, ensorcelés, n'y ont vu que du feu.",
       notes: [
         { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est adverbe (si, aussi) : invariable." },
         { word: "départies", rule: "Se départir est essentiellement pronominal : accord avec le sujet (les chasseuses)." },
-        { word: "entrechats", rare: true, rule: "Entrechat : saut de danse où les pieds se croisent en l'air. Nom masculin, finale muette en -t." },
-        { word: "pyrotechnie", rare: true, rule: "Pyrotechnie : art des feux d'artifice. Retenir « py » avec un y, puis « ch » prononcé [k]." },
-        { word: "maléfices", rare: true, rule: "Maléfice : sortilège qui vise à nuire. Nom masculin, finale en -ice." },
-        { word: "ourdis", rare: true, rule: "Ourdir : tramer en secret. Le COD « que » (les maléfices) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
+        { word: "entrechats", rare: true, rule: "Entrechat : saut de danse où les pieds se croisent en l'air. Nom masculin, finale muette en -t.", d: 2, piege: "ch, t et s finaux muets" },
+        { word: "pyrotechnie", rare: true, rule: "Pyrotechnie : art des feux d'artifice. Retenir « py » avec un y, puis « ch » prononcé [k].", d: 3, piege: "y, ch pour [k], finale -ie" },
+        { word: "exorcisme", rule: "Cérémonie qui chasse les démons. Ex- prononcé [egz], puis -orcisme avec un c.", rare: true, d: 3, piege: "x prononcé [gz], c devant i (famille exorciste)" },
+        { word: "maléfices", rare: true, rule: "Maléfice : sortilège qui vise à nuire. Nom masculin, finale en -ice.", d: 2, piege: "é, c devant e, finale -ice" },
+        { word: "ourdis", rare: true, rule: "Ourdir : tramer en secret. Le COD « que » (les maléfices) est placé avant l'auxiliaire avoir : accord au masculin pluriel.", d: 2, piege: "d muet, accord" },
+        { word: "ensorcelés", rule: "Soumis à un sort, comme envoûtés. Un seul l au participe, accord au masculin pluriel avec « les fans ».", rare: true, d: 3, piege: "un seul l, s du pluriel" }
       ]
     }
   ],

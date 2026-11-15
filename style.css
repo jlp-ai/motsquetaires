@@ -218,3 +218,29 @@ p { margin: 0; }
   *, *::before, *::after { animation-duration: .001s !important; animation-iteration-count: 1 !important; transition-duration: .001s !important; }
   .confetti { display: none; }
 }
+
+/* ---------- Progress, badges ---------- */
+.strip { display: block; width: 100%; text-align: left; margin: 12px 0 0; padding: 10px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; cursor: pointer; box-shadow: var(--shadow); }
+.strip-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.strip-top span { color: var(--muted); font-size: .85rem; font-weight: 600; }
+.bar { display: block; height: 8px; border-radius: 999px; background: var(--line); margin-top: 8px; overflow: hidden; }
+.bar i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent), var(--pen)); transition: width .6s ease; }
+.rank b { font-size: 1.4rem; display: block; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 6px; text-align: center; }
+.stat b { display: block; font-size: 1.3rem; }
+.stat small { color: var(--muted); font-size: .72rem; line-height: 1.2; display: block; }
+.weak { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.weak li { display: flex; align-items: center; gap: 10px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--pen); border-radius: 12px; padding: 10px 12px; }
+.weak li > span { flex: 1; min-width: 0; font-size: .95rem; line-height: 1.35; }
+.weak small { display: block; color: var(--muted); }
+.weak .btn { min-height: 44px; padding: 8px 12px; }
+.badges { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.badge { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; }
+.badge .bi { font-size: 1.4rem; display: block; }
+.badge b { display: block; font-size: .95rem; }
+.badge small { color: var(--muted); font-size: .78rem; line-height: 1.3; display: block; }
+.badge.on { border-color: #e6a700; background: color-mix(in srgb, #e6a700 12%, var(--card)); }
+.badge.on .bi { color: #e6a700; }
+.badge.off { opacity: .6; }
+.toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 30; background: var(--accent); color: var(--on-accent); padding: 12px 18px; border-radius: 999px; box-shadow: var(--shadow); animation: enter .3s both; max-width: 90vw; text-align: center; }

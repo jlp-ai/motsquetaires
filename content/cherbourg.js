@@ -17,16 +17,17 @@
       notes: [
         { word: "tout entière", rule: "Devant un adjectif féminin commençant par une voyelle, l'adverbe « tout » reste invariable." },
         { word: "bâtie", rule: "Le COD « que » (la digue) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "embruns", rule: "Pluie fine d'eau de mer soulevée par le vent. Nom masculin, souvent au pluriel, écrit avec « em » devant le b.", rare: true },
+        { word: "embruns", rule: "Pluie fine d'eau de mer soulevée par le vent. Nom masculin, souvent au pluriel, écrit avec « em » devant le b.", rare: true, d: 2, piege: "em et non an, finale -uns, s du pluriel" },
         { word: "aventurés", rule: "Verbe pronominal (s'aventurer) : le participe s'accorde avec le sujet « ceux »." }
       ]
     },
     {
       level: "maitre",
-      text: "Les chalutiers, partis avant l'aube, regagnèrent le bassin à la nuit tombée. Sur les quais, des goélands affamés tournoyaient au-dessus des caisses, bien qu'aucun pêcheur ne leur eût jeté le moindre poisson. Quant à l'arsenal voisin, il veillait, silencieux, sur ses sous-marins en construction.",
+      text: "Les chalutiers, partis avant l'aube, contournèrent les écueils de la rade et regagnèrent le bassin à la nuit tombée. Sur les quais, des goélands affamés tournoyaient au-dessus des caisses, bien qu'aucun pêcheur ne leur eût jeté le moindre poisson. Quant à l'arsenal voisin, il veillait, silencieux, sur ses sous-marins en construction.",
       notes: [
-        { word: "chalutiers", rule: "Bateaux qui pêchent au chalut, un grand filet : le t final de chalut se retrouve dans chalutier.", rare: true },
-        { word: "goélands", rule: "Grand oiseau marin : tréma sur le é, d final muet (goéland).", rare: true },
+        { word: "chalutiers", rule: "Bateaux qui pêchent au chalut, un grand filet : le t final de chalut se retrouve dans chalutier.", rare: true, d: 1, piege: "t de chalut, finale -ier" },
+        { word: "écueils", rule: "Récif ou rocher à fleur d'eau, danger pour les navires. Écrit é, puis -cueil comme dans accueil et recueil, avec un s au pluriel.", rare: true, d: 3, piege: "é, -cueil et non -queil ni -euil" },
+        { word: "goélands", rule: "Grand oiseau marin : accent aigu sur le é, d final muet (goéland).", rare: true, d: 2, piege: "é, d final muet" },
         { word: "eût", rule: "« Bien que » appelle le subjonctif : plus-que-parfait du subjonctif, « eût jeté », avec accent circonflexe." },
         { word: "quant à", rule: "« Quant à » (en ce qui concerne) s'écrit avec un t, à distinguer de « quand » (lorsque)." },
         { word: "regagnèrent", rule: "Passé simple, 3e personne du pluriel du 1er groupe : -èrent." }
@@ -34,15 +35,17 @@
     },
     {
       level: "grand-scribe",
-      text: "Au Nez de Jobourg, des falaises escarpées surplombent un ressac que les rafales rendent plus furieux encore. Les marins, qui se sont maintes fois fiés au balisage de ces parages, savent combien les courants s'y sont montrés traîtres. Quelque aguerris qu'ils soient, ils ne s'y aventurent qu'avec prudence.",
+      text: "Au Nez de Jobourg, des falaises escarpées surplombent un ressac que les rafales rendent plus furieux encore. Les marins, qui se sont maintes fois fiés au balisage de ces parages, savent combien les courants s'y sont montrés traîtres et les écueils nombreux. Quelque aguerris qu'ils soient, ils ne s'y aventurent qu'avec un accastillage irréprochable.",
       notes: [
-        { word: "escarpées", rule: "Très raides, d'accès difficile : accord au féminin pluriel avec « falaises ».", rare: true },
-        { word: "ressac", rule: "Retour violent des vagues sur elles-mêmes : nom masculin, deux s, finale en -ac.", rare: true },
-        { word: "balisage", rule: "Ensemble des balises qui signalent les dangers en mer : un seul l, finale en -age.", rare: true },
-        { word: "aguerris", rule: "Endurcis par l'expérience : deux r, et accord au masculin pluriel avec « ils ».", rare: true },
+        { word: "escarpées", rule: "Très raides, d'accès difficile : accord au féminin pluriel avec « falaises ».", rare: true, d: 1, piege: "sc, un seul p" },
+        { word: "ressac", rule: "Retour violent des vagues sur elles-mêmes : nom masculin, deux s, finale en -ac.", rare: true, d: 2, piege: "ss, c final" },
+        { word: "balisage", rule: "Ensemble des balises qui signalent les dangers en mer : un seul l, finale en -age.", rare: true, d: 1, piege: "s sonore comme dans balise, -age" },
+        { word: "aguerris", rule: "Endurcis par l'expérience : deux r, et accord au masculin pluriel avec « ils ».", rare: true, d: 3, piege: "gu, rr (famille guerre), s du pluriel" },
         { word: "fiés", rule: "Se fier est essentiellement pronominal : le participe s'accorde avec le sujet (les marins)." },
         { word: "montrés", rule: "Se montrer : le « se » est COD, le participe s'accorde avec « les courants »." },
-        { word: "quelque aguerris", rule: "« Quelque » devant un adjectif signifie « si » : c'est un adverbe, invariable." }
+        { word: "écueils", rule: "Récif ou rocher à fleur d'eau, danger pour les navires. Écrit é, puis -cueil comme dans accueil et recueil, avec un s au pluriel.", rare: true, d: 3, piege: "é, -cueil et non -queil ni -euil" },
+        { word: "quelque aguerris", rule: "« Quelque » devant un adjectif signifie « si » : c'est un adverbe, invariable." },
+        { word: "accastillage", rule: "Ensemble des équipements d'un navire (poulies, taquets, cordages). Deux c, un s muet devant le t, puis -illage : ac-cas-til-lage.", rare: true, d: 3, piege: "cc, st, ill : aucun indice à l'oreille" }
       ]
     }
   ],
