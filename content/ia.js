@@ -21,7 +21,7 @@
         { word: "entraîner", rule: "Après la préposition « à », le verbe se met à l'infinitif : on peut le remplacer par « à construire » (et non « construit »)." },
         { word: "quant", rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t." },
         { word: "soigneusement", rule: "Adverbe formé sur le féminin de l'adjectif : soigneuse + ment." },
-        { word: "algorithme", rare: true, rule: "Suite d'instructions qui résout un problème. Un i après le r, puis « th » : al-go-ri-thme (jamais « algorythme »).", d: 2, piege: "th muet, i après le r, finale -me" }
+        { word: "algorithme", rare: true, rule: "Suite d'instructions qui résout un problème. Un i après le r, puis « th » : al-go-ri-thme (jamais « algorythme »).", d: 2, piege: "th pour [t], i après le r, finale -me" }
       ]
     },
     {
@@ -32,17 +32,17 @@
         { word: "crues", rule: "Le COD « que » (les réponses) précède le participe de croire, suivi d'un attribut : accord au féminin pluriel." },
         { word: "révélées", rule: "Se révéler : le « se » est COD, le participe s'accorde avec le sujet (les réponses)." },
         { word: "maintes affabulations", rare: true, rule: "« Maint » est un déterminant variable : il s'accorde avec le nom qu'il précède (maintes, féminin pluriel). Affabulations : récits inventés, avec deux f et un seul b.", d: 3, piege: "ff (famille fable), un seul b, maintes accordé" },
-        { word: "algorithme", rare: true, rule: "Un i après le r, puis « th » : al-go-ri-thme (jamais « algorythme »).", d: 2, piege: "th muet, i après le r, finale -me" }
+        { word: "algorithme", rare: true, rule: "Un i après le r, puis « th » : al-go-ri-thme (jamais « algorythme »).", d: 2, piege: "th pour [t], i après le r, finale -me" }
       ]
     },
     {
       level: "grand-scribe",
-      text: "Les algorithmes se sont succédé à un rythme tel que les plus aguerris, d'ordinaire circonspects, se sont laissé séduire par ces oracles conversationnels. Quelque convaincantes que paraissent leurs réponses, il sied de les confronter aux sources, sans s'en remettre aveuglément à des machines qui, faute de discernement, ne doutent jamais.",
+      text: "Les algorithmes se sont succédé à un rythme tel que les plus aguerris, d'ordinaire circonspects, se sont fait séduire par ces oracles conversationnels. Quelque convaincantes que paraissent leurs réponses, il sied de les confronter aux sources, sans s'en remettre aveuglément à des machines qui, faute de discernement, ne doutent jamais.",
       notes: [
         { word: "succédé", rule: "Se succéder : le « se » est COI (succéder à), le participe reste invariable." },
         { word: "aguerris", rule: "Endurcis par l'expérience. Famille de guerre : gu devant e, deux r, accord au masculin pluriel.", rare: true, d: 3, piege: "gu, rr (famille guerre), s du pluriel" },
         { word: "circonspects", rule: "Prudents, réservés. Le t final, muet, se retrouve dans circonspection ; s au masculin pluriel.", rare: true, d: 3, piege: "sp, ct final muet (famille circonspection)" },
-        { word: "laissé", rule: "Le sujet ne fait pas l'action de séduire : laissé suivi de cet infinitif reste invariable." },
+        { word: "fait", rule: "« Fait » suivi d'un infinitif reste toujours invariable, y compris à la forme pronominale." },
         { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est adverbe (si) et reste invariable." },
         { word: "aveuglément", rare: true, rule: "Sans réflexion ni contrôle. Cet adverbe prend un accent aigu avant le suffixe : aveuglé + ment.", d: 3, piege: "é de l'adverbe (et non -ement), famille aveugle" },
         { word: "conversationnels", rare: true, rule: "Qui dialoguent avec l'utilisateur. Formé sur conversation : deux n devant le suffixe -el, et un s au masculin pluriel (ces oracles).", d: 2, piege: "nn (-ionnel), finale -els" }

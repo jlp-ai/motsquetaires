@@ -4,11 +4,11 @@
   dictees: [
     {
       level: "apprenti",
-      text: "Au bout du Cotentin, Cherbourg regarde la mer. Les ferries partent du port et les bateaux de pêche rentrent le soir. Sur le quai, les enfants observent les mouettes. Quand le vent souffle fort, ils remontent leur capuche et ouvrent leurs parapluies.",
+      text: "Au bout du Cotentin, sous la Montagne du Roule, Cherbourg regarde la mer. Les ferries partent du port et les bateaux de pêche rentrent le soir. Sur le quai, les enfants observent les mouettes. Quand le vent souffle fort, ils remontent leur capuche et ouvrent leurs parapluies.",
       notes: [
         { word: "rentrent", rule: "Le sujet « les bateaux » est au pluriel : le verbe se termine par -ent, qui ne s'entend pas." },
         { word: "quand", rule: "« Quand » marque le moment (lorsque) : il s'écrit avec un d." },
-        { word: "leurs parapluies", rule: "« Leur » s'accorde avec le nom qu'il accompagne : leur capuche (une chacun), leurs parapluies (pluriel)." }
+        { word: "leurs parapluies", rule: "« Leur » s'accorde avec le nom qu'il accompagne : leur capuche (une par enfant), leurs parapluies (pluriel)." }
       ]
     },
     {
@@ -50,13 +50,13 @@
     }
   ],
   erreurs: [
-    { level: "apprenti", text: "Les bateaux de pêche rentre au port avant la nuit.", wrong: "rentre", right: "rentrent", choices: ["rentrent", "rentres", "rentrer"], rule: "Le sujet « les bateaux » est au pluriel : ils rentrent." },
-    { level: "apprenti", text: "Le ferry part a midi pour l'Angleterre.", wrong: "a", right: "à", choices: ["à", "a", "as"], rule: "« À » est ici une préposition (on ne peut pas dire « avait midi ») : accent grave." },
-    { level: "compagnon", text: "Les sous-marins que l'arsenal a construit impressionnent les visiteurs.", wrong: "construit", right: "construits", choices: ["construits", "construites", "construire"], rule: "Le COD « que » (les sous-marins) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-    { level: "compagnon", text: "La brume s'est levé dès que le soleil est apparu.", wrong: "levé", right: "levée", choices: ["levée", "levés", "lever"], rule: "Verbe pronominal avec « se » COD : le participe s'accorde avec le sujet (la brume)." },
-    { level: "maitre", text: "Les promeneurs se sont succédés sur les quais tout l'après-midi.", wrong: "succédés", right: "succédé", choices: ["succédé", "succédés", "succéder"], rule: "Se succéder : le « se » est COI (succéder à quelqu'un), le participe reste invariable." },
-    { level: "maitre", text: "Bien que la houle soit forte, il faut que le ferry part à l'heure.", wrong: "part", right: "parte", choices: ["parte", "partes", "parts"], rule: "« Il faut que » appelle le subjonctif : que le ferry parte." },
-    { level: "grand-scribe", text: "Les tempêtes qu'il y a eues cet hiver ont malmené la rade.", wrong: "eues", right: "eu", choices: ["eu", "eues", "eus"], rule: "Le participe passé d'un verbe impersonnel (il y a) reste toujours invariable." },
-    { level: "grand-scribe", text: "Les sirènes du port s'étaient tu au lever du jour.", wrong: "tu", right: "tues", choices: ["tues", "tus", "tue"], rule: "Se taire est essentiellement pronominal : le participe s'accorde avec le sujet (les sirènes)." }
+    { level: "apprenti", text: "Les bateaux de pêche rentre dans la rade, devant la digue, avant la nuit.", wrong: "rentre", right: "rentrent", choices: ["rentrent", "rentres", "rentrer"], rule: "Le sujet « les bateaux » est au pluriel : ils rentrent." },
+    { level: "apprenti", text: "Depuis la gare maritime de Cherbourg, le ferry part a midi pour l'Angleterre.", wrong: "a", right: "à", choices: ["à", "a", "as"], rule: "« À » est ici une préposition (on ne peut pas dire « avait midi ») : accent grave." },
+    { level: "compagnon", text: "Les sous-marins que l'arsenal de Cherbourg a construit impressionnent les visiteurs.", wrong: "construit", right: "construits", choices: ["construits", "construites", "construire"], rule: "Le COD « que » (les sous-marins) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
+    { level: "compagnon", text: "La brume qui couvrait la Montagne du Roule s'est levé dès que le soleil est apparu.", wrong: "levé", right: "levée", choices: ["levée", "levés", "lever"], rule: "Verbe pronominal avec « se » COD : le participe s'accorde avec le sujet (la brume)." },
+    { level: "maitre", text: "Les promeneurs se sont succédés sur la Montagne du Roule tout l'après-midi.", wrong: "succédés", right: "succédé", choices: ["succédé", "succédés", "succéder"], rule: "Se succéder : le « se » est COI (succéder à quelqu'un), le participe reste invariable." },
+    { level: "maitre", text: "Bien que la houle batte la digue, il faut que le ferry part à l'heure.", wrong: "part", right: "parte", choices: ["parte", "partes", "parts"], rule: "« Il faut que » appelle le subjonctif : que le ferry parte." },
+    { level: "grand-scribe", text: "Les tempêtes qu'il y a eues cet hiver ont malmené la digue de Cherbourg.", wrong: "eues", right: "eu", choices: ["eu", "eues", "eus"], rule: "Le participe passé d'un verbe impersonnel (il y a) reste toujours invariable." },
+    { level: "grand-scribe", text: "Les mouettes de la digue s'étaient tu au lever du jour.", wrong: "tu", right: "tues", choices: ["tues", "tus", "tue"], rule: "Se taire est essentiellement pronominal : le participe s'accorde avec le sujet (les sirènes)." }
   ]
 };

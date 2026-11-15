@@ -29,7 +29,7 @@
       text: "Quelles que soient les modes, la vidéaste refuse de céder aux sirènes de l'algorithme : seul compte, à ses yeux, un public pérenne. Les heures de tournage qu'il a fallu pour cette série, elle ne les a jamais comptées. Les extraits qu'elle a fait traduire ont été bien accueillis à l'étranger.",
       notes: [
         { word: "Quelles", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (les modes : féminin pluriel)." },
-        { word: "algorithme", rule: "Suite d'instructions qui trie et recommande les vidéos. Th muet, i après le r, finale -me.", rare: true, d: 2, piege: "th muet, i après le r" },
+        { word: "algorithme", rule: "Suite d'instructions qui trie et recommande les vidéos. Th prononcé [t], i après le r, finale -me.", rare: true, d: 2, piege: "th pour [t], i après le r" },
         { word: "pérenne", rule: "Qui dure longtemps. Deux n, comme dans pérennité : pé-ren-ne, accent aigu.", rare: true, d: 3, piege: "deux n (famille pérennité), é" },
         { word: "fallu", rule: "Le participe passé d'un verbe impersonnel reste toujours invariable : les heures qu'il a fallu." },
         { word: "comptées", rule: "Le COD « les » (les heures) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
@@ -57,7 +57,7 @@
     { level: "apprenti", text: "La vidéo et en ligne depuis ce matin.", wrong: "et", right: "est", choices: ["est", "ai", "es"], rule: "On peut remplacer par « était » : c'est le verbe être, qui s'écrit « est »." },
     { level: "compagnon", text: "Les commentaires qu'elle a reçu l'ont beaucoup encouragée.", wrong: "reçu", right: "reçus", choices: ["reçus", "reçues", "reçut"], rule: "Le COD « que » (les commentaires) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
     { level: "compagnon", text: "Dans son tutoriel, elle décrit son matériel très précisement.", wrong: "précisement", right: "précisément", choices: ["précisément", "précisemment", "précisement"], rule: "Précisément fait partie des adverbes en -ément, comme énormément ou profondément : accent aigu sur le e devant -ment." },
-    { level: "maitre", text: "Les dix minutes qu'a durées le direct ont paru interminables.", wrong: "durées", right: "duré", choices: ["duré", "durées", "durés"], rule: "« Que » est ici un complément de durée et non un COD : le participe de durer reste invariable." },
+    { level: "maitre", text: "Les chaînes que la vidéaste a vu naître ont presque toutes disparu.", wrong: "vu", right: "vues", choices: ["vues", "vus", "vue"], rule: "Le COD « que » (les chaînes) est placé avant l'auxiliaire et fait l'action de l'infinitif (elles naissent) : le participe s'accorde au féminin pluriel." },
     { level: "maitre", text: "Pour ses miniatures, la graphiste a choisi des contours kakis assez discrets.", wrong: "kakis", right: "kaki", choices: ["kaki", "kakis", "kakies"], rule: "Un nom employé comme adjectif de couleur reste invariable : des contours kaki." },
     { level: "grand-scribe", text: "Les deux créatrices se sont parlées longuement avant de tourner ensemble.", wrong: "parlées", right: "parlé", choices: ["parlé", "parlées", "parlés"], rule: "On parle à quelqu'un : le « se » est COI, le participe reste invariable." },
     { level: "grand-scribe", text: "Le tournage a duré deux heures et demi, pauses comprises.", wrong: "demi", right: "demie", choices: ["demie", "demi", "demies"], rule: "Placé après le nom, « demi » s'accorde en genre seulement : deux heures et demie." }

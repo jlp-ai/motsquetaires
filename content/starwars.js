@@ -66,6 +66,6 @@
     { level: "maitre", text: "Les heures que le contrebandier a passé à réparer son vaisseau lui ont semblé interminables.", wrong: "passé", right: "passées", choices: ["passées", "passés", "passer"], rule: "« Passer des heures » : le COD « que » (les heures) est placé avant l'auxiliaire avoir, accord au féminin pluriel." },
     { level: "maitre", text: "Il faut que le jeune chevalier acquiert la maîtrise de ses émotions.", wrong: "acquiert", right: "acquière", choices: ["acquière", "acquiers", "acquérir"], rule: "« Il faut que » appelle le subjonctif : qu'il acquière, avec un accent grave." },
     { level: "grand-scribe", text: "Quelques aguerris qu'ils soient, les pilotes redoutent toujours le passage en hyperespace.", wrong: "Quelques", right: "Quelque", choices: ["Quelque", "Quelques", "Quels"], rule: "Devant un adjectif, « quelque » signifie « si » : c'est un adverbe invariable." },
-    { level: "grand-scribe", text: "Les deux heures qu'a durées la traversée de l'hyperespace leur ont paru interminables.", wrong: "durées", right: "duré", choices: ["duré", "durées", "durée"], rule: "« Durer » est intransitif : « deux heures » est un complément de mesure et non un COD, le participe reste invariable." }
+    { level: "grand-scribe", text: "Les deux pilotes se sont longuement parlés avant le saut dans l'hyperespace.", wrong: "parlés", right: "parlé", choices: ["parlé", "parlés", "parlée"], rule: "Se parler : le « se » est COI (parler à quelqu'un), le participe reste invariable." }
   ]
 };

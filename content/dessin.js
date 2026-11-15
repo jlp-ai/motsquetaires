@@ -18,7 +18,7 @@
       notes: [
         { word: "demandées", rule: "Le COD « que » (les esquisses) est placé avant le verbe : le participe passé s'accorde au féminin pluriel." },
         { word: "fusain", rule: "Baguette de charbon de bois pour dessiner. Finale en -ain, comme dans « bain ».", rare: true, d: 2, piege: "s sonore [z], finale -ain" },
-        { word: "hachures", rule: "Traits parallèles qui figurent l'ombre. Le h est aspiré (pas de liaison : des / hachures) et le mot finit en -ure.", rare: true, d: 2, piege: "h muet, ch pour [ʃ]" },
+        { word: "hachures", rule: "Traits parallèles qui figurent l'ombre. Le h est aspiré (pas de liaison : des / hachures) et le mot finit en -ure.", rare: true, d: 2, piege: "h aspiré, ch pour [ʃ]" },
         { word: "chaque élève a", rule: "« Chaque » est toujours singulier : le verbe se conjugue à la 3e personne du singulier." },
         { word: "estompées", rule: "Le COD « les » (les hachures) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
         { word: "apparus", rule: "Apparaître se conjugue avec être : le participe s'accorde avec le sujet (les volumes : masculin pluriel)." }

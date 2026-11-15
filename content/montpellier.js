@@ -40,7 +40,7 @@
     },
     {
       level: "grand-scribe",
-      text: "Au nord de la ville, la garrigue, hérissée d'euphorbes, est tout embaumée de thym et de sarriette ; au sud, des flamants roses se mirent dans les étangs. Alentour ondulent des vignobles que les vents marins ont maintes fois battus. Quelque fourbus qu'ils soient, les vendangeurs ne se sont jamais résolus à délaisser ces coteaux, dont ils vantent les cépages.",
+      text: "Autour du pic Saint-Loup, la garrigue, hérissée d'euphorbes, est tout embaumée de thym et de sarriette ; au sud de Montpellier, des flamants roses se mirent dans les étangs. Alentour ondulent des vignobles que les vents marins ont maintes fois battus. Quelque fourbus qu'ils soient, les vendangeurs ne se sont jamais résolus à délaisser ces coteaux, dont ils vantent les cépages.",
       notes: [
         { word: "tout embaumée", rule: "« Tout » adverbe (tout à fait) reste invariable devant un adjectif féminin commençant par une voyelle." },
         { word: "euphorbes", rule: "Plantes à latex blanc de la garrigue. Famille d'euphorie : eu, ph, puis -orbe ; nom féminin.", rare: true, d: 3, piege: "eu-ph (famille euphorie), -orbes" },
@@ -57,13 +57,13 @@
     }
   ],
   erreurs: [
-    { level: "apprenti", text: "Les platanes donne de l'ombre sur toute la place.", wrong: "donne", right: "donnent", choices: ["donnent", "donnes", "donné"], rule: "Le sujet « les platanes » est au pluriel : le verbe prend la terminaison -ent." },
-    { level: "apprenti", text: "Nous somme allés à la plage cet après-midi.", wrong: "somme", right: "sommes", choices: ["sommes", "somes", "sont"], rule: "Avec « nous », le verbe être s'écrit « sommes »." },
+    { level: "apprenti", text: "Les arcades de l'aqueduc du Peyrou domine les toits de la ville.", wrong: "domine", right: "dominent", choices: ["dominent", "domines", "dominé"], rule: "Le sujet « les arcades » est au pluriel : le verbe prend la terminaison -ent." },
+    { level: "apprenti", text: "Nous somme allés flâner dans le quartier Antigone cet après-midi.", wrong: "somme", right: "sommes", choices: ["sommes", "somes", "sont"], rule: "Avec « nous », le verbe être s'écrit « sommes »." },
     { level: "compagnon", text: "Les ruelles de l'Écusson, que nous avons parcouru à pied, sont pavées.", wrong: "parcouru", right: "parcourues", choices: ["parcourues", "parcourus", "parcourue"], rule: "Le COD « que » (les ruelles) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
     { level: "compagnon", text: "Le tramway passe prêt de la place de la Comédie.", wrong: "prêt", right: "près", choices: ["près", "prés", "prêt"], rule: "« Près de » (à côté de) s'écrit avec un accent grave. « Prêt » signifie disposé à." },
     { level: "maitre", text: "Bien que les étudiants sont nombreux, l'Écusson reste calme le matin.", wrong: "sont", right: "soient", choices: ["soient", "soit", "soie"], rule: "« Bien que » appelle le subjonctif : bien que les étudiants soient nombreux." },
-    { level: "maitre", text: "La faculté de médecine est sensée avoir formé des générations de médecins.", wrong: "sensée", right: "censée", choices: ["censée", "censé", "sensé"], rule: "« Censé » signifie supposé ; « sensé » signifie raisonnable. Accord avec la faculté : censée." },
-    { level: "grand-scribe", text: "Les flamants, quelques gracieux qu'ils soient, restent farouches.", wrong: "quelques", right: "quelque", choices: ["quelque", "quelle", "quel"], rule: "Devant un adjectif, « quelque » signifie « si » : c'est un adverbe invariable." },
+    { level: "maitre", text: "Les étudiants de la faculté de médecine, voisine du jardin des plantes, sont sensés réviser leurs cours.", wrong: "sensés", right: "censés", choices: ["censés", "censé", "sensé"], rule: "« Censé » signifie supposé ; « sensé » signifie raisonnable. Accord avec les étudiants : censés." },
+    { level: "grand-scribe", text: "Les flamants roses des étangs de Palavas, quelques gracieux qu'ils soient, restent farouches.", wrong: "quelques", right: "quelque", choices: ["quelque", "quelle", "quel"], rule: "Devant un adjectif, « quelque » signifie « si » : c'est un adverbe invariable." },
     { level: "grand-scribe", text: "Les vendangeurs se sont succédés sur les coteaux jusqu'au soir.", wrong: "succédés", right: "succédé", choices: ["succédé", "succédées", "succédait"], rule: "« Se succéder » : le « se » est COI (succéder à quelqu'un), le participe reste invariable." }
   ]
 };

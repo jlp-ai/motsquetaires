@@ -39,12 +39,12 @@
     },
     {
       level: "grand-scribe",
-      text: "Les épisodes se sont succédé à un rythme effréné ; quelque blasés qu'ils soient, maints abonnés se sont laissé happer par ces intrigues alambiquées. Les génériques, tout empreints d'une mélancolie surannée, ne laissaient rien présager des pièges retors que les scénaristes s'étaient plu à semer.",
+      text: "Les épisodes se sont succédé à un rythme effréné ; quelque blasés qu'ils soient, maints abonnés se sont fait happer par ces intrigues alambiquées. Les génériques, tout empreints d'une mélancolie surannée, ne laissaient rien présager des pièges retors que les scénaristes s'étaient plu à semer.",
       notes: [
         { word: "succédé", rule: "Se succéder : le « se » est COI (succéder à quelqu'un), le participe reste invariable." },
         { word: "effréné", rule: "Sans frein, démesuré. Deux f, accent aigu sur le premier e et sur le dernier : ef-fré-né.", rare: true, d: 3, piege: "ff, é, é" },
         { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est un adverbe signifiant « si » : il reste invariable." },
-        { word: "laissé", rule: "Les abonnés ne font pas l'action de happer : « laissé » suivi de l'infinitif reste invariable." },
+        { word: "fait", rule: "« Fait » suivi d'un infinitif reste toujours invariable, y compris à la forme pronominale." },
         { word: "surannée", rule: "Démodée, d'un autre temps. Formé sur an : un seul r, deux n, accord au féminin avec « mélancolie ».", rare: true, d: 3, piege: "un seul r, nn (famille an)" },
         { word: "retors", rule: "Rusé, tortueux. Le s final est muet et ne varie pas : un piège retors, des pièges retors.", rare: true, d: 3, piege: "s final (famille tordre)" },
         { word: "plu", rule: "Le participe passé de se plaire reste toujours invariable : le « se » est COI." },

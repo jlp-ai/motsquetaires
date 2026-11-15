@@ -14,7 +14,7 @@
     },
     {
       level: "compagnon",
-      text: "Les planches que l'autrice avait esquissées pendant l'été ont enfin été publiées. Dès la sortie du premier tome, les lecteurs se sont précipités en librairie. Quant à l'adaptation en série animée, elle passionne déjà les amateurs, qui attendent impatiemment le premier épisode.",
+      text: "Les planches que la dessinatrice avait esquissées pendant l'été ont enfin été publiées. Dès la sortie du premier tome, les lecteurs se sont précipités en librairie. Quant à l'adaptation en série animée, elle passionne déjà les amateurs, qui attendent impatiemment le premier épisode.",
       notes: [
         { word: "esquissées", rule: "Le COD « que » (les planches) est placé avant le verbe : le participe s'accorde au féminin pluriel." },
         { word: "précipités", rule: "Verbe pronominal : le participe s'accorde avec le sujet (les lecteurs : masculin pluriel)." },
@@ -51,7 +51,7 @@
   erreurs: [
     { level: "apprenti", text: "Dans ce tome, le héros affronte trois rivals redoutables.", wrong: "rivals", right: "rivaux", choices: ["rivaux", "rivaus", "rivals"], rule: "Les noms en -al font en général leur pluriel en -aux : un rival, des rivaux." },
     { level: "apprenti", text: "Les deux amies dessinait leurs personnages pendant la récréation.", wrong: "dessinait", right: "dessinaient", choices: ["dessinaient", "dessinais", "dessinai"], rule: "Le sujet « les deux amies » est à la 3e personne du pluriel : elles dessinaient." },
-    { level: "compagnon", text: "Il faut que l'autrice finit le chapitre avant samedi.", wrong: "finit", right: "finisse", choices: ["finisse", "finissent", "finira"], rule: "« Il faut que » est suivi du subjonctif : que l'autrice finisse." },
+    { level: "compagnon", text: "Il faut que la dessinatrice finit le chapitre avant samedi.", wrong: "finit", right: "finisse", choices: ["finisse", "finissent", "finira"], rule: "« Il faut que » est suivi du subjonctif : que la dessinatrice finisse." },
     { level: "compagnon", text: "Si la série avait du succès, l'éditeur publierai un deuxième tome.", wrong: "publierai", right: "publierait", choices: ["publierait", "publiera", "publierais"], rule: "Après « si » suivi de l'imparfait, le verbe principal se met au conditionnel : il publierait." },
     { level: "maitre", text: "Les décors qu'elle a faits peindre par ses assistants sont superbes.", wrong: "faits", right: "fait", choices: ["fait", "faite", "faites"], rule: "Le participe « fait » suivi d'un infinitif reste toujours invariable." },
     { level: "maitre", text: "Ce festival récompense chaque année des chefs-d'œuvres de l'animation.", wrong: "chefs-d'œuvres", right: "chefs-d'œuvre", choices: ["chefs-d'œuvre", "chef-d'œuvres", "chefs-d'œuvres"], rule: "Dans « chef-d'œuvre », seul « chef » prend la marque du pluriel : des chefs-d'œuvre." },
