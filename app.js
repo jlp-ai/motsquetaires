@@ -403,6 +403,8 @@
     var tokens = item.text.split(" ");
     var failed = false;
     function strip(t) { return t.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, ""); }
+    // Same, also without an elided article (l', d', qu'...) glued to the word: "l'estocade" matches "estocade".
+    function stripEl(t) { return strip(t).replace(/^(?:[ldjmtsnc]|qu|lorsqu|puisqu|jusqu)['’]/i, ""); }
 
     function sentence(chosen, fixedIdx) {
       return "<div class='card sentence' role='group' aria-label='Phrase'>" + tokens.map(function (t, i) {
@@ -423,7 +425,7 @@
     }
 
     function onPick(i, el) {
-      if (strip(tokens[i]) !== item.wrong) {
+      if (strip(tokens[i]) !== item.wrong && stripEl(tokens[i]) !== item.wrong) {
         failed = true;
         el.classList.add("nope");
         var h = document.getElementById("hint");
@@ -450,7 +452,7 @@
       if (!ok) failed = true;
       state.streak = ok ? state.streak + 1 : 0;
       var firstTry = ok && !failed;
-      var earned = Progress.record({ kind: "erreur", item: item, ok: firstTry, notes: [{ key: item.type || item.rule, label: item.rule, ok: firstTry }] });
+      var earned = Progress.record({ kind: "erreur", item: item, ok: firstTry, notes: [{ key: item.type || item.rule, label: (item.type && window.TYPE_LABELS && window.TYPE_LABELS[item.type]) || item.rule, ok: firstTry }] });
       screen({ back: themesBack, streak: true },
         "<h1>Trouve l'erreur</h1><p class='sub'>Niveau " + level(item.level).name.toLowerCase() + "</p>" +
         "<div class='verdict " + (ok ? "good" : "bad") + "' style='margin-top:18px' aria-live='polite'>" + (ok ? ICONS.check + "Bravo !" : ICONS.cross + "Presque : « " + esc(item.right) + " »") + "</div>" +

@@ -27,3 +27,7 @@ Pour chaque correction : fichier, avant, après, raison. Puis les points encore 
 ## Modèle
 
 Opus quand il est disponible (l'orthographe y est critique), sinon Sonnet avec une seconde passe. Jamais Fable.
+
+## Densité des phrases Trouve l'erreur
+
+Contrôler aussi la densité de chaque phrase à erreur selon le niveau (tableau « Densité des phrases Trouve l'erreur » de `docs/redaction-contenu.md` et `docs/niveau-expert.md`) : longueur, nombre de difficultés correctes autour de la faute, choix plausibles, mécanismes variés. Une phrase trop courte ou à une seule règle pour son niveau est réécrite, la faute restant unique et sans débat.

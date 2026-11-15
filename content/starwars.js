@@ -56,16 +56,130 @@
         { word: "parût", rule: "Subjonctif imparfait après « quelque... que », admis dans un récit à l'imparfait : accent circonflexe, « qu'il parût »." },
         { word: "acquiert", rule: "Présent d'acquérir, 3e personne du singulier : un seul r, « il acquiert »." }
       ]
+    },
+    {
+      level: "apprenti",
+      text: "Sur {{Tatooine|la planète des deux soleils}}, {{Luke Skywalker|le jeune fermier}} regardait le ciel chaque soir. Il rêvait de quitter le désert et de piloter un vaisseau. Un jour, deux droïdes sont arrivés près de sa maison. Ils avaient voyagé pendant des heures.",
+      notes: [
+        { word: "regardait", rule: "Verbe regarder à l'imparfait, 3e personne du singulier : -ait." },
+        { word: "quitter", rule: "Après la préposition « de », le verbe reste à l'infinitif : quitter (on peut le remplacer par « partir »)." },
+        { word: "arrivés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (deux droïdes : masculin pluriel)." },
+        { word: "voyagé", rule: "Avec l'auxiliaire avoir et sans COD, le participe passé reste invariable." },
+        { word: "heures", rule: "Le h est muet, et le nom prend un s au pluriel." }
+      ]
+    },
+    {
+      level: "apprenti",
+      text: "{{R2-D2|Le petit droïde}} est très courageux. Il a réparé les circuits du vaisseau, et ses amis l'ont remercié. {{C-3PO|Le droïde doré}} parle toutes les langues, mais il a souvent peur. {{Chewbacca|Le grand copilote}} les écoute attentivement.",
+      notes: [
+        { word: "courageux", rule: "Adjectif en -eux : courageux, courageuse. Il s'accorde avec le sujet." },
+        { word: "réparé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « les circuits » est placé après)." },
+        { word: "ses", rule: "« Ses » est un déterminant pluriel (les amis de lui) ; « ces » sert à désigner." },
+        { word: "ont", rule: "Verbe avoir au présent, 3e personne du pluriel : « ils ont » (on peut dire « ils avaient »). Ne pas confondre avec « on »." },
+        { word: "langues", rule: "Le u après le g garde le son dur : langue, langues." }
+      ]
+    },
+    {
+      level: "compagnon",
+      text: "{{Han Solo|Le contrebandier}} avait si souvent réparé la carlingue du {{Faucon Millenium|vieux cargo}} qu'il en connaissait chaque soudure. Les pièces qu'il s'était procurées étaient d'occasion. Malgré les moqueries, ce vaisseau, que beaucoup prenaient pour une épave, filait plus vite que tous ses poursuivants.",
+      notes: [
+        { word: "réparé", rule: "Avec l'auxiliaire avoir, le COD « la carlingue » est placé après : le participe reste invariable." },
+        { word: "carlingue", rule: "Partie intérieure d'un avion ou d'un vaisseau où se tiennent les occupants. Finale -ingue, avec u après le g.", rare: true, d: 2, piege: "ing, gu, e final" },
+        { word: "procurées", rule: "Le COD « que » (les pièces) est placé avant l'auxiliaire : accord au féminin pluriel ; le « se » est COI." },
+        { word: "moqueries", rule: "Nom féminin pluriel : moquerie prend un s, et le qu devant e garde le son k." },
+        { word: "poursuivants", rule: "Nom masculin pluriel, formé sur poursuivre : -ants." }
+      ]
+    },
+    {
+      level: "compagnon",
+      text: "{{Leia|La princesse}} a glissé un hologramme dans la mémoire d'un droïde avant que les soldats l'arrêtent. Bien qu'elle ait été capturée, elle espérait que ce message parviendrait jusqu'à ses alliés. Les quelques heures qui ont suivi lui ont paru interminables.",
+      notes: [
+        { word: "hologramme", rule: "Image en relief enregistrée par un faisceau lumineux. Le h est muet, et « gramme » prend deux m (famille de télégramme).", rare: true, d: 2, piege: "h muet, mm" },
+        { word: "ait", rule: "« Bien que » appelle le subjonctif : qu'elle ait été (avoir au subjonctif présent)." },
+        { word: "capturée", rule: "Avec l'auxiliaire être, le participe s'accorde avec le sujet « elle » : féminin singulier." },
+        { word: "parviendrait", rule: "Verbe parvenir au conditionnel (futur dans le passé) : -drait, avec le r du futur." },
+        { word: "quelques", rule: "Devant un nom pluriel, « quelques » signifie « un petit nombre de » : déterminant avec un s." },
+        { word: "paru", rule: "Paraître avec l'auxiliaire avoir, sans COD placé avant : le participe reste invariable." }
+      ]
+    },
+    {
+      level: "maitre",
+      text: "Les disciples que {{Yoda|le vieux maître}} avait instruits se sont longtemps interrogés sur {{la Force|l'énergie mystérieuse}}. La sagacité du maître et sa mansuétude les frappaient ; il leur enseignait qu'elle unissait tous les êtres vivants, quelles que fussent leurs différences.",
+      notes: [
+        { word: "disciples", rule: "Élèves d'un maître. Groupe sc au milieu : dis-ci-ples, comme discipline." },
+        { word: "instruits", rule: "Le COD « que » (les disciples) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
+        { word: "interrogés", rule: "Verbe pronominal : « se » est COD, accord avec le sujet (les disciples : masculin pluriel)." },
+        { word: "sagacité", rule: "Finesse d'esprit, flair. Famille de sagace : g, puis un seul c (sa-ga-ci-té), accent aigu final.", rare: true, d: 3, piege: "g, c/ss, é" },
+        { word: "mansuétude", rule: "Douceur et indulgence d'un caractère. Man- avec an (et non en), puis -suétude : u, é, puis -tude.", rare: true, d: 3, piege: "an, ué, -tude" },
+        { word: "quelles", rule: "Dans « quelles que fussent », « quel » est un adjectif qui s'accorde avec « différences » : féminin pluriel, en deux mots." },
+        { word: "fussent", rule: "Subjonctif imparfait après « quelles que », admis dans un récit à l'imparfait." }
+      ]
+    },
+    {
+      level: "maitre",
+      text: "Cuirassé de noir, {{Dark Vador|le seigneur sombre}} s'avançait entre deux haies d'affidés. Sa respiration, que nul n'avait entendue sans frémir, précédait chacun de ses pas. Les officiers, tant ceux de la flotte que ceux de la garde, se turent ; aucun n'osa soutenir son regard.",
+      notes: [
+        { word: "cuirassé", rule: "Protégé par une cuirasse. Cui-r avec ui, deux s, é final.", rare: true, d: 2, piege: "ui, ss" },
+        { word: "haies", rule: "Rangées de personnes ou d'arbustes. Le h est aspiré, et la graphie -aies (comme dans « haie ») est à retenir.", d: 2, piege: "h, aie" },
+        { word: "affidés", rule: "Partisans dévoués à un chef, souvent pour des desseins obscurs. Deux f, un seul d, finale -és.", rare: true, d: 3, piege: "ff, d unique, -és" },
+        { word: "entendue", rule: "Le COD « que » (sa respiration) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
+        { word: "turent", rule: "Passé simple de taire (se taire) à la 3e personne du pluriel : se turent, sans accent." }
+      ]
+    },
+    {
+      level: "grand-scribe",
+      text: "Sénatrice et rebelle, {{Leia|la princesse}} savait que la persuasion est moins l'apanage de la force que celui de la patience. Les conciliabules qu'elle tint dans l'ombre, les escarmouches qu'elle sut éviter, tous ces efforts, tout discrets qu'ils étaient, préparaient la riposte. Elle y mit une équanimité que ses pairs lui enviaient.",
+      notes: [
+        { word: "apanage", rule: "Ce qui revient en propre à quelqu'un. Un seul p, un seul n, finale -age.", rare: true, d: 3, piege: "p simple, n simple" },
+        { word: "conciliabules", rule: "Réunions discrètes. Con-cil-ia-bule : c devant i, puis -abule.", rare: true, d: 3, piege: "c, ia, -bule" },
+        { word: "tint", rule: "Passé simple de tenir à la 3e personne du singulier : « elle tint », avec un t final et sans accent circonflexe (celui-ci marque le subjonctif imparfait, « qu'elle tînt »)." },
+        { word: "escarmouches", rule: "Combats brefs entre petits groupes. Groupe sc, puis -mouche : es-car-mouche.", rare: true, d: 3, piege: "sc, ou, ch" },
+        { word: "sut", rule: "Passé simple de savoir à la 3e personne du singulier : « elle sut », sans accent circonflexe (celui-ci marque le subjonctif imparfait, « qu'elle sût »)." },
+        { word: "tout", rule: "Devant un adjectif masculin pluriel (discrets), « tout » est un adverbe invariable : tout discrets qu'ils étaient." },
+        { word: "équanimité", rule: "Égalité d'âme, calme inébranlable. É, puis qu devant a, puis -nimité : é-qua-ni-mi-té.", rare: true, d: 3, piege: "é, qu, i" },
+        { word: "pairs", rule: "Égaux, semblables, membres d'une même assemblée : homophone de paire, père, perds ; le s final se retient avec « pair »." }
+      ]
+    },
+    {
+      level: "grand-scribe",
+      text: "Sur {{Tatooine|la planète des deux soleils}}, {{Luke Skywalker|le jeune fermier}} ne connaissait que l'âpreté d'un désert caillouteux. Les corvées qu'il avait dû accomplir, la sécheresse qu'il avait subie et la menace de l'ensablement n'avaient pas éteint ses rêves : chaque soir, il levait les yeux vers les étoiles.",
+      notes: [
+        { word: "âpreté", rule: "Rudesse, caractère rude. Accent circonflexe sur le a, un seul p, puis -eté (famille de âpre).", rare: true, d: 3, piege: "â, p simple, -eté" },
+        { word: "caillouteux", rule: "Plein de cailloux. Famille de caillou : ill, puis -outeux (adjectif en -eux).", rare: true, d: 3, piege: "ill, -eux" },
+        { word: "dû", rule: "Devant un infinitif sous-entendu ou exprimé, « dû » reste invariable ; accent circonflexe au masculin singulier." },
+        { word: "sécheresse", rule: "Absence de pluie. Accent aigu, ch, accent grave : sé-che-resse, avec deux s.", d: 3, piege: "é, ch, è/e, ss" },
+        { word: "subie", rule: "Le COD « que » (la sécheresse) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
+        { word: "ensablement", rule: "Fait de se couvrir de sable. Famille de sable : en-sable-ment, avec e devant -ment.", rare: true, d: 3, piege: "ens, sable, -ement" },
+        { word: "éteint", rule: "Participe de éteindre : le COD « ses rêves » est placé après, donc invariable ; finale -eint." }
+      ]
     }
   ],
   erreurs: [
-    { level: "apprenti", text: "Le droïde a réparer le moteur du vaisseau.", wrong: "réparer", right: "réparé", choices: ["réparé", "réparés", "réparez"], rule: "Après l'auxiliaire avoir, on utilise le participe passé : réparé." },
-    { level: "apprenti", text: "Les deux soleils se couche lentement derrière les dunes.", wrong: "couche", right: "couchent", choices: ["couchent", "couches", "couchant"], rule: "Le sujet « les deux soleils » est au pluriel : ils se couchent." },
-    { level: "compagnon", text: "Les droïdes que le contrebandier a vendu étaient tous en panne.", wrong: "vendu", right: "vendus", choices: ["vendus", "vendues", "vendre"], rule: "Le COD « que » (les droïdes) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-    { level: "compagnon", text: "Quand aux rebelles, ils ont rejoint leur base secrète.", wrong: "Quand", right: "Quant", choices: ["Quant", "Qu'en", "Quan"], rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t ; « quand » marque le temps." },
-    { level: "maitre", text: "Les heures que le contrebandier a passé à réparer son vaisseau lui ont semblé interminables.", wrong: "passé", right: "passées", choices: ["passées", "passés", "passer"], rule: "« Passer des heures » : le COD « que » (les heures) est placé avant l'auxiliaire avoir, accord au féminin pluriel." },
-    { level: "maitre", text: "Il faut que le jeune chevalier acquiert la maîtrise de ses émotions.", wrong: "acquiert", right: "acquière", choices: ["acquière", "acquiers", "acquérir"], rule: "« Il faut que » appelle le subjonctif : qu'il acquière, avec un accent grave." },
-    { level: "grand-scribe", text: "Quelques aguerris qu'ils soient, les pilotes redoutent toujours le passage en hyperespace.", wrong: "Quelques", right: "Quelque", choices: ["Quelque", "Quelques", "Quels"], rule: "Devant un adjectif, « quelque » signifie « si » : c'est un adverbe invariable." },
-    { level: "grand-scribe", text: "Les deux pilotes se sont longuement parlés avant le saut dans l'hyperespace.", wrong: "parlés", right: "parlé", choices: ["parlé", "parlés", "parlée"], rule: "Se parler : le « se » est COI (parler à quelqu'un), le participe reste invariable." }
+    { level: "apprenti", type: "participe", text: "Le droïde a réparer le moteur du vaisseau.", wrong: "réparer", right: "réparé", choices: ["réparé", "réparés", "réparez"], rule: "Après l'auxiliaire avoir, on utilise le participe passé : réparé." },
+    { level: "apprenti", type: "accord", text: "Les deux soleils se couche lentement derrière les dunes.", wrong: "couche", right: "couchent", choices: ["couchent", "couches", "couchant"], rule: "Le sujet « les deux soleils » est au pluriel : ils se couchent." },
+    { level: "compagnon", type: "participe", text: "Les droïdes que le contrebandier a vendu étaient tous en panne.", wrong: "vendu", right: "vendus", choices: ["vendus", "vendues", "vendre"], rule: "Le COD « que » (les droïdes) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
+    { level: "apprenti", type: "homophone", text: "{{Han Solo|Le contrebandier}} à atterri près de la base.", wrong: "à", right: "a", choices: ["a", "as", "ah"], rule: "Devant un participe passé, on a le verbe avoir : « a atterri » (on peut dire « avait atterri »). « À » est une préposition." },
+    { level: "apprenti", type: "accord", text: "Sur {{Naboo|la planète verdoyante}}, les plaines sont couverte d'herbe.", wrong: "couverte", right: "couvertes", choices: ["couvertes", "couvert", "couvrir"], rule: "Le participe, employé avec « être », s'accorde avec le sujet « les plaines » : féminin pluriel." },
+    { level: "apprenti", type: "homophone", text: "{{Yoda|Le vieux maître}} et petit, mais très sage.", wrong: "et", right: "est", choices: ["est", "ait", "es"], rule: "« Est » est le verbe être (on peut dire « était »). « Et » relie deux mots." },
+    { level: "apprenti", type: "accord", text: "{{Les Sith|Les seigneurs obscurs}} envoient des vaisseau vers la planète.", wrong: "vaisseau", right: "vaisseaux", choices: ["vaisseaux", "vaisseaus", "vaissaux"], rule: "Les noms en -eau prennent un x au pluriel : des vaisseaux." },
+    { level: "compagnon", type: "participe", text: "Après l'assaut contre {{l'Étoile de la Mort|la station géante}}, plusieurs chasseurs étaient endommager.", wrong: "endommager", right: "endommagés", choices: ["endommagés", "endommagé", "endommagées"], rule: "Après « étaient », on emploie le participe passé, accordé avec le sujet « chasseurs » : masculin pluriel. On peut remplacer par « détruits »." },
+    { level: "compagnon", type: "homophone", text: "{{Rey|La jeune récupératrice}} ce déplace avec agilité entre les épaves.", wrong: "ce", right: "se", choices: ["se", "ceux", "c'est"], rule: "Verbe pronominal se déplacer : le pronom « se » précède le verbe. « Ce » est un déterminant ou un pronom démonstratif." },
+    { level: "compagnon", type: "homophone", text: "{{Tatooine|La planète désertique}} est le monde ou {{Luke Skywalker|le jeune fermier}} a grandi.", wrong: "ou", right: "où", choices: ["où", "ou", "u"], rule: "« Où » indique le lieu et prend un accent grave ; « ou » exprime un choix (on peut dire « ou bien »)." },
+    { level: "compagnon", type: "accord", text: "Le grondement des moteurs du {{Faucon Millenium|vieux cargo}} résonnent dans tout le hangar.", wrong: "résonnent", right: "résonne", choices: ["résonne", "résonnes", "résonnée"], rule: "Le verbe s'accorde avec le noyau du sujet : « le grondement » (singulier), pas avec « moteurs »." },
+    { level: "compagnon", type: "homophone", text: "Quand aux rebelles, ils ont rejoint leur base secrète.", wrong: "Quand", right: "Quant", choices: ["Quant", "Qu'en", "Quan"], rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t ; « quand » marque le temps." },
+    { level: "maitre", type: "participe", text: "Les heures que le contrebandier a passé à réparer son vaisseau lui ont semblé interminables.", wrong: "passé", right: "passées", choices: ["passées", "passés", "passer"], rule: "« Passer des heures » : le COD « que » (les heures) est placé avant l'auxiliaire avoir, accord au féminin pluriel." },
+    { level: "maitre", type: "temps", text: "Il faut que le jeune chevalier acquiert la maîtrise de ses émotions.", wrong: "acquiert", right: "acquière", choices: ["acquière", "acquiers", "acquérir"], rule: "« Il faut que » appelle le subjonctif : qu'il acquière, avec un accent grave." },
+    { level: "grand-scribe", type: "lexique", text: "Les mécaniciens que {{Han Solo|le contrebandier}} avait congédiés ne reconnaîtraient plus la carlinge du {{Faucon Millenium|vieux cargo}}, tant les réparations de fortune s'y étaient accumulées.", wrong: "carlinge", right: "carlingue", choices: ["carlingue","carlinge","carlinque"], rule: "Carlingue s'écrit avec la finale -ingue, le u après le g gardant le son dur (comme dans bringue). La finale -inge est celle de singe ou de linge." },
+    { level: "grand-scribe", type: "lexique", text: "Une escadrile que {{Leia|la princesse}} avait envoyée en reconnaissance fut anéantie avant d'avoir pu signaler le moindre vaisseau ennemi, et nul rescapé ne vint témoigner de cet affrontement.", wrong: "escadrile", right: "escadrille", choices: ["escadrille","escadrile","esquadrille"], rule: "Escadrille s'écrit avec deux l, comme escadre dont il est le diminutif, et sans u ni q. La finale -ille se retrouve dans flottille." },
+    { level: "grand-scribe", type: "lexique", text: "Le message que {{R2-D2|le petit droïde}} dissimulait dans ses circuits n'était qu'un holograme tremblotant, mais {{Obi-Wan Kenobi|le vieux chevalier}} y reconnut l'ultime appel d'une sénatrice qu'il avait jadis conseillée.", wrong: "holograme", right: "hologramme", choices: ["hologramme", "holograme", "ologramme"], rule: "Hologramme s'écrit avec un h muet et la finale -gramme, deux m, comme télégramme ou diagramme. Le mot est formé sur le grec holos (entier) et gramma (écriture)." },
+    { level: "grand-scribe", type: "lexique", text: "Avant de plonger dans cet hyperspace dont les navigateurs redoutent les caprices, {{Chewbacca|le grand copilote}} contrôla les propulseurs que {{Han Solo|le contrebandier}} avait fait réviser la veille.", wrong: "hyperspace", right: "hyperespace", choices: ["hyperespace","hyperspace","hyper-espace"], rule: "Hyperespace est formé du préfixe hyper- soudé au nom espace : le e du nom est conservé, sans trait d'union. La graphie hyperspace est l'anglais hyperspace." },
+    { level: "grand-scribe", type: "pronominal", text: "Sur {{Hoth|la planète de glace}}, les rebelles, que le froid ne cessait de harceler, se sont succédés aux commandes du générateur pendant trois jours, et aucun ne s'est plaint de la fatigue.", wrong: "succédés", right: "succédé", choices: ["succédé","succédés","succédées"], rule: "Succéder se construit avec à (succéder à quelqu'un) : le « se » est COI, donc le participe reste invariable. Même règle pour se nuire, se plaire, se parler." },
+    { level: "grand-scribe", type: "participe", text: "Les silhouettes que le jeune pilote avait crues apercevoir derrière l'astéroïde n'étaient que des débris, mais les pilotes, que l'inquiétude rendait fébriles, restèrent en alerte.", wrong: "crues", right: "cru", choices: ["cru","crues","crus"], rule: "Le COD « que » (les silhouettes) est complément de l'infinitif apercevoir, non de croire : le participe cru reste invariable. L'accord n'aurait lieu que si « que » était COD de cru lui-même." },
+    { level: "grand-scribe", type: "invariable", text: "Mêmes les droïdes de maintenance, pourtant peu enclins à l'émotion, reculèrent lorsque {{Dark Vador|le seigneur sombre}} traversa la salle de contrôle, tant sa seule présence glaçait l'équipage.", wrong: "Mêmes", right: "Même", choices: ["Même","Mêmes","Meme"], rule: "Devant un article, « même » signifie « y compris » : c'est un adverbe invariable. Il ne prend un s que s'il suit le nom ou le pronom (les droïdes mêmes, eux-mêmes)." },
+    { level: "grand-scribe", type: "temps", text: "À moins que les ingénieurs, harassés par trois nuits de veille, ne peuvent rétablir les propulseurs avant l'aube, aucun des transporteurs que {{Leia|la princesse}} avait réquisitionnés ne quittera la base.", wrong: "peuvent", right: "puissent", choices: ["puissent","peuvent","pourront"], rule: "La locution « à moins que » est suivie du subjonctif : qu'ils puissent, et non qu'ils peuvent. Le ne qui précède est explétif." },
+    { level: "maitre", type: "invariable", text: "Quel que fussent les obstacles, {{Han Solo|le contrebandier}} refusait d'abandonner {{Chewbacca|son fidèle copilote}}.", wrong: "Quel", right: "Quels", choices: ["Quels", "Quelles", "Quelque"], rule: "Dans « quel que soit / fussent », « quel » est un attribut qui s'accorde avec le sujet « les obstacles » : masculin pluriel, en deux mots." },
+    { level: "maitre", type: "participe", text: "Les élèves que {{les Jedi|les chevaliers}} avaient vu s'entraîner promettaient beaucoup.", wrong: "vu", right: "vus", choices: ["vus", "vues", "voir"], rule: "Le COD « que » (les élèves) fait l'action de l'infinitif (ils s'entraînent) : le participe de voir s'accorde, au masculin pluriel." },
+    { level: "maitre", type: "temps", text: "Il faut {{qu'Anakin|que le jeune apprenti}} apprend à écouter ses maîtres.", wrong: "apprend", right: "apprenne", choices: ["apprenne", "apprennes", "apprendre"], rule: "« Il faut que » appelle le subjonctif présent : qu'il apprenne, avec deux n." },
+    { level: "maitre", type: "sens", text: "{{C-3PO|Le droïde doré}} était sensé traduire chaque langue.", wrong: "sensé", right: "censé", choices: ["censé", "cencé", "sencé"], rule: "« Censé » signifie « supposé » et s'écrit avec un c (famille de censeur) ; « sensé » signifie « raisonnable »." }
   ]
 };

@@ -79,3 +79,33 @@ Cette consigne remplace les interdictions de noms propres des règles 5 et 6 et 
 - **Un nom n'est jamais le piège** : ni mot fautif, ni mot de `notes`, ni bonne réponse.
 - **Exactitude** : n'écrire que des faits certains et stables (rôle, appartenance, trait connu) ; aucun score, aucune statistique, aucune rumeur, aucun jugement sur une personne réelle. Orthographe des noms vérifiée ; en cas de doute sur un nom ou son orthographe, ne pas l'utiliser et le signaler dans le rapport.
 - **Contrôle** : `node tools/noms.mjs` doit rester OK dans les deux modes.
+
+## Densité des phrases Trouve l'erreur, par niveau (décidé le 15/11/2026)
+
+Les phrases à erreur doivent monter en densité d'un niveau à l'autre, pas seulement en difficulté de la règle. La faute reste unique ; ce qui change, ce sont la longueur et le nombre de difficultés correctement écrites autour de la faute.
+
+| Niveau | Longueur | Difficultés dans la phrase |
+| --- | --- | --- |
+| `apprenti` | 8 à 15 mots | une règle du cycle 3, phrase simple |
+| `compagnon` | 12 à 20 mots | une règle du cycle 4 et au moins 1 autre point correct (accord, homophone, mot du thème) |
+| `maitre` | 15 à 25 mots | deux règles croisées, dont l'une porte la faute, et au moins 1 mot rare correctement écrit |
+| `grand-scribe` | 18 à 35 mots | au moins 4 difficultés correctes autour de la faute (voir `docs/niveau-expert.md`) |
+
+- Les choix (`choices`) sont trois graphies ou accords vraiment plausibles, plus subtils à chaque niveau.
+- Sur les 8 phrases d'un thème à un même niveau : au plus 2 dont la faute est un accord de participe, au moins 5 mécanismes différents (5 à tous les niveaux : 4 phrases lexique laissent 4 types pour les autres).
+- La règle (`rule`) explique le raisonnement en deux phrases au plus.
+- Les dictées ne sont pas concernées par cette échelle (périmètre limité aux phrases Trouve l'erreur).
+
+## Répartition des types d'erreur et vocabulaire (décidée le 15/11/2026)
+
+Chaque phrase à erreur porte un champ `type` parmi : `lexique`, `pronominal`, `participe`, `homophone`, `invariable`, `temps`, `accord`, `adverbe`, `compose`, `sens` (libellés dans `content/types.js`). Constat : seules 1,6 % des phrases existantes portaient sur l'orthographe d'un mot, et un tiers des phrases Expert sur un verbe pronominal. Désormais, pour les 8 phrases d'un thème à un même niveau :
+
+| Niveau | `lexique` (minimum) | Plafonds | Variété |
+| --- | --- | --- | --- |
+| `apprenti` | 2 | pronominal 1, participe 2, homophone 2 | au moins 5 types |
+| `compagnon` | 3 | idem | au moins 5 types |
+| `maitre` | 3 (mots rares) | idem | au moins 5 types |
+| `grand-scribe` | 4 (mots rares D≥3, graphies opaques) | pronominal 1, participe 2, homophone 2 | au moins 5 types |
+
+- **Phrase `lexique`** : une phrase correcte dans laquelle un mot du thème est mal écrit (double consonne, lettre muette, accent, finale, y/i, ph/f, graphie opaque). `wrong` est la graphie fautive plausible, `right` la graphie exacte, les trois choix sont trois orthographes plausibles du même mot. Le mot est du champ lexical du thème (rare à partir du niveau `maitre`), jamais un nom propre, jamais un mot à double graphie admise.
+- Contrôle : `node tools/erreurs.mjs` (un thème est contrôlé dès que l'un de ses items porte un `type`).

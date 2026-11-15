@@ -32,7 +32,8 @@ for (const mode of ["perso", "commercial"]) {
     }
     for (const e of t.erreurs) {
       const words = e.text.split(" ").map((w) => w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, ""));
-      if (words.filter((w) => w === e.wrong).length !== 1) fail(mode, id, `« ${e.wrong} » doit apparaître une fois dans « ${e.text} »`);
+      const unel = (w) => w.replace(/^(?:[ldjmtsnc]|qu|lorsqu|puisqu|jusqu)['’]/i, ""); // same rule as app.js stripEl
+      if (words.filter((w) => w === e.wrong || unel(w) === e.wrong).length !== 1) fail(mode, id, `« ${e.wrong} » doit apparaître une fois dans « ${e.text} »`);
       if (!e.choices.includes(e.right)) fail(mode, id, `« ${e.right} » absent des choix`);
       if (/\{\{|\}\}/.test(e.text)) fail(mode, id, "marqueur non résolu");
     }
