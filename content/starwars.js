@@ -1,5 +1,5 @@
 (window.THEMES = window.THEMES || {}).starwars = {
-  name: "Star Wars",
+  name: "{{Star Wars|Space opera}}",
   emoji: "🚀",
   dictees: [
     {

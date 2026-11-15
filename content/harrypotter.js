@@ -1,5 +1,5 @@
 (window.THEMES = window.THEMES || {}).harrypotter = {
-  name: "Harry Potter",
+  name: "{{Harry Potter|Sorciers}}",
   emoji: "🧙",
   dictees: [
     {

@@ -1,5 +1,5 @@
 (window.THEMES = window.THEMES || {}).kpopdemonhunters = {
-  name: "K-Pop Demon Hunters",
+  name: "{{K-Pop Demon Hunters|Chasseuses de démons}}",
   emoji: "👹",
   dictees: [
     {

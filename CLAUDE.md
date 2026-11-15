@@ -73,7 +73,13 @@ techniques repris tels quels.
 ### Thèmes à traiter plus tard
 
 - **Le Club des Cinq** (série de romans jeunesse) : méta « Fictions et sagas », mêmes règles que les autres œuvres (textes originaux, aucune citation).
+- **Idées de thèmes (15/11/2026)** : chevaux, équitation, football, danse, piano, solfège. Méta-thèmes probables : Sport (équitation, football, danse), Animaux (chevaux) ou Sport, Musique (piano, solfège). À fusionner si des doublons apparaissent (chevaux et équitation). D'autres idées suivront : les ajouter ici au fil de l'eau.
+- **Les Enfants de la Résistance** (bande dessinée) : méta « Fictions et sagas » ou « Lecture et dessin ». Œuvre protégée : textes originaux, aucun personnage ni passage repris. Appuyer l'angle sur l'histoire (occupation, réseaux, maquis, clandestinité) avec des faits historiques exacts et sourcés ; sujet grave, ton sobre et respectueux.
 - **Disney** : méta « Fictions et sagas » ou méta dédié. Univers très large (films, parcs, personnages) : cadrer l'angle avant d'écrire (par exemple films d'animation et vocabulaire du conte) et rester sur des textes originaux, sans réplique ni paroles.
+
+## Noms propres : perso puis commercial
+
+Tant que le projet est personnel, les noms propres sont permis. Avant toute monétisation, ils sont remplacés par des périphrases. Un nom remplaçable s'écrit `{{Nom|périphrase}}` dans le contenu ; le mode se règle dans `config.js` (`perso` ou `commercial`). Contrôle : `node tools/noms.mjs`. Règles et procédure de bascule : `docs/redaction-contenu.md`. Aujourd'hui seuls les noms de thème (PSG, YouTube, Star Wars, Harry Potter, KPop Demon Hunters) sont marqués ; les textes n'en contiennent aucun.
 
 ## Mots rares
 

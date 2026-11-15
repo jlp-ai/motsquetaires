@@ -51,3 +51,14 @@ Star Wars, Harry Potter, KPop Demon Hunters, Les Trois Mousquetaires : écrire d
 ## Thèmes de villes
 
 Cherbourg, Montpellier : ne citer que des faits stables et vérifiables (lieux emblématiques, géographie, patrimoine, histoire connue). Pas de chiffres de population, de budget, de classement ni d'événement récent. En cas de doute sur un fait, le retirer.
+
+## Noms propres : mode perso ou commercial
+
+Tant que le projet est personnel, les noms propres de marques, de sagas, d'œuvres ou de personnes sont permis. Dès qu'il sera monétisé, chacun est remplacé par une périphrase. Mécanisme : un nom qui doit pouvoir être remplacé s'écrit **{{Nom|périphrase}}** dans le contenu (texte, notes, règles, nom de thème ou de méta-thème).
+
+- **Mode** : une seule ligne dans `config.js` (`window.NAMES_MODE = "perso"` ou `"commercial"`). `names.js` résout les marqueurs au chargement ; les outils font de même (variable d'environnement `NAMES_MODE` prioritaire).
+- **Périphrase interchangeable** : même nature grammaticale que le nom (genre, nombre, élision) pour que la phrase reste correcte, que le mot fautif reste unique et que les notes restent valables. Exemple : `{{Ousmane Dembélé|l'ailier parisien}}` dans « {{Ousmane Dembélé|l'ailier parisien}} a marqué ».
+- **Un nom n'est jamais un piège** : ni mot fautif, ni mot de `notes`, ni bonne réponse d'un choix.
+- **Contrôle** : `node tools/noms.mjs` liste les marqueurs, vérifie la structure dans les deux modes et signale les mots capitalisés non marqués (candidats à protéger). `NAMES_MODE=commercial node tools/rarete.mjs check` vérifie aussi les quotas de mots rares en mode commercial.
+- **Passage en commercial** : changer `config.js`, lancer `node tools/noms.mjs`, puis `node tools/clips.mjs --generate` (les textes modifiés produisent de nouveaux clips ; seuls ceux-là sont à régénérer).
+- **Sans marqueur** : les lieux (villes, régions) et les personnages du domaine public (Les Trois Mousquetaires) restent en clair dans les deux modes.

@@ -1,5 +1,5 @@
 (window.THEMES = window.THEMES || {}).youtube = {
-  name: "YouTube",
+  name: "{{YouTube|Vidéo en ligne}}",
   emoji: "▶️",
   dictees: [
     {

@@ -6,6 +6,7 @@
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadContent } from "./content.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const TSV = process.env.LEXIQUE_TSV || join(root, "..", "Onirologos", "data", "lexique", "Lexique383.tsv");
@@ -47,10 +48,10 @@ export function words(text) {
     .filter((w) => w.length > 3 && !STOP.has(w));
 }
 
+let CONTENT = null;
 function loadTheme(id) {
-  const win = {};
-  new Function("window", readFileSync(join(root, "content", id + ".js"), "utf8"))(win);
-  return win.THEMES[id];
+  CONTENT = CONTENT || loadContent().themes;
+  return CONTENT[id];
 }
 
 function main() {

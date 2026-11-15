@@ -16,6 +16,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
+import { loadContent } from "./content.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
@@ -36,17 +37,7 @@ const args = process.argv.slice(2);
 const generate = args.includes("--generate");
 const only = (args.includes("--only") ? args[args.indexOf("--only") + 1] : "").split(",").filter(Boolean);
 
-function loadWindow(file) {
-  const win = {};
-  new Function("window", fs.readFileSync(path.join(root, "content", file), "utf8"))(win);
-  return win;
-}
-const PRON = loadWindow("pronunciations.js").PRON || {};
-const themes = {};
-for (const f of fs.readdirSync(path.join(root, "content"))) {
-  if (!f.endsWith(".js") || ["metas.js", "pronunciations.js"].includes(f)) continue;
-  Object.assign(themes, loadWindow(f).THEMES);
-}
+const { themes, pron: PRON, mode: NAMES_MODE } = loadContent();
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
@@ -83,6 +74,7 @@ for (const [id, theme] of Object.entries(themes)) {
 
 const missing = jobs.filter((j) => !fs.existsSync(path.join(root, j.file)));
 const chars = missing.reduce((n, j) => n + j.chars, 0);
+console.log(`Noms propres : mode ${NAMES_MODE}.`);
 console.log(`Clips : ${jobs.length} au total, ${missing.length} à générer (${chars} caractères).`);
 const known = new Set(jobs.map((j) => path.basename(j.file)));
 const orphans = fs.existsSync(audioDir) ? fs.readdirSync(audioDir).filter((f) => f.endsWith(".mp3") && !known.has(f)) : [];

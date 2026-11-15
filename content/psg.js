@@ -1,5 +1,5 @@
 (window.THEMES = window.THEMES || {}).psg = {
-  name: "PSG",
+  name: "{{PSG|Football}}",
   emoji: "⚽",
   dictees: [
     {
