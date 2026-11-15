@@ -76,6 +76,7 @@ techniques repris tels quels.
 - **Le Club des Cinq** (série de romans jeunesse) : méta « Fictions et sagas », mêmes règles que les autres œuvres (textes originaux, aucune citation).
 - **Idées de thèmes (15/11/2026)** : chevaux, équitation, football, danse, piano, solfège. Méta-thèmes probables : Sport (équitation, football, danse), Animaux (chevaux) ou Sport, Musique (piano, solfège). À fusionner si des doublons apparaissent (chevaux et équitation). D'autres idées suivront : les ajouter ici au fil de l'eau.
 - **Les Enfants de la Résistance** (bande dessinée) : méta « Fictions et sagas » ou « Lecture et dessin ». Œuvre protégée : textes originaux, aucun personnage ni passage repris. Appuyer l'angle sur l'histoire (occupation, réseaux, maquis, clandestinité) avec des faits historiques exacts et sourcés ; sujet grave, ton sobre et respectueux.
+- **Odyssée** (15/11/2026) : suppose l'épopée d'Homère (Ulysse, Pénélope, Ithaque, Polyphème, les Sirènes, Circé, Calypso). Œuvre du domaine public : noms propres en clair, mythologie et vocabulaire de la navigation et de l'Antiquité (cyclope, nautonier, onde, rivage). À confirmer si « Odyssée » visait autre chose (par exemple le film ou le roman de science-fiction).
 - **Disney** : méta « Fictions et sagas » ou méta dédié. Univers très large (films, parcs, personnages) : cadrer l'angle avant d'écrire (par exemple films d'animation et vocabulaire du conte) et rester sur des textes originaux, sans réplique ni paroles.
 
 ## Noms propres : perso puis commercial

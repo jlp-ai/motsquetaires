@@ -62,3 +62,12 @@ Tant que le projet est personnel, les noms propres de marques, de sagas, d'œuvr
 - **Contrôle** : `node tools/noms.mjs` liste les marqueurs, vérifie la structure dans les deux modes et signale les mots capitalisés non marqués (candidats à protéger). `NAMES_MODE=commercial node tools/rarete.mjs check` vérifie aussi les quotas de mots rares en mode commercial.
 - **Passage en commercial** : changer `config.js`, lancer `node tools/noms.mjs`, puis `node tools/clips.mjs --generate` (les textes modifiés produisent de nouveaux clips ; seuls ceux-là sont à régénérer).
 - **Sans marqueur** : les lieux (villes, régions) et les personnages du domaine public (Les Trois Mousquetaires) restent en clair dans les deux modes.
+
+## Consigne actuelle : noms propres bienvenus (mode perso, décidée le 15/11/2026)
+
+Cette consigne remplace les interdictions de noms propres des règles 5 et 6 et des sections « saga » et « villes » ci-dessus, tant que le projet est personnel.
+- **Utiliser volontiers** les noms propres du thème : joueurs, personnages, groupes, lieux, œuvres (ex. Ousmane Dembélé pour le PSG, Harry pour Harry Potter, Rumi pour KPop Demon Hunters).
+- **Toujours sous forme de marqueur** `{{Nom|périphrase}}` pour tout nom de personne réelle, de personnage, de marque ou d'œuvre sous droits, avec une périphrase de même genre, nombre et élision (ex. `{{Ousmane Dembélé|l'attaquant parisien}}`). Les lieux et les personnages du domaine public restent en clair.
+- **Un nom n'est jamais le piège** : ni mot fautif, ni mot de `notes`, ni bonne réponse.
+- **Exactitude** : n'écrire que des faits certains et stables (rôle, appartenance, trait connu) ; aucun score, aucune statistique, aucune rumeur, aucun jugement sur une personne réelle. Orthographe des noms vérifiée ; en cas de doute sur un nom ou son orthographe, ne pas l'utiliser et le signaler dans le rapport.
+- **Contrôle** : `node tools/noms.mjs` doit rester OK dans les deux modes.
