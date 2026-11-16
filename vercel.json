@@ -1,4 +1,4 @@
 {
-  "buildCommand": "mkdir -p _site && cp -r index.html style.css app.js correction.js speech.js names.js config.js progress.js manifest.webmanifest icons content audio _site/",
+  "buildCommand": "node tools/build-site.mjs",
   "outputDirectory": "_site"
 }

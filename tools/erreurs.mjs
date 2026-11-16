@@ -6,9 +6,10 @@
 import { loadContent } from "./content.mjs";
 
 const TYPES = ["lexique", "pronominal", "participe", "homophone", "invariable", "temps", "accord", "adverbe", "compose", "sens"];
-const MIN_LEXIQUE = { apprenti: 2, compagnon: 3, maitre: 3, "grand-scribe": 4 };
-const CAP = { pronominal: 1, participe: 2, homophone: 2 };
-const LEVELS = Object.keys(MIN_LEXIQUE);
+// Ratios scale with the number of items n of a level (8 items: lexique 2/3/3/4, caps 1/2/2; 20 items: lexique 5/8/8/10, caps 3/5/5).
+const LEX_RATIO = { apprenti: 0.25, compagnon: 0.375, maitre: 0.375, "grand-scribe": 0.5 };
+const CAP_RATIO = { pronominal: 0.125, participe: 0.25, homophone: 0.25 };
+const LEVELS = Object.keys(LEX_RATIO);
 const all = process.argv.includes("--all");
 
 const { themes } = loadContent("perso");
@@ -24,8 +25,10 @@ for (const [id, t] of Object.entries(themes)) {
       if (!TYPES.includes(e.type)) problems.push(`type manquant ou inconnu (« ${e.wrong} »)`);
       count[e.type] = (count[e.type] || 0) + 1;
     }
-    for (const [k, cap] of Object.entries(CAP)) if ((count[k] || 0) > cap) problems.push(`${k} ${count[k]} > ${cap}`);
-    if ((count.lexique || 0) < MIN_LEXIQUE[lv] && items.length >= 8) problems.push(`lexique ${count.lexique || 0} < ${MIN_LEXIQUE[lv]}`);
+    const n = items.length;
+    for (const [k, r] of Object.entries(CAP_RATIO)) { const cap = Math.ceil(r * n); if ((count[k] || 0) > cap) problems.push(`${k} ${count[k]} > ${cap}`); }
+    const minLex = Math.ceil(LEX_RATIO[lv] * n);
+    if ((count.lexique || 0) < minLex && n >= 8) problems.push(`lexique ${count.lexique || 0} < ${minLex}`);
     if (items.length >= 8 && Object.keys(count).filter((k) => TYPES.includes(k)).length < 5) problems.push("mécanismes trop peu variés");
     if (problems.length) bad++;
     console.log((problems.length ? "FAIL " : "OK   ") + id.padEnd(18) + lv.padEnd(13) + Object.entries(count).map(([k, v]) => `${k}:${v}`).join(" ") + (problems.length ? "  | " + problems.join("; ") : ""));

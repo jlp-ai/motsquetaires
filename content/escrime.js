@@ -33,7 +33,7 @@
         { word: "vu", rule: "Participe suivi d'un infinitif : « que » (les feintes) est COD d'exécuter, pas de voir. Le participe reste invariable." },
         { word: "quelles", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (ses craintes : féminin pluriel)." },
         { word: "dégagements", rule: "Mouvements de lame qui passent de l'autre côté de celle de l'adversaire. Accent aigu sur le premier é, e muet gardé devant -ment, s au pluriel.", rare: true, d: 2, piege: "é, e muet devant -ment" },
-        { word: "estocades", rule: "Coups portés de la pointe de l'épée. Dérivé d'estoc : s muet après le e initial, puis c et -ade.", rare: true, d: 3, piege: "s muet (famille estoc), c, -ade" },
+        { word: "estocades", rule: "Coups portés de la pointe de l'épée. Dérivé d'estoc : es-, puis -toc- avec un seul c, et la finale -ade.", rare: true, d: 3, piege: "un seul c (famille estoc), -ade" },
         { word: "sang-froid", rule: "Nom composé avec trait d'union ; « sang » garde son g final muet." }
       ]
     },
@@ -43,7 +43,7 @@
       notes: [
         { word: "bretteurs", rule: "Bretteur : amateur de duels à l'épée. Deux t, comme dans « brette », l'ancienne épée longue.", rare: true, d: 1, piege: "deux t (famille brette)" },
         { word: "ferraillaient", rule: "Ferrailler : se battre à l'épée. Formé sur fer, avec deux r et -ill-, puis -aient à l'imparfait.", rare: true, d: 3, piege: "rr (famille fer), ill, -aient" },
-        { word: "estoc", rule: "Frapper d'estoc, c'est frapper de la pointe. Finale en -oc, avec un c prononcé.", rare: true, d: 3, piege: "s muet, c final prononcé" },
+        { word: "estoc", rule: "Frapper d'estoc, c'est frapper de la pointe. Finale en -oc, avec un c prononcé.", rare: true, d: 3, piege: "es-, c final prononcé" },
         { word: "escrimeurs", rule: "Dérivé d'escrime : un seul m, et pas d'accent sur le e initial.", rare: true, d: 1, piege: "un seul m, pas d'accent" },
         { word: "quarte", rule: "Position de parade (la quatrième) : nom féminin, avec le groupe -qu-.", rare: true, d: 2, piege: "qu et non c (carte), e final" },
         { word: "septime", rule: "Septième position de parade. Formé sur sept : le p se garde sans se prononcer ; nom féminin.", rare: true, d: 3, piege: "p muet (famille sept), finale -ime" },
@@ -129,13 +129,12 @@
     },
     {
       level: "maitre",
-      text: "Quelques instants avant l'assaut, les tireuses ajustent leur masque grillagé, dont la bavette, solidement fixée, protège la gorge. Toutes les protections qu'elles ont enfilées sous la veste, plastron et coquille, sont vérifiées par l'arbitre, qui s'assure que rien ne dépasse.",
+      text: "Quelques instants avant l'assaut, les tireuses ajustent leur masque grillagé, dont la bavette, solidement fixée, protège la gorge. Toutes les protections qu'elles ont enfilées sous la veste, à commencer par le plastron, sont vérifiées par l'arbitre, qui s'assure que rien ne dépasse.",
       notes: [
         { word: "quelques", rule: "Devant un nom pluriel (instants), « quelques » prend un s." },
         { word: "grillagé", rule: "Garni d'un grillage. Famille de « grille » : -ill-, puis -agé, avec un seul l après le a.", rare: true, d: 3, piege: "ill (famille grille), -agé" },
         { word: "bavette", rule: "Pièce du masque qui protège la gorge : un seul v, deux t, finale -ette.", rare: true, d: 2, piege: "un seul v, tt" },
-        { word: "enfilées", rule: "Le COD « que » (les protections) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "coquille", rule: "Protection portée sous le vêtement : -qu-, puis -ill-, puis le e muet final." }
+        { word: "enfilées", rule: "Le COD « que » (les protections) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
       ]
     },
     {
@@ -169,7 +168,7 @@
       level: "grand-scribe",
       text: "Avant que s'ouvre la compétition, les escrimeuses vérifient leur tenue avec un soin méticuleux. Sous la veste se sont glissées des protections rembourrées, et le masque, dont le treillis serré et la bavette défendent le visage et la gorge, a été examiné par l'arbitre. Aucune pointe, si fine soit-elle, ne doit pouvoir s'y engager. Quelques fils, quelques lampes, un gant épais : tout l'équipement concourt à la sécurité, et rien n'a été laissé au hasard, même les lacets les plus discrets. L'examen terminé, chacune rejoint la piste, le regard fixe, tandis que s'élève la rumeur du public.",
       notes: [
-        { word: "escrimeuses", rule: "Dérivé d'escrime : s muet après le e initial, un seul m, puis la finale -euses.", rare: true, d: 3, piege: "s muet, c, un seul m, -euses" },
+        { word: "escrimeuses", rule: "Dérivé d'escrime : e, puis le groupe sc, un seul m et la finale -euses.", rare: true, d: 3, piege: "sc, un seul m, -euses" },
         { word: "glissées", rule: "Sujet inversé (des protections) : le participe d'un verbe pronominal s'accorde avec lui, féminin pluriel." },
         { word: "rembourrées", rule: "Garnies de bourre : rem-, puis deux r (famille de « bourre »), et accord au féminin pluriel.", rare: true, d: 3, piege: "rr (famille bourre), -ées" },
         { word: "treillis", rule: "Grillage à mailles serrées : -eill- puis -is, avec un s final muet même au singulier.", rare: true, d: 3, piege: "eill, s final muet" },
@@ -223,9 +222,9 @@
     { level: "maitre", type: "homophone", text: "Quoique l'arbitre décide, les tireurs doivent s'incliner devant son verdict.", wrong: "Quoique", right: "Quoi que", choices: ["Quoi que", "Quoique", "Quoiqu'"], rule: "« Quoi que » (quelle que soit la chose que) s'écrit en deux mots. « Quoique » équivaut à « bien que » et se rencontre devant un fait." },
     { level: "maitre", type: "participe", text: "Les tireuses que j'ai vu s'échauffer ce matin ont gagné leurs poules.", wrong: "vu", right: "vues", choices: ["vues", "vu", "vus"], rule: "Le COD « que » (les tireuses) est placé avant l'auxiliaire et fait l'action de l'infinitif (elles s'échauffent) : le participe s'accorde, féminin pluriel." },
     { level: "maitre", type: "invariable", text: "Les tireuses, mêmes fatiguées, ont poursuivi le combat jusqu'au dernier assaut.", wrong: "mêmes", right: "même", choices: ["même", "mêmes", "mème"], rule: "Devant un adjectif (fatiguées), « même » est un adverbe (« y compris ») et reste invariable." },
-    { level: "grand-scribe", type: "lexique", text: "Les gentilshommes du siècle des Lumières, désormais plus enclins à l'estoc qu'à la taille, ne se séparaient guère de leur colichmarde, épée dont la lame large près de la garde s'affinait ensuite brusquement.", wrong: "colichmarde", right: "colichemarde", choices: ["colichemarde", "colichmarde", "collichemarde"], rule: "Colichemarde : épée de cour à lame large près de la garde, puis très fine. Retenir co-li-che-marde : un seul l, puis ch et un e avant -marde." },
-    { level: "grand-scribe", type: "lexique", text: "Les armuriers d'autrefois, soucieux de protéger la main, recourbaient les quilons de la garde afin que la lame adverse, déviée, ne glissât pas jusqu'aux doigts du tireur.", wrong: "quilons", right: "quillons", choices: ["quillons", "quilons", "quillions"], rule: "Quillon : barre de la garde d'une épée. Le groupe -qu- est suivi de -ill- (deux l), puis de la finale -on, sans i." },
-    { level: "grand-scribe", type: "lexique", text: "Moins élégant que le fleuret, l'estramasson, large épée dont on frappait de taille plutôt que d'estoc, exigeait des bras robustes que les maîtres d'armes d'alors entraînaient sans relâche.", wrong: "estramasson", right: "estramaçon", choices: ["estramaçon", "estramasson", "estramason"], rule: "Estramaçon : épée large qui frappe de taille. Le son [s] devant -on s'écrit avec une cédille, comme dans « maçon » et « façon »." },
+    { level: "grand-scribe", type: "lexique", text: "Les gentilshommes d'autrefois, plus soucieux d'élégance que de force, ne se séparaient guère de leur colichmarde, épée de cour dont la lame, large près de la garde, s'affinait ensuite brusquement.", wrong: "colichmarde", right: "colichemarde", choices: ["colichemarde", "colichmarde", "collichemarde"], rule: "Colichemarde : épée de cour à lame large près de la garde, puis très fine. Retenir co-li-che-marde : un seul l, puis ch et un e avant -marde." },
+    { level: "grand-scribe", type: "lexique", text: "Les armuriers d'autrefois, soucieux de protéger la main, munissaient la garde de quilons afin que la lame adverse, déviée, ne glissât pas jusqu'aux doigts du tireur.", wrong: "quilons", right: "quillons", choices: ["quillons", "quilons", "quillions"], rule: "Quillon : barre de la garde d'une épée. Le groupe -qu- est suivi de -ill- (deux l), puis de la finale -on, sans i." },
+    { level: "grand-scribe", type: "lexique", text: "Les spadasins, que les gentilshommes d'autrefois s'étaient plu à engager pour régler leurs querelles d'honneur, vendaient leur lame au plus offrant, quelque redoutables que fussent leurs adversaires.", wrong: "spadasins", right: "spadassins", choices: ["spadassins", "spadasins", "spadacins"], rule: "Spadassin vient de l'italien spada (épée) : le son [s] entre deux voyelles s'écrit ss, puis -in. Un spadassin est un bretteur à gages." },
     { level: "grand-scribe", type: "lexique", text: "Après avoir longtemps feinté, le vieux maître porta l'estoccade d'un coup de poignet si vif que l'adversaire, pourtant méfiant, n'eut même pas le temps de lever sa lame.", wrong: "estoccade", right: "estocade", choices: ["estocade", "estoccade", "estoquade"], rule: "Estocade : coup porté de la pointe, de l'italien « stoccata ». Un seul c, comme dans « estoc » dont le mot est dérivé." },
     { level: "grand-scribe", type: "pronominal", text: "Les deux rivales, qui s'étaient longtemps nuies pendant les sélections, se sont pourtant saluées chaleureusement au terme d'un assaut que la salle entière avait jugé magnifique.", wrong: "nuies", right: "nui", choices: ["nui", "nuies", "nuis"], rule: "Se nuire : on nuit à quelqu'un, « se » est donc COI et le participe reste invariable. Dans « se sont saluées », « se » est COD : l'accord se fait." },
     { level: "grand-scribe", type: "participe", text: "Les épreuves que l'équipe a dues affronter en poules, puis les titres qu'elle a pu remporter malgré la blessure de sa capitaine, ont fait d'elle la favorite du tournoi.", wrong: "dues", right: "dû", choices: ["dû", "dues", "dus"], rule: "Le COD « que » complète l'infinitif « affronter » et non le verbe « devoir » : le participe « dû » reste invariable. Même raisonnement que pour « pu »." },

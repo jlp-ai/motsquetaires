@@ -20,10 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Assemble the site
-        run: |
-          mkdir _site
-          cp index.html style.css app.js correction.js speech.js names.js config.js progress.js manifest.webmanifest _site/
-          cp -r content audio icons _site/
+        run: node tools/build-site.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

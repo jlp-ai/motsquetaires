@@ -35,6 +35,10 @@ for (const envFile of [path.join(root, ".env"), path.join(root, "..", "Onirologo
 
 const args = process.argv.slice(2);
 const generate = args.includes("--generate");
+// --no-punct: do not generate the punctuation-spoken variants (browser voice is the fallback).
+// --lite: lighter mp3 (16 kHz, 32 kbit/s) for the new clips, to keep the deployment small.
+const noPunct = args.includes("--no-punct");
+const lite = args.includes("--lite");
 const only = (args.includes("--only") ? args[args.indexOf("--only") + 1] : "").split(",").filter(Boolean);
 
 const { themes, pron: PRON, mode: NAMES_MODE } = loadContent();
@@ -72,7 +76,7 @@ for (const [id, theme] of Object.entries(themes)) {
   }
 }
 
-const missing = jobs.filter((j) => !fs.existsSync(path.join(root, j.file)));
+const missing = jobs.filter((j) => !fs.existsSync(path.join(root, j.file)) && !(noPunct && j.key.startsWith("normal+punct|") ) && !(noPunct && j.key.startsWith("slow+punct|")));
 const chars = missing.reduce((n, j) => n + j.chars, 0);
 console.log(`Noms propres : mode ${NAMES_MODE}.`);
 console.log(`Clips : ${jobs.length} au total, ${missing.length} à générer (${chars} caractères).`);
@@ -97,7 +101,7 @@ if (!generate) {
         headers: {
           "Ocp-Apim-Subscription-Key": process.env.AZURE_SPEECH_KEY,
           "Content-Type": "application/ssml+xml",
-          "X-Microsoft-OutputFormat": "audio-24khz-48kbitrate-mono-mp3",
+          "X-Microsoft-OutputFormat": lite ? "audio-16khz-32kbitrate-mono-mp3" : "audio-24khz-48kbitrate-mono-mp3",
           "User-Agent": "dictees-clips"
         },
         body: j.ssml

@@ -1,0 +1,33 @@
+# Consigne de la passe de volume (phrases Trouve l'erreur)
+
+Lis intégralement `docs/extension-brief.md` (toutes les sections : densité par niveau, répartition des types en proportions, volume cible, phrases intéressantes et sans divulgâchage), `docs/niveau-expert.md`, `docs/redaction-contenu.md` (règles dures, noms propres en marqueurs `{{Nom|périphrase}}`, ancrage local des villes, zéro débat orthographique).
+
+Mission sur les phrases à erreur (`erreurs`) du thème demandé ; ne touche pas aux dictées.
+
+1. **Volume** : amène chacun des quatre niveaux (`apprenti`, `compagnon`, `maitre`, `grand-scribe`) à **20 phrases à erreur**. Ajoute les phrases manquantes à la suite du tableau.
+2. **Qualité des phrases existantes** : relis les phrases déjà présentes ; remplace celles qui sont ternes (généralités, formules de manuel), qui divulguent un élément important d'une œuvre, ou qui font dépasser un plafond de répartition. Ne touche pas aux phrases Expert déjà réécrites au standard championnat sauf pour le divulgâchage ou une erreur.
+3. **Chaque phrase** respecte la densité de son niveau (Facile 8 à 15 mots, une règle ; Moyen 12 à 20 mots ; Difficile 15 à 25 mots, deux règles croisées dont un mot rare correct ; Expert 18 à 35 mots, au moins 4 difficultés correctes), est **intéressante** (voir le brief) et **sans divulgâchage**.
+4. **Répartition par niveau sur les 20 phrases** : `lexique` au moins 25 % (Facile), 37,5 % (Moyen, Difficile), 50 % (Expert) ; `pronominal` au plus 12,5 % ; `participe` et `homophone` chacun au plus 25 % ; au moins 5 types ; champ `type` sur chaque phrase. Phrase `lexique` : phrase correcte sauf un mot du thème mal écrit (double consonne, lettre muette, accent, finale, y/i, ph/f), `wrong` = graphie fautive plausible, `right` = graphie exacte, trois choix = trois orthographes plausibles du même mot ; mots rares à partir du niveau `maitre`.
+5. **Aucun doublon** dans le thème : ni phrase, ni mot fautif, ni règle déjà présents. Pas de graphie à double usage admis (marron, paraît, entraîneur, maîtriser, embûche, coûter, naître, flûte, Internet, toute entière, laissé + infinitif, durer + complément de durée, accord de proximité, mots étrangers pièges), pas de « ne » explétif, pas de subjonctif imparfait après un passé composé. `wrong` unique comme mot entier dans sa phrase (une élision collée est acceptée : `l'estocade` contient `estocade`), `right` dans `choices`, trois choix distincts, règle exacte en deux phrases au plus. Noms propres jamais piège.
+6. **Contrôles** : `node tools/erreurs.mjs` (les quatre niveaux du thème doivent passer), `node tools/noms.mjs` (structure OK), `node tools/rarete.mjs check <id>` (OK). Contrôle propre : `wrong` unique (dans les deux modes si marqueurs), `right` dans `choices`, nombre de phrases par niveau égal à 20, longueurs respectées. Ne touche à aucun autre fichier.
+
+Rapport court : nombre de phrases par niveau et par type, phrases remplacées et pourquoi (ternes, divulgâchage, plafond), points de doute (graphies, faits).
+
+## Couverture des programmes aux niveaux Facile et Moyen (décidé le 15/11/2026)
+
+Les niveaux `apprenti` (CM1, CM2, 6e) et `compagnon` (5e, 4e, 3e) doivent tester un large éventail de règles du programme, pas seulement des homophones et des accords simples. Constat actuel : au niveau Facile, 41 % des phrases portent sur un homophone et 37 % sur un accord ; au niveau Moyen, 24 % sur un homophone, 19 % sur un participe, 17 % sur un temps.
+
+- **Champ `notion`** : chaque phrase à erreur de ces deux niveaux porte l'identifiant d'une notion de `docs/programme-referentiel.md` (colonne « testable en dictée » = oui ou partiellement), du niveau scolaire correspondant (CM1, CM2, 6e pour `apprenti` ; 5e, 4e, 3e pour `compagnon`).
+- **Largeur** : sur les 20 phrases d'un sous-thème et d'un niveau, au moins 14 notions différentes ; aucune notion plus de 2 fois. À l'échelle du jeu, chaque notion testable en dictée du référentiel doit être couverte par au moins 3 phrases de sous-thèmes différents.
+- **Exemples de règles à exploiter** (liste non exhaustive, à puiser dans le référentiel) : conjugaison des temps du programme (imparfait, passé simple, futur, conditionnel, plus-que-parfait, impératif, subjonctif présent au cycle 4), verbes en -cer, -ger, -yer, -eler, -eter, accord du participe avec être et avec avoir (COD antéposé), accord du verbe avec sujet éloigné ou inversé, accord de l'attribut, pluriel et féminin des noms et adjectifs irréguliers, pluriel des noms composés au cycle 4, homophones grammaticaux (a/à, ou/où, et/est, on/ont, son/sont, ce/se, ces/ses/c'est/s'est, leur/leurs, quel(le)(s)/qu'elle(s), la/là/l'a, ni/n'y, mais/mes/met), mots invariables, formation des mots (préfixes, suffixes, familles), accents et tréma, lettres finales muettes par la famille de mots, ponctuation (virgule, deux-points, guillemets), registres et sens des mots (paronymes), accord de tout, même, quelque au cycle 4.
+
+## Niveaux Difficile et Expert : catalogue de règles avancées
+
+Pour les niveaux `maitre` et `grand-scribe`, puise tes mécanismes dans `docs/catalogue-regles-avancees.md` (s'il existe) en plus de `docs/extension-brief.md` (section « Diversité des mécanismes ») : au moins 8 mécanismes différents sur 20 phrases ; plafonds : verbes pronominaux 2, COD antéposé 2, « quelque » et « quel que » 2, subjonctif ou conditionnel 3.
+
+## Le vocabulaire reste central aux niveaux Difficile et Expert (précisé le 16/11/2026)
+
+La grammaire et la conjugaison ne remplacent pas le vocabulaire : les phrases `lexique` gardent leur part (au moins 37,5 % en Difficile, 50 % en Expert) et ne se limitent pas à « un mot rare mal écrit ». Pour les phrases `lexique` d'un même niveau et d'un même thème :
+- **Variété des mécanismes graphiques** : au moins 6 mécanismes différents parmi : doublement ou simplification de consonne (famille de mots), lettre muette intérieure ou finale, `ph`, `th`, `rh`, `y`, `h` aspiré ou muet, accent (circonflexe écarté si double graphie), tréma, cédille, finales `-ance` ou `-ence`, `-ant` ou `-ent`, adverbes en `-amment` ou `-emment`, pluriels en `-aux`, `-als`, `-s` ou `-x` dès le singulier, genre d'un mot, mots d'origine étrangère francisés (graphie unique).
+- **Vocabulaire de sens** (type `sens`) : au moins 2 phrases sur 20 à l'Expert et 1 à 2 en Difficile : paronymes, homophones lexicaux rares, faux amis, mots employés à contresens (acception, conjecture, éminent, différend, ...), choisis dans le catalogue (famille « Mots et graphies »).
+- **Précision du lexique** : le mot du thème est précis et de registre soutenu à partir du niveau Difficile (verbes, adjectifs et noms de métier, pas seulement des noms d'objets).

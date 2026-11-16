@@ -79,11 +79,11 @@
     },
     {
       level: "apprenti",
-      text: "Les enfants visitent le jardin des plantes avec leur classe. Ils découvrent de grands arbres, des fleurs rares et une serre pleine de plantes vertes. La guide leur demande de dessiner la fleur qu'ils ont préférée.",
+      text: "Les enfants visitent le jardin des plantes avec leur classe. Ils découvrent de grands arbres, des fleurs rares et une allée pleine de plantes vertes. La guide leur demande de dessiner la fleur qu'ils ont préférée.",
       notes: [
         { word: "visitent", rule: "Verbe du 1er groupe au présent, 3e personne du pluriel : -ent." },
         { word: "grands", rule: "L'adjectif s'accorde avec le nom (arbres : masculin pluriel) : grands." },
-        { word: "pleine", rule: "L'adjectif s'accorde avec le nom (une serre : féminin singulier) : pleine." },
+        { word: "pleine", rule: "L'adjectif s'accorde avec le nom (une allée : féminin singulier) : pleine." },
         { word: "vertes", rule: "L'adjectif s'accorde avec le nom (plantes : féminin pluriel) : vertes." },
         { word: "préférée", rule: "Le COD « que » (la fleur) est placé avant l'auxiliaire avoir : accord au féminin singulier." }
       ]
@@ -123,7 +123,7 @@
     },
     {
       level: "maitre",
-      text: "Dessiné d'un seul tenant, le quartier Antigone déploie ses pilastres et ses colonnes, qu'on dirait empruntés à quelque cité antique. Les passants s'y sont longtemps étonnés de cet ordonnancement, quoique les riverains s'y soient vite accoutumés. Au bout de l'esplanade, le Lez coule paisiblement.",
+      text: "Dessiné d'un seul tenant, le quartier Antigone déploie ses pilastres et ses colonnes, qu'on dirait empruntés à quelque cité antique. Les passants s'y sont longtemps étonnés de cet ordonnancement, quoique les riverains s'y soient vite accoutumés. Non loin de là, le Lez coule paisiblement.",
       notes: [
         { word: "dessiné", rule: "Participe passé apposé : il s'accorde avec le nom qu'il qualifie (le quartier : masculin singulier)." },
         { word: "pilastres", rule: "Mot rare : pilier plat engagé dans un mur. Un seul l, un seul s, puis -tres : pilastre, comme « astre ».", rare: true, d: 2, piege: "l simple, s muet, finale -tres" },
@@ -161,7 +161,7 @@
     },
     {
       level: "grand-scribe",
-      text: "Dans l'Écusson, les ruelles que des siècles de piétons ont polies serpentent entre des hôtels particuliers dont les architraves et les linteaux sont sculptés. Les curieux qui se sont fourvoyés dans ce dédale n'ont jamais regretté de s'y être égarés. Seuls y résonnent les pas des flâneurs.",
+      text: "Dans l'Écusson, les ruelles que des siècles de piétons ont polies serpentent entre des hôtels particuliers dont les portails de pierre sont surmontés de linteaux et d'architraves. Les curieux qui se sont fourvoyés dans ce dédale n'ont jamais regretté de s'y être égarés. Seuls y résonnent les pas des flâneurs.",
       notes: [
         { word: "polies", rule: "Le COD « que » (les ruelles) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
         { word: "architraves", rule: "Mot très rare : poutres de pierre posées sur les colonnes. Archi- comme architecte (ch = k), puis -traves.", rare: true, d: 3, piege: "ch = k, finale -traves" },
@@ -174,7 +174,7 @@
     },
     {
       level: "grand-scribe",
-      text: "Sur la place de la Comédie, que les Montpelliérains surnomment l'Œuf à cause de sa forme, la fontaine des Trois Grâces bruisse devant l'Opéra. Des escamoteurs et des saltimbanques s'y produisent ; des curieux, assis sur la margelle, s'y sont donné rendez-vous.",
+      text: "Sur la place de la Comédie, que les Montpelliérains surnomment l'Œuf à cause de sa forme, la fontaine des Trois Grâces bruisse devant l'Opéra. Des escamoteurs et des saltimbanques s'y produisent parfois ; des curieux, assis sur la margelle, s'y sont donné rendez-vous.",
       notes: [
         { word: "surnomment", rule: "Surnommer prend deux n (famille de nom) et -ent à la 3e personne du pluriel." },
         { word: "bruisse", rule: "Mot rare : faire un bruit léger, comme l'eau. Un seul s entre u et i : bru-i-sse, avec deux s devant e muet.", rare: true, d: 3, piege: "ui, ss devant e muet" },
@@ -207,7 +207,7 @@
     { level: "maitre", type: "temps", text: "Bien que les étudiants sont nombreux, l'Écusson reste calme le matin.", wrong: "sont", right: "soient", choices: ["soient", "soit", "soie"], rule: "« Bien que » appelle le subjonctif : bien que les étudiants soient nombreux." },
     { level: "maitre", type: "sens", text: "Les étudiants de la faculté de médecine, voisine du jardin des plantes, sont sensés réviser leurs cours.", wrong: "sensés", right: "censés", choices: ["censés", "censé", "sensé"], rule: "« Censé » signifie supposé ; « sensé » signifie raisonnable. Accord avec les étudiants : censés." },
     { level: "grand-scribe", type: "lexique", text: "Pour que les futurs médecins y reconnaissent les simples, le jardin des plantes, que jouxte la faculté de médecine, a longtemps fourni aux apoticaires les herbes qu'ils venaient y cueillir.", wrong: "apoticaires", right: "apothicaires", choices: ["apothicaires","apoticaires","apothiquaires"], rule: "Le mot vient du grec apothêkê (boutique) : on écrit -th- puis -aire. Pas de q ni de u : apothicaire." },
-    { level: "grand-scribe", type: "lexique", text: "Les promeneurs qui s'étaient arrêtés sur l'esplanade du Peyrou ont admiré, depuis le belvédaire, l'aqueduc dont les arcades superposées se détachent sur un ciel que l'on aurait cru peint.", wrong: "belvédaire", right: "belvédère", choices: ["belvédère","belvédaire","belvedère"], rule: "Mot formé sur l'italien belvedere (belle vue) : accent aigu sur le premier é, accent grave et finale -ère. La finale se prononce comme dans « mère »." },
+    { level: "grand-scribe", type: "lexique", text: "Les promeneurs qui s'étaient arrêtés sur l'esplanade du Peyrou, véritable belvédaire sur la ville, ont admiré l'aqueduc dont les arcades superposées se détachent sur un ciel que l'on aurait cru peint.", wrong: "belvédaire", right: "belvédère", choices: ["belvédère","belvédaire","belvedère"], rule: "Mot formé sur l'italien belvedere (belle vue) : accent aigu sur le premier é, accent grave et finale -ère. La finale se prononce comme dans « mère »." },
     { level: "grand-scribe", type: "lexique", text: "Sur les plages voisines de Palavas, des pêcheurs à pied ramassent des telines, petits coquillages que les gourmets du Languedoc font sauter à la poêle avec de l'ail.", wrong: "telines", right: "tellines", choices: ["tellines","telines","télines"], rule: "Le nom vient du latin tellina : deux l, un seul n, finale -ine. On retient le doublement du l, comme dans « coquillage »." },
     { level: "grand-scribe", type: "lexique", text: "Dans les ruelles de l'Écusson, les hôtels particuliers, dont les balcons s'ornent de ferroneries délicates, attirent ceux qui, s'étant égarés, y ont trouvé quelque cour oubliée.", wrong: "ferroneries", right: "ferronneries", choices: ["ferronneries","ferroneries","feronneries"], rule: "Mot de la famille de « ferronnier » : deux r et deux n, ferronnerie. L'analogie avec « fer » fait oublier les doublements." },
     { level: "grand-scribe", type: "invariable", text: "Quelques imposants que soient les piliers de la cathédrale Saint-Pierre, ils ne dissimulent pas l'élégance du porche, que des générations d'étudiants de la faculté voisine ont franchi sans y prendre garde.", wrong: "Quelques", right: "Quelque", choices: ["Quelque","Quelques","Quel que"], rule: "Devant un adjectif, « quelque » signifie « si » : c'est un adverbe invariable, suivi du subjonctif. « Quel que » ne s'écrit en deux mots que devant le verbe être (quel que soit)." },

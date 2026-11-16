@@ -2,3 +2,4 @@
 node_modules/
 # Analyses of copyrighted dictation texts: private study notes, never published.
 docs/pivot/
+_site/

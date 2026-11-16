@@ -31,3 +31,13 @@ Opus quand il est disponible (l'orthographe y est critique), sinon Sonnet avec u
 ## Densité des phrases Trouve l'erreur
 
 Contrôler aussi la densité de chaque phrase à erreur selon le niveau (tableau « Densité des phrases Trouve l'erreur » de `docs/redaction-contenu.md` et `docs/niveau-expert.md`) : longueur, nombre de difficultés correctes autour de la faute, choix plausibles, mécanismes variés. Une phrase trop courte ou à une seule règle pour son niveau est réécrite, la faute restant unique et sans débat.
+
+## Phrases « Trouve l'erreur » intéressantes, sans divulgâchage (décidé le 15/11/2026)
+
+**Intéressantes.** Chaque phrase doit valoir la peine d'être lue pour elle-même, indépendamment de la faute :
+- elle apprend ou raconte quelque chose de concret : un fait établi, un geste de métier, un détail de coulisses, une anecdote plausible, une image précise, une petite tension ou un trait d'humour ;
+- elle a un sujet et un décor identifiables (un lieu, un objet, un personnage, un moment), pas une généralité (« Le sport est un domaine passionnant ») ni une tournure de manuel (« Les élèves font des exercices ») ;
+- deux phrases d'un même thème et d'un même niveau ne racontent pas la même scène et n'ouvrent pas sur la même formule ; le registre varie (récit, description, consigne, dialogue indirect, énumération, question rhétorique) ;
+- la phrase se lit comme une phrase vraie de journal, de roman ou de guide, jamais comme un exercice fabriqué ; les mots du thème y apparaissent naturellement.
+
+**Sans divulgâchage.** Aucune phrase ne révèle un élément important d'une œuvre (roman, film, série, jeu, bande dessinée, épopée) : ni dénouement, ni mort, ni trahison, ni identité cachée, ni retournement, ni élément de la seconde moitié de l'intrigue. On s'en tient à la situation de départ connue de tous, au décor, aux gestes, aux objets, aux univers, aux personnages tels qu'on les rencontre au début (ex. pour Les Trois Mousquetaires : le duel, les gardes du cardinal, la devise, jamais le sort de Milady ni de Constance ; pour l'Odyssée : le voyage, les monstres rencontrés, jamais le retour déguisé ni le massacre des prétendants). En cas de doute, la phrase est générique ou retirée.

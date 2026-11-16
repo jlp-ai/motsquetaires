@@ -109,3 +109,18 @@ Chaque phrase à erreur porte un champ `type` parmi : `lexique`, `pronominal`, `
 
 - **Phrase `lexique`** : une phrase correcte dans laquelle un mot du thème est mal écrit (double consonne, lettre muette, accent, finale, y/i, ph/f, graphie opaque). `wrong` est la graphie fautive plausible, `right` la graphie exacte, les trois choix sont trois orthographes plausibles du même mot. Le mot est du champ lexical du thème (rare à partir du niveau `maitre`), jamais un nom propre, jamais un mot à double graphie admise.
 - Contrôle : `node tools/erreurs.mjs` (un thème est contrôlé dès que l'un de ses items porte un `type`).
+
+
+## Volume cible par sous-thème (décidé le 15/11/2026)
+
+L'utilisateur veut du volume : un joueur ne doit pas revoir la même phrase après quelques parties. Cible par sous-thème et par niveau : **20 phrases à erreur** et **6 dictées** (80 phrases à erreur et 24 dictées par sous-thème). Les règles de répartition passent en proportions pour n phrases : `lexique` au moins 25 % (Facile), 37,5 % (Moyen et Difficile), 50 % (Expert) ; `pronominal` au plus 12,5 % ; `participe` et `homophone` chacun au plus 25 % ; au moins 5 types. Chaque nouvelle phrase respecte la densité et le niveau (tableau de densité), les marqueurs, l'ancrage local pour les villes, et ne répète ni une phrase, ni un mot fautif, ni une règle déjà présents dans le thème. Contrôle : `node tools/erreurs.mjs`.
+
+## Phrases « Trouve l'erreur » intéressantes, sans divulgâchage (décidé le 15/11/2026)
+
+**Intéressantes.** Chaque phrase doit valoir la peine d'être lue pour elle-même, indépendamment de la faute :
+- elle apprend ou raconte quelque chose de concret : un fait établi, un geste de métier, un détail de coulisses, une anecdote plausible, une image précise, une petite tension ou un trait d'humour ;
+- elle a un sujet et un décor identifiables (un lieu, un objet, un personnage, un moment), pas une généralité (« Le sport est un domaine passionnant ») ni une tournure de manuel (« Les élèves font des exercices ») ;
+- deux phrases d'un même thème et d'un même niveau ne racontent pas la même scène et n'ouvrent pas sur la même formule ; le registre varie (récit, description, consigne, dialogue indirect, énumération, question rhétorique) ;
+- la phrase se lit comme une phrase vraie de journal, de roman ou de guide, jamais comme un exercice fabriqué ; les mots du thème y apparaissent naturellement.
+
+**Sans divulgâchage.** Aucune phrase ne révèle un élément important d'une œuvre (roman, film, série, jeu, bande dessinée, épopée) : ni dénouement, ni mort, ni trahison, ni identité cachée, ni retournement, ni élément de la seconde moitié de l'intrigue. On s'en tient à la situation de départ connue de tous, au décor, aux gestes, aux objets, aux univers, aux personnages tels qu'on les rencontre au début (ex. pour Les Trois Mousquetaires : le duel, les gardes du cardinal, la devise, jamais le sort de Milady ni de Constance ; pour l'Odyssée : le voyage, les monstres rencontrés, jamais le retour déguisé ni le massacre des prétendants). En cas de doute, la phrase est générique ou retirée.

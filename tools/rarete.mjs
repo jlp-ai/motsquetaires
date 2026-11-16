@@ -66,7 +66,7 @@ function main() {
     return;
   }
   if (cmd === "check") {
-    const ids = args.length ? args : readdirSync(join(root, "content")).filter((f) => f.endsWith(".js") && f !== "metas.js" && f !== "pronunciations.js").map((f) => f.slice(0, -3));
+    const ids = args.length ? args : readdirSync(join(root, "content")).filter((f) => f.endsWith(".js") && f !== "metas.js" && f !== "pronunciations.js" && f !== "types.js").map((f) => f.slice(0, -3));
     let bad = 0;
     for (const id of ids) {
       const theme = loadTheme(id);

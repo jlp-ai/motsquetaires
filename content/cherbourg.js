@@ -23,7 +23,7 @@
     },
     {
       level: "maitre",
-      text: "Les chalutiers, partis avant l'aube, contournèrent les écueils de la rade et regagnèrent le bassin à la nuit tombée. Sur les quais, des goélands affamés tournoyaient au-dessus des caisses, bien qu'aucun pêcheur ne leur eût jeté le moindre poisson. Quant à l'arsenal voisin, il veillait, silencieux, sur ses sous-marins en construction.",
+      text: "Les chalutiers, partis avant l'aube, contournèrent les écueils de la rade de Cherbourg et regagnèrent le bassin à la nuit tombée. Sur les quais, des goélands affamés tournoyaient au-dessus des caisses, bien qu'aucun pêcheur ne leur eût jeté le moindre poisson. Quant à l'arsenal voisin, il veillait, silencieux, sur ses sous-marins en construction.",
       notes: [
         { word: "chalutiers", rule: "Bateaux qui pêchent au chalut, un grand filet : le t final de chalut se retrouve dans chalutier.", rare: true, d: 1, piege: "t de chalut, finale -ier" },
         { word: "écueils", rule: "Récif ou rocher à fleur d'eau, danger pour les navires. Écrit é, puis -cueil comme dans accueil et recueil, avec un s au pluriel.", rare: true, d: 3, piege: "é, -cueil et non -queil ni -euil" },
@@ -80,7 +80,7 @@
     },
     {
       level: "compagnon",
-      text: "Inaugurée avant la guerre, la gare maritime transatlantique de Cherbourg accueillait jadis des voyageurs venus d'Amérique. Les paquebots, que l'on amarrait le long du quai, repartaient chargés d'émigrants impatients. Aujourd'hui, la Cité de la Mer occupe ces halls que tant de passagers ont traversés.",
+      text: "Inaugurée avant la guerre, la gare maritime transatlantique de Cherbourg accueillait jadis des voyageurs venus d'Amérique. Les paquebots, ancrés dans la rade, repartaient chargés d'émigrants impatients. Aujourd'hui, la Cité de la Mer occupe ces halls que tant de passagers ont traversés.",
       notes: [
         { word: "Inaugurée", rule: "Le participe, employé comme adjectif, s'accorde avec « la gare » : féminin singulier." },
         { word: "chargés", rule: "Participe employé comme adjectif : il s'accorde avec « les paquebots »." },
@@ -131,7 +131,7 @@
     },
     {
       level: "maitre",
-      text: "Le ferry, chargé de camions et de voyageurs, longe la digue et cingle vers l'Irlande, l'étrave haute. Derrière lui, les mouettes rieuses, lassées de le poursuivre, regagnent les quais de Cherbourg avant que la bruine tombe.",
+      text: "Le ferry, chargé de camions et de voyageurs, longe la digue et cingle vers le large, l'étrave haute. Derrière lui, les mouettes rieuses, lassées de le poursuivre, regagnent les quais de Cherbourg avant que la bruine tombe.",
       notes: [
         { word: "cingle", rule: "Cingler (naviguer vers) s'écrit avec un c, comme « cingler » un coup de fouet, jamais avec s.", d: 3, piege: "c et non s, gl" },
         { word: "étrave", rule: "Partie avant de la coque, qui fend l'eau : accent aigu, puis tr, finale -ave.", rare: true, d: 3, piege: "é, tr, finale -ave" },
@@ -157,7 +157,7 @@
     },
     {
       level: "grand-scribe",
-      text: "Jadis, dans la rade de Cherbourg, les caboteurs se faufilaient entre les grands paquebots transatlantiques, qui mouillaient à l'abri de la digue tandis que des tenders ramenaient les voyageurs à terre. Les émigrants, qu'on avait vus s'entasser contre le bastingage, descendaient, hâves et transis, cependant que les passagères de première classe, quelque lasses qu'elles fussent, gagnaient d'un pas léger le train qui les attendait. Sur le quai, les porteurs, dont le dos s'était courbé sous les malles, se hâtaient, car l'heure du train pressait. Tous ces voyageurs, que l'attente avait lassés, devinaient déjà les toits de la ville, au pied de la Montagne du Roule.",
+      text: "Jadis, dans la rade de Cherbourg, les caboteurs se faufilaient entre les grands paquebots transatlantiques, qui mouillaient à l'abri de la digue tandis que des embarcations ramenaient les voyageurs à terre. Les émigrants, qu'on avait vus s'entasser contre le bastingage, descendaient, hâves et transis, cependant que les passagères de première classe, quelque lasses qu'elles fussent, gagnaient d'un pas léger le train qui les attendait. Sur le quai, les porteurs, dont le dos s'était courbé sous les malles, se hâtaient, car l'heure du train pressait. Tous ces voyageurs, que l'attente avait lassés, devinaient déjà les toits de la ville, au pied de la Montagne du Roule.",
       notes: [
         { word: "caboteurs", rule: "Navires qui font du cabotage le long des côtes : un seul t, finale -eur.", rare: true, d: 3, piege: "un seul t, finale -eurs" },
         { word: "transatlantiques", rule: "Préfixe trans- puis atlantique : un seul t après le n, et -ques au pluriel.", rare: true, d: 3, piege: "trans-, atlantique, qu" },
@@ -190,12 +190,12 @@
     }
   ],
   erreurs: [
-    { level: "apprenti", type: "accord", text: "Les bateaux de pêche rentre dans la rade, devant la digue, avant la nuit.", wrong: "rentre", right: "rentrent", choices: ["rentrent", "rentres", "rentrer"], rule: "Le sujet « les bateaux » est au pluriel : ils rentrent." },
+    { level: "apprenti", type: "accord", text: "Les bateaux de pêche rentre dans la rade de Cherbourg, devant la digue, avant la nuit.", wrong: "rentre", right: "rentrent", choices: ["rentrent", "rentres", "rentrer"], rule: "Le sujet « les bateaux » est au pluriel : ils rentrent." },
     { level: "apprenti", type: "homophone", text: "Depuis la gare maritime de Cherbourg, le ferry part a midi pour l'Angleterre.", wrong: "a", right: "à", choices: ["à", "a", "as"], rule: "« À » est ici une préposition (on ne peut pas dire « avait midi ») : accent grave." },
     { level: "compagnon", type: "participe", text: "Les sous-marins que l'arsenal de Cherbourg a construit impressionnent les visiteurs.", wrong: "construit", right: "construits", choices: ["construits", "construites", "construire"], rule: "Le COD « que » (les sous-marins) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
     { level: "compagnon", type: "pronominal", text: "La brume qui couvrait la Montagne du Roule s'est levé dès que le soleil est apparu.", wrong: "levé", right: "levée", choices: ["levée", "levés", "lever"], rule: "Verbe pronominal avec « se » COD : le participe s'accorde avec le sujet (la brume)." },
     { level: "maitre", type: "pronominal", text: "Les promeneurs se sont succédés sur la Montagne du Roule tout l'après-midi.", wrong: "succédés", right: "succédé", choices: ["succédé", "succédés", "succéder"], rule: "Se succéder : le « se » est COI (succéder à quelqu'un), le participe reste invariable." },
-    { level: "maitre", type: "temps", text: "Bien que la houle batte la digue, il faut que le ferry part à l'heure.", wrong: "part", right: "parte", choices: ["parte", "partes", "parts"], rule: "« Il faut que » appelle le subjonctif : que le ferry parte." },
+    { level: "maitre", type: "temps", text: "Bien que la houle batte la digue de Cherbourg, il faut que le ferry part à l'heure.", wrong: "part", right: "parte", choices: ["parte", "partes", "parts"], rule: "« Il faut que » appelle le subjonctif : que le ferry parte." },
     { level: "apprenti", type: "homophone", text: "Les bateaux son amarrés au port de plaisance de Cherbourg.", wrong: "son", right: "sont", choices: ["sont", "son", "sons"], rule: "On peut remplacer « sont » par « étaient » : c'est le verbe être. « Son » est un déterminant (son bateau)." },
     { level: "apprenti", type: "homophone", text: "La Cité de la Mer est un musée ou les enfants découvrent la vie sous l'eau.", wrong: "ou", right: "où", choices: ["où", "ou", "oû"], rule: "« Où » indique le lieu et ne peut pas se remplacer par « ou bien » : accent grave." },
     { level: "apprenti", type: "accord", text: "Les bateau de pêche passent devant la digue de Cherbourg au lever du jour.", wrong: "bateau", right: "bateaux", choices: ["bateaux", "bateaus", "bateau"], rule: "Le sujet « les bateaux » est au pluriel : les noms en -eau prennent un x." },
@@ -220,7 +220,7 @@
     { level: "grand-scribe", type: "lexique", text: "Au pied du Nez de Jobourg, où le ressac fouette des falaises escarpées, les plaisanciers aguerris vérifient leur acastillage avant que la marée soit haute.", wrong: "acastillage", right: "accastillage", choices: ["accastillage","acastillage","accastilage"], rule: "L'accastillage regroupe les équipements d'un navire (poulies, taquets, cordages). Il s'écrit avec deux c, un s muet devant le t, puis -illage avec deux l." },
     { level: "grand-scribe", type: "invariable", text: "Quel que soient les vents qui balaient la rade, les pilotes de Cherbourg guident les ferries entre la digue et l'arsenal, sans que les écueils, pourtant nombreux, leur fassent jamais perdre le cap.", wrong: "Quel", right: "Quels", choices: ["Quels","Quel","Quelque"], rule: "Devant le verbe être au subjonctif, « quel que » s'écrit en deux mots et « quel » s'accorde avec le sujet : quels que soient les vents. « Quelque » sans espace ne s'emploie que devant un adjectif ou un nom." },
     { level: "grand-scribe", type: "pronominal", text: "À l'abri de la digue de Cherbourg, les pilotes qui se sont succédés depuis des générations connaissent chaque écueil, et les goélands, que ces marins ont vus tournoyer au-dessus des chalutiers, les escortent.", wrong: "succédés", right: "succédé", choices: ["succédé","succédés","succédées"], rule: "Se succéder se construit avec un complément en « à » (succéder à quelqu'un) : le « se » est COI, donc le participe reste invariable. Seul l'accord de « vus » est correct, car « que » (les goélands) fait l'action de tournoyer." },
-    { level: "grand-scribe", type: "participe", text: "Les blocs de pierre que les ouvriers ont vus immerger au large forment aujourd'hui la digue de Cherbourg, derrière laquelle les ferries, quelque lourds qu'ils soient, mouillent à l'abri des vagues.", wrong: "vus", right: "vu", choices: ["vu","vus","vue"], rule: "Le COD « que » (les blocs) subit l'action de l'infinitif : on les immerge. Le participe reste donc invariable, alors qu'il s'accorde quand le COD fait l'action." },
+    { level: "grand-scribe", type: "participe", text: "Les marins que la tempête avait surpris au large et qu'on avait cru perdus ont regagné le bassin de Cherbourg à l'abri de la digue, tandis que les goélands tournoyaient au-dessus des chalutiers.", wrong: "cru", right: "crus", choices: ["crus","cru","crue"], rule: "Le COD « que » (les marins) est placé avant l'auxiliaire avoir et suivi d'un attribut (perdus) : le participe de croire s'accorde au masculin pluriel. Test : « on avait cru les marins perdus »." },
     { level: "grand-scribe", type: "temps", text: "Si la digue de Cherbourg ne fermerait pas la rade, les tempêtes jetteraient les chalutiers contre les quais de l'arsenal, et les goélands affolés ne trouveraient plus d'abri.", wrong: "fermerait", right: "fermait", choices: ["fermait","fermerait","fermât"], rule: "Après « si » exprimant une hypothèse, le verbe se met à l'imparfait, et le conditionnel appartient à la principale. Jamais de conditionnel après « si » : si la digue ne fermait pas la rade." }
   ]
 };
