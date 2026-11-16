@@ -9,6 +9,7 @@
     psg: "#1d3f8f", kpop: "#d63a95", jeuxvideo: "#6d45e8", youtube: "#d92f26",
     manga: "#e8740c", series: "#0b8f94", ia: "#2a8f62"
   };
+  var DICTEES = window.DICTEES_ENABLED !== false;
   var app = document.getElementById("app");
   var state = { level: Progress.pref("level", "apprenti"), game: null, theme: null, streak: 0 };
 
@@ -57,15 +58,15 @@
     var cur = level(state.level);
     screen({},
       "<div class='logo'>" + ICONS.logo + "<div class='name'><span>Dictées</span></div></div>" +
-      "<p class='tagline'>Deux jeux, quatre niveaux, des thèmes d'aujourd'hui.</p>" + playerChip() + rankStrip() +
+      "<p class='tagline'>" + (DICTEES ? "Deux jeux, quatre niveaux, des thèmes d'aujourd'hui." : "Quatre niveaux, des thèmes d'aujourd'hui.") + "</p>" + playerChip() + rankStrip() +
       "<h2>Niveau</h2><div class='levels'>" +
       LEVELS.map(function (l) {
         return "<button class='level lv-" + l.n + "' data-level='" + l.id + "' aria-pressed='" + (l.id === state.level) + "'>" +
           "<span class='nm'>" + l.name + "</span>" + dots(l.n) + "</button>";
       }).join("") + "</div>" +
       "<p class='level-hint' id='hint'>" + esc(cur.hint) + "</p>" +
-      "<h2>Jeu</h2><div class='grid'>" +
-      "<button class='game g-dictee' data-game='dictee'><span class='badge'>" + ICONS.ear + "</span><span><b>Dictée</b><small>Écouter, écrire, être corrigé</small></span></button>" +
+      "<h2>" + (DICTEES ? "Jeu" : "Jouer") + "</h2><div class='grid'>" +
+      (DICTEES ? "<button class='game g-dictee' data-game='dictee'><span class='badge'>" + ICONS.ear + "</span><span><b>Dictée</b><small>Écouter, écrire, être corrigé</small></span></button>" : "") +
       "<button class='game g-erreur' data-game='erreur'><span class='badge'>" + ICONS.search + "</span><span><b>Trouve l'erreur</b><small>Repérer le mot fautif dans la phrase</small></span></button></div>");
     app.querySelectorAll("[data-level]").forEach(function (b) {
       b.onclick = function () { state.level = b.dataset.level; Progress.setPref("level", state.level); home(); };
@@ -490,6 +491,7 @@
     var seen = {}, queue = [];
     keys.forEach(function (k) {
       shuffle(Progress.itemsFor(window.THEMES, k, state.level)).slice(0, 3).forEach(function (it) {
+        if (!DICTEES && it._kind === "dictee") return;
         if (!seen[it._id]) { seen[it._id] = 1; queue.push(it); }
       });
     });
@@ -505,7 +507,7 @@
     screen({ back: home },
       "<h1>Mon carnet</h1>" +
       "<div class='card rank'><b>" + esc(r.name) + "</b><span class='sub'>" + p.xp + " points" + (r.next ? ", prochain rang : " + esc(r.next) : ", rang maximal") + "</span><span class='bar'><i style='width:" + pct + "%'></i></span></div>" +
-      "<div class='stats'>" + stat(p.played, "exercices") + stat(p.perfect, "dictées sans faute") + stat(p.found, "erreurs trouvées") + stat(p.bestStreak, "meilleure série") + "</div>" +
+      "<div class='stats'>" + stat(p.played, "exercices") + (DICTEES ? stat(p.perfect, "dictées sans faute") : "") + stat(p.found, "erreurs trouvées") + stat(p.bestStreak, "meilleure série") + "</div>" +
       "<h2>À réviser</h2>" +
       (weak.length
         ? "<button class='btn primary block' id='revAll'>Tout réviser</button><ul class='weak'>" + weak.slice(0, 8).map(function (x, i) {
@@ -513,7 +515,7 @@
           return "<li><span><b>" + esc(x.w.label) + "</b><small>Manquée " + x.w.count + " fois" + (names ? " · " + esc(names) : "") + "</small></span><button class='btn' data-w='" + i + "'>Réviser</button></li>";
         }).join("") + "</ul>"
         : "<p class='sub'>Rien à réviser pour l'instant. Les règles manquées apparaîtront ici ; deux bonnes réponses d'affilée les retirent.</p>") +
-      "<h2>Badges</h2><div class='badges'>" + Progress.BADGES.map(function (b) {
+      "<h2>Badges</h2><div class='badges'>" + Progress.BADGES.filter(function (b) { return DICTEES || b.id !== "sans-faute"; }).map(function (b) {
         var on = !!p.badges[b.id];
         return "<div class='badge " + (on ? "on" : "off") + "'><span class='bi'>" + (on ? "★" : "☆") + "</span><b>" + esc(b.name) + "</b><small>" + esc(b.how) + "</small></div>";
       }).join("") + "</div>");

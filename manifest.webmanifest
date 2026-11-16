@@ -1,7 +1,7 @@
 {
   "name": "Dictées",
   "short_name": "Dictées",
-  "description": "Dictées thématiques et chasse à l'erreur, en quatre niveaux.",
+  "description": "Chasse à l'erreur thématique, en quatre niveaux.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",
