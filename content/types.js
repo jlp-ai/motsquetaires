@@ -10,5 +10,9 @@ window.TYPE_LABELS = {
   accord: "Accords : sujet et verbe, adjectif, pluriel, féminin",
   adverbe: "Adverbes en -ment (-emment, -amment)",
   compose: "Noms composés, nombres, couleurs, traits d'union",
-  sens: "Paronymes et pièges de sens"
+  sens: "Paronymes et pièges de sens",
+  typographie: "Majuscules, traits d'union, ponctuation et espaces",
+  syntaxe: "Constructions fautives : malgré que, se rappeler de, double négation, faux amis de grammaire",
+  quantite: "Accord après plus d'un, la plupart, une foule de, l'un et l'autre, c'est / ce sont",
+  euphonie: "Élision, liaison, tréma, accents et formes verbales délicates (vas-y, cueilles-en)"
 };

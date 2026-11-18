@@ -5,7 +5,7 @@
 //   pronominal <= 1 ; participe <= 2 ; homophone <= 2 ; lexique >= minimum by level.
 import { loadContent } from "./content.mjs";
 
-const TYPES = ["lexique", "pronominal", "participe", "homophone", "invariable", "temps", "accord", "adverbe", "compose", "sens"];
+const TYPES = ["lexique", "pronominal", "participe", "homophone", "invariable", "temps", "accord", "adverbe", "compose", "sens", "typographie", "syntaxe", "quantite", "euphonie"];
 // Ratios scale with the number of items n of a level (8 items: lexique 2/3/3/4, caps 1/2/2; 20 items: lexique 5/8/8/10, caps 3/5/5).
 const LEX_RATIO = { apprenti: 0.25, compagnon: 0.375, maitre: 0.375, "grand-scribe": 0.5 };
 const CAP_RATIO = { pronominal: 0.125, participe: 0.25, homophone: 0.25 };

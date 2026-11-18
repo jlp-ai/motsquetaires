@@ -134,7 +134,7 @@
   function itemsFor(themes, key, level) {
     var all = [];
     Object.keys(themes).forEach(function (t) {
-      (themes[t].erreurs || []).forEach(function (e) { if ((e.type || e.rule) === key) all.push(e); });
+      (themes[t].erreurs || []).forEach(function (e) { if ([e.type, e.rule].concat((e.faults || []).map(function (f) { return f.type || f.rule; })).indexOf(key) >= 0) all.push(e); });
       (themes[t].dictees || []).forEach(function (d) { if ((d.notes || []).some(function (n) { return (n.type || n.rule) === key; })) all.push(d); });
     });
     var inLevel = all.filter(function (it) { return it.level === level; });

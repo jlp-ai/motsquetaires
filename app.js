@@ -400,33 +400,56 @@
   }
 
   // ---------- Game 2: find the wrong word ----------
+  // An item has either one fault (wrong, right, choices, rule) or several (faults: [{ wrong, right, choices, rule, type? }]).
+  function faultsOf(item) {
+    return item.faults || [{ wrong: item.wrong, right: item.right, choices: item.choices, rule: item.rule, type: item.type }];
+  }
+
   function erreur(item) {
     var tokens = item.text.split(" ");
+    var faults = faultsOf(item);
+    var multi = faults.length > 1;
+    var fixed = {};      // token index -> fault, once found
+    var results = [];    // { fault, ok } in order of discovery
     var failed = false;
     function strip(t) { return t.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, ""); }
     // Same, also without an elided article (l', d', qu'...) glued to the word: "l'estocade" matches "estocade".
     function stripEl(t) { return strip(t).replace(/^(?:[ldjmtsnc]|qu|lorsqu|puisqu|jusqu)['’]/i, ""); }
+    function faultAt(i) {
+      for (var k = 0; k < faults.length; k++) {
+        if (results.some(function (r) { return r.fault === faults[k]; })) continue;
+        if (strip(tokens[i]) === faults[k].wrong || stripEl(tokens[i]) === faults[k].wrong) return faults[k];
+      }
+      return null;
+    }
+    function remaining() { return faults.length - results.length; }
 
-    function sentence(chosen, fixedIdx) {
+    function sentence(chosen, done) {
       return "<div class='card sentence' role='group' aria-label='Phrase'>" + tokens.map(function (t, i) {
-        var cls = "tok" + (i === chosen ? " chosen" : "") + (i === fixedIdx ? " fixed" : "");
-        var txt = i === fixedIdx ? t.replace(item.wrong, item.right) : t;
-        return "<button class='" + cls + "' data-i='" + i + "'" + (fixedIdx !== undefined ? " disabled" : "") + ">" + esc(txt) + "</button>";
+        var f = fixed[i];
+        var cls = "tok" + (i === chosen ? " chosen" : "") + (f ? " fixed" : "");
+        var txt = f ? t.replace(f.wrong, f.right) : t;
+        return "<button class='" + cls + "' data-i='" + i + "'" + (done || f ? " disabled" : "") + ">" + esc(txt) + "</button>";
       }).join(" ") + "</div>";
+    }
+
+    function intro() {
+      return multi ? "Cette phrase contient " + faults.length + " erreurs. Touchez un mot fautif." : "Touchez le mot fautif.";
     }
 
     function render(chosen, hint, bad) {
       screen({ back: themesBack, streak: true },
         "<h1>Trouve l'erreur</h1><p class='sub'>Niveau " + level(item.level).name.toLowerCase() + "</p>" +
         "<h2>Phrase</h2>" + sentence(chosen) +
-        "<p class='hint" + (bad ? " bad" : "") + "' id='hint'>" + (hint || "Touchez le mot fautif.") + "</p><div id='choices'></div>");
+        "<p class='hint" + (bad ? " bad" : "") + "' id='hint'>" + (hint || intro()) + "</p><div id='choices'></div>");
       app.querySelectorAll(".tok").forEach(function (el) {
         el.onclick = function () { onPick(+el.dataset.i, el); };
       });
     }
 
     function onPick(i, el) {
-      if (strip(tokens[i]) !== item.wrong && stripEl(tokens[i]) !== item.wrong) {
+      var f = faultAt(i);
+      if (!f) {
         failed = true;
         el.classList.add("nope");
         var h = document.getElementById("hint");
@@ -441,26 +464,42 @@
       h2.textContent = "Bien repéré. Quelle est la bonne graphie ?";
       var box = document.getElementById("choices");
       box.innerHTML = "<div class='grid' style='margin-top:6px'>" +
-        shuffle(item.choices).map(function (c) { return "<button class='btn choice' data-c='" + esc(c) + "'>" + esc(c) + "</button>"; }).join("") + "</div>";
+        shuffle(f.choices).map(function (c) { return "<button class='btn choice' data-c='" + esc(c) + "'>" + esc(c) + "</button>"; }).join("") + "</div>";
       box.scrollIntoView({ behavior: "smooth", block: "nearest" });
       box.querySelectorAll("[data-c]").forEach(function (b) {
-        b.onclick = function () { onChoice(i, b.dataset.c); };
+        b.onclick = function () { onChoice(i, f, b.dataset.c); };
       });
     }
 
-    function onChoice(i, c) {
-      var ok = c === item.right;
+    function onChoice(i, f, c) {
+      var ok = c === f.right;
       if (!ok) failed = true;
-      state.streak = ok ? state.streak + 1 : 0;
-      var firstTry = ok && !failed;
-      var earned = Progress.record({ kind: "erreur", item: item, ok: firstTry, notes: [{ key: item.type || item.rule, label: (item.type && window.TYPE_LABELS && window.TYPE_LABELS[item.type]) || item.rule, ok: firstTry }] });
+      results.push({ fault: f, ok: ok && !failed });
+      fixed[i] = f;
+      if (remaining() > 0) {
+        render(null, (ok ? "Bien vu. " : "Presque : « " + f.right + " ». ") + (remaining() === 1 ? "Il reste une erreur." : "Il reste " + remaining() + " erreurs."), !ok);
+        return;
+      }
+      finish();
+    }
+
+    function finish() {
+      var allOk = !failed;
+      state.streak = allOk ? state.streak + 1 : 0;
+      var notes = results.map(function (r) {
+        var ty = r.fault.type || item.type;
+        return { key: ty || r.fault.rule, label: (ty && window.TYPE_LABELS && window.TYPE_LABELS[ty]) || r.fault.rule, ok: r.ok };
+      });
+      var earned = Progress.record({ kind: "erreur", item: item, ok: allOk, notes: notes });
+      var verdict = allOk ? ICONS.check + "Bravo !" : ICONS.cross + "Presque : " + results.filter(function (r) { return !r.ok; }).map(function (r) { return "« " + esc(r.fault.right) + " »"; }).join(", ");
+      var tips = faults.map(function (f) { return "<div class='tip'><span>" + esc(f.rule) + "</span></div>"; }).join("");
       screen({ back: themesBack, streak: true },
         "<h1>Trouve l'erreur</h1><p class='sub'>Niveau " + level(item.level).name.toLowerCase() + "</p>" +
-        "<div class='verdict " + (ok ? "good" : "bad") + "' style='margin-top:18px' aria-live='polite'>" + (ok ? ICONS.check + "Bravo !" : ICONS.cross + "Presque : « " + esc(item.right) + " »") + "</div>" +
-        sentence(null, i) +
-        "<h2>À retenir</h2><div class='tip'><span>" + esc(item.rule) + "</span></div>" +
+        "<div class='verdict " + (allOk ? "good" : "bad") + "' style='margin-top:18px' aria-live='polite'>" + verdict + "</div>" +
+        sentence(null, true) +
+        "<h2>À retenir</h2>" + tips +
         "<div class='row'><button class='btn primary' id='next'>Phrase suivante</button><button class='btn' id='menu'>Menu</button></div>");
-      if (ok) confetti();
+      if (allOk) confetti();
       toastBadges(earned);
       document.getElementById("next").onclick = play;
       document.getElementById("menu").onclick = home;

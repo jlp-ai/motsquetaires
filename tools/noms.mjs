@@ -33,8 +33,17 @@ for (const mode of ["perso", "commercial"]) {
     for (const e of t.erreurs) {
       const words = e.text.split(" ").map((w) => w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, ""));
       const unel = (w) => w.replace(/^(?:[ldjmtsnc]|qu|lorsqu|puisqu|jusqu)['’]/i, ""); // same rule as app.js stripEl
-      if (words.filter((w) => w === e.wrong || unel(w) === e.wrong).length !== 1) fail(mode, id, `« ${e.wrong} » doit apparaître une fois dans « ${e.text} »`);
-      if (!e.choices.includes(e.right)) fail(mode, id, `« ${e.right} » absent des choix`);
+      const faults = e.faults || [e];
+      if (e.faults && (e.faults.length < 2 || e.wrong || e.right || e.choices)) fail(mode, id, `faults : au moins 2 fautes, sans wrong/right/choices au niveau de l'item (« ${e.text} »)`);
+      const used = new Set();
+      for (const f of faults) {
+        const idx = words.map((w, i) => (w === f.wrong || unel(w) === f.wrong ? i : -1)).filter((i) => i >= 0);
+        if (idx.length !== 1) fail(mode, id, `« ${f.wrong} » doit apparaître une fois dans « ${e.text} »`);
+        else if (used.has(idx[0])) fail(mode, id, `deux fautes sur le même mot dans « ${e.text} »`);
+        else used.add(idx[0]);
+        if (!f.choices || !f.choices.includes(f.right)) fail(mode, id, `« ${f.right} » absent des choix`);
+        if (e.faults && !f.rule) fail(mode, id, `règle manquante pour « ${f.wrong} »`);
+      }
       if (/\{\{|\}\}/.test(e.text)) fail(mode, id, "marqueur non résolu");
     }
   }
