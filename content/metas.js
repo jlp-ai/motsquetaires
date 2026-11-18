@@ -5,7 +5,7 @@ window.METAS = [
   { id: "sport", name: "Sport", emoji: "🏅", color: "#1d3f8f", themes: ["psg", "escrime", "chevaux"] },
   { id: "musique", name: "Musique", emoji: "🎵", color: "#d63a95", themes: ["kpop", "piano"] },
   { id: "ecrans", name: "Écrans", emoji: "🖥️", color: "#6d45e8", themes: ["jeuxvideo", "youtube", "series"] },
-  { id: "sagas", name: "Fictions et sagas", emoji: "🪄", color: "#8a3ffc", themes: ["starwars", "harrypotter", "kpopdemonhunters", "mousquetaires"] },
+  { id: "sagas", name: "Fictions et sagas", emoji: "🪄", color: "#8a3ffc", themes: ["starwars", "harrypotter", "kpopdemonhunters", "mousquetaires", "julesverne"] },
   { id: "lecture", name: "Lecture et dessin", emoji: "✏️", color: "#e8740c", themes: ["manga", "dessin"] },
   { id: "villes", name: "Villes de France", emoji: "📍", color: "#0b6e8f", themes: ["cherbourg", "montpellier"] },
   { id: "mythologie", name: "Mythologie", emoji: "🏛️", color: "#a15c2b", themes: ["odyssee"] },
