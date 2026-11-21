@@ -1,185 +1,6 @@
 (window.THEMES = window.THEMES || {}).psg = {
   name: "{{PSG|Football}}",
   emoji: "⚽",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Samedi soir, les supporters sont arrivés tôt au stade. Ils ont chanté, agité leurs écharpes et encouragé les joueurs. Leur équipe a marqué deux buts.",
-      notes: [
-        { word: "arrivés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les supporters : masculin pluriel)." },
-        { word: "leurs", rule: "« Leurs » est un déterminant : il accompagne un nom pluriel (leurs écharpes)." },
-        { word: "marqué", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (pas de COD placé avant)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les joueurs que le technicien avait convoqués se sont préparés toute la semaine à multiplier les dribbles. Les spectateurs qui s'étaient déplacés avec leurs banderoles les ont longuement applaudis, même si la rencontre s'est terminée sur un match nul.",
-      notes: [
-        { word: "banderoles", rare: true, rule: "Longue bande d'étoffe portant une inscription. Un seul r, un seul l, et un e muet au milieu : ban-de-role.", d: 1, piege: "un seul r, un seul l, e muet" },
-        { word: "convoqués", rule: "Le COD « que » (les joueurs) est placé avant le verbe : le participe passé s'accorde." },
-        { word: "préparés", rule:"Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet." },
-        { word: "dribbles", rule: "Passes d'un adversaire balle au pied. Mot venu de l'anglais, avec deux b, puis -le ; s au pluriel.", rare: true, d: 2, piege: "bb (famille dribbler), -les" },
-        { word: "longuement", rule: "Adverbe formé sur l'adjectif long : longue + ment." },
-        { word: "applaudis", rule: "Le COD « les » (les joueurs) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Quoique le gardien eût détourné une frappe redoutable en première période, les Parisiens, malgré leur domination, peinèrent à concrétiser leurs occasions sous les vociférations du public. Personne n'aurait imaginé que le dénouement surviendrait aussi tard.",
-      notes: [
-        { word: "eût", rule: "« Quoique » est suivi du subjonctif : plus-que-parfait du subjonctif, « eût détourné »." },
-        { word: "concrétiser", rare: true, rule: "Transformer une occasion en but. Formé sur concret : accent aigu sur le é (con-cré-ti-ser), alors que le féminin concrète prend un accent grave.", d: 1, piege: "accent aigu (famille concret), s" },
-        { word: "vociférations", rule: "Cris de colère ou de protestation. Famille de vociférer : c devant i, accent aigu, f, puis -ations.", rare: true, d: 3, piege: "c, é, f (famille vociférer)" },
-        { word: "dénouement", rare: true, rule: "Issue finale d'une situation. Formé sur dénouer : on garde le e muet entre « ou » et « -ment ».", d: 2, piege: "e muet gardé devant -ment" },
-        { word: "peinèrent", rule: "Passé simple, 3e personne du pluriel du 1er groupe : -èrent." },
-        { word: "aurait", rule: "« Personne » est un sujet de 3e personne du singulier : conditionnel passé, « aurait imaginé »." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les ultras, dont l'effervescence confine parfois à l'exaltation, déploient des tifos à l'élaboration minutieuse, sous les clameurs tonitruantes des gradins en liesse ; quelques-uns, s'étant plu à les concevoir des semaines durant, en ont référé aux dirigeants, lesquels, tout compte fait, les ont autorisés.",
-      notes: [
-        { word: "plu", rule: "Le participe passé de se plaire reste invariable (le « se » est COI)." },
-        { word: "effervescence", rule: "Agitation vive, bouillonnement. Deux f, puis -vescence avec sc, finale -ence.", rare: true, d: 3, piege: "ff, sc (famille effervescent), -ence" },
-        { word: "tonitruantes", rule: "Qui fait un bruit de tonnerre. Un seul n (tonitruant), alors que tonnerre en a deux ; accord au féminin pluriel avec « clameurs ».", rare: true, d: 3, piege: "un seul n, -truantes, accord" },
-        { word: "liesse", rule: "Joie collective et bruyante. Ie, puis deux s et un e final : lies-se.", rare: true, d: 3, piege: "ie, ss, e final" },
-        { word: "quelques-uns", rule: "Pronom indéfini : quelques, trait d'union, uns." },
-        { word: "référé", rare: true, rule: "« En référer à quelqu'un » : soumettre une question à qui décide. Deux accents aigus, et le participe reste invariable.", d: 2, piege: "deux é et un seul f (famille référer)" },
-        { word: "élaboration", rare: true, rule: "Préparation soignée. Accent aigu sur le é initial, un seul l, un seul b : é-la-bo-ra-tion.", d: 1, piege: "é, un seul l, un seul b" },
-        { word: "autorisés", rule: "Le COD « les » (les tifos) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Dimanche, la classe a visité le Parc des Princes, à Paris. Les élèves sont descendus dans le tunnel, puis ils ont touché la pelouse. Le guide leur a montré les vestiaires et les tribunes.",
-      notes: [
-        { word: "visité", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « le Parc des Princes » est placé après)." },
-        { word: "descendus", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les élèves : masculin pluriel)." },
-        { word: "pelouse", rule: "Un seul l, et un s entre deux voyelles qui se prononce z : pe-lou-se." },
-        { word: "leur", rule: "Ici « leur » est un pronom (à eux) placé devant le verbe : il reste invariable, sans s." },
-        { word: "tribunes", rule: "Nom au pluriel après « les » : s final." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Le gardien de but s'est jeté sur la gauche. Il a attrapé le ballon, puis il l'a lancé à son défenseur. Ses coéquipiers, soulagés, l'ont félicité. Le public a applaudi.",
-      notes: [
-        { word: "jeté", rule: "Verbe pronominal : le participe s'accorde avec le sujet (le gardien : masculin singulier)." },
-        { word: "attrapé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « le ballon » est placé après)." },
-        { word: "soulagés", rule: "Adjectif : il s'accorde avec « coéquipiers » (masculin pluriel), d'où le s." },
-        { word: "félicité", rule: "Le pronom « l' » (le gardien) est masculin singulier : le participe ne prend ni e ni s." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Le match était vif. L'arbitre a sifflé deux fautes en dix minutes. Les joueurs, surpris, ont protesté, mais leur capitaine les a calmés. Dans les tribunes, le public retenait son souffle.",
-      notes: [
-        { word: "sifflé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « deux fautes » est placé après)." },
-        { word: "surpris", rule: "Adjectif : il s'accorde avec « joueurs » (masculin pluriel) ; surpris se termine par un s même au singulier." },
-        { word: "leur", rule: "Ici « leur » est un déterminant : il accompagne un nom au singulier (leur capitaine), donc pas de s." },
-        { word: "calmés", rule: "Le COD « les » (les joueurs) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Avant chaque séance, le kinésithérapeute étire les muscles des joueurs que le préparateur a ménagés toute la semaine. Après l'échauffement, ils se sont élancés sur la pelouse et ont multiplié les sprints. Personne ne s'est plaint de courbatures.",
-      notes: [
-        { word: "kinésithérapeute", rare: true, rule: "Professionnel qui soigne et masse les sportifs. Un k initial, un é, puis th et un e muet : ki-né-si-thé-ra-peute.", d: 3, piege: "k, é, th, -eute" },
-        { word: "ménagés", rule: "Le COD « que » (les joueurs) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "échauffement", rare: true, rule: "Mise en température des muscles avant l'effort. Accent aigu, ch, deux f, puis -ement : é-chauf-fe-ment.", d: 3, piege: "é, ch, au, ff" },
-        { word: "élancés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (ils : masculin pluriel)." },
-        { word: "plaint", rule: "Se plaindre : le participe s'accorde avec le sujet « personne » (masculin singulier) ; il garde un t final muet." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Le car des supporters est parti à l'aube pour une rencontre en province. Pendant le trajet, un meneur a lancé des chants au mégaphone, puis certains ont déroulé les calicots qu'ils avaient peints la veille. Une fois arrivés devant le stade, les fidèles, fatigués mais heureux, ont patienté.",
-      notes: [
-        { word: "mégaphone", rare: true, rule: "Porte-voix électrique. Accent aigu sur le é, puis ph pour le son f : mé-ga-phone.", d: 2, piege: "é, ph" },
-        { word: "calicots", rare: true, rule: "Bandes de tissu portant une inscription. Un c (pas de k), finale -ot et s au pluriel.", d: 2, piege: "c et non k, finale -ot" },
-        { word: "peints", rule: "Le COD « que » (les calicots) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "arrivés", rule: "Participe en tête de phrase : il s'accorde avec le sujet du verbe qui suit (les fidèles : masculin pluriel)." },
-        { word: "fatigués", rule: "Adjectif : il s'accorde avec « les fidèles » (masculin pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Chaque jeudi, les jardiniers du stade tondent le gazon, puis ils s'occupent de l'arrosage. Les lignes qu'ils ont tracées doivent rester nettes. Si la pluie tombait trop fort, la rencontre serait reportée ; les nuages, heureusement, se sont dissipés.",
-      notes: [
-        { word: "arrosage", rare: true, rule: "Action d'arroser. Deux r et un seul s, comme dans le verbe arroser : arro-sage.", d: 2, piege: "rr, un seul s" },
-        { word: "tracées", rule: "Le COD « que » (les lignes) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "serait", rule: "Après « si » suivi de l'imparfait (tombait), la principale est au conditionnel présent : serait." },
-        { word: "reportée", rule: "Participe passé employé avec être : il s'accorde avec le sujet « la rencontre » (féminin singulier)." },
-        { word: "dissipés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (les nuages : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Il faut que l'arbitre sache trancher en un instant, quelque confuse que soit la mêlée. Les gestes qu'il a coordonnés avec ses assistants, la main levée et le fanion dressé, ont signalé une irrégularité manifeste. Les protestations, quoique vives, n'ont rien changé : l'impartialité de l'arbitre n'a pas été mise en cause.",
-      notes: [
-        { word: "quelque", rule: "Quelque + adjectif + que + subjonctif : « quelque » est un adverbe, donc invariable (quelque confuse que soit...)." },
-        { word: "coordonnés", rule: "Le COD « que » (les gestes) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "irrégularité", rare: true, rule: "Anomalie par rapport à la règle. Accent aigu sur le premier é, deux r dans « irrégulier » mais un seul g, puis -ité : ir-ré-gu-la-ri-té.", d: 2, piege: "rr, é, -ité" },
-        { word: "quoique", rule: "« Quoique » en un seul mot signifie « bien que » et appelle le subjonctif ou une construction réduite (quoique vives)." },
-        { word: "impartialité", rare: true, rule: "Qualité de qui ne prend pas parti. Préfixe im- devant p, puis -tialité avec ti prononcé s : im-par-tia-li-té.", d: 3, piege: "im-, ti prononcé s (famille partial)" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Les joueuses, qui se sont longtemps heurtées à l'indifférence, voient aujourd'hui l'affluence grandir dans les tribunes. Quelle que soit la rencontre, l'engouement des spectateurs, né de longues années de ténacité, ne se dément pas. Les pionnières de ce sport en sont, à juste titre, fières.",
-      notes: [
-        { word: "heurtées", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (les joueuses : féminin pluriel)." },
-        { word: "affluence", rare: true, rule: "Arrivée en nombre. Deux f, puis -luence avec -ence : af-flu-ence.", d: 2, piege: "ff, -ence" },
-        { word: "quelle", rule: "« Quel que » suivi du verbe être au subjonctif : « quel » s'accorde avec le sujet (la rencontre : féminin singulier)." },
-        { word: "engouement", rare: true, rule: "Vif enthousiasme collectif. Formé sur s'engouer : on garde le e muet entre « ou » et « -ment », et on commence par en-.", d: 3, piege: "en-, ou, e muet devant -ment" },
-        { word: "dément", rule: "Verbe démentir au présent : « ne se dément pas » (3e personne du singulier), sans t final." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Chaque été, le mercato agite les conversations. Les recruteurs, aussi discrets soient-ils, scrutent des profils qu'ils ont repérés des mois durant. Les pourparlers et les tractations, qu'ils aboutissent ou non, restent confidentiels jusqu'à la signature du contrat.",
-      notes: [
-        { word: "soient", rule: "« Aussi + adjectif + soient-ils » : subjonctif présent du verbe être, 3e personne du pluriel, avec inversion du sujet." },
-        { word: "scrutent", rule: "Scruter : examiner avec attention. Groupe sc, puis -ent à la 3e personne du pluriel.", d: 1, piege: "sc" },
-        { word: "repérés", rule: "Le COD « que » (les profils) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "pourparlers", rare: true, rule: "Discussions préalables à un accord. Un seul mot, pour- puis parlers, avec un s final même au singulier.", d: 3, piege: "un seul mot, s final invariable" },
-        { word: "tractations", rare: true, rule: "Négociations discrètes. Groupe -ct- (tract-), puis -ations : trac-ta-tions.", d: 3, piege: "ct (famille tracter), -ations" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Posté devant sa cage, le gardien, que sa carrure rendait stoïque, guettait chaque frappe avec un flegme déconcertant. Sa pugnacité, que les attaquants avaient sous-estimée, a réduit leurs espoirs à néant.",
-      notes: [
-        { word: "carrure", rare: true, rule: "Largeur du dos et des épaules. Deux r, puis -ure : car-rure.", d: 2, piege: "rr, -ure" },
-        { word: "stoïque", rule: "Qui supporte l'épreuve sans broncher. Tréma sur le i, puis -que : sto-ï-que.", rare: true, d: 3, piege: "ï tréma, -que" },
-        { word: "flegme", rare: true, rule: "Sang-froid, calme imperturbable. Un g (pas de ph), un e muet final : fleg-me.", d: 3, piege: "g muet devant m, e final" },
-        { word: "pugnacité", rare: true, rule: "Goût du combat, ardeur à se battre. Formé sur le radical de pugnace : g puis n, puis c et -ité : pu-gna-ci-té.", d: 3, piege: "gn, c (et non s), -ité" },
-        { word: "sous-estimée", rule: "Le COD « que » (sa pugnacité) est placé avant l'auxiliaire avoir : accord au féminin singulier. Sous-estimer s'écrit avec un trait d'union." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Dans la pépinière du club, les jeunes pensionnaires, que des éducateurs exigeants accompagnent depuis l'adolescence, apprennent l'assiduité autant que le geste juste. Ceux qui ont persévéré, et que leurs anciens ont adoubés, s'engagent alors sur la voie de l'abnégation.",
-      notes: [
-        { word: "pépinière", rare: true, rule: "Lieu où l'on forme des jeunes talents. Accent aigu sur le premier é, puis accent grave sur le è : pé-pi-niè-re.", d: 3, piege: "é puis è (famille pépin), un seul n" },
-        { word: "assiduité", rare: true, rule: "Application constante. Deux s, un seul d, puis -uité avec accent aigu : as-si-dui-té.", d: 3, piege: "ss, un seul d, -uité" },
-        { word: "persévéré", rule: "Persévérer : deux accents aigus, et le participe reste invariable." },
-        { word: "adoubés", rare: true, rule: "Adouber : consacrer, reconnaître comme un des siens. Un seul d, puis -ou- ; le COD « que » (les jeunes) est placé avant l'auxiliaire : accord au masculin pluriel.", d: 3, piege: "un seul d, ou" },
-        { word: "abnégation", rare: true, rule: "Renoncement à soi, don de soi. Groupe -bn- au début, puis é et -gation : ab-né-ga-tion.", d: 3, piege: "bn, é, g" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Aux abords du Parc des Princes, à Paris, la foule converge vers les portiques à l'approche du coup d'envoi. Dans les coursives et les vomitoires, l'impatience monte ; sur la pelouse, que les projecteurs nimbent d'une clarté laiteuse, les joueurs entrent, et les gradins s'ébranlent dans un grondement.",
-      notes: [
-        { word: "converge", rare: true, rule: "Converger : aller vers un même point. Con-, puis -verge avec un g suivi d'un e : conver-ge.", d: 2, piege: "g devant e (convergeons)" },
-        { word: "portiques", rare: true, rule: "Dispositifs de contrôle à l'entrée. Groupe -qu- (et non -c-), s au pluriel.", d: 2, piege: "qu, finale -ique(s)" },
-        { word: "coursives", rare: true, rule: "Couloirs étroits d'un édifice. Formé sur cours : r puis s, puis -ive.", d: 3, piege: "rs (famille cours), -ive" },
-        { word: "vomitoires", rare: true, rule: "Larges passages qui mènent aux gradins. Un seul m, puis -itoires.", d: 3, piege: "un seul m, -oires (famille vomir)" },
-        { word: "nimbent", rare: true, rule: "Nimber : entourer d'une lumière. Un m devant le b, e muet, puis -nt à la 3e personne du pluriel (sujet : les projecteurs).", d: 3, piege: "mb, -ent" }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", text: "Les joueurs ont gagner le match hier soir.", wrong: "gagner", right: "gagné", choices: ["gagné", "gagnés", "gagnez"], rule: "Après l'auxiliaire avoir, on utilise le participe passé : gagné.", type: "homophone" },
     { level: "apprenti", text: "Le stade étais plein dès le début de la rencontre.", wrong: "étais", right: "était", choices: ["était", "étaient", "été"], rule: "Le sujet « le stade » est à la 3e personne du singulier : il était.", type: "accord" },
@@ -248,7 +69,7 @@
     { level: "maitre", type: "accord", notion: "5e.accords.sujet-separe", text: "Derrière le but, dans le virage d'Auteuil, se masse les supporters les plus fidèles du club, bras tendus vers la pelouse.", wrong: "masse", right: "massent", choices: ["massent","masse","massant"], rule: "Le sujet est inversé : « les supporters les plus fidèles », placé après le verbe. Le verbe s'accorde avec lui, au pluriel." },
     { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Au Parc des Princes, l'arbitre assistant a signalé plusieurs hors-jeux que la vidéo a confirmés sans que personne ne conteste la décision.", wrong: "hors-jeux", right: "hors-jeu", choices: ["hors-jeu","hors-jeux","hors-jeus"], rule: "Dans « hors-jeu », « hors » est une préposition invariable et « jeu » reste au singulier : des hors-jeu, comme « un hors-jeu »." },
     { level: "maitre", type: "adverbe", notion: "5e.lex.derivation", text: "Pendant toute la seconde période, le gardien parisien a défendu vaillemment son but, repoussant les centres que les attaquants adverses lui envoyaient.", wrong: "vaillemment", right: "vaillamment", choices: ["vaillamment","vaillemment","vaillament"], rule: "Vaillant se termine en -ant : l'adverbe est en -amment, avec deux m (vaillamment)." },
-    { level: "maitre", type: "accord", notion: "3e.accords.adjectif-apposition", text: "Au Parc des Princes, un match se joue en quatre-vingts-dix minutes, plus le temps additionnel que le quatrième arbitre annonce sur un panneau lumineux.", wrong: "quatre-vingts-dix", right: "quatre-vingt-dix", choices: ["quatre-vingt-dix","quatre-vingts-dix","quatres-vingt-dix"], rule: "Dans « quatre-vingt-dix », « vingt » ne prend pas de s : il n'est multiplié que lorsqu'il termine le nombre (quatre-vingts)." },
+    { level: "maitre", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Au Camp des Loges, les remplaçants enfilent une chazuble orange par-dessus leur maillot avant le petit jeu qui clôt la séance du matin.", wrong: "chazuble", right: "chasuble", choices: ["chasuble", "chazuble", "chassuble"], rule: "Chasuble s'écrit avec un s, comme dans « casaque » ; le z ne se trouve pas dans ce mot et le double s n'est pas justifié." },
     { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Une coorte de supporters, venue du bout de l'Île-de-France par le RER, envahit les abords du Parc des Princes plusieurs heures avant le coup d'envoi, écharpes au cou et chants aux lèvres.", wrong: "coorte", right: "cohorte", choices: ["cohorte","coorte","cohorrte"], rule: "Cohorte (troupe nombreuse) vient du latin « cohors » : le h muet se retrouve dans « cohérent » et « cohésion »." },
     { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Au coup de sifflet final, une euforie contagieuse gagne les gradins du Parc des Princes, où chacun, étranger ou parisien, s'est cru le douzième homme de l'équipe.", wrong: "euforie", right: "euphorie", choices: ["euphorie","euforie","euphorrie"], rule: "Euphorie vient du grec « eu » (bien) et « pherein » (porter) : ph, comme dans « phare »." },
     { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Les observateurs reconnaissent à ce milieu de terrain parisien une pugnasité qui compense sa discrétion, car il récupère des ballons que personne n'espérait plus et les remet aussitôt à un partenaire démarqué.", wrong: "pugnasité", right: "pugnacité", choices: ["pugnacité","pugnasité","pugnacitée"], rule: "Pugnacité vient de l'adjectif « pugnace » (combatif) : finale -acité avec un c, comme « sagacité » et « voracité »." },
@@ -260,6 +81,24 @@
     { level: "grand-scribe", type: "accord", notion: "5e.accords.sujet-separe", text: "Bon nombre de spectateurs, que la pluie n'avait pas découragés, a quitté le Parc des Princes bien avant le coup de sifflet final, laissant les travées à demi vides.", wrong: "a", right: "ont", choices: ["ont","a","ai"], rule: "Après « bon nombre de », le verbe se met au pluriel, car l'expression désigne une pluralité : « bon nombre de spectateurs ont quitté »." },
     { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Au Camp des Loges, les spécialistes des coup francs répètent chaque semaine leurs trajectoires, ballon après ballon, jusqu'à ce que le mur de mannequins n'oppose plus aucune résistance.", wrong: "coup", right: "coups", choices: ["coups","coup","cous"], rule: "Dans « coup franc », le nom et l'adjectif prennent la marque du pluriel : des coups francs. Il n'y a pas de trait d'union." },
     { level: "grand-scribe", type: "homophone", notion: "3e.homo.lexicaux", text: "Un défenseur central est sensé protéger sa surface contre les centres adverses, mais, au Parc des Princes, les attaquants rapides savent trouver la faille dans le dos de la ligne.", wrong: "sensé", right: "censé", choices: ["censé","sensé","sensée"], rule: "Censé (supposé) vient de « censer » ; sensé (raisonnable) vient de « sens ». Ici, l'idée est celle d'une mission attendue." },
-    { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Les titulaires qui ont disputé le match de la veille ne sont évidament pas tous alignés le lendemain, car le calendrier exige que le technicien parisien fasse tourner son effectif.", wrong: "évidament", right: "évidemment", choices: ["évidemment","évidament","évidement"], rule: "Évident se termine en -ent : l'adverbe est en -emment, avec deux m (évidemment)." }
+    { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Les titulaires qui ont disputé le match de la veille ne sont évidament pas tous alignés le lendemain, car le calendrier exige que le technicien parisien fasse tourner son effectif.", wrong: "évidament", right: "évidemment", choices: ["évidemment","évidament","évidement"], rule: "Évident se termine en -ent : l'adverbe est en -emment, avec deux m (évidemment)." },
+    { level:"maitre",type:"accord",text:"Dans le virage d'Auteuil, l'atmosphère, surchauffé par les chants et les fumigènes, devint presque irrespirable avant même le coup d'envoi.",wrong:"surchauffé",right:"surchauffée",choices:["surchauffée","surchauffé","surchauffés"],rule:"Atmosphère est un nom féminin : le participe surchauffée s'accorde au féminin singulier." },
+    { level:"maitre",type:"accord",text:"Entre la défense et le milieu de terrain, un hiatus ouverte par l'absence d'un relayeur a permis à l'adversaire de s'engouffrer jusqu'aux abords de la surface.",wrong:"ouverte",right:"ouvert",choices:["ouvert","ouverte","ouverts"],rule:"Hiatus est un nom masculin : le participe ouvert reste au masculin singulier." },
+    { level:"maitre",type:"temps",text:"Il fallait que le gardien parisien tint bon jusqu'au coup de sifflet final, car la défense, épuisée, ne repoussait plus que quelques centres par intermittence.",wrong:"tint",right:"tînt",choices:["tînt","tint","tienne"],rule:"Après « il fallait que » (imparfait), on emploie le subjonctif imparfait de tenir : qu'il tînt, avec un accent circonflexe." },
+    { level:"maitre",type:"compose",text:"Au Parc des Princes, les gardes-fous qui bordent les travées interdisent aux spectateurs de s'approcher du bord, même lorsque tout le stade est en fête.",wrong:"gardes-fous",right:"garde-fous",choices:["garde-fous","gardes-fous","garde-fou"],rule:"Garde-fou (verbe garder + nom fou) : le verbe reste invariable, le nom prend le s du pluriel." },
+    { level:"maitre",type:"compose",text:"Au centre d'entraînement, les deux avants-centres s'exercent à la finition devant le but, face à des gardiens qui les attendent de pied ferme.",wrong:"avants-centres",right:"avant-centres",choices:["avant-centres","avants-centres","avant-centre"],rule:"Dans avant-centre, avant est invariable : seul le nom prend la marque du pluriel." },
+    { level:"maitre",type:"lexique",text:"Sur une talonade audacieuse, l'ailier parisien a éliminé deux défenseurs d'un seul geste, sous les applaudissements du Parc des Princes.",wrong:"talonade",right:"talonnade",choices:["talonnade","talonade","talonnnade"],rule:"Talonnade (geste du talon) vient de talonner : deux n, comme dans le verbe." },
+    { level:"maitre",type:"lexique",text:"Les tribunes saluent le dribleur qui enchaîne feintes et crochets dans l'étroit couloir de la touche, avant de centrer sans regarder.",wrong:"dribleur",right:"dribbleur",choices:["dribbleur","dribleur","dribbleux"],rule:"Dribbleur vient de dribbler : deux b, comme dans le verbe." },
+    { level:"maitre",type:"lexique",text:"Touché à la cuisse en début de match, le milieu de terrain porte un énorme ématome dont les médecins du club surveillent l'évolution.",wrong:"ématome",right:"hématome",choices:["hématome","ématome","hématôme"],rule:"Hématome (grec haima, sang) garde un h initial muet, comme « hémorragie » et « hématie »." },
+    { level:"grand-scribe",type:"accord",text:"Dans la salle de musculation du centre d'entraînement, les haltères, soigneusement alignées sur leur râtelier, attendent les joueurs que les préparateurs physiques ont convoqués dès l'aube.",wrong:"alignées",right:"alignés",choices:["alignés","alignées","aligné"],rule:"Haltère est un nom masculin (un haltère) : le participe alignés s'accorde au masculin pluriel." },
+    { level:"grand-scribe",type:"accord",text:"Dans le tunnel qui mène à la pelouse du Parc des Princes flottent, chaudes et tenaces, des effluves de camphre et de gazon mouillé que les joueurs reconnaîtraient les yeux fermés.",wrong:"chaudes",right:"chauds",choices:["chauds","chaudes","chaude"],rule:"Effluve est un nom masculin (un effluve, des effluves) : l'adjectif chauds s'accorde au masculin pluriel." },
+    { level:"grand-scribe",type:"temps",text:"Dès l'ouverture du score, les supporters exigèrent que l'équipe poursuivit son effort et que la défense ne cédât plus un pouce de terrain avant la pause.",wrong:"poursuivit",right:"poursuivît",choices:["poursuivît","poursuivit","poursuive"],rule:"Après « exigèrent que » (passé simple), on emploie le subjonctif imparfait : que l'équipe poursuivît, avec un accent circonflexe." },
+    { level:"grand-scribe",type:"compose",text:"Sur la pelouse du Parc des Princes, les ailiers parisiens, rapides et précis, lancent des contres-attaques que les défenseurs adverses, repliés trop tard, n'ont plus le temps de couper.",wrong:"contres-attaques",right:"contre-attaques",choices:["contre-attaques","contres-attaques","contre-attaque"],rule:"Dans contre-attaque, contre est invariable : seul le nom prend la marque du pluriel." },
+    { level:"grand-scribe",type:"compose",text:"Dans la loge d'honneur du Parc des Princes, les vices-présidents du club, venus saluer les invités, discutent de la rencontre à venir avec les dirigeants adverses.",wrong:"vices-présidents",right:"vice-présidents",choices:["vice-présidents","vices-présidents","vice-président"],rule:"Vice- est un préfixe invariable : seul le nom président prend la marque du pluriel." },
+    { level:"grand-scribe",type:"lexique",text:"Après la rencontre, le kinésitérapeute du club masse longuement les cuisses du milieu de terrain, dont les fibres sont tendues par l'effort.",wrong:"kinésitérapeute",right:"kinésithérapeute",choices:["kinésithérapeute","kinésitérapeute","kinésythérapeute"],rule:"Kinésithérapeute associe kinési- (mouvement) et thérapeute, qui garde son th." },
+    { level:"grand-scribe",type:"lexique",text:"Dans le virage, une immense oriflame rouge et bleue ondule au-dessus des têtes avant le coup d'envoi, tenue à bout de bras par des dizaines de supporters.",wrong:"oriflame",right:"oriflamme",choices:["oriflamme","oriflame","orifflamme"],rule:"Oriflamme (de flamme) s'écrit avec deux m, comme « flamme »." },
+    { level:"grand-scribe",type:"lexique",text:"Au coup de sifflet final, la lièce gagne les gradins du Parc des Princes, où les écharpes tournoient au-dessus des têtes et où les chants reprennent de plus belle.",wrong:"lièce",right:"liesse",choices:["liesse","lièce","lyesse"],rule:"Liesse (joie collective) s'écrit avec -sse, comme « détresse » et « liasse »." },
+    { level:"grand-scribe",type:"lexique",text:"Pour ménager ses muscles, le milieu de terrain étire longuement ses quadricéps avant la séance, un pied posé sur un banc du vestiaire.",wrong:"quadricéps",right:"quadriceps",choices:["quadriceps","quadricéps","quadricepts"],rule:"Quadriceps (latin caput, tête : à quatre têtes) s'écrit sans accent, comme « biceps », avec un s dès le singulier." },
+    { level:"grand-scribe",type:"lexique",text:"Un clacage à l'ischio-jambier a écarté le défenseur parisien des terrains pour plusieurs semaines, au grand regret des supporters.",wrong:"clacage",right:"claquage",choices:["claquage","clacage","claquache"],rule:"Claquage vient de claquer : on garde le qu de la famille du mot." }
   ]
 };

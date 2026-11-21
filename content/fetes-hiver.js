@@ -1,98 +1,6 @@
 (window.THEMES = window.THEMES || {})["fetes-hiver"] = {
   name: "Noël et Chandeleur",
   emoji: "🎄",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Chaque année, la famille installe une crèche près du sapin. Les enfants ont placé les santons, puis ajouté de la paille dans l'étable. Ce soir, les cousins sont venus la regarder avant le dîner.",
-      notes: [
-        { word: "près", rule: "« Près » (proche de) s'écrit avec un accent grave et un s final. Il ne se confond pas avec « prêt »." },
-        { word: "ont", rule: "Verbe avoir au présent : on peut dire « avaient ». Il s'écrit -ont, à ne pas confondre avec « on »." },
-        { word: "placé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « les santons » est placé après)." },
-        { word: "sont", rule: "Verbe être au présent : on peut dire « étaient ». Il s'écrit -ont, à ne pas confondre avec « son »." },
-        { word: "venus", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les cousins : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Au début de janvier, la grand-mère prépare une galette des rois. Elle cache une fève dans la pâte dorée. Chacun mange sa part, puis le plus chanceux devient roi et porte la couronne en papier.",
-      notes: [
-        { word: "dorée", rule: "L'adjectif s'accorde avec le nom qu'il qualifie : « pâte » est féminin singulier, donc dorée." },
-        { word: "chacun", rule: "Pronom indéfini, toujours au singulier : « chacun mange » (jamais de s ni de -ent)." },
-        { word: "chanceux", rule: "Adjectif masculin en -eux : il s'écrit avec un x final, comme heureux ou courageux." },
-        { word: "devient", rule: "Verbe devenir au présent, 3e personne du singulier : -ient, avec un t final." },
-        { word: "couronne", rule: "Nom féminin avec deux n : cou-ron-ne, comme dans « couronner »." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Selon la tradition, {{saint François d'Assise|un religieux italien}} aurait fait installer une mangeoire remplie de paille dans un village d'Italie, au début du treizième siècle. Les crèches que les familles ont ensuite imaginées se sont multipliées dans toute l'Europe. Les santons de Provence, apparus à la fin du dix-huitième siècle, les ont peuplées de personnages du village.",
-      notes: [
-        { word: "aurait", rule: "Le conditionnel passé signale une information transmise par la tradition et non vérifiée : « aurait fait », terminaison -ait." },
-        { word: "mangeoire", rule: "Auge où mange le bétail. Le e après le g garde le son doux devant o, comme dans « manger » : mangeoire.", rare: true, d: 2, piege: "g doux (ge) devant o, finale -oire" },
-        { word: "imaginées", rule: "Le COD « que » (les crèches) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "multipliées", rule: "Se multiplier : verbe pronominal, le participe s'accorde avec le sujet (les crèches : féminin pluriel)." },
-        { word: "peuplées", rule: "Le COD « les » (les crèches) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "La Chandeleur a lieu quarante jours après Noël. Dans le calendrier chrétien, cette fête des chandelles et de la lumière tombe au cœur de l'hiver, alors que les jours rallongent. Par leur forme ronde et leur couleur dorée, les crêpes que les familles préparent ce jour-là évoquent volontiers le retour du soleil hivernal.",
-      notes: [
-        { word: "rallongent", rule: "Rallonger : le e après le g est conservé devant -ent pour garder le son doux, puis -ent à la 3e personne du pluriel." },
-        { word: "dorée", rule: "L'adjectif s'accorde avec le nom qu'il qualifie : « couleur » est féminin singulier, donc dorée." },
-        { word: "préparent", rule: "Verbe du 1er groupe au présent, 3e personne du pluriel (sujet « les familles ») : -ent." },
-        { word: "hivernal", rule: "Qui se rapporte à l'hiver. Le h initial est muet, comme dans « hiver » : hivernal.", rare: true, d: 2, piege: "h muet initial, v" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Chaque année, à l'Épiphanie, les familles se partagent la galette des rois. À l'origine, la fève que l'on y cachait était une véritable graine ; elle fut remplacée plus tard par une figurine de porcelaine. Quelle que soit la matière, celui qui la trouve devient roi pour la journée. Les pâtissiers soignent le feuilletage et la frangipane.",
-      notes: [
-        { word: "fève", rule: "Graine, puis figurine, cachée dans la galette. Accent grave sur le è devant le v.", rare: true, d: 2, piege: "è et non é ou ê" },
-        { word: "remplacée", rule: "Verbe au passif (« fut remplacée ») : le participe s'accorde avec le sujet « elle » (la fève : féminin singulier)." },
-        { word: "quelle", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (la matière : féminin singulier), en deux mots." },
-        { word: "feuilletage", rule: "Technique de la pâte feuilletée. Formé sur « feuille » : eu, ill, un seul t, puis la finale -age.", rare: true, d: 3, piege: "eu, ill (famille feuille), un seul t, -age" },
-        { word: "frangipane", rule: "Crème aux amandes : fran-gi-pane, avec un g (et non un j) devant i et un seul p.", rare: true, d: 2, piege: "g et non j, p simple" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Passé le solstice d'hiver, les jours rallongent peu à peu. Pour fêter la Chandeleur, les paroisses allumaient autrefois des cierges, et les familles posaient des bougies sur des chandeliers ou des bougeoirs. Les rites antérieurs dont les historiens l'ont parfois rapprochée restent mal connus.",
-      notes: [
-        { word: "passé", rule: "Placé avant le nom, « passé » est une préposition (« une fois passé ») : il reste invariable." },
-        { word: "solstice", rule: "Moment de l'année où le jour atteint sa durée minimale ou maximale. Finale en -ice, pas -isse ; le s est suivi du t.", rare: true, d: 2, piege: "s-t-ice, finale -ice et non -isse" },
-        { word: "chandeliers", rule: "Support de bougies. Formé sur « chandelle », mais avec un seul l : chandelier, puis s au pluriel.", rare: true, d: 2, piege: "un seul l (et non chandell-), -ier" },
-        { word: "bougeoirs", rule: "Petit support à poignée pour une bougie. Le e après le g garde le son doux devant o ; finale -oir, s au pluriel.", rare: true, d: 3, piege: "g doux (ge) devant o, finale -oir" },
-        { word: "dont", rule: "« Rapprocher de » : le complément du verbe se reprend par « dont » (de + lesquels), jamais par « auxquels »." },
-        { word: "rapprochée", rule: "Le COD « l' » (la Chandeleur) est placé avant l'auxiliaire avoir : accord au féminin singulier." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Documenté en Alsace au seizième siècle, l'usage du sapin de Noël s'est ensuite répandu en Europe. Les épicéas que l'on dressait alors, parés de pommes et de roses en papier, côtoyaient des branches de houx, vertes même au cœur des frimas. Autant de feuillages persistants que les familles ont volontiers vus comme des symboles de vie.",
-      notes: [
-        { word: "documenté", rule: "Participe apposé en début de phrase : il s'accorde avec le nom auquel il se rapporte (l'usage : masculin singulier)." },
-        { word: "répandu", rule: "Se répandre : verbe pronominal, le participe s'accorde avec le sujet (l'usage : masculin singulier)." },
-        { word: "épicéas", rule: "Conifère proche du sapin. Accent aigu sur les deux é, c doux devant é, finale en -a ; s au pluriel.", rare: true, d: 3, piege: "é, c doux, é, finale -a" },
-        { word: "houx", rule: "Arbuste à feuilles piquantes et à baies rouges. Houx s'écrit avec un h muet et un x final, au singulier comme au pluriel.", rare: true, d: 3, piege: "h muet, ou, x final" },
-        { word: "frimas", rule: "Brouillard glacé, givre : frimas prend un s final, même au singulier, sans famille de mots qui le laisse entendre.", rare: true, d: 3, piege: "s final muet" },
-        { word: "vus", rule: "Le COD « que » (les feuillages) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "L'Épiphanie rappelle la visite des mages, qui, dit la tradition, apportèrent de l'or, de l'encens et de la myrrhe. À la Chandeleur, les familles chauffent la crêpière et font sauter chaque crêpe d'une main, une pièce dans l'autre : ces réjouissances, que tant de foyers ont conservées, passent pour porter bonheur.",
-      notes: [
-        { word: "apportèrent", rule: "Passé simple, 3e personne du pluriel : apport-èrent, avec un accent grave sur le è et la finale -èrent." },
-        { word: "encens", rule: "Résine aromatique que l'on brûle. En-cens : un c devant le e, puis la finale -ens avec un s muet." },
-        { word: "myrrhe", rule: "Résine aromatique. Un y, deux r, un h muet, puis un e final : myrrhe.", rare: true, d: 4, piege: "y, rr, h muet, e final" },
-        { word: "crêpière", rule: "Poêle plate pour cuire les crêpes. Accent circonflexe sur le ê, un seul p, puis la finale -ière.", rare: true, d: 3, piege: "ê, p simple, -ière" },
-        { word: "réjouissances", rule: "Famille de se réjouir : accent aigu sur le é, j (et non g), ou, double s, puis -ance ; s au pluriel.", rare: true, d: 3, piege: "é, j, ou, ss, -ance" },
-        { word: "conservées", rule: "Le COD « que » (ces réjouissances) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", text: "Les enfants on décoré le sapin avec des guirlandes dorées.", wrong: "on", right: "ont", choices: ["ont", "on", "ons"], type: "homophone", rule: "On peut dire « avaient » : c'est le verbe avoir, qui s'écrit ont." },
     { level: "apprenti", text: "Les santons de la crèche sont fabriqué en argile.", wrong: "fabriqué", right: "fabriqués", choices: ["fabriqués", "fabriquée", "fabriqué"], type: "participe", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les santons : masculin pluriel)." },
@@ -173,6 +81,26 @@
     { level: "grand-scribe", type: "accord", notion: "5e.accords.sujet-separe", text: "Bon nombre de familles alsaciennes conserve encore l'habitude de dresser le sapin dans la pièce commune quelques jours avant Noël et d'y suspendre des étoiles de papier doré.", wrong: "conserve", right: "conservent", choices: ["conservent", "conserve", "conservant"], rule: "Après « bon nombre de » suivi d'un nom pluriel, le verbe se met au pluriel : bon nombre de familles conservent." },
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Dès la tombée de la nuit, les enfants guettaient ardamment le premier flocon, que les anciens, scrutant le ciel à travers la vitre, promettaient depuis le matin.", wrong: "ardamment", right: "ardemment", choices: ["ardemment", "ardamment", "ardement"], rule: "Ardent donne ardemment : -ent devient -emment, comme « prudent » donne « prudemment »." },
     { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Pour le réveillon, le traiteur a livré des plateaux de petit-fours et de toasts au saumon que les invités vidaient dès qu'ils étaient posés.", wrong: "petit-fours", right: "petits-fours", choices: ["petits-fours", "petit-fours", "petits-four"], rule: "Dans « petit-four », l'adjectif et le nom prennent la marque du pluriel : des petits-fours." },
-    { level: "grand-scribe", type: "participe", notion: "5e.accords.pp-avoir-cod-antepose", text: "Des santons de l'ancienne crèche, que les inondations avaient noyés, la grand-mère n'a retrouvé que ceux que le potier avait pus réparer, et elle les a rangés avec respect.", wrong: "pus", right: "pu", choices: ["pu", "pus", "pue"], rule: "Le participe de pouvoir reste toujours invariable : ceux que le potier avait pu réparer. Le COD « que » complète « réparer », pas « pu »." }
+    { level: "grand-scribe", type: "participe", notion: "5e.accords.pp-avoir-cod-antepose", text: "Des santons de l'ancienne crèche, que les inondations avaient noyés, la grand-mère n'a retrouvé que ceux que le potier avait pus réparer, et elle les a rangés avec respect.", wrong: "pus", right: "pu", choices: ["pu", "pus", "pue"], rule: "Le participe de pouvoir reste toujours invariable : ceux que le potier avait pu réparer. Le COD « que » complète « réparer », pas « pu »." },
+    { level: "maitre", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Sous les voûtes de l'église, l'orgue, entièrement restaurée l'été dernier, accompagne les cantiques de la messe de minuit et emplit la nef d'un son profond.", wrong: "restaurée", right: "restauré", choices: ["restauré","restaurée","restaurés"], rule: "Orgue est un nom masculin au singulier : l'orgue restauré. Le féminin ne s'emploie qu'au pluriel emphatique, « les grandes orgues »." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le maire du village exigea que la crèche vivante fût dressée sur la place avant la nuit, afin que chaque figurant eut sa place autour de la paille.", wrong: "eut", right: "eût", choices: ["eût","eut","eusse"], rule: "Après « afin que » et un verbe principal au passé simple, le subjonctif se met à l'imparfait : « qu'il eût ». La 3e personne du singulier prend un accent circonflexe." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Pendant la veillée, les enfants souhaitaient que la nuit de Noël dura jusqu'au matin, et que le père Noël ne repartît jamais.", wrong: "dura", right: "durât", choices: ["durât","dura","dure"], rule: "« Souhaitaient que » appelle le subjonctif, à l'imparfait après un verbe à l'imparfait : « qu'elle durât », avec accent circonflexe à la 3e personne du singulier." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Pour la veillée du nouvel an, l'oncle a sorti du tiroir trois tires-bouchons et deux casse-noix, car les bouteilles ne se comptaient plus.", wrong: "tires-bouchons", right: "tire-bouchons", choices: ["tire-bouchons","tires-bouchons","tire-bouchon"], rule: "Dans un nom composé verbe + nom, le verbe reste invariable : des tire-bouchons, avec un s au seul nom." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Sur la table du réveillon, trois chauffes-plats gardaient au chaud le chapon, les gratins et la purée, tandis que les convives patientaient devant les verres.", wrong: "chauffes-plats", right: "chauffe-plats", choices: ["chauffe-plats","chauffes-plats","chauffe-plat"], rule: "Dans chauffe-plat, « chauffe » est le verbe chauffer : il reste invariable, et seul « plat » prend le s du pluriel." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Sur la porte du presbytère, une couronne de hou et de gui rappelait que l'hiver, loin de tout endormir, avait ses propres parures.", wrong: "hou", right: "houx", choices: ["houx","hou","houe"], rule: "Houx s'écrit avec un x final muet, même au singulier : un houx, des houx." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Après la messe de minuit, le réveilon réunissait la famille autour d'un chapon rôti et d'une bûche à la crème au beurre.", wrong: "réveilon", right: "réveillon", choices: ["réveillon","réveilon","réveyon"], rule: "Réveillon vient de « réveiller » et de « veille » : on garde le double l." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "La cuisinière a glissé les filets de saumon dans des papilotes de papier sulfurisé avant de les enfourner pour le dîner de Noël.", wrong: "papilotes", right: "papillotes", choices: ["papillotes","papilotes","papillottes"], rule: "Papillote s'écrit avec deux l et un seul t, comme « pastille » et « quille »." },
+    { level: "grand-scribe", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Le vent d'hiver, qui s'engouffrait par une interstice entre deux volets mal joints, faisait vaciller les bougies du réveillon, au grand dam des convives.", wrong: "une", right: "un", choices: ["un","une","cet"], rule: "Interstice est un nom masculin : on écrit « un interstice »." },
+    { level: "grand-scribe", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Au douzième coup de minuit, le feu d'artifice tiré depuis la jetée offrit à la foule un apothéose de gerbes dorées, que les enfants, juchés sur les épaules de leurs pères, saluèrent de cris joyeux.", wrong: "un", right: "une", choices: ["une","un","cette"], rule: "Apothéose est un nom féminin : on écrit « une apothéose »." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le santonnier, qui avait modelé ses figurines dès septembre, craignait que l'argile, trop humide, ne sécha pas avant la foire de décembre, et qu'elle se fendît au premier feu.", wrong: "sécha", right: "séchât", choices: ["séchât","sécha","séchasse"], rule: "Après « craignait que », le subjonctif imparfait de sécher est « séchât », avec un accent circonflexe, comme « fendît » dans la même phrase." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Selon l'usage de la maison, il fallait que celui qui découvrait la fève choisît une reine, puis que toute la tablée trinqua à la santé de la nouvelle majesté.", wrong: "trinqua", right: "trinquât", choices: ["trinquât","trinqua","trinque"], rule: "Après « il fallait que », le subjonctif se met à l'imparfait : « que la tablée trinquât », avec un accent circonflexe, comme « choisît »." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Avant les fêtes, les skieurs retenaient leurs compartiments dans les wagon-lits du train de nuit qui, depuis Paris, les emportait vers les cimes enneigées, valises et skis compris.", wrong: "wagon-lits", right: "wagons-lits", choices: ["wagons-lits","wagon-lits","wagons-lit"], rule: "Wagon-lit associe deux noms : les deux éléments prennent la marque du pluriel, des wagons-lits." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "À l'approche du nouvel an, les centres de tri oblitèrent par milliers les cartes de vœux, dont les timbres-postes, souvent ornés de houx ou de sapins, font la joie des collectionneurs.", wrong: "timbres-postes", right: "timbres-poste", choices: ["timbres-poste","timbres-postes","timbre-poste"], rule: "Dans timbre-poste, « poste » est un complément du nom, comme dans « timbre de la poste » : seul « timbre » prend la marque du pluriel." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Parmi les treize desserts de la veillée provençale, les oreilettes, fines pâtes frites saupoudrées de sucre, voisinent avec la fougasse à l'huile d'olive et les fruits secs.", wrong: "oreilettes", right: "oreillettes", choices: ["oreillettes","oreilettes","oreyettes"], rule: "Oreillette dérive de « oreille » : on garde le double l, puis le double t du suffixe." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.lex.morphologie", text: "Dans la chapelle glaciale, le sacristain balança l'ensensoir devant la crèche tandis que les fidèles, transis malgré leurs bonnets de laine, entonnaient un cantique à mi-voix.", wrong: "ensensoir", right: "encensoir", choices: ["encensoir","ensensoir","encençoir"], rule: "Encensoir dérive d'« encens » : en- initial puis c devant e, comme dans « encens » et « encenser »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Au petit matin du 24 décembre, le verglat qui recouvrait la route du col força les voisins, chargés de bûches et de paniers, à rejoindre le village à pas comptés.", wrong: "verglat", right: "verglas", choices: ["verglas","verglat","verglac"], rule: "Verglas, formé sur « verre » et « glace », se termine par un s muet, comme « glas » et « frimas »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Le menuisier du hameau avait taillé la mangeoire de la crèche dans un mélèse du pays, dont la résine parfumait l'atelier jusque tard dans l'Avent.", wrong: "mélèse", right: "mélèze", choices: ["mélèze","mélèse","mèlèze"], rule: "Mélèze (conifère des montagnes) s'écrit avec un z et deux accents différents : é puis è." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.lex.morphologie", text: "Le boucher du marché avait réservé à chaque famille du quartier un dindoneau fermier, que les enfants venaient admirer, plumé et bridé, sur l'étal glacé avant les fêtes.", wrong: "dindoneau", right: "dindonneau", choices: ["dindonneau","dindoneau","dindonau"], rule: "Dindonneau se forme sur « dindon » : le n est doublé devant le suffixe -eau." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "À la Chandeleur, en Bretagne, les galettes de sarazin précèdent souvent les crêpes de froment, que l'on fait sauter d'un coup de poignet adroit, une pièce serrée dans la main gauche selon une vieille coutume.", wrong: "sarazin", right: "sarrasin", choices: ["sarrasin","sarazin","sarasin"], rule: "Sarrasin s'écrit avec deux r et un seul s, qui se prononce [z] entre deux voyelles." }
   ]
 };

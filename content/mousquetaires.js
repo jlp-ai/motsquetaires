@@ -1,151 +1,6 @@
 (window.THEMES = window.THEMES || {}).mousquetaires = {
   name: "Les Trois Mousquetaires",
   emoji: "⚔️",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Le jeune d'Artagnan quitte sa Gascogne pour rejoindre Paris. Il rêve de devenir mousquetaire du roi. En chemin, il s'arrête dans une auberge où il se dispute avec un inconnu. À Paris, il rencontre trois mousquetaires et accepte de les affronter en duel le même jour.",
-      notes: [
-        { word: "rejoindre", rule: "Après la préposition « pour », le verbe se met à l'infinitif : pour rejoindre." },
-        { word: "où", rule: "« Où » pronom relatif de lieu (l'auberge où il s'arrête) prend un accent grave ; « ou » sans accent signifie « ou bien »." },
-        { word: "mousquetaires", rule: "Après « trois », le nom est au pluriel : trois mousquetaires, avec un s." },
-        { word: "affronter", rule: "Après la préposition « de », le verbe reste à l'infinitif : accepte de les affronter (on peut le remplacer par « combattre »). Deux f, un seul t." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Athos, Porthos et Aramis sont des mousquetaires fidèles au roi. Ils se retrouvent souvent à Paris, près de l'hôtel de Tréville, leur capitaine. Après un duel interrompu par les gardes du cardinal, ils ont accueilli d'Artagnan parmi eux, et leur amitié est devenue célèbre.",
-      notes: [
-        { word: "sont", rule: "« Sont » est le verbe être (ils sont) ; « son » est un déterminant possessif (son épée)." },
-        { word: "fidèles", rule: "L'adjectif s'accorde avec « mousquetaires » : masculin pluriel, fidèles avec un s." },
-        { word: "près", rule: "« Près de » (à côté de) s'écrit avec un s ; « prêt » (préparé) prend un t et un accent circonflexe." },
-        { word: "accueilli", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici : le COD « d'Artagnan » est placé après le verbe." },
-        { word: "devenue", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet « leur amitié » : féminin singulier, devenue." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Constance Bonacieux travaillait au service de la reine Anne d'Autriche. Elle connaissait les secrets du palais et rendait de grands services à d'Artagnan. Le jeune Gascon veillait sur elle quand le cardinal de Richelieu cherchait à découvrir ces secrets.",
-      notes: [
-        { word: "travaillait", rule: "Imparfait, 3e personne du singulier : -ait. Le sujet est « Constance »." },
-        { word: "services", rule: "Dans « rendre de grands services », services est un nom pluriel : s final." },
-        { word: "veillait", rule: "Imparfait, 3e personne du singulier : -ait. Le sujet « le jeune Gascon » est au singulier." },
-        { word: "cherchait", rule: "Imparfait, 3e personne du singulier : -ait. Le sujet « le cardinal » est au singulier." },
-        { word: "ces", rule: "« Ces » est un déterminant démonstratif (ces secrets) ; « ses » est un possessif ; « c'est » est un présentatif." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les ferrets que la reine avait offerts au duc de Buckingham devaient briller au bal. Le cardinal, qui connaissait ce secret, espérait la compromettre. Les quatre amis se sont mis en route vers l'Angleterre ; trois sont restés en chemin, mais d'Artagnan a rapporté les bijoux à temps.",
-      notes: [
-        { word: "ferrets", rule: "Ferret : ici, bijou serti de diamants. Finale en -et, deux r ; pluriel régulier en s.", rare: true, d: 2, piege: "rr, t final muet" },
-        { word: "offerts", rule: "Le COD « que » (les ferrets) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "restés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet « trois » (trois amis) : masculin pluriel." },
-        { word: "rapporté", rule: "Le COD « les bijoux » est placé après le verbe : le participe passé avec avoir reste invariable." },
-        { word: "bijoux", rule: "Bijou fait partie des sept noms en -ou qui prennent un x au pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Devant La Rochelle, les soldats du roi creusaient des tranchées et tiraient au mousquet depuis leurs retranchements. Richelieu, qui dirigeait le siège, avait fait bâtir une longue digue pour affamer la ville, et le duc de Buckingham ne parvint pas à la secourir.",
-      notes: [
-        { word: "tranchées", rule: "Tranchée : fossé creusé dans le sol. Féminin, finale en -ée, pluriel en s." },
-        { word: "mousquet", rule: "Mousquet : arme à feu portative du XVIIe siècle, dont dérive « mousquetaire ». Finale en -et, avec un t muet.", rare: true, d: 2, piege: "qu, finale -et muette" },
-        { word: "retranchements", rule: "Retranchement : position fortifiée. Dans la famille de retrancher, le e est conservé devant -ment ; pluriel en s." },
-        { word: "affamer", rule: "Affamer : réduire par la faim. Deux f, un seul m (famille de faim et de famine)." },
-        { word: "fait", rule: "Suivi d'un infinitif, le participe « fait » reste toujours invariable : avait fait bâtir." },
-        { word: "parvint", rule: "Passé simple de parvenir, 3e personne du singulier : il parvint, sans t après le n." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Fier de son baudrier, Porthos se pavanait devant ses compagnons. Quant à Aramis, il rêvait de quitter le pourpoint pour la soutane, car l'Église l'attirait plus que la guerre. Athos, lui, restait silencieux et grave.",
-      notes: [
-        { word: "baudrier", rule: "Baudrier : bande de cuir portée en travers de la poitrine pour soutenir l'épée. Le son « o » s'écrit au ; le d est muet ; finale en -ier.", rare: true, d: 2, piege: "au pour o, d muet, -ier" },
-        { word: "pourpoint", rule: "Pourpoint : veste ajustée que portaient les hommes au XVIIe siècle. Le t final est muet (comme dans point).", rare: true, d: 2, piege: "ou, t final muet" },
-        { word: "quant", rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t ; « quand » (moment) prend un d." },
-        { word: "attirait", rule: "Attirer s'écrit avec deux t ; imparfait en -ait, le sujet « l'Église » est au singulier." },
-        { word: "silencieux", rule: "Adjectif accordé avec « Athos » : masculin singulier, finale en -eux." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Bien que les gardes du cardinal les eussent surpris près d'un couvent, les mousquetaires ne cédèrent pas un pouce de terrain. Les rapières s'entrechoquèrent longtemps, et le jeune Gascon se rangea résolument à leurs côtés. Quelque intrigue qu'on ourdît ensuite à la cour, cette alliance ne se démentit jamais.",
-      notes: [
-        { word: "eussent", rule: "« Bien que » appelle le subjonctif : plus-que-parfait du subjonctif, « eussent surpris », admis devant un passé simple." },
-        { word: "cédèrent", rule: "Passé simple du 1er groupe à la 3e personne du pluriel : -èrent, avec un accent grave." },
-        { word: "rapières", rule: "Rapière : longue épée de duel. Un seul p, accent grave sur le e ; mot féminin.", rare: true, d: 2, piege: "-ière et non -iaire, un seul p" },
-        { word: "résolument", rule: "Adverbe formé sur « résolu » : le e de l'adjectif féminin disparaît, résolument sans e ni accent circonflexe." },
-        { word: "ourdît", rule: "Ourdir : tramer en secret. « Quelque... que » appelle le subjonctif ; imparfait du subjonctif, 3e personne : -ît, avec un accent circonflexe.", rare: true, d: 3, piege: "ourd-, accent circonflexe de l'imparfait du subjonctif" },
-        { word: "démentit", rule: "Passé simple de « se démentir » : il se démentit, sans accent circonflexe (indicatif)." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Milady, dont l'outrecuidance n'avait d'égale que la félonie, dissimulait sous ses vêtements la marque infamante qu'un bourreau lui avait imprimée sur l'épaule. Athos connaissait ce secret depuis longtemps ; selon lui, il fallait que justice se fît.",
-      notes: [
-        { word: "outrecuidance", rule: "Outrecuidance : confiance excessive en soi, présomption. Outre- accolé à cuid- (de l'ancien verbe cuider), finale en -ance.", rare: true, d: 3, piege: "outre-, cuid-, -ance" },
-        { word: "félonie", rule: "Félonie : trahison, déloyauté. Un seul l (famille de félon), accent aigu, finale en -ie.", rare: true, d: 3, piege: "un seul l, é, -ie" },
-        { word: "égale", rule: "Dans « n'avoir d'égale que », l'adjectif s'accorde avec le nom féminin « outrecuidance » : égale." },
-        { word: "imprimée", rule: "Le COD « que » (la marque) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "fît", rule: "Après « il fallait que », imparfait du subjonctif : que justice se fît, avec un accent circonflexe." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Planchet, laquais de d'Artagnan, passait ses journées à fourbir les armes de son maître et à panser son cheval. Maints valets de ce genre s'asseyaient, leur tâche accomplie, sur le seuil de l'écurie et attendaient que le soir tombât.",
-      notes: [
-        { word: "laquais", rule: "Laquais : valet en livrée. Le qu se prononce k devant a ; finale en -ais, avec un s muet même au singulier.", rare: true, d: 3, piege: "qu, finale -ais muette" },
-        { word: "fourbir", rule: "Fourbir : nettoyer une arme pour la faire briller. Ou, puis -bir (verbe du 2e groupe).", rare: true, d: 2, piege: "ou, b, finale -ir" },
-        { word: "panser", rule: "Panser : soigner, ou brosser un cheval. À ne pas confondre avec penser : le a de panse (le ventre) se retrouve ici.", rare: true, d: 2, piege: "panser et penser" },
-        { word: "maints", rule: "Maint : adjectif indéfini qui signifie « plusieurs ». Ici au pluriel : maints valets, avec un s.", rare: true, d: 2, piege: "-int, s du pluriel" },
-        { word: "s'asseyaient", rule: "S'asseoir à l'imparfait : ils s'asseyaient, avec un y et la terminaison -aient." },
-        { word: "tombât", rule: "Après « attendre que », subjonctif ; l'imparfait du subjonctif s'accorde avec l'imparfait : que le soir tombât, avec un accent circonflexe." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les estafettes qu'on avait aperçues aux abords de La Rochelle annonçaient le siège et les escarmouches. Quatre bretteurs, s'étant targués de tenir un bastion exposé, y bivouaquèrent sous le feu ennemi. Quels qu'aient été les périls encourus, ils ne se sont jamais départis de leur panache, et les embûches que Milady leur a tendues ont échoué.",
-      notes: [
-        { word: "estafettes", rule: "Estafette : messager à cheval. Mot féminin, deux t et finale en -ette.", rare: true, d: 3, piege: "s muet, f simple, tt" },
-        { word: "escarmouches", rule: "Petits combats entre éléments avancés de deux troupes. Es- avec un s muet, puis -carmouche (ou, ch), s au pluriel.", rare: true, d: 3, piege: "s muet, c, -ouche" },
-        { word: "aperçues", rule: "Cédille devant u ; le COD « qu' » (les estafettes) précède l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "bretteurs", rule: "Bretteur : homme qui aime se battre à l'épée (de « brette », longue épée). Deux t.", rare: true, d: 1, piege: "deux t (famille brette)" },
-        { word: "targués", rule: "« Se targuer » est essentiellement pronominal : le participe s'accorde avec le sujet (quatre bretteurs)." },
-        { word: "bivouaquèrent", rule: "Bivouaquer : camper en plein air. Famille de bivouac : le c devient qu devant e ; passé simple en -èrent.", rare: true, d: 3, piege: "ou-a, qu (famille bivouac), -èrent" },
-        { word: "bastion", rule: "Bastion : ouvrage avancé d'une fortification. Finale en -tion, masculin.", rare: true, d: 1, piege: "finale -tion" },
-        { word: "quels", rule: "« Quel que » + être au subjonctif : « quel » s'accorde avec le sujet inversé (les périls, masculin pluriel)." },
-        { word: "départis", rule: "« Se départir de » : essentiellement pronominal, accord avec le sujet « ils ». Se conjugue comme partir.", rare: true, d: 1, piege: "é, s du pluriel" },
-        { word: "embûches", rule: "Embûche : piège. Accent circonflexe sur le u ; mot féminin.", rare: true, d: 2, piege: "û, s du pluriel" },
-        { word: "tendues", rule: "Le COD « que » (les embûches) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Rue du Vieux-Colombier, l'hôtel de monsieur de Tréville ne désemplissait pas. Les solliciteurs y quémandaient des faveurs, tandis que les mousquetaires, querelleurs mais fidèles, y recevaient leurs ordres. D'Artagnan, que les longues heures d'attente qu'il avait endurées dans l'antichambre n'avaient pas découragé, plaida sa cause avec ardeur.",
-      notes: [
-        { word: "désemplissait", rule: "Désemplir : se vider (surtout dans « ne pas désemplir »). Préfixe dés-, puis emplir ; imparfait en -issait.", rare: true, d: 3, piege: "dés-, mp, -issait" },
-        { word: "solliciteurs", rule: "Solliciteur : personne qui demande une faveur. Deux l, un c, puis -iteur.", rare: true, d: 2, piege: "ll, c" },
-        { word: "quémandaient", rule: "Quémander : demander avec insistance. Qu devant é, accent aigu, un seul m ; imparfait en -aient.", rare: true, d: 3, piege: "qu, é, m simple" },
-        { word: "querelleurs", rule: "Querelleur : qui aime se disputer. Deux l comme dans querelle ; finale en -eur, avec s au pluriel.", rare: true, d: 3, piege: "qu, ll, -eur" },
-        { word: "endurées", rule: "Le COD « qu' » (les heures d'attente) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "découragé", rule: "Le COD « que » (d'Artagnan, masculin singulier) précède l'auxiliaire avoir : accord au masculin singulier, donc sans marque." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Toute dévouée qu'elle fût à la reine Anne d'Autriche, Constance Bonacieux redoutait les affidés du cardinal de Richelieu. Dans le Paris des mousquetaires, un simple coupe-gorge pouvait dissimuler un guet-apens, et les ruelles que les passants avaient dû emprunter à la nuit tombée leur laissaient un souvenir tenace.",
-      notes: [
-        { word: "toute", rule: "Devant un adjectif féminin commençant par une consonne, « tout » s'accorde : toute dévouée." },
-        { word: "fût", rule: "Après « toute... que » à valeur concessive, subjonctif ; imparfait du subjonctif : qu'elle fût, avec un accent circonflexe." },
-        { word: "affidés", rule: "Affidé : personne de confiance qui sert un maître, souvent pour des desseins secrets. Deux f, é final, s au pluriel.", rare: true, d: 3, piege: "ff, é final" },
-        { word: "coupe-gorge", rule: "Coupe-gorge : lieu isolé et dangereux. Trait d'union ; coupe prend un e (forme du verbe couper) ; gorge reste au singulier.", rare: true, d: 3, piege: "trait d'union, coupe avec e, gorge" },
-        { word: "guet-apens", rule: "Guet-apens : embuscade préparée à l'avance. Trait d'union ; guet avec un t muet ; apens avec un s final muet.", rare: true, d: 3, piege: "trait d'union, guet, apens" },
-        { word: "dû", rule: "Participe passé de devoir : il reste invariable quand le COD est un infinitif sous-entendu (les ruelles qu'ils avaient dû emprunter) ; accent circonflexe au masculin singulier." },
-        { word: "tombée", rule: "Dans « à la nuit tombée », le participe passé s'accorde avec le nom féminin « nuit »." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "accord", text: "Les mousquetaires portait une cape et une épée.", wrong: "portait", right: "portaient", choices: ["portaient", "portais", "porter"], rule: "Le sujet « les mousquetaires » est au pluriel : ils portaient." },
     { level: "apprenti", type: "homophone", text: "Le jeune Gascon quitte sont village pour Paris.", wrong: "sont", right: "son", choices: ["son", "sont", "sons"], rule: "« Son » est un déterminant possessif (son village) ; « sont » est le verbe être (ils sont)." },
@@ -226,6 +81,25 @@
     { level: "grand-scribe", type: "accord", notion: "5e.accords.sujet-separe", text: "Bien des gardes du cardinal avait déjà éprouvé la fermeté du poignet d'Athos, et tous gardaient une prudente distance quand il tirait l'épée.", wrong: "avait", right: "avaient", choices: ["avaient", "avait", "avais"], rule: "Après « bien des » suivi d'un nom pluriel, le verbe se met au pluriel : bien des gardes avaient éprouvé." },
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Porthos, pourtant peu enclin à la réflexion, mena le combat si intelligement que ses trois adversaires, déroutés, finirent par rompre sans avoir porté une seule botte.", wrong: "intelligement", right: "intelligemment", choices: ["intelligemment", "intelligement", "intelligeamment"], rule: "Intelligent donne intelligemment : -ent devient -emment, avec un g qui se prononce [ʒ] devant e." },
     { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Après la dépense du voyage, le jeune gentilhomme, qui avait quitté sa province l'esprit léger, n'avait plus en poche que quatre-vingt écus, un cheval fourbu et la lettre de son père.", wrong: "quatre-vingt", right: "quatre-vingts", choices: ["quatre-vingts", "quatre-vingt", "quatre vingts"], rule: "Quatre-vingts prend un s quand il n'est suivi d'aucun autre nombre : quatre-vingts écus." },
-    { level: "grand-scribe", type: "temps", notion: "cm2.conj.passe-simple-g3-liste", text: "Quand la nuit tomba, les quatre amis, que la prudence ne retenait jamais longtemps, résoudrent de franchir les remparts pour porter secours à un compagnon, malgré le danger.", wrong: "résoudrent", right: "résolurent", choices: ["résolurent", "résoudrent", "résolûrent"], rule: "Au passé simple, résoudre fait « ils résolurent » : le radical devient résol-, sans d." }
+    { level: "grand-scribe", type: "temps", notion: "cm2.conj.passe-simple-g3-liste", text: "Quand la nuit tomba, les quatre amis, que la prudence ne retenait jamais longtemps, résoudrent de franchir les remparts pour porter secours à un compagnon, malgré le danger.", wrong: "résoudrent", right: "résolurent", choices: ["résolurent", "résoudrent", "résolûrent"], rule: "Au passé simple, résoudre fait « ils résolurent » : le radical devient résol-, sans d." },
+    { level: "maitre", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Aramis, qui rêvait de soutane et de belles-lettres, glissait dans la conversation une épigramme, vif et mordante, que ses amis répétaient à l'auberge.", wrong: "vif", right: "vive", choices: ["vive","vif","vifs"], rule: "Épigramme est un nom féminin : on écrit une épigramme vive et mordante." },
+    { level: "maitre", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Dans l'antichambre de l'hôtel de Tréville, l'atmosphère, lourd de bravades, devenait électrique dès qu'on prononçait le nom du cardinal.", wrong: "lourd", right: "lourde", choices: ["lourde","lourd","lourdes"], rule: "Atmosphère est un nom féminin : l'adjectif s'accorde, l'atmosphère lourde." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le capitaine exigeait que ses mousquetaires fussent toujours prêts et qu'aucun ne se battit sans motif contre les gardes du cardinal.", wrong: "battit", right: "battît", choices: ["battît","battit","batte"], rule: "Après « exigeait que », concordance au subjonctif imparfait : qu'aucun ne se battît. Le circonflexe le distingue du passé simple « battit »." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "D'Artagnan redoutait que Tréville ne l'accueillit froidement, car la lettre de son père, pliée dans sa poche, était sa seule recommandation.", wrong: "accueillit", right: "accueillît", choices: ["accueillît","accueillit","accueille"], rule: "Après « redoutait que », concordance au subjonctif imparfait : que Tréville ne l'accueillît. Le circonflexe le distingue du passé simple « accueillit »." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Dans la compagnie des mousquetaires du roi, bien des gentilhommes de province portaient fièrement la casaque bleue ornée d'une croix blanche.", wrong: "gentilhommes", right: "gentilshommes", choices: ["gentilshommes","gentilhommes","gentilshomme"], rule: "Dans « gentilhomme », « gentil » et « homme » prennent tous deux la marque du pluriel : des gentilshommes." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "À la tombée de la nuit, des coupe-jarret rôdaient dans les ruelles voisines du Luxembourg, guettant les imprudents qui rentraient seuls à l'auberge.", wrong: "coupe-jarret", right: "coupe-jarrets", choices: ["coupe-jarrets","coupe-jarret","coupes-jarrets"], rule: "Dans « coupe-jarret », « coupe » est un verbe invariable et « jarret » est un nom : des coupe-jarrets." },
+    { level: "maitre", type: "typographie", notion: "4e.voc.composition", text: "Dans la compagnie, les gascons passaient pour des fanfarons, mais d'Artagnan, qui venait de leur province, tenait ses promesses l'épée à la main.", wrong: "gascons", right: "Gascons", choices: ["Gascons","gascons","GASCONS"], rule: "Les noms d'habitants prennent une majuscule : les Gascons. L'adjectif correspondant n'en prend pas." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "Dans la cour de l'auberge, le hénissement des chevaux se mêlait au cliquetis des éperons et aux jurons des palefreniers.", wrong: "hénissement", right: "hennissement", choices: ["hennissement","hénissement","hennisement"], rule: "Hennissement vient de « hennir » : deux n, comme dans le verbe." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "Athos tira son épée à demi du fourau, puis la rengaina d'un geste las, jugeant l'adversaire indigne de sa lame.", wrong: "fourau", right: "fourreau", choices: ["fourreau","fourau","fourrau"], rule: "Fourreau prend deux r, comme « fourrer » et « fourrure », et la finale -eau." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Un cavalier, la cuirrasse luisante sous la pluie, barrait la route de Meung, et les voyageurs hésitaient à s'aventurer plus loin.", wrong: "cuirrasse", right: "cuirasse", choices: ["cuirasse","cuirrasse","cuirace"], rule: "Cuirasse s'écrit avec un seul r, comme « cuir » dont il est issu." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Les cadets de province arrivaient à Paris dans un pourpoin râpé aux coudes, la bourse presque vide et l'épée de leur père au côté.", wrong: "pourpoin", right: "pourpoint", choices: ["pourpoint","pourpoin","pourpoing"], rule: "Pourpoint se termine par un t muet, comme « point » : il vient de « pourpoindre »." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le cardinal eut aimé que ces mousquetaires insolents se soumissent à son autorité, mais le roi, qui ne tolérait pas qu'on les offensât, les défendait avec constance.", wrong: "eut", right: "eût", choices: ["eût","eut","eu"], rule: "« Eût aimé » est un plus-que-parfait du subjonctif employé à la place du conditionnel passé : il prend un accent circonflexe." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Il semblait peu probable, aux yeux des gardes du cardinal, qu'un jeune Gascon arrivé à Paris sur un cheval jaune vint un jour leur tenir tête, l'épée au poing.", wrong: "vint", right: "vînt", choices: ["vînt","vint","vienne"], rule: "Après « il semblait peu probable que », concordance au subjonctif imparfait : qu'un jeune Gascon vînt. Le circonflexe le distingue du passé simple « vint »." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "À la tombée de la nuit, les gardes postés aux portes de la ville examinaient, à la lueur d'une torche, les saufs-conduits des voyageurs, et refoulaient ceux qui ne pouvaient justifier d'un motif.", wrong: "saufs-conduits", right: "sauf-conduits", choices: ["sauf-conduits","saufs-conduits","sauf-conduit"], rule: "Dans « sauf-conduit », « sauf » reste invariable : seul « conduit » prend la marque du pluriel, des sauf-conduits." },
+    { level: "grand-scribe", type: "quantite", notion: "5e.accords.sujet-separe", text: "La plupart des gardes du cardinal, que les mousquetaires narguaient à chaque rencontre, rêvait d'une revanche éclatante, l'épée à la main, dans un terrain vague, loin des yeux du roi.", wrong: "rêvait", right: "rêvaient", choices: ["rêvaient","rêvait","rêvèrent"], rule: "Après « la plupart des » suivi d'un nom pluriel, le verbe se met au pluriel : la plupart des gardes rêvaient." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Un garde, sans un mot, jeta son gantlet aux pieds de l'étranger ; le défi, dans les usages du temps, ne souffrait ni excuse ni retard.", wrong: "gantlet", right: "gantelet", choices: ["gantelet","gantlet","gantellet"], rule: "Gantelet, diminutif de « gant », s'écrit avec un seul t et un seul l : gant + -elet." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Les anciens soldats, que la forfanterrie des jeunes recrues amusait plus qu'elle ne les irritait, leur laissaient raconter leurs exploits imaginaires avant de les envoyer à la corvée.", wrong: "forfanterrie", right: "forfanterie", choices: ["forfanterie","forfanterrie","fanfanterie"], rule: "Forfanterie ne prend qu'un seul r avant le suffixe -erie, comme « galanterie »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Dans l'armurerie du château, parmi les rapières et les arquebuses, une pertuisanne à la lame ouvragée rappelait l'époque où les gardes du roi montaient la garde avec de telles armes.", wrong: "pertuisanne", right: "pertuisane", choices: ["pertuisane","pertuisanne","partuisane"], rule: "Pertuisane, nom féminin désignant une arme d'hast, ne double pas le n : finale -ane, comme « partisane »." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.lex.morphologie", text: "Les gardes du cardinal, chamarés de galons, traversaient la place au pas, et leur passage écartait la foule comme l'étrave d'un navire sépare l'eau.", wrong: "chamarés", right: "chamarrés", choices: ["chamarrés","chamarés","chamarrées"], rule: "Chamarré vient de « chamarre », ancienne casaque galonnée : deux r." }
   ]
 };

@@ -1,181 +1,6 @@
 (window.THEMES = window.THEMES || {}).manga = {
   name: "Manga et anime",
   emoji: "📚",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Chaque mercredi, la jeune dessinatrice prépare une nouvelle planche. Elle trace d'abord les cases au crayon, puis elle encre les visages de ses héros. Ses amies sont venues l'encourager, et elles ont admiré les dessins terminés.",
-      notes: [
-        { word: "venues", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (ses amies : féminin pluriel)." },
-        { word: "admiré", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici, car le COD (les dessins) est placé après." },
-        { word: "ses", rule: "« Ses » est un déterminant possessif : ce sont ses héros à elle (les siens), à ne pas confondre avec « ces »." },
-        { word: "terminés", rule: "Le participe employé comme adjectif s'accorde avec le nom qu'il accompagne (les dessins : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les planches que la dessinatrice avait esquissées pendant l'été ont enfin été publiées. Dès la sortie du premier tome, les lecteurs se sont précipités en librairie. Quant à l'adaptation en série animée, elle passionne déjà les amateurs, qui attendent impatiemment le premier épisode.",
-      notes: [
-        { word: "esquissées", rule: "Le COD « que » (les planches) est placé avant le verbe : le participe s'accorde au féminin pluriel." },
-        { word: "précipités", rule: "Verbe pronominal : le participe s'accorde avec le sujet (les lecteurs : masculin pluriel)." },
-        { word: "Quant", rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t, à la différence de « quand », qui marque le temps." },
-        { word: "impatiemment", rare: true, rule: "Les adjectifs en -ent donnent des adverbes en -emment : impatient, impatiemment.", d: 2, piege: "-emment (famille patient), mm" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Pour ce nouveau tome, la dessinatrice a repris quelque trente planches, phylactères compris. Les efforts qu'il lui a fallu consentir ont été considérables : les mèches bleu nuit de son héroïne ont exigé des heures d'encrage et de retouches. Ses lecteurs, eux, n'en ont rien su.",
-      notes: [
-        { word: "quelque", rule: "Devant un nombre, « quelque » est un adverbe qui signifie « environ » : il reste invariable." },
-        { word: "phylactères", rule: "Bulle qui contient les paroles d'un personnage de bande dessinée. Ph, y, puis -lactère avec un c et un t, accent grave sur le e.", rare: true, d: 3, piege: "ph, y, ct, è : aucun indice à l'oreille" },
-        { word: "fallu", rule: "Le participe passé d'un verbe impersonnel (il faut) reste toujours invariable." },
-        { word: "bleu nuit", rule: "Un adjectif de couleur composé de deux mots reste invariable : des mèches bleu nuit." },
-        { word: "encrage", rare: true, rule: "Passage à l'encre des dessins au crayon. Formé sur encre, avec « en » : à ne pas confondre avec l'ancrage d'un bateau.", d: 2, piege: "en- (famille encre), -age" },
-        { word: "retouches", rare: true, rule: "Corrections apportées à un dessin. Nom féminin formé sur toucher : re-, sans accent, et -ouches au pluriel.", d: 1, piege: "re- sans accent, -ouches" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les dessinatrices se sont succédé à la table de l'atelier ; aucune ne s'est dérobée, quelque harassantes que soient les nuits de bouclage. Les rivaux qu'on avait crus irréconciliables se sont donné la main lors du festival, où maints amateurs costumés, tout ébaubis devant le dernier chapitre apocalyptique, arboraient des perruques vermillon.",
-      notes: [
-        { word: "succédé", rule: "Dans « se succéder », le « se » est complément indirect (succéder à quelqu'un) : le participe reste invariable." },
-        { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est un adverbe signifiant « si » : il reste invariable." },
-        { word: "irréconciliables", rule: "Qu'on ne peut réconcilier. Préfixe ir- devant ré-, d'où deux r ; un seul l ; accord au masculin pluriel avec « les rivaux ».", rare: true, d: 3, piege: "deux r (ir- + ré-), un seul l" },
-        { word: "donné", rule: "Le « se » est complément indirect et le COD (la main) est placé après le verbe : le participe reste invariable." },
-        { word: "apocalyptique", rule: "Qui évoque la fin du monde. Famille d'apocalypse : y, p puis t, et finale -ique.", rare: true, d: 3, piege: "y, pt (famille apocalypse), -ique" },
-        { word: "vermillon", rare: true, rule: "Rouge vif. Deux l, finale -on. Nom employé comme adjectif de couleur, il reste invariable : des perruques vermillon.", d: 2, piege: "ll, finale -on" },
-        { word: "ébaubis", rare: true, rule: "Stupéfaits, ébahis. Accent aigu initial, « -au- » au milieu, et accord au masculin pluriel (les amateurs).", d: 3, piege: "é, au et non o, b : aucune famille" }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Au Japon, les lecteurs ouvrent le livre par la droite. Ils tournent les pages de droite à gauche, et les cases se lisent dans le même sens. Ma cousine a vite appris cette habitude : elle lit maintenant trois tomes par semaine.",
-      notes: [
-        { word: "tournent", rule: "Verbe du 1er groupe au présent, 3e personne du pluriel : la terminaison est -ent." },
-        { word: "lisent", rule: "Verbe lire au présent, 3e personne du pluriel : lis-ent, avec la terminaison -ent." },
-        { word: "appris", rule: "Participe passé d'apprendre, avec un s final ; il reste invariable ici, car le COD (cette habitude) est placé après." },
-        { word: "semaine", rule: "Nom féminin : un seul n, et un e final muet." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Samedi, les élèves de la classe sont allés au festival du manga. Plusieurs visiteurs portaient des costumes colorés et des perruques bleues. Une jeune fille déguisée en guerrière a posé devant le stand des libraires.",
-      notes: [
-        { word: "allés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les élèves : masculin pluriel)." },
-        { word: "portaient", rule: "Verbe porter à l'imparfait, 3e personne du pluriel : -aient." },
-        { word: "bleues", rule: "L'adjectif s'accorde avec le nom (des perruques : féminin pluriel) : bleu devient bleues." },
-        { word: "déguisée", rule: "Le participe employé comme adjectif s'accorde avec le nom (une jeune fille : féminin singulier)." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Le soir, mon frère regarde sa série animée préférée. Les héros combattent des monstres, mais ils s'entraident toujours. Hier, il a prêté ses premiers tomes à deux camarades, qui les ont lus avec plaisir.",
-      notes: [
-        { word: "combattent", rule: "Verbe du 3e groupe au présent, 3e personne du pluriel : -ent." },
-        { word: "prêté", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici, car le COD (ses premiers tomes) est placé après." },
-        { word: "premiers", rule: "L'adjectif s'accorde avec le nom (tomes : masculin pluriel)." },
-        { word: "lus", rule: "Le COD « les » (les tomes) est placé avant l'auxiliaire avoir : le participe s'accorde au masculin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Dans une planche réussie, les onomatopées, ces mots qui imitent les bruits, occupent parfois toute une case. La dessinatrice les a dessinées en grosses lettres, afin que le lecteur entende presque le fracas de la bataille. Les silences, eux, elle les a rendus par de grandes cases vides.",
-      notes: [
-        { word: "onomatopées", rare: true, rule: "Mot qui imite un bruit. Un seul n, un seul m, un seul p, et finale en -ée avec un s au pluriel.", d: 3, piege: "o-n-o-m-a-t-o-p-é-e : lettres simples, aucun indice" },
-        { word: "dessinées", rule: "Le COD « les » (les onomatopées) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "entende", rule: "« Afin que » est suivi du subjonctif : que le lecteur entende, avec un e final." },
-        { word: "rendus", rule: "Le COD « les » (les silences) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Au festival, des centaines de passionnés ont défilé dans des costumes qu'ils avaient confectionnés eux-mêmes. Certains, malgré la chaleur, n'ont pas quitté leur cuirasse de la journée. Les jurés, impressionnés par tant de minutie, ont décerné plusieurs prix.",
-      notes: [
-        { word: "confectionnés", rule: "Confectionner : fabriquer avec soin. Groupe -ct- (famille de confection) et deux n ; accord au masculin pluriel avec le COD « qu' » (les costumes)." },
-        { word: "cuirasse", rule: "Armure qui protège le buste. Groupe -ui- après le c, puis deux s." },
-        { word: "minutie", rare: true, rule: "Soin extrême apporté aux détails. Un seul n, puis -ti- qui se prononce « si » : famille de minute.", d: 2, piege: "ti = si, un seul n" },
-        { word: "impressionnés", rule: "Le participe employé comme adjectif s'accorde avec le nom (les jurés : masculin pluriel)." },
-        { word: "décerné", rare: true, rule: "Décerner : attribuer un prix. C devant e et accent aigu final ; avec l'auxiliaire avoir, le participe reste invariable ici, car le COD (plusieurs prix) est placé après.", d: 2, piege: "c devant e, é final" }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Quand un studio adapte un manga en feuilleton télévisé, les animateurs ne se contentent pas de reproduire les planches : ils imaginent des mouvements, choisissent des couleurs et engagent des comédiens pour prêter leur voix aux héros. Les amateurs, qui avaient longtemps espéré cette adaptation, se sont installés devant l'écran dès la première diffusion.",
-      notes: [
-        { word: "feuilleton", rule: "Récit diffusé par épisodes. Début en feuill- (comme feuille), puis -eton avec un seul t." },
-        { word: "télévisé", rare: true, rule: "Diffusé à la télévision. Accent aigu sur les deux e, et s entre deux voyelles, qui se prononce « z ».", d: 2, piege: "é, é, s = z" },
-        { word: "choisissent", rule: "Verbe du 2e groupe au présent, 3e personne du pluriel : choisiss-ent." },
-        { word: "espéré", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici, car le COD (cette adaptation) est placé après." },
-        { word: "installés", rule: "Verbe pronominal : le participe s'accorde avec le sujet (les amateurs : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Parcouru de droite à gauche, un manga déconcerte d'abord le lecteur occidental ; il suffit pourtant de quelques pages pour que l'œil s'accoutume à ce parcours. Les vignettes, tantôt resserrées, tantôt étalées sur toute la largeur, y dictent le rythme, et l'ellipse entre deux cases suffit parfois à suspendre le temps.",
-      notes: [
-        { word: "déconcerte", rule: "Déconcerter : troubler, surprendre. Formé sur concert, avec un c devant le e, sans accent sur le premier e." },
-        { word: "accoutume", rule: "S'accoutumer : prendre l'habitude. Deux c, puis -ou- (famille de coutume), sans accent circonflexe." },
-        { word: "vignettes", rare: true, rule: "Cases d'une bande dessinée. Groupe -gn- (comme vigne), puis deux t devant le e muet.", d: 2, piege: "gn, tt" },
-        { word: "resserrées", rule: "Resserrer : rendre plus étroit. Deux r, puis ss ; l'adjectif s'accorde avec « les vignettes » (féminin pluriel)." },
-        { word: "ellipse", rare: true, rule: "Saut dans le récit : ce qui n'est pas montré entre deux cases. Deux l, un seul p, pas de y.", d: 3, piege: "ll, p simple, pas de y" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Dans l'atelier, les assistantes se partagent les tâches : l'une applique les aplats, une autre peaufine les décors, une troisième estompe les ombres. Les planches, qu'elles se sont passées de main en main, ne parviennent à l'éditeur qu'après de longues veillées.",
-      notes: [
-        { word: "aplats", rare: true, rule: "Surfaces de couleur uniforme. Un seul p, et un t final muet qui reparaît dans aplatir.", d: 3, piege: "p simple, t muet" },
-        { word: "peaufine", rare: true, rule: "Peaufiner : fignoler, parfaire. Début en -peau- (famille peau), puis f simple.", d: 3, piege: "eau (famille peau), f simple" },
-        { word: "estompe", rule: "Estomper : atténuer les contours. Un s muet après le e initial, puis m devant p." },
-        { word: "passées", rule: "Dans « se sont passées », le « se » est complément indirect : le participe s'accorde avec le COD « que » (les planches), placé avant." },
-        { word: "veillées", rule: "Heures passées éveillé le soir ou la nuit. Famille de veiller : -ill-, puis -ées au féminin pluriel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Devant la librairie, la file des lecteurs s'allongeait depuis l'aube : ils guettaient la sortie du dernier tome, dont l'éditeur avait jalousement gardé le dénouement, et espéraient une dédicace. Quelques-uns, lassés d'attendre, s'étaient accroupis sur le trottoir, et se sont relevés dès l'ouverture.",
-      notes: [
-        { word: "guettaient", rule: "Guetter : surveiller avec attention. Groupe -gu- devant e, puis deux t, et -aient à l'imparfait." },
-        { word: "dénouement", rare: true, rule: "Issue d'une histoire. Formé sur dénouer : é, -ou-, puis e muet conservé devant -ment.", d: 2, piege: "é, ou, e muet devant -ment" },
-        { word: "dédicace", rare: true, rule: "Mot d'un auteur écrit sur un exemplaire. Accents aigus, puis c = k et c = s : dédi-ca-ce.", d: 3, piege: "c = k, ce = s" },
-        { word: "accroupis", rule: "S'accroupir : se baisser en pliant les genoux. Deux c, puis -ou- ; accord au masculin pluriel avec le sujet." },
-        { word: "lassés", rule: "Le participe employé comme adjectif s'accorde avec le nom ou le pronom (quelques-uns : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Dans les hebdomadaires où paraissent d'abord les chapitres, chaque planche doit happer le lecteur, si rapide que soit sa lecture. Les dessinateurs y multiplient les hachures, les cases brisées et les cris tonitruants ; les intrigues rocambolesques s'y succèdent sans répit. Les récits qu'ils ont ainsi publiés pendant des années ont fini par former un genre à part entière.",
-      notes: [
-        { word: "hebdomadaires", rare: true, rule: "Publication qui paraît chaque semaine. H muet, puis -bdo- (famille grecque), -m-, et finale -aires au pluriel.", d: 3, piege: "h muet, bd, un seul m, -aires" },
-        { word: "rocambolesques", rare: true, rule: "Aux péripéties extravagantes. Un m devant b, un seul l, puis -esques ; accord avec « les intrigues ».", d: 3, piege: "mb, l simple, -esques" },
-        { word: "tonitruants", rare: true, rule: "Qui fait un bruit de tonnerre. Formé sur le latin tonitruare : un seul n, un seul t entre les voyelles, puis -ruants.", d: 3, piege: "tonitru-, un seul t, -ants" },
-        { word: "hachures", rare: true, rule: "Traits parallèles serrés qui rendent les ombres. H aspiré, puis -ch- et finale -ures.", d: 2, piege: "h, ch, -ures" },
-        { word: "publiés", rule: "Le COD « que » (les récits) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Au festival, les costumes les plus chamarrés rivalisent d'audace : baudriers de cuir, carquois garnis de flèches en carton, soutaches cousues à la main. Les couturières qui se sont relayées toute la nuit ne se sont pas ménagées, et plusieurs se sont piqué les doigts plus d'une fois.",
-      notes: [
-        { word: "chamarrés", rare: true, rule: "Chamarré : orné de couleurs vives et variées. Un seul m, puis deux r, accord au masculin pluriel.", d: 3, piege: "un seul m, rr" },
-        { word: "baudriers", rare: true, rule: "Bande de cuir portée en bandoulière pour suspendre une arme. Groupe -au-, puis finale -iers au pluriel.", d: 3, piege: "au, d, -iers" },
-        { word: "carquois", rare: true, rule: "Étui à flèches. Groupe -qu- puis -ois, avec un s final même au singulier.", d: 3, piege: "qu, finale -ois avec s" },
-        { word: "soutaches", rare: true, rule: "Galons étroits cousus en ornement. Groupe -ou-, un seul t, puis -ch-.", d: 3, piege: "ou, t simple, ch" },
-        { word: "relayées", rule: "Verbe pronominal à sens non réfléchi : le participe s'accorde avec le sujet (les couturières : féminin pluriel)." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les éditeurs ont longtemps hésité à investir dans ces séries. Les tomes qu'ils ont finalement publiés, au façonnage soigné, aux couvertures tantôt gaufrées, tantôt pelliculées, et aux rabats ornés d'un portrait de la dessinatrice, se sont arrachés dès la première semaine.",
-      notes: [
-        { word: "façonnage", rare: true, rule: "Ensemble des opérations qui donnent sa forme finale au livre. Cédille devant a, puis deux n.", d: 3, piege: "ç, nn" },
-        { word: "gaufrées", rare: true, rule: "Gaufrer : imprimer des motifs en relief. Groupe -gau-, f simple, accord au féminin pluriel.", d: 3, piege: "gau, f simple" },
-        { word: "pelliculées", rare: true, rule: "Pelliculer : recouvrir d'une fine pellicule. Deux l après le e, puis un seul l après le u.", d: 3, piege: "ll puis l (famille pellicule)" },
-        { word: "rabats", rule: "Parties de la couverture repliées vers l'intérieur. Un t final muet, qui reparaît dans rabattre." },
-        { word: "publiés", rule: "Le COD « que » (les tomes) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "accord", text: "Dans ce tome, le héros affronte trois rivals redoutables.", wrong: "rivals", right: "rivaux", choices: ["rivaux", "rivaus", "rivals"], rule: "Les noms en -al font en général leur pluriel en -aux : un rival, des rivaux." },
     { level: "apprenti", type: "accord", text: "Les deux amies dessinait leurs personnages pendant la récréation.", wrong: "dessinait", right: "dessinaient", choices: ["dessinaient", "dessinais", "dessinai"], rule: "Le sujet « les deux amies » est à la 3e personne du pluriel : elles dessinaient." },
@@ -256,6 +81,27 @@
     { level: "grand-scribe", type: "accord", notion: "3e.accords.sujet-gn-complement-du-nom", text: "Parmi les albums que l'éditeur met en avant figure trois recueils de nouvelles, dont les couvertures, peintes à la main, ont fait date.", wrong: "figure", right: "figurent", choices: ["figurent","figure","figurant"], rule: "Le sujet est inversé : c'est « trois recueils de nouvelles », placé après le verbe. Le verbe s'accorde avec lui, au pluriel." },
     { level: "grand-scribe", type: "sens", notion: "3e.homo.lexicaux", text: "Dans l'atelier d'un auteur de manga, l'assistant qui sert de modèle à une scène de combat doit tenir la même pause, bras tendu, le temps que le dessinateur saisisse les volumes de son corps.", wrong: "pause", right: "pose", choices: ["pose","pause","posse"], rule: "Une pose est une attitude du corps que l'on prend pour un modèle ; une pause est un arrêt. Les deux mots se prononcent pareil." },
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Assis sur un banc, jambes croisées, le jeune lecteur feuillette nonchalament le tome que ses amis lui ont prêté, sans voir passer les heures ni la nuit tomber.", wrong: "nonchalament", right: "nonchalamment", choices: ["nonchalamment","nonchalament","nonchalemment"], rule: "Nonchalant se termine en -ant : l'adverbe est donc en -amment, avec deux m (nonchalamment)." },
-    { level: "grand-scribe", type: "temps", notion: "4e.conj.participes-consonne-muette", text: "Quand un jeune lecteur réclame un autographe, l'auteur lui tend un crayon et le défie : « Prends cette feuille, observe un modèle, puis dessine-en un toi-même. »", wrong: "dessine-en", right: "dessines-en", choices: ["dessines-en","dessine-en","dessinez-en"], rule: "À l'impératif, les verbes du premier groupe perdent leur s, sauf devant « en » ou « y » : on le rétablit pour la liaison (dessines-en)." }
+    { level: "grand-scribe", type: "temps", notion: "4e.conj.participes-consonne-muette", text: "Quand un jeune lecteur réclame un autographe, l'auteur lui tend un crayon et le défie : « Prends cette feuille, observe un modèle, puis dessine-en un toi-même. »", wrong: "dessine-en", right: "dessines-en", choices: ["dessines-en","dessine-en","dessinez-en"], rule: "À l'impératif, les verbes du premier groupe perdent leur s, sauf devant « en » ou « y » : on le rétablit pour la liaison (dessines-en)." },
+    { level: "maitre", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Entre deux cases, un interstice blanche, appelé gouttière, suffit à suggérer le temps qui passe, et les auteurs en jouent en horlogers.", wrong: "blanche", right: "blanc", choices: ["blanc","blanche","blancs"], rule: "Interstice est un nom masculin : on écrit un interstice blanc." },
+    { level: "maitre", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Au bas de la case, un astérisque discrète, tracé à la plume, renvoie le lecteur à une note du traducteur sur un jeu de mots japonais.", wrong: "discrète", right: "discret", choices: ["discret","discrète","discrets"], rule: "Astérisque est un nom masculin : on écrit un astérisque discret." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "L'éditeur exigeait que la dessinatrice remit ses planches le lundi, et il ne tolérait pas qu'un chapitre parût en retard.", wrong: "remit", right: "remît", choices: ["remît","remit","remette"], rule: "Après « exigeait que », concordance au subjonctif imparfait : que la dessinatrice remît. Le circonflexe le distingue du passé simple « remit »." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Bien qu'il lut chaque semaine la revue de prépublication, le jeune lecteur attendait le volume relié pour savourer le récit d'une traite.", wrong: "lut", right: "lût", choices: ["lût","lut","lise"], rule: "Après « bien que » et un verbe principal à l'imparfait, le subjonctif est à l'imparfait : bien qu'il lût. Le circonflexe le distingue du passé simple « lut »." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Sur la table du dessinateur s'alignent des porte-mine, des gommes, des règles et des encriers, que ses assistants rangent chaque soir avant de partir.", wrong: "porte-mine", right: "porte-mines", choices: ["porte-mines","porte-mine","portes-mines"], rule: "Dans « porte-mine », « porte » est un verbe invariable et « mine » est un nom : des porte-mines." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Les studios diffusent des bandes-annonce de chaque adaptation animée plusieurs semaines avant la sortie, afin de réveiller l'attention des lecteurs de la série.", wrong: "bandes-annonce", right: "bandes-annonces", choices: ["bandes-annonces","bandes-annonce","bande-annonces"], rule: "Dans « bande-annonce », les deux noms de même valeur prennent la marque du pluriel : des bandes-annonces." },
+    { level: "maitre", type: "invariable", notion: "3e.accords.adjectif-apposition", text: "« Vous trouverez les planches ci-joint, corrigées à la hâte », écrit l'auteur à son éditeur dans un mot d'excuse pour le retard.", wrong: "ci-joint", right: "ci-jointes", choices: ["ci-jointes","ci-joint","ci-joints"], rule: "« Ci-joint » s'accorde quand il suit le nom auquel il se rapporte : les planches ci-jointes. Il est invariable placé devant le nom." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "Avant d'encrer la planche, l'auteur trace une esquise rapide au crayon bleu, qui fixe la place des personnages et le rythme des cases.", wrong: "esquise", right: "esquisse", choices: ["esquisse","esquise","esquice"], rule: "Esquisse prend deux s et s'écrit comme le verbe « esquisser »." },
+    { level: "maitre", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Un pictograme d'éclair, dessiné au coin de la case, signale au lecteur que le personnage s'apprête à frapper.", wrong: "pictograme", right: "pictogramme", choices: ["pictogramme","pictograme","pyctogramme"], rule: "Pictogramme s'écrit avec -gramme et deux m, comme « programme » et « diagramme »." },
+    { level: "maitre", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Les couvertures de l'édition de luxe, imprimées en sérigrafie sur un papier épais, supportent à merveille les couleurs vives des illustrations.", wrong: "sérigrafie", right: "sérigraphie", choices: ["sérigraphie","sérigrafie","cérigraphie"], rule: "Sérigraphie s'écrit avec ph, comme « photographie » : le second élément grec -graphie signifie « écrire »." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Après le crayonné, l'ancrage des contours à la plume exige une main sûre : une fois l'encre posée, aucune hésitation n'est permise.", wrong: "ancrage", right: "encrage", choices: ["encrage","ancrage","encrâge"], rule: "Encrage vient d'« encre » : on encre une planche. « Ancrage » se rapporte à l'ancre d'un bateau." },
+    { level: "grand-scribe", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Après dix ans de publication hebdomadaire, l'auteur a annoncé une pause, et cet intervalle, long et inattendue, a inquiété ses lecteurs, qui ont multiplié les messages d'encouragement.", wrong: "inattendue", right: "inattendu", choices: ["inattendu","inattendue","inattendus"], rule: "Intervalle est un nom masculin : on écrit un intervalle long et inattendu." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "L'assistant avait pourtant demandé que l'auteur fit relire ses planches avant l'impression, mais celui-ci, sûr de son trait, n'en tint aucun compte et envoya tout tel quel à l'imprimeur.", wrong: "fit", right: "fît", choices: ["fît","fit","fasse"], rule: "Après « avait demandé que », concordance au subjonctif imparfait : que l'auteur fît relire. Le circonflexe le distingue du passé simple « fit »." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le dessinateur craignait que son héros, trop sombre, ne tint pas le lecteur en haleine au-delà du premier chapitre, et il retravailla sans relâche les premières pages.", wrong: "tint", right: "tînt", choices: ["tînt","tint","tienne"], rule: "Après « craignait que », concordance au subjonctif imparfait : que son héros ne tînt pas. Le circonflexe le distingue du passé simple « tint »." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Les couvertures de ce manga romantique, baignées de teintes pastel, multiplient les arc-en-ciel, les pétales et les étoiles scintillantes, que l'illustratrice dessine au pastel gras.", wrong: "arc-en-ciel", right: "arcs-en-ciel", choices: ["arcs-en-ciel","arc-en-ciel","arcs-en-ciels"], rule: "Dans « arc-en-ciel », seul le premier nom prend la marque du pluriel : des arcs-en-ciel." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.conditionnel-emplois", text: "Au cas où l'éditeur refusera le chapitre, l'auteur en dessinerait un autre, plus court, et le proposerait dès la semaine suivante à une revue concurrente.", wrong: "refusera", right: "refuserait", choices: ["refuserait","refusera","refuse"], rule: "La locution « au cas où » appelle le conditionnel : au cas où l'éditeur refuserait." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Pour célébrer le dernier tome, l'auteur a signé une litographie en couleurs, tirée sur pierre en édition limitée, que les collectionneurs se sont arrachée en quelques heures.", wrong: "litographie", right: "lithographie", choices: ["lithographie","litographie","lithografie"], rule: "Lithographie s'écrit avec th et ph : le grec lithos signifie « pierre » et -graphie « écrire »." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Pour le tome anniversaire, l'éditeur a commandé une couverture policrome, ornée d'un cadre doré, où les héros de la série se pressent en costumes de fête autour d'un gâteau monumental.", wrong: "policrome", right: "polychrome", choices: ["polychrome","policrome","polichrome"], rule: "Polychrome vient du grec khrôma, « couleur » : poly- + -chrome, avec ch." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Contre la lumière, le papier des anciens recueils laisse deviner un filigramme, marque discrète de l'imprimeur, que seuls les collectionneurs savent reconnaître au premier coup d'œil.", wrong: "filigramme", right: "filigrane", choices: ["filigrane","filigramme","filigrame"], rule: "Filigrane vient de l'italien filigrana (fil + grain) : il se termine par -ane, non par -amme." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Chaque idéograme japonais porte à la fois un sens et plusieurs lectures, ce qui explique les petits signes que les éditeurs ajoutent à côté des mots difficiles dans les mangas pour enfants.", wrong: "idéograme", right: "idéogramme", choices: ["idéogramme","idéograme","idéogrâme"], rule: "Idéogramme s'écrit avec -gramme et deux m, comme « programme » : du grec gramma, « signe écrit »." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Le volume de collection comprend une dizaine de planches monocromes, où le noir profond et le blanc nu se disputent chaque case, et que les amateurs encadrent volontiers.", wrong: "monocromes", right: "monochromes", choices: ["monochromes","monocromes","monochrômes"], rule: "Monochrome vient du grec monos (seul) et khrôma (couleur) : -chrome, avec ch." }
   ]
 };

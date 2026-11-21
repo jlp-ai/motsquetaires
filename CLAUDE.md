@@ -2,14 +2,13 @@
 
 Projet personnel (hors OCTO) : spin-off allégé d'Onirologos / Les Motsquetaires
 (`../Onirologos/`). Même socle pédagogique (quatre niveaux de difficulté), mais
-sans récit, sans univers, sans méta-progression. Deux jeux courts, jouables
-en quelques minutes.
+sans récit, sans univers, sans méta-progression. Un seul jeu, « Trouve l'erreur »,
+jouable en quelques minutes. Le jeu Dictée (audio, clips, textes à trous) a été supprimé le 20/11/2026 ; il reste récupérable dans l'historique git.
 
-- **Statut (15/11/2026)** : prototype jouable, publié sur `https://github.com/jlp-ai/motsquetaires` (branche `main`, workflow GitHub Pages à activer dans Settings > Pages > source « GitHub Actions »). Fait : deux jeux, quatre niveaux, 15 thèmes en 7 méta-thèmes, textes à trous (Facile, Moyen), clips Azure pré-générés (clé partagée d'Onirologos), mots rares mesurés, mode noms propres perso/commercial, référentiel des programmes (`docs/programme-referentiel.md`).
-- **Reste à faire** : (0) réécrire les phrases à erreur et dictées de `montpellier` et `cherbourg` pour un ancrage local net (lieux célèbres nommés, règle ajoutée dans `docs/redaction-contenu.md`), après la fin de l'agent juge D qui édite les mêmes fichiers ; vérifier ensuite les autres thèmes de lieu ou d'œuvre pour la même généricité ; (1) critère de difficulté orthographique D à côté de la rareté R (un mot rare n'est pas forcément difficile à écrire : « estafette » plus dur que « bretteur »), avec un agent juge sur les mots `rare: true` ; (2) analyse des dictées de Pivot, rapports attendus dans `docs/pivot/` (dossier ignoré par git, droits) ; (3) étiqueter notes et erreurs par identifiant de notion du référentiel, pour une révision ciblée ; (4) vérifier à l'oreille les clips et à l'écran le mode à trous ; (5) thèmes à traiter plus tard, ci-dessous ; (6) skill `proposer-themes` (agent qui propose des thèmes à valider).
-- **Reprise après limite de session (15/11/2026, limite levée à 18h20)** : dernier envoi publié = commit « Sept nouveaux thèmes… ». Non publié, dans l'arbre de travail : (a) extension à 3 dictées et 6 erreurs par niveau de `starwars`, `harrypotter`, `kpopdemonhunters`, `mousquetaires` (noms propres en marqueurs ; relecture orthographique à refaire : consignes dans l'historique du skill `relire-orthographe`, points à vérifier : contractions devant les marqueurs dans les deux modes, « Louis XIII » à remplacer par « le roi », phrases pointues) ; (b) extensions INTERROMPUES de `manga.js` et `youtube.js` (quotas `rarete.mjs check` en échec : à terminer ou à restaurer avec `git checkout content/manga.js content/youtube.js`) ; (c) extensions non commencées (limite atteinte) de psg, kpop, jeuxvideo, series, ia, escrime, dessin, cherbourg, montpellier vers 4 dictées et 8 erreurs par niveau, selon `docs/extension-brief.md` ; puis les 7 thèmes récents et les 4 fictions à 4/8. Ensuite : clips (`node tools/clips.mjs --generate`), contrôles, publication (skill `publier`). Ne pas publier tant que `node tools/rarete.mjs check` a des FAIL.
-- **Densité des phrases Trouve l'erreur (décidée le 15/11/2026, hors dictées)** : phrases à réécrire par niveau (`docs/niveau-expert.md`, tableau de densité dans `docs/redaction-contenu.md`) : Expert (18 à 35 mots, 4 difficultés correctes autour de la faute), puis Difficile (15 à 25 mots, deux règles croisées), puis Moyen (12 à 20 mots), pour les 22 thèmes, par vagues d'agents (une par thème, 8 phrases par niveau) après la fin des extensions en cours ; relecture indépendante ensuite.
-- **Volume cible (15/11/2026)** : 20 phrases à erreur et 6 dictées par niveau et par sous-thème (voir `docs/extension-brief.md`), après la relecture, la publication et les passes Difficile et Moyen. Règles de répartition en proportions (`tools/erreurs.mjs`).
+- **Statut (20/11/2026)** : prototype jouable, publié sur `https://github.com/jlp-ai/motsquetaires` (branche `main`, workflow GitHub Pages). Fait : jeu « Trouve l'erreur », quatre niveaux, thèmes regroupés en méta-thèmes, phrases à plusieurs fautes, types d'erreur, mode noms propres perso/commercial, référentiel des programmes (`docs/programme-referentiel.md`).
+- **Reste à faire** : (0) vérifier l'ancrage local des thèmes de lieu ou d'œuvre (`montpellier`, `cherbourg` : lieux célèbres nommés, règle de `docs/redaction-contenu.md`) ; (1) analyse des dictées de Pivot, rapports attendus dans `docs/pivot/` (dossier ignoré par git, droits) ; (2) étiqueter les erreurs par identifiant de notion du référentiel, pour une révision ciblée ; (3) thèmes à traiter plus tard, ci-dessous ; (4) skill `proposer-themes` (agent qui propose des thèmes à valider).
+- **Densité des phrases Trouve l'erreur (décidée le 15/11/2026)** : phrases à réécrire par niveau (`docs/niveau-expert.md`, tableau de densité dans `docs/redaction-contenu.md`) : Expert (18 à 35 mots, 4 difficultés correctes autour de la faute), puis Difficile (15 à 25 mots, deux règles croisées), puis Moyen (12 à 20 mots), par vagues d'agents (une par thème, 8 phrases par niveau) ; relecture indépendante ensuite.
+- **Volume cible (15/11/2026)** : 20 phrases à erreur par niveau et par sous-thème (voir `docs/extension-brief.md`). Règles de répartition en proportions (`tools/erreurs.mjs`).
 - **À reprendre (18/11/2026)** : (a) quatre thèmes demandés, non écrits : photographie, Résistance (sobre, faits établis), Révolution française, Moyen Âge ; méta « Histoire » proposé pour les trois derniers ; (b) lot « variété des niveaux Apprenti et Compagnon » : remplacer environ 6 phrases par thème par des pièges des nouveaux types (`typographie`, `syntaxe`, `quantite`, `euphonie`, ajoutés dans `content/types.js` et `tools/erreurs.mjs`) ; (c) phrases à plusieurs fautes (`faults`, voir `docs/redaction-contenu.md`) : support prêt dans `app.js`, à introduire en minorité en Difficile et Expert ; (d) relecture orthographique (`relire-orthographe`) des lots Difficile et Expert et des thèmes La Fontaine, Échecs, Métal, Disney, puis enregistrement de ces 4 thèmes dans `index.html` et `content/metas.js` ; (e) autres idées de thèmes : marine et voile, architecture et patrimoine, espace et astronomie, cinéma. Limiter les agents en parallèle (4 au plus) pour ne pas épuiser la limite de session avant publication.
 - **Principe directeur** : plus simple qu'Onirologos. Toute fonctionnalité
   qui ressemble à de la méta (sceaux, carnet, carte de mondes, conteurs)
@@ -17,24 +16,9 @@ en quelques minutes.
 
 ---
 
-## Les deux jeux
+## Le jeu
 
-### 1. Dictées thématiques contemporaines
-
-Le joueur écoute un texte court dicté à voix haute et l'écrit. Correction
-à la fin, faute par faute, avec mini-explication de la règle.
-
-- **Thèmes contemporains** : PSG, K-Pop, et d'autres à ajouter (jeux vidéo,
-  séries, cuisine, voyage, réseaux sociaux, sport...). Un thème = un fichier
-  de contenu, un champ lexical propre.
-- **Piège orthographique et sujet moderne** : le thème porte l'attrait, la
-  difficulté porte sur la langue française (accords, homophones, participes
-  passés, mots rares du champ lexical).
-- **Noms propres et mots étrangers** (joueurs, groupes, termes coréens) : ne
-  jamais en faire des pièges. Les donner en clair (affichés ou épelés) ou les
-  éviter aux rangs bas.
-
-### 2. Trouve le mot en erreur
+### Trouve le mot en erreur
 
 Une phrase s'affiche avec **une seule faute d'orthographe** (ou de grammaire)
 cachée sur un mot. Le joueur touche le mot fautif, puis tape ou choisit la
@@ -42,7 +26,9 @@ bonne forme. Correction et règle expliquée.
 
 - Une et une seule erreur par phrase, sans ambiguïté possible.
 - La phrase doit rester correcte et naturelle une fois corrigée.
-- Mêmes thèmes contemporains que le jeu 1, pour mutualiser le contenu.
+- Un thème = un fichier de contenu, un champ lexical propre (PSG, K-Pop, jeux vidéo, séries, cuisine, voyage, sport...).
+- **Piège orthographique et sujet moderne** : le thème porte l'attrait, la difficulté porte sur la langue française (accords, homophones, participes passés, mots rares du champ lexical).
+- **Noms propres et mots étrangers** (joueurs, groupes, termes coréens) : ne jamais en faire des pièges. Les donner en clair ou les éviter aux rangs bas.
 
 ---
 
@@ -80,7 +66,7 @@ techniques repris tels quels.
 - **Le Club des Cinq** (série de romans jeunesse) : méta « Fictions et sagas », mêmes règles que les autres œuvres (textes originaux, aucune citation).
 - **Idées de thèmes (15/11/2026)** : chevaux, équitation, football, danse, piano, solfège. Méta-thèmes probables : Sport (équitation, football, danse), Animaux (chevaux) ou Sport, Musique (piano, solfège). À fusionner si des doublons apparaissent (chevaux et équitation). D'autres idées suivront : les ajouter ici au fil de l'eau.
 - **Les coins de France** (15/11/2026) : méta-thème de lieux (villes, régions, massifs, côtes, villages, sites remarquables). Il recouvre le méta « Villes de France » existant (Cherbourg, Montpellier) : à fusionner en le renommant « Coins de France » si l'utilisateur confirme. Chaque thème de lieu reste ancré dans des repères nommés et célèbres (règle « ancrage local » de `docs/redaction-contenu.md`) ; la dictée « Douce France » de Micheline Sommant (`docs/pivot/douce-france-sommant.md`) en est le modèle de format. Faits stables, aucun chiffre.
-- **Les fêtes et leurs origines** (15/11/2026) : Noël, Halloween, Pâques, Chandeleur, Épiphanie, Toussaint, 14 juillet, Carnaval, Saint-Valentin, nouvel an... Méta-thème « Fêtes et traditions », un thème par fête (origine, coutumes, vocabulaire : crèche, santon, bûche, citrouille, déguisement, galette, fève, crêpe). Sujets religieux et historiques : ton neutre et factuel, origines établies seulement (marquer « non vérifié » ce qui est légende), aucune prise de position ; ne rien dire qui puisse offenser une famille ou un enseignant. Idéal pour la dictée du jour calendaire plus tard (voir le skill `dictees-du-jour` d'Onirologos).
+- **Les fêtes et leurs origines** (15/11/2026) : Noël, Halloween, Pâques, Chandeleur, Épiphanie, Toussaint, 14 juillet, Carnaval, Saint-Valentin, nouvel an... Méta-thème « Fêtes et traditions », un thème par fête (origine, coutumes, vocabulaire : crèche, santon, bûche, citrouille, déguisement, galette, fève, crêpe). Sujets religieux et historiques : ton neutre et factuel, origines établies seulement (marquer « non vérifié » ce qui est légende), aucune prise de position ; ne rien dire qui puisse offenser une famille ou un enseignant.
 - **Le métro** (15/11/2026) : probablement le métro de Paris (stations nommées, lignes, correspondances, quai, rame, tourniquet, ticket) ; à préciser si d'autres métros sont visés (Lyon, Marseille, Londres, New York). Méta-thème possible « Transports » (métro, train, tramway, vélo). Ancrage obligatoire : stations et repères célèbres nommés ; faits stables, aucun chiffre de fréquentation ni horaire ; noms de lignes et de stations en clair (lieux publics), nom de l'opérateur en marqueur.
 - **Les magasins** (15/11/2026) : commerces et lieux d'achat (boulangerie, boucherie, fromagerie, librairie, quincaillerie, marché, supermarché, centre commercial, caisse, rayon, vitrine, soldes). À préciser : commerces de quartier, grandes surfaces, ou les deux. Méta-thème possible « Vie quotidienne » (magasins, métro, cuisine, fêtes). Enseignes et marques en marqueurs `{{Nom|périphrase}}` ; aucun prix ni promotion datés. Les métiers de commerce (boulanger, fromager, quincaillier) sont un bon gisement de mots rares, dans l'esprit des métiers d'autrefois de la dictée « Douce France ».
 - **Comprendre le monde** (vulgarisation, dans l'esprit de « C'est pas sorcier », 15/11/2026) : méta-thème de textes qui expliquent comment les choses fonctionnent. Sous-thèmes possibles (propositions, non validées) : le corps humain, l'espace et les planètes, les volcans et les séismes, la météo et le climat, l'électricité, les ponts et les barrages, les trains et les avions, l'eau et ses cycles, les fourmis et les abeilles, le cerveau. Un thème = un mécanisme expliqué en quelques phrases (cause, étapes, conséquence) avec un champ lexical technique accessible, idéal pour les mots rares et les termes savants. Règles : faits scientifiques établis seulement, aucun chiffre contesté ni donnée datée, ton clair et vivant. Le titre « C'est pas sorcier » est une marque ; ne s'y référer qu'en marqueur ou pas du tout.
@@ -93,11 +79,11 @@ techniques repris tels quels.
 
 ## Skills du projet (`.claude/skills/`)
 
-- `ecrire-theme` : écrire un thème ou l'étendre (plus de dictées et de phrases à erreur).
+- `ecrire-theme` : écrire un thème ou l'étendre (plus de phrases à erreur).
 - `relire-orthographe` : relecture indépendante des fichiers de contenu.
-- `juger-difficulte` : difficulté orthographique D à côté de la rareté R, quota de difficulté.
+- `juger-difficulte` : difficulté orthographique D des pièges, rareté R des mots.
 - `proposer-themes` : veille et fiches de thèmes à valider, sans rien rédiger.
-- `publier` : contrôles, clips vocaux, commit et push (GitHub, Vercel).
+- `publier` : contrôles, commit et push (GitHub, Vercel).
 
 Modèles des sous-agents : Sonnet par défaut, Opus quand l'orthographe doit être irréprochable, jamais Fable. Ces skills s'appuient sur les références d'Onirologos (`../Onirologos/.claude/skills/creer-dictee/references/`) sans les copier.
 
@@ -105,22 +91,18 @@ Modèles des sous-agents : Sonnet par défaut, Opus quand l'orthographe doit êt
 
 Tant que le projet est personnel, les noms propres sont permis. Avant toute monétisation, ils sont remplacés par des périphrases. Un nom remplaçable s'écrit `{{Nom|périphrase}}` dans le contenu ; le mode se règle dans `config.js` (`perso` ou `commercial`). Contrôle : `node tools/noms.mjs`. Règles et procédure de bascule : `docs/redaction-contenu.md`. Aujourd'hui seuls les noms de thème (PSG, YouTube, Star Wars, Harry Potter, KPop Demon Hunters) sont marqués ; les textes n'en contiennent aucun.
 
-## Mots rares
+## Rareté des mots
 
-Quota par dictée selon le niveau (0, 1, 2, 3 mots rares ; au moins 1 très rare en Expert), mesuré sur Lexique 3.83 : `node tools/rarete.mjs check`. Chaque mot rare est une note `rare: true`, affichée avec une pastille « mot rare » dans la correction. Détail dans `docs/redaction-contenu.md`.
+Les phrases à erreur de type `lexique` sont contrôlées sur Lexique 3.83 par niveau (`node tools/rarete-erreurs.mjs`) ; fréquence d'un mot : `node tools/rarete.mjs words <mots>`. Détail dans `docs/redaction-contenu.md`.
 
 ## Ce qui est réutilisable depuis Onirologos
 
 À copier ou adapter, pas à lier (les deux projets doivent rester
 indépendants) :
 
-- `prototype/correction.js` : moteur de correction pur, utilisable sous node.
-- `prototype/voice.js` : lecture à voix haute et prononciations par
-  occurrence.
 - `tools/rarete.mjs` et `data/lexique/` : rareté mesurée sur Lexique 3.83
   (CC BY-SA 4.0, à créditer).
-- Skills `creer-dictee` et `juger-difficulte` (écriture et jugement de
-  difficulté).
+- Skill `juger-difficulte` (jugement de difficulté).
 
 À ne **pas** reprendre : récit, conteurs, mondes, carnet, caserne, sceaux,
 atelier de back-office, BMAD.
@@ -138,15 +120,13 @@ atelier de back-office, BMAD.
   juge jamais le joueur.
 - Droits : pas de paroles de chansons ni d'extraits d'articles. Textes
   originaux uniquement.
-- Une dictée : 3 à 6 phrases (à affiner par niveau). Une phrase à erreur :
-  une ligne.
+- Une phrase à erreur : une ligne.
 
 ## Conventions techniques (provisoires, à valider)
 
 - Application web statique, HTML/CSS/JS sans framework ni build, mobile
   d'abord (390 x 844).
-- Voix : synthèse vocale du navigateur par défaut ; clips pré-générés
-  seulement si la qualité est insuffisante.
+- Pas de voix ni d'audio : jeu purement textuel.
 - Contenu en JSON, un fichier par thème, un jeu de champs par jeu et par
   niveau.
 - Persistance minimale en `localStorage` (niveau choisi, dernier thème).
@@ -155,10 +135,8 @@ atelier de back-office, BMAD.
 ## Questions ouvertes
 
 - Nom du jeu et noms affichés des quatre niveaux.
-- Texte dicté : phrase à trous aux niveaux 1 et 2 (comme Onirologos) ou
-  dictée libre partout ?
-- Format du jeu 2 : saisie libre de la correction, ou choix entre
-  plusieurs graphies ?
+- Format du jeu : saisie libre de la correction, ou choix entre
+  plusieurs graphies (choix, actuellement) ?
 - Production du contenu : écriture assistée par Claude puis relecture
   humaine, avec quelle grille de validation ?
 - Hébergement (Vercel comme Onirologos ou simple fichier local).

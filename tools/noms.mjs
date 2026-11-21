@@ -1,7 +1,7 @@
 // Proper-name mechanism checks.
 //   node tools/noms.mjs          current mode, markers per theme, structure checks in BOTH modes,
 //                                and a scan of capitalized words left unmarked (commercial mode).
-// A marker {{Name|stand-in}} must leave every dictation and every error sentence valid in both modes.
+// A marker {{Name|stand-in}} must leave every error sentence valid in both modes.
 import { loadContent, currentMode, Names } from "./content.mjs";
 
 console.log("Mode courant : " + currentMode() + " (config.js ; NAMES_MODE de l'environnement prioritaire)\n");
@@ -25,11 +25,6 @@ for (const mode of ["perso", "commercial"]) {
   const { themes } = loadContent(mode);
   for (const [id, t] of Object.entries(themes)) {
     for (const lv of ["apprenti", "compagnon", "maitre", "grand-scribe"]) if (t.erreurs.filter((e) => e.level === lv).length < 2) fail(mode, id, `niveau ${lv} : au moins 2 erreurs attendues`);
-    for (const d of t.dictees) {
-      const text = d.text.toLowerCase();
-      for (const n of d.notes || []) if (!text.includes(n.word.toLowerCase())) fail(mode, id, `note « ${n.word} » absente de la dictée ${d.level}`);
-      if (/\{\{|\}\}/.test(d.text)) fail(mode, id, "marqueur non résolu");
-    }
     for (const e of t.erreurs) {
       const words = e.text.split(" ").map((w) => w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, ""));
       const unel = (w) => w.replace(/^(?:[ldjmtsnc]|qu|lorsqu|puisqu|jusqu)['’]/i, ""); // same rule as app.js stripEl
@@ -59,7 +54,7 @@ const ALLOWED = new Set(["Paris", "Parisiens", "Parisien", "Internet", "Normandi
   "Artagnan", "Milady", "Buckingham", "Léa"]);
 let flagged = 0;
 for (const [id, t] of Object.entries(themes)) {
-  const texts = [...t.dictees.map((d) => d.text), ...t.erreurs.map((e) => e.text)];
+  const texts = t.erreurs.map((e) => e.text);
   const found = new Set();
   for (const text of texts) {
     for (const m of text.matchAll(/(?<![.!?…]\s|^)\b\p{Lu}[\p{L}'’-]*/gu)) {

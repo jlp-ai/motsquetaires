@@ -19,7 +19,7 @@ const THRESHOLD = {
 function main() {
   const args = process.argv.slice(2);
   const allIds = readdirSync(join(root, "content"))
-    .filter((f) => f.endsWith(".js") && f !== "metas.js" && f !== "pronunciations.js" && f !== "types.js")
+    .filter((f) => f.endsWith(".js") && f !== "metas.js" && f !== "types.js")
     .map((f) => f.slice(0, -3));
   const ids = args.length ? args : allIds;
 

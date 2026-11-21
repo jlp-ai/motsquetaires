@@ -1,198 +1,6 @@
 (window.THEMES = window.THEMES || {}).youtube = {
   name: "{{YouTube|Vidéo en ligne}}",
   emoji: "▶️",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Chaque semaine, ma cousine filme une nouvelle vidéo dans sa chambre. Elle installe la caméra, vérifie la lumière et commence à parler. Le soir, ses abonnés regardent la vidéo et laissent des commentaires gentils.",
-      notes: [
-        { word: "regardent", rule: "Le sujet « ses abonnés » est au pluriel : le verbe se termine par -ent." },
-        { word: "ses", rule: "« Ses » est un déterminant possessif : les abonnés sont à elle (à ne pas confondre avec « ces »)." },
-        { word: "gentils", rule: "L'adjectif s'accorde avec le nom « commentaires » : masculin pluriel." },
-        { word: "à", rule: "Dans « commence à parler », « à » est une préposition : on ne peut pas le remplacer par « avait »." },
-        { word: "abonnés", rare: true, rule: "Formé sur abonner : deux n, puis -és au masculin pluriel (ses abonnés).", d: 1, piege: "un seul n, accord" }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les vidéos que la créatrice a montées pendant la nuit ont été mises en ligne dès l'aube. Ses abonnés, qui les attendaient impatiemment, se sont précipités pour les regarder. Quant aux miniatures, elles ont été retouchées avec soin.",
-      notes: [
-        { word: "montées", rule: "Le COD « que » (les vidéos) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "impatiemment", rare: true, rule: "Les adverbes formés sur un adjectif en -ent s'écrivent -emment : impatient, impatiemment.", d: 2, piege: "-emment (famille patient), mm" },
-        { word: "précipités", rule: "Verbe pronominal dont le « se » est COD : le participe s'accorde avec le sujet (ses abonnés)." },
-        { word: "Quant", rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t." },
-        { word: "abonnés", rare: true, rule: "Formé sur abonner : deux n, puis -és au masculin pluriel.", d: 1, piege: "un seul n, accord" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Quelles que soient les modes, la vidéaste refuse de céder aux sirènes de l'algorithme : seul compte, à ses yeux, un public pérenne. Les heures de tournage qu'il a fallu pour cette série, elle ne les a jamais comptées. Les extraits qu'elle a fait traduire ont été bien accueillis à l'étranger.",
-      notes: [
-        { word: "Quelles", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (les modes : féminin pluriel)." },
-        { word: "algorithme", rule: "Suite d'instructions qui trie et recommande les vidéos. Th prononcé [t], i après le r, finale -me.", rare: true, d: 2, piege: "th pour [t], i après le r" },
-        { word: "pérenne", rule: "Qui dure longtemps. Deux n, comme dans pérennité : pé-ren-ne, accent aigu.", rare: true, d: 3, piege: "deux n (famille pérennité), é" },
-        { word: "fallu", rule: "Le participe passé d'un verbe impersonnel reste toujours invariable : les heures qu'il a fallu." },
-        { word: "comptées", rule: "Le COD « les » (les heures) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "fait", rule: "« Fait » suivi d'un infinitif reste toujours invariable." },
-        { word: "vidéaste", rare: true, rule: "Personne qui réalise des vidéos. Accent aigu sur le é de vidé-, suffixe -aste avec un e final, au masculin comme au féminin.", d: 1, piege: "é, -aste" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les vidéastes se sont succédé dans ce studio exigu, quelque aguerris qu'ils soient aux affres du direct. Les scénarios qu'ils avaient cru pouvoir improviser leur ont valu maintes nuits blanches et d'interminables tergiversations ; aussi en rient-ils volontiers aujourd'hui.",
-      notes: [
-        { word: "succédé", rule: "Dans « se succéder », le « se » est COI (succéder à quelqu'un) : le participe reste invariable." },
-        { word: "exigu", rule: "Très petit, étroit. X, g suivi de u, finale -u au masculin singulier.", rare: true, d: 2, piege: "x, gu, finale -u" },
-        { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est adverbe (si) et reste invariable." },
-        { word: "aguerris", rule: "Endurcis par l'expérience. Famille de guerre : gu devant e, deux r, accord au masculin pluriel.", rare: true, d: 3, piege: "gu, rr (famille guerre), s du pluriel" },
-        { word: "cru", rule: "Le « que » est COD de « improviser » et non de « croire » : le participe reste invariable." },
-        { word: "tergiversations", rule: "Détours et hésitations pour éviter de se décider. Dérivé de tergiverser : g doux, puis -sations avec s.", rare: true, d: 3, piege: "g doux, s et non c (famille tergiverser)" },
-        { word: "affres", rare: true, rule: "Tourments, angoisses. Deux f, et ce nom féminin ne s'emploie qu'au pluriel : les affres.", d: 3, piege: "ff, s (toujours pluriel)" },
-        { word: "vidéastes", rare: true, rule: "Personnes qui réalisent des vidéos. Accent aigu sur le é de vidé-, suffixe -aste, et un s au pluriel.", d: 1, piege: "é, -aste, s" }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Pour son premier film, ma sœur a tourné toutes les scènes dans le jardin. Ensuite, elle a coupé les passages ratés et ajouté de la musique. Ses amis ont applaudi quand ils ont vu le résultat. Elle les a remerciés chaleureusement.",
-      notes: [
-        { word: "scènes", rule: "Nom féminin pluriel après « toutes les » : s final, avec un accent grave sur le e." },
-        { word: "ratés", rule: "L'adjectif s'accorde avec le nom « passages » : masculin pluriel." },
-        { word: "ont", rule: "« Ont » est le verbe avoir : on peut le remplacer par « avaient » (à ne pas confondre avec « on »)." },
-        { word: "remerciés", rule: "Le COD « les » (ses amis) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "chaleureusement", rule: "Adverbe formé sur l'adjectif chaleureuse : chaleureuse + ment, avec un e conservé." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "La miniature est l'image qui donne envie de cliquer. Léa choisit une photo claire et écrit un titre court. Sous la vidéo, des inconnus posent des questions, et elle leur répond toujours avec le sourire. Quelle chance d'avoir un public aussi curieux.",
-      notes: [
-        { word: "claire", rule: "L'adjectif s'accorde avec le nom « photo » : féminin singulier, avec un e final." },
-        { word: "posent", rule: "Le sujet « des inconnus » est au pluriel : le verbe se termine par -ent." },
-        { word: "leur", rule: "Devant un verbe, « leur » est un pronom : il ne prend jamais de s." },
-        { word: "répond", rule: "Verbe répondre à la 3e personne du singulier : d final, comme dans « il répondait »." },
-        { word: "Quelle", rule: "« Quelle » est un déterminant exclamatif qui s'accorde avec « chance » (à ne pas confondre avec « qu'elle »)." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Ce soir, mon frère passe en direct pour montrer un tutoriel de cuisine. Il prépare des crêpes et explique chaque étape. Les spectateurs écrivent leurs questions, puis il les lit à voix haute. Tout le monde s'est bien amusé.",
-      notes: [
-        { word: "crêpes", rule: "Accent circonflexe sur le e, et s du pluriel après « des »." },
-        { word: "étape", rule: "Nom féminin : accent aigu initial, accent circonflexe absent, e final." },
-        { word: "écrivent", rule: "Le sujet « les spectateurs » est au pluriel : écrivent, avec -ent." },
-        { word: "leurs", rule: "« Leurs » est un déterminant possessif devant un nom pluriel (questions) : il prend un s." },
-        { word: "amusé", rule: "Verbe pronominal : le participe s'accorde avec le sujet « tout le monde », masculin singulier." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les séquences que le monteur a visionnées étaient trop longues. Il a donc supprimé les passages inutiles, resserré le cadrage et soigné le bruitage. Une fois assemblées, les images semblaient enfin plus vivantes.",
-      notes: [
-        { word: "visionnées", rule: "Le COD « que » (les séquences) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "resserré", rule: "Resserrer, c'est rendre plus serré : deux r et deux s, comme dans serrer." },
-        { word: "bruitage", rare: true, rule: "Reproduction de sons au montage : formé sur bruit (ui, un seul t), suffixe -age sans e.", d: 2, piege: "ui, un seul t, -age" },
-        { word: "assemblées", rule: "Le participe employé seul s'accorde avec le sujet « les images » : féminin pluriel." },
-        { word: "semblaient", rule: "Imparfait, 3e personne du pluriel : le sujet « les images » appelle -aient." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Au début, la jeune chaîne n'avait ni studio ni matériel professionnel. La créatrice posait son téléphone sur un trépied branlant et enregistrait ses vidéos le soir, quand ses voisins étaient enfin silencieux. Peu à peu, les premiers fidèles sont arrivés.",
-      notes: [
-        { word: "professionnel", rule: "Adjectif dérivé de profession : deux n devant le e, comme dans professionnelle.", d: 2, piege: "deux n" },
-        { word: "trépied", rare: true, rule: "Support à trois pieds : accent aigu, puis un d final muet, comme dans pied.", d: 2, piege: "é, d muet (famille pied)" },
-        { word: "branlant", rule: "Participe présent de branler, employé comme adjectif : finale en -ant." },
-        { word: "silencieux", rule: "Adjectif formé sur silence : c, puis -ieux." },
-        { word: "arrivés", rule: "Avec l'auxiliaire être, le participe s'accorde avec le sujet (les fidèles : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Le sous-titrage rend les vidéos accessibles aux personnes sourdes et à ceux qui regardent sans le son. Les phrases qui s'affichent doivent rester courtes, lisibles et bien synchronisées avec la voix. Les internautes que ce soin a séduits laissent souvent un commentaire élogieux.",
-      notes: [
-        { word: "accessibles", rule: "L'adjectif s'accorde avec « vidéos » : pluriel, avec deux c et deux s dans la famille d'accès.", d: 1, piege: "cc, ss" },
-        { word: "sourdes", rule: "L'adjectif s'accorde avec « personnes » : féminin pluriel." },
-        { word: "synchronisées", rare: true, rule: "Mises en accord dans le temps : y après le s, puis ch prononcé [k], accord au féminin pluriel.", d: 2, piege: "y, ch pour [k]" },
-        { word: "séduits", rule: "Le COD « que » (les internautes) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "élogieux", rare: true, rule: "Qui contient des louanges. Formé sur éloge : accent aigu, g doux, puis -ieux.", d: 2, piege: "é, g doux, -ieux" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Quoique la miniature soit le premier contact avec le public, nombre de créateurs la négligent. Un camaïeu de teintes ternes passe inaperçu, alors que deux ou trois contrastes bien choisis suffisent à retenir l'œil. Les maquettes que la graphiste a esquissées, puis retouchées, ont fini par faire l'unanimité.",
-      notes: [
-        { word: "Quoique", rule: "« Quoique » en un mot signifie « bien que » et appelle le subjonctif (soit)." },
-        { word: "négligent", rule: "Après « nombre de », le verbe s'accorde au pluriel. Le verbe négliger prend -gent, avec un e après le g." },
-        { word: "camaïeu", rare: true, rule: "Dégradé d'une même couleur. Tréma sur le i, puis -eu : ca-ma-ï-eu.", d: 3, piege: "ï, -eu" },
-        { word: "inaperçu", rule: "Passer inaperçu : un seul p, cédille sous le c devant u, accord avec « un camaïeu » (masculin singulier)." },
-        { word: "suffisent", rule: "Verbe suffire au présent, 3e personne du pluriel : suffisent, avec -ent." },
-        { word: "esquissées", rule: "Esquisser : deux s, comme dans le nom esquisse. Accord avec le COD « que » (les maquettes)." },
-        { word: "unanimité", rare: true, rule: "Accord de tous. Formé sur le latin unanimus : un seul n, puis nim-, accent aigu final.", d: 2, piege: "un seul n, é" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Un direct ne pardonne rien : pas de seconde prise, pas de coupe au montage. Quand la connexion se mit à faiblir, l'animatrice, imperturbable, meubla le silence pendant que les techniciens rétablissaient le signal. Les spectateurs, qui s'étaient crus abandonnés, se sont rassurés et ont salué un tel aplomb.",
-      notes: [
-        { word: "mit", rule: "Passé simple de mettre à la 3e personne du singulier : mit, sans accent circonflexe." },
-        { word: "connexion", rare: true, rule: "Liaison de communication. Deux n, puis -xion et non -ction : connexion.", d: 3, piege: "nn, x et non ct" },
-        { word: "animatrice", rare: true, rule: "Féminin de animateur : un seul n, un seul m, puis -trice.", d: 2, piege: "un seul n, -trice" },
-        { word: "imperturbable", rule: "Qui ne se laisse pas troubler. Formé sur perturber : im-, un seul r devant -turb-, finale -able." },
-        { word: "crus", rule: "Se croire abandonnés : le « se » est COD, le participe s'accorde avec le sujet (les spectateurs : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "La vulgarisation scientifique exige de la rigueur : les hypothèses que le présentateur a énoncées doivent reposer sur une démarche empirique. Il a beau simplifier, jamais il ne trahit les faits. Les expériences qu'il a su réaliser avec des moyens dérisoires ont convaincu des milliers de curieux.",
-      notes: [
-        { word: "vulgarisation", rare: true, rule: "Action de rendre accessible au grand public. Formé sur vulgaire : gar, puis -isation avec s.", d: 2, piege: "g, s et non z" },
-        { word: "empirique", rare: true, rule: "Fondé sur l'expérience et l'observation. Em- devant p, un seul p, puis -irique avec -que final.", d: 3, piege: "em, un seul p, -ique" },
-        { word: "énoncées", rule: "Le COD « que » (les hypothèses) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "su", rule: "Participe suivi d'un infinitif : « que » (les expériences) est COD de réaliser, pas de savoir. Le participe reste invariable." },
-        { word: "dérisoires", rule: "Insignifiants, minuscules. Dérivé de dérision : accent aigu, un seul r, un s doux, puis -oires." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Sous chaque vidéo, les internautes ont déversé une kyrielle de quolibets, sans que nul d'entre eux se soucie d'argumenter. La créatrice, dont l'opiniâtreté n'a jamais fléchi, s'est abstenue de répondre aux diatribes. Les critiques qu'elle a jugées fondées, elle les a au contraire accueillies avec gratitude.",
-      notes: [
-        { word: "kyrielle", rare: true, rule: "Longue suite de mots ou d'éléments. K et y initiaux, un seul r, puis -ielle avec deux l.", d: 3, piege: "ky, un seul r, ll" },
-        { word: "quolibets", rare: true, rule: "Plaisanteries moqueuses. Qu devant o, un seul l, finale -ets au pluriel.", d: 3, piege: "qu devant o, un seul l, -ets" },
-        { word: "soucie", rule: "Après « sans que », le subjonctif présent de se soucier s'écrit avec un e final." },
-        { word: "opiniâtreté", rare: true, rule: "Obstination. Formé sur opiniâtre : un seul n, accent circonflexe sur le a, puis -eté avec accent aigu.", d: 3, piege: "p, â, -eté" },
-        { word: "abstenue", rule: "S'abstenir est essentiellement pronominal : le participe s'accorde avec le sujet (la créatrice : féminin singulier)." },
-        { word: "diatribes", rare: true, rule: "Critiques violentes et injurieuses. Dia-, puis -tribes sans h.", d: 2, piege: "dia-, t sans h, b" },
-        { word: "jugées", rule: "Le COD « que » (les critiques) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "accueillies", rule: "Le COD « les » (les critiques) est placé avant l'auxiliaire avoir : accord au féminin pluriel. Accueillir prend deux c et -ueill-." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Dans la salle de montage, le réalisateur rabâchait les mêmes consignes depuis l'aube. Bien que la prise eût été soigneusement cadrée, un raccord bancal en gâchait l'effet. Les séquences qu'il aurait voulu retourner, faute de temps, il a dû y renoncer ; aussi s'est-il contenté d'un habile rééquilibrage de la bande-son.",
-      notes: [
-        { word: "rabâchait", rare: true, rule: "Répéter sans cesse. Accent circonflexe sur le a, ch, puis -ait à l'imparfait.", d: 3, piege: "â, ch, -ait" },
-        { word: "eût", rule: "Après « bien que », subjonctif plus-que-parfait au singulier : eût, avec un accent circonflexe." },
-        { word: "raccord", rare: true, rule: "Liaison entre deux plans successifs. Formé sur accord : deux c, un seul r.", d: 3, piege: "cc, un seul r (famille accord)" },
-        { word: "bancal", rare: true, rule: "Qui boite, instable. Finale en -al, avec un c devant le a.", d: 2, piege: "c, finale -al" },
-        { word: "voulu", rule: "Participe suivi d'un infinitif : « que » (les séquences) est COD de retourner. Le participe reste invariable." },
-        { word: "contenté", rule: "Se contenter : le « se » est COD, le participe s'accorde avec le sujet « il » (masculin singulier)." },
-        { word: "rééquilibrage", rare: true, rule: "Remise en équilibre. Ré- devant équilibre : deux accents aigus qui se suivent, puis -age.", d: 3, piege: "éé, qu, -age" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les tutoriels de bricolage ont essaimé sur la toile. Certains, d'un didactisme exemplaire, détaillent chaque geste ; d'autres, hâtivement montés, laissent le novice perplexe devant une vis récalcitrante. Quelque patience qu'ils aient, les débutants se sont maintes fois découragés.",
-      notes: [
-        { word: "essaimé", rare: true, rule: "Se multiplier comme un essaim d'abeilles. Formé sur essaim : e initial, deux s, puis ai.", d: 3, piege: "ss, ai (famille essaim)" },
-        { word: "didactisme", rare: true, rule: "Caractère d'un propos qui enseigne. Dérivé de didactique : d, i, d, puis -actisme.", d: 3, piege: "didact-, c, -isme" },
-        { word: "hâtivement", rule: "Trop vite. Accent circonflexe sur le a (famille hâte), puis -ivement." },
-        { word: "perplexe", rule: "Embarrassé, indécis. Per-, puis -plexe avec un x." },
-        { word: "récalcitrante", rare: true, rule: "Qui résiste. Accent aigu, c, puis -alcitr-, finale -ante au féminin.", d: 3, piege: "é, c, -alcitr-" },
-        { word: "Quelque", rule: "Devant un nom (patience), « quelque » est déterminant : un seul mot, e final, suivi du subjonctif (aient)." },
-        { word: "découragés", rule: "Se décourager : le « se » est COD, le participe s'accorde avec le sujet (les débutants : masculin pluriel)." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "accord", text: "Les abonnés attende la prochaine vidéo avec impatience.", wrong: "attende", right: "attendent", choices: ["attendent", "attend", "attendes"], rule: "Le sujet « les abonnés » est au pluriel : le verbe se termine par -ent." },
     { level: "apprenti", type: "homophone", text: "La vidéo et en ligne depuis ce matin.", wrong: "et", right: "est", choices: ["est", "ai", "es"], rule: "On peut remplacer par « était » : c'est le verbe être, qui s'écrit « est »." },
@@ -213,11 +21,11 @@
     { level: "compagnon", type: "temps", text: "Il faut que tu active les sous-titres avant le début.", wrong: "active", right: "actives", choices: ["actives", "active", "activent"], rule: "Après « il faut que », le verbe est au subjonctif : à la 2e personne du singulier, il se termine par -es." },
     { level: "compagnon", type: "participe", text: "Quelle vidéo as-tu préféré cette semaine ?", wrong: "préféré", right: "préférée", choices: ["préférée", "préférés", "préférées"], rule: "Le COD « quelle vidéo » est placé avant l'auxiliaire avoir : accord au féminin singulier." },
     { level: "maitre", type: "temps", text: "Bien qu'elle a beaucoup d'abonnés, la créatrice reste d'une grande discrétion.", wrong: "a", right: "ait", choices: ["ait", "a", "aie"], rule: "« Bien que » est suivi du subjonctif : qu'elle ait." },
-    { level: "maitre", type: "participe", text: "Les prises que le réalisateur a dues refaire étaient nombreuses.", wrong: "dues", right: "dû", choices: ["dû", "dues", "dus"], rule: "Suivi d'un infinitif (refaire), le participe passé de devoir reste invariable. Il prend un accent circonflexe au masculin singulier." },
+    { level: "maitre", type: "lexique", text: "Les vidéastes se plaignent de l'algorythme de recommandation, dont les critères restent opaques et changent sans prévenir.", wrong: "algorythme", right: "algorithme", choices: ["algorithme", "algorythme", "algoritme"], rule: "Algorithme vient du nom du mathématicien al-Khwârizmî : th et i, sans y. Il ne faut pas le rapprocher de « rythme »." },
     { level: "maitre", type: "invariable", text: "Les spectatrices, tout contentes d'avoir été citées en direct, ont applaudi.", wrong: "tout", right: "toutes", choices: ["toutes", "tous", "tout"], rule: "Devant un adjectif féminin qui commence par une consonne, « tout » s'accorde : toutes contentes." },
-    { level: "maitre", type: "temps", text: "Même si elle gagnerait en visibilité, elle refuserait cette offre.", wrong: "gagnerait", right: "gagnait", choices: ["gagnait", "gagnerait", "gagnerai"], rule: "Après « si » de condition, on n'emploie pas le conditionnel : on met l'imparfait (si elle gagnait)." },
+    { level: "maitre", type: "lexique", text: "Le montage d'un documentaire d'une heure est un travail cronophage, que peu de créateurs acceptent de déléguer.", wrong: "cronophage", right: "chronophage", choices: ["chronophage", "cronophage", "chronofage"], rule: "Chronophage, « qui consomme beaucoup de temps », vient du grec chronos (temps) et phagein (manger) : ch initial comme dans chronomètre, ph prononcé [f]." },
     { level: "maitre", type: "accord", text: "Les tutoriels auquel elle a recours sont toujours très clairs.", wrong: "auquel", right: "auxquels", choices: ["auxquels", "auxquelles", "auquels"], rule: "« Auxquels » reprend « les tutoriels » (masculin pluriel) : on a recours à ces tutoriels." },
-    { level: "maitre", type: "temps", text: "Aussi prolifiques qu'ils soit, les vidéastes ne publient pas tous les jours.", wrong: "soit", right: "soient", choices: ["soient", "soit", "soie"], rule: "Le sujet « ils » est au pluriel : le subjonctif de être se termine par -ent (soient)." },
+    { level: "maitre", type: "lexique", text: "La chaîne a renoncé à tout décor ostantatoire : un simple fond uni et une lumière douce suffisent à ses vidéos.", wrong: "ostantatoire", right: "ostentatoire", choices: ["ostentatoire", "ostantatoire", "ostentattoire"], rule: "Ostentatoire vient du latin ostentare, « montrer avec insistance » : ostent- avec un e après le t, puis finale -atoire (un seul t)." },
     { level: "grand-scribe", type: "lexique", text: "Le journal a salué, en des termes ditirambiques, la rétrospective que la chaîne a consacrée à ses dix premières années, et les abonnés, enchantés, se sont empressés de la partager.", wrong: "ditirambiques", right: "dithyrambiques", choices: ["dithyrambiques","ditirambiques","dythirambiques"], rule: "Dithyrambique vient du dithyrambe, chant en l'honneur de Dionysos : th et y comme dans le grec. Il signifie « d'un éloge enthousiaste »." },
     { level: "grand-scribe", type: "lexique", text: "Parmi la plétore de chaînes consacrées au bricolage, rares sont celles dont les tutoriels, filmés avec une rigueur d'horloger, sont à la fois clairs et exhaustifs.", wrong: "plétore", right: "pléthore", choices: ["pléthore","plétore","plèthore"], rule: "Pléthore, « surabondance », vient du grec plêthôra : th après l'accent aigu, comme dans pléthorique. L'accent est aigu sur le premier e." },
     { level: "grand-scribe", type: "lexique", text: "Les vidéos éphèmères, qui disparaissent au bout de vingt-quatre heures, ont renouvelé la façon dont les créateurs entretiennent un lien avec leur communauté sans jamais recourir à de longs montages.", wrong: "éphèmères", right: "éphémères", choices: ["éphémères","éphèmères","éfémères"], rule: "Éphémère, « qui ne dure qu'un jour », vient du grec : ph prononcé [f], puis accents aigus sur les deux premiers e (é-phé-mè-re) et accent grave sur le troisième." },
@@ -249,6 +57,24 @@
     { level: "compagnon", type: "homophone", notion: "4e.homo.quand-quant-quen", text: "Quand à la musique de fond, la vidéaste la compose elle-même, au piano, chaque semaine.", wrong: "Quand", right: "Quant", choices: ["Quant", "Quand", "Qu'en"], rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t. « Quand » marque le temps." },
     { level: "compagnon", type: "homophone", notion: "4e.homo.mais-mes", text: "La vidéaste a longuement retouché l'image, mes le son reste très mauvais.", wrong: "mes", right: "mais", choices: ["mais", "mes", "met"], rule: "On peut remplacer par « cependant » : c'est la conjonction « mais ». « Mes » est un déterminant possessif." },
     { level: "compagnon", type: "accord", notion: "5e.accords.sujet-separe", text: "Le nombre de commentaires sous ses vidéos augmentent à chaque nouvel épisode de la série.", wrong: "augmentent", right: "augmente", choices: ["augmente", "augmentent", "augmentes"], rule: "Le verbe s'accorde avec le noyau du sujet, « nombre », au singulier, et non avec le complément « commentaires »." },
-    { level: "compagnon", type: "sens", notion: "3e.homo.lexicaux", text: "Chaque dimanche, la vidéaste lit à ses jeunes abonnés un compte de fées, assise près d'une lampe.", wrong: "compte", right: "conte", choices: ["conte", "compte", "comte"], rule: "Un conte est un récit imaginaire ; un compte sert à calculer ou désigne un accès en ligne. Le sens impose « conte »." }
+    { level: "compagnon", type: "sens", notion: "3e.homo.lexicaux", text: "Chaque dimanche, la vidéaste lit à ses jeunes abonnés un compte de fées, assise près d'une lampe.", wrong: "compte", right: "conte", choices: ["conte", "compte", "comte"], rule: "Un conte est un récit imaginaire ; un compte sert à calculer ou désigne un accès en ligne. Le sens impose « conte »." },
+    { level:"maitre",type:"accord",text:"Un hiatus de trois mois, annoncée à l'avance dans une courte vidéo, a séparé les deux saisons de la chaîne, sans que les abonnés se désabonnent.",wrong:"annoncée",right:"annoncé",choices:["annoncé","annoncée","annoncés"],rule:"Hiatus est un nom masculin : le participe annoncé reste au masculin singulier." },
+    { level:"maitre",type:"accord",text:"Tournée dans une usine abandonnée, la vidéo installe d'emblée une atmosphère inquiétant, que la musique et le grain de l'image renforcent.",wrong:"inquiétant",right:"inquiétante",choices:["inquiétante","inquiétant","inquiétants"],rule:"Atmosphère est un nom féminin : l'adjectif inquiétante s'accorde au féminin singulier." },
+    { level:"maitre",type:"temps",text:"Elle voulait que le montage fut terminé avant le direct, quitte à passer la nuit devant l'écran avec une pile de cafés.",wrong:"fut",right:"fût",choices:["fût","fut","soit"],rule:"Après « voulait que » (imparfait), on emploie le subjonctif imparfait : qu'il fût, avec un accent circonflexe." },
+    { level:"maitre",type:"compose",text:"Le vidéaste filme ses personnages en contres-plongées appuyées, pour leur donner une stature de héros que le décor, modeste, ne leur offrirait pas.",wrong:"contres-plongées",right:"contre-plongées",choices:["contre-plongées","contres-plongées","contre-plongée"],rule:"Dans contre-plongée, contre est invariable : seul le nom prend la marque du pluriel." },
+    { level:"maitre",type:"compose",text:"Sa chaîne de cuisine en plein air propose des recettes de piques-niques que l'on prépare la veille et que l'on mange sans réchauffer.",wrong:"piques-niques",right:"pique-niques",choices:["pique-niques","piques-niques","pique-nique"],rule:"Dans pique-nique, pique (forme du verbe piquer) reste invariable : seul nique prend la marque du pluriel." },
+    { level:"maitre",type:"lexique",text:"Pour filmer ses plans fixes, la vidéaste cale sa caméra sur un trépié dont elle règle patiemment chaque pied avant de lancer l'enregistrement.",wrong:"trépié",right:"trépied",choices:["trépied","trépié","trépid"],rule:"Trépied (tri, trois, et pied) garde le d final de « pied »." },
+    { level:"maitre",type:"lexique",text:"Elle a monté un diaporamma sonore de ses voyages, où chaque photographie reste affichée quelques secondes sur une musique douce.",wrong:"diaporamma",right:"diaporama",choices:["diaporama","diaporamma","diaporrama"],rule:"Diaporama s'écrit avec un seul m, comme « panorama » et « cinéma »." },
+    { level:"maitre",type:"lexique",text:"La monnétisation de la chaîne, activée après plusieurs mois, lui a permis de rémunérer enfin son monteur et d'acheter un meilleur micro.",wrong:"monnétisation",right:"monétisation",choices:["monétisation","monnétisation","monétization"],rule:"Monétisation vient du latin moneta : un seul n, contrairement à « monnaie »." },
+    { level:"grand-scribe",type:"accord",text:"Un astérisque, glissée dans la description sous la vidéo, renvoie à une mention en petits caractères que les abonnés, pressés, ne lisent jamais.",wrong:"glissée",right:"glissé",choices:["glissé","glissée","glissés"],rule:"Astérisque est un nom masculin : le participe glissé reste au masculin singulier." },
+    { level:"grand-scribe",type:"accord",text:"Dans une vidéo cinglante, un vulgarisateur a jeté sur les placements de produits un anathème définitive, que bien des confrères ont jugé excessif.",wrong:"définitive",right:"définitif",choices:["définitif","définitive","définitifs"],rule:"Anathème est un nom masculin : l'adjectif définitif reste au masculin singulier." },
+    { level:"grand-scribe",type:"temps",text:"Sans le soutien fidèle de ses premiers abonnés, la chaîne, longtemps confidentielle, n'eut jamais survécu aux deux années de silence qui avaient suivi son lancement.",wrong:"eut",right:"eût",choices:["eût","eut","eu"],rule:"« N'eût jamais survécu » est un conditionnel passé 2e forme : l'auxiliaire prend un accent circonflexe (eût)." },
+    { level:"grand-scribe",type:"compose",text:"Dans les arrières-plans de ses vidéos de rangement, on aperçoit des étagères, des cartons étiquetés et un chat qui traverse la pièce au mauvais moment.",wrong:"arrières-plans",right:"arrière-plans",choices:["arrière-plans","arrières-plans","arrière-plan"],rule:"Dans arrière-plan, arrière est invariable : seul le nom prend la marque du pluriel." },
+    { level:"grand-scribe",type:"compose",text:"Cette chaîne de style trie, pièce par pièce, deux gardes-robes entières avant de décider de ce qu'il faut garder, donner ou revendre en ligne.",wrong:"gardes-robes",right:"garde-robes",choices:["garde-robes","gardes-robes","garde-robe"],rule:"Garde-robe (verbe garder + nom robe) : le verbe reste invariable, le nom prend le s du pluriel." },
+    { level:"grand-scribe",type:"lexique",text:"Le vidéaste, submergé par une logorée de messages dans le chat, n'arrive plus à répondre à la moindre question.",wrong:"logorée",right:"logorrhée",choices:["logorrhée","logorée","logorhée"],rule:"Logorrhée (grec logos, parole, et rhein, couler) s'écrit avec rrh, comme « diarrhée »." },
+    { level:"grand-scribe",type:"lexique",text:"Sous la vidéo, un colibet cinglant a recueilli des centaines de mentions « j'aime » avant que la modératrice ne le supprime.",wrong:"colibet",right:"quolibet",choices:["quolibet","colibet","quolibé"],rule:"Quolibet (raillerie) s'écrit avec qu et finit par -et." },
+    { level:"grand-scribe",type:"lexique",text:"Certaines chaînes confondent partage et prozélytisme : elles martèlent chaque semaine les mêmes injonctions pour convertir leurs abonnés à une marque.",wrong:"prozélytisme",right:"prosélytisme",choices:["prosélytisme","prozélytisme","prosélitisme"],rule:"Prosélytisme vient de prosélyte (grec proselutos) : s, pas z, et y." },
+    { level:"grand-scribe",type:"lexique",text:"Malgré une miniature spectaculaire, la vaquité du propos, que le montage dynamique ne parvient pas à masquer, saute aux yeux dès les premières minutes.",wrong:"vaquité",right:"vacuité",choices:["vacuité","vaquité","vacuitée"],rule:"Vacuité (du latin vacuus, vide) s'écrit avec c, comme « vacant » et « vacance »." },
+    { level:"grand-scribe",type:"lexique",text:"Le vidéaste, victime d'un ostracysme discret de la part de quelques confrères, a continué de publier chaque dimanche sans commenter la polémique.",wrong:"ostracysme",right:"ostracisme",choices:["ostracisme","ostracysme","ostrascisme"],rule:"Ostracisme vient du grec ostrakon (tesson) : suffixe -isme avec i." }
   ]
 };

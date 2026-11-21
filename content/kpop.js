@@ -1,179 +1,6 @@
 (window.THEMES = window.THEMES || {}).kpop = {
   name: "K-Pop",
   emoji: "🎤",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Mes amies et moi avons dansé toute la soirée sur la nouvelle chanson. Les chanteuses sont montées sur la scène, et la foule a crié très fort.",
-      notes: [
-        { word: "dansé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici." },
-        { word: "montées", rule: "Avec l'auxiliaire être, le participe s'accorde avec le sujet (les chanteuses : féminin pluriel)." },
-        { word: "soirée", rule: "Nom féminin en -ée." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Ces groupes, que des milliers de fans ont découverts en ligne, répètent pendant des années avant de se produire en public. Les chorégraphies qu'ils ont apprises demandent une précision remarquable.",
-      notes: [
-        { word: "découverts", rule: "Le COD « que » (ces groupes) est placé avant le verbe : accord au masculin pluriel." },
-        { word: "apprises", rule: "Le COD « que » (les chorégraphies) est placé avant le verbe : accord au féminin pluriel." },
-        { word: "chorégraphies", rare: true, rule: "Le « ch » se prononce [k], le son [f] s'écrit « ph », et un seul accent aigu : cho-ré-gra-phies.", d: 2, piege: "ch pour [k], é, ph pour [f], finale -ies" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Bien que l'engouement pour ces formations soit récent, leurs méthodes de recrutement, héritées d'une logique industrielle, ont suscité des débats : on s'est interrogé sur les cadences et la synchronisation imposées à des adolescents, quelles que soient leurs motivations.",
-      notes: [
-        { word: "soit", rule: "« Bien que » est suivi du subjonctif : soit." },
-        { word: "engouement", rule: "Enthousiasme vif et souvent passager. Formé sur engouer : en- (et non an-), puis -ement avec le e muet.", rare: true, d: 2, piege: "en- et non an-, e muet devant -ment" },
-        { word: "interrogé", rule: "« On » a ici un sens indéterminé : le participe de « s'interroger » s'accorde au masculin singulier." },
-        { word: "quelles", rule: "« Quel que » + être au subjonctif : « quel » s'accorde avec le sujet (leurs motivations : féminin pluriel)." },
-        { word: "synchronisation", rule: "Mise en accord de mouvements dans le temps. Famille de synchrone : y après le s, ch prononcé [k], puis -isation avec un s.", rare: true, d: 3, piege: "y, ch pour [k], -isation (famille synchrone)" },
-        { word: "recrutement", rare: true, rule: "Formé sur recruter : aucun accent sur le premier e, et le e muet de recrute se garde devant -ment.", d: 1, piege: "pas d'accent, e muet devant -ment" },
-        { word: "imposées", rule: "Le participe employé sans auxiliaire s'accorde avec les noms qu'il qualifie (les cadences et la synchronisation : féminin pluriel)." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Phénomène planétaire, la vague coréenne, qu'on avait crue éphémère, s'est imposée au point que même les plus sceptiques, naguère rétifs, se sont piqués d'en fredonner les refrains hypnotiques et d'en imiter les chorégraphies millimétrées ; maints observateurs, longtemps perplexes devant ce foisonnement de talents, se sont répandus en éloges dithyrambiques.",
-      notes: [
-        { word: "crue", rule: "Le COD « que » (la vague) est placé avant l'auxiliaire avoir, et « éphémère » est son attribut : accord au féminin singulier." },
-        { word: "piqués", rule: "« Se piquer de » (se flatter de) est un pronominal à sens figuré : le participe s'accorde avec le sujet (les plus sceptiques)." },
-        { word: "hypnotiques", rule: "Qui exerce une sorte de fascination. Famille d'hypnose : y après le h, puis -ique, avec un s au pluriel.", rare: true, d: 3, piege: "y (famille hypnose), -ique" },
-        { word: "naguère", rule: "Adverbe signifiant « il y a peu de temps » ; à ne pas confondre avec « jadis »." },
-        { word: "millimétrées", rare: true, rule: "Réglées avec une précision extrême. Formé sur millimètre : deux l, le è devient é, et l'accord se fait au féminin pluriel (les chorégraphies).", d: 2, piege: "ll, é (et non è), accord féminin pluriel" },
-        { word: "foisonnement", rule: "Abondance, grand nombre. Dérivé de foisonner : oi, puis deux n devant -ement.", rare: true, d: 3, piege: "oi, nn (famille foisonner)" },
-        { word: "répandus", rule: "Se répandre en éloges : pronominal, le participe s'accorde avec le sujet (maints observateurs : masculin pluriel)." },
-        { word: "dithyrambiques", rule: "Excessivement élogieux. Dérivé de dithyrambe : th, y, puis -ambique, avec -ques au pluriel.", rare: true, d: 3, piege: "th, y, -ambiques" }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Chaque année, des centaines de jeunes passent une audition pour devenir apprentis dans une agence. Ils chantent, dansent et répondent aux questions du jury. Ceux qui sont choisis travaillent ensuite pendant des mois, souvent jusqu'au soir.",
-      notes: [
-        { word: "centaines", rule: "Nom féminin en -aine, avec un s au pluriel." },
-        { word: "répondent", rule: "Verbe répondre au présent, 3e personne du pluriel : -ent." },
-        { word: "choisis", rule: "Le participe, employé avec l'auxiliaire être, s'accorde avec le sujet « ceux » (masculin pluriel)." },
-        { word: "travaillent", rule: "Verbe du 1er groupe au présent, 3e personne du pluriel : travaill-ent, avec -ill-." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Dans la salle, les fans agitent leur bâton lumineux au rythme de la musique. Chacun l'a apporté de la maison et l'a rechargé la veille. Quand les lumières s'éteignent, des milliers de petites étoiles brillent dans le noir.",
-      notes: [
-        { word: "bâton", rule: "Nom masculin avec un accent circonflexe sur le a." },
-        { word: "apporté", rule: "Le pronom « l' » reprend un nom masculin singulier (le bâton) : le participe ne change pas de forme." },
-        { word: "milliers", rule: "Nom masculin : finale en -ers, avec un s." },
-        { word: "brillent", rule: "Verbe briller au présent, 3e personne du pluriel : -ent, avec -ll-." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Après plusieurs mois d'absence, le groupe revient avec une chanson inédite. Les chanteuses portent des costumes brillants, des bottes blanches et des lunettes de soleil. Leurs admiratrices les ont tout de suite reconnues.",
-      notes: [
-        { word: "revient", rule: "Verbe revenir au présent, 3e personne du singulier : -ient." },
-        { word: "inédite", rule: "Adjectif féminin accordé avec « chanson » : inédit, inédite." },
-        { word: "admiratrices", rule: "Féminin d'admirateur : -trices, avec un s au pluriel." },
-        { word: "reconnues", rule: "Le COD « les » (les chanteuses) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Avant de monter sur scène, les apprentis suivent un programme exigeant, fait de cours de chant, de danse et de langues. Les élèves que le jury a retenus doivent faire preuve de persévérance, car la sélection reste rude. Certains, découragés, se sont désistés en cours de route.",
-      notes: [
-        { word: "exigeant", rule: "Adjectif formé sur exiger : le g reste doux grâce au e avant -ant." },
-        { word: "retenus", rule: "Le COD « que » (les élèves) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "persévérance", rule: "Famille de persévérer : é, v, puis -érance, de la série -ance.", rare: true, d: 2, piege: "é, é, -ance (famille persévérer)" },
-        { word: "désistés", rule: "Se désister (renoncer) est pronominal : le participe s'accorde avec le sujet (certains : masculin pluriel).", rare: true, d: 3, piege: "é, s muet, st, accord pronominal" }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les associations de fans organisent des rencontres où les admirateurs échangent des cartes et des affichettes. Pendant un concert, ils coordonnent leurs bâtons lumineux, qui scintillent comme un océan de couleurs. Les ovations qu'ils ont poussées ont fait vibrer toute la salle.",
-      notes: [
-        { word: "échangent", rule: "Verbe échanger au présent, 3e personne du pluriel : le g reste doux grâce au e, puis -ent." },
-        { word: "coordonnent", rule: "Famille de coordonner : deux o, puis nn devant le e muet.", rare: true, d: 2, piege: "oo, nn" },
-        { word: "scintillent", rule: "Verbe scintiller : sc- devant i, puis -ill-, et -ent au pluriel." },
-        { word: "poussées", rule: "Le COD « que » (les ovations) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Le retour d'un groupe se prépare pendant des semaines : les stylistes choisissent des tenues éclatantes, tandis que les maquilleuses imaginent des teintes audacieuses. Les costumes qu'elles ont conçus ont étonné les photographes massés devant la salle.",
-      notes: [
-        { word: "stylistes", rule: "Famille de style : y après le st, puis -iste.", rare: true, d: 1, piege: "y (famille style)" },
-        { word: "maquilleuses", rule: "Famille de maquiller : qu, puis -ill-, et -euses au féminin pluriel.", rare: true, d: 2, piege: "qu, ill, -euses" },
-        { word: "audacieuses", rule: "Adjectif en -cieux, comme audace : le féminin pluriel est -cieuses." },
-        { word: "conçus", rule: "Le COD « que » (les costumes) est placé avant l'auxiliaire avoir : accord au masculin pluriel ; le c prend une cédille devant u." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Que ces apprentis aient su, dès l'adolescence, s'astreindre à une discipline quasi militaire force l'admiration : levés à l'aube, ils multiplient gammes, répétitions et séances de gymnastique, sans jamais fléchir. Les épreuves que la sélection leur a imposées, ils les ont surmontées avec un stoïcisme étonnant.",
-      notes: [
-        { word: "aient", rule: "Le sujet « que » en tête de phrase appelle le subjonctif : aient su." },
-        { word: "astreindre", rule: "S'astreindre à : s'imposer une règle stricte. s muet, puis -eindre comme peindre.", rare: true, d: 3, piege: "s muet, str, -eindre" },
-        { word: "surmontées", rule: "Le COD « les » (les épreuves) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "stoïcisme", rule: "Fermeté devant l'épreuve. Famille de stoïque : tréma sur le i, puis -cisme.", rare: true, d: 3, piege: "tréma, -cisme" },
-        { word: "imposées", rule: "Le COD « que » (les épreuves) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Il n'est pas rare que, des heures avant l'ouverture des portes, des admirateurs bivouaquent devant la salle, munis de couvertures et de leur précieux bâton lumineux. Quelque fatigués qu'ils soient, ils entonnent à l'unisson des refrains appris par cœur, sous les yeux amusés des riverains.",
-      notes: [
-        { word: "bivouaquent", rule: "Bivouaquer : passer la nuit à l'extérieur. Le groupe -qu- est conservé devant -ent : bivouaqu-ent.", rare: true, d: 3, piege: "v, ouaqu, -ent" },
-        { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est adverbe (= si) et reste invariable." },
-        { word: "entonnent", rule: "Entonner : commencer à chanter. Deux n devant le e muet, puis -ent.", d: 2, piege: "nn, -ent" },
-        { word: "unisson", rule: "À l'unisson : un seul n, puis ss prononcé [s] entre deux voyelles.", rare: true, d: 2, piege: "ss et un seul n" },
-        { word: "appris", rule: "Employé sans auxiliaire, le participe s'accorde avec le nom (les refrains : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "L'écriture coréenne, créée au XVe siècle sous l'impulsion {{du roi Sejong|de ce souverain}}, fascine bien des amateurs de musique. Rien n'est plus ingénieux que ce système : les lettres s'agencent en blocs, chacun formant une syllabe. Séduites par cette rigueur, certaines fans se sont attelées à l'apprendre, quitte à sacrifier leurs soirées.",
-      notes: [
-        { word: "créée", rule: "Le participe employé sans auxiliaire s'accorde avec le nom (l'écriture : féminin singulier)." },
-        { word: "ingénieux", rule: "Habile et astucieux. Famille d'ingénieur : é, puis -ieux.", rare: true, d: 2, piege: "é, -ieux" },
-        { word: "agencent", rule: "Agencer : le g est doux devant le e, puis c et -ent.", rare: true, d: 3, piege: "g doux, c, -ent" },
-        { word: "attelées", rule: "S'atteler à est pronominal : le participe s'accorde avec le sujet (certaines fans : féminin pluriel). Deux t, un l.", d: 2, piege: "tt, accord pronominal" },
-        { word: "quitte", rule: "« Quitte à » + infinitif est une locution invariable : quitte, sans s." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Qu'ils aient été admis sur concours ou repérés dans la rue, les stagiaires de ces écoles de chant sont astreints à un régime ascétique : ils vocalisent et s'adonnent aux pas de danse sans relâche. Les éloges que leurs professeurs leur ont décernés demeurent rares, et maints aspirants, accablés par tant d'abnégation exigée, ont renoncé.",
-      notes: [
-        { word: "astreints", rule: "Astreindre : imposer une obligation stricte. Participe en -eints, avec un s muet initial, accordé avec le sujet (les stagiaires).", rare: true, d: 3, piege: "s muet, str, -eints" },
-        { word: "ascétique", rule: "Qui relève d'une vie de privations. Famille d'ascèse : asc-, puis -étique.", rare: true, d: 3, piege: "sc, é, -ique" },
-        { word: "vocalisent", rule: "Vocaliser : chanter sur une voyelle. Famille de vocal : un seul l, puis -iser avec un s.", rare: true, d: 2, piege: "s et non z (famille vocal), -ent" },
-        { word: "décernés", rule: "Le COD « que » (les éloges) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "abnégation", rule: "Renoncement à soi-même. Formé sur le latin abnegare : ab-, puis -négation, avec un seul g.", rare: true, d: 3, piege: "bn, é, -ation" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Au terme du concert, les spectatrices, enrouées d'avoir tant scandé et de s'être égosillées, quittent la salle en un flot compact. Nulle d'entre elles ne regrette les heures de file d'attente que ces fidèles inconditionnelles se sont infligées : la ferveur collective les a transportées.",
-      notes: [
-        { word: "enrouées", rule: "Dont la voix est rauque. Famille d'enrouer : en-, puis -ou-, avec accord au féminin pluriel.", rare: true, d: 3, piege: "en- (et non an-), ou, accord" },
-        { word: "scandé", rule: "Scander : prononcer en marquant le rythme. Sc- devant a ; sans COD, le participe reste invariable.", d: 2, piege: "sc, -é" },
-        { word: "égosillées", rule: "S'égosiller : crier à pleine voix. Accord avec le sujet ; é, un seul s, puis -ill-.", rare: true, d: 3, piege: "é, s sonore, ill" },
-        { word: "inconditionnelles", rule: "Sans réserve. Famille de condition : in-, puis nn devant le e, avec -elles au féminin pluriel.", rare: true, d: 3, piege: "nn, -elles (famille condition)" },
-        { word: "infligées", rule: "Le COD « que » (les heures) est placé avant le verbe ; « se » est COI : accord au féminin pluriel avec « que »." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les stylistes de ces troupes puisent leur inspiration dans des étoffes diaprées : brocarts, tulles et satins, dont les chatoiements éblouissent le public. Les tenues que les couturiers ont cousues sur mesure, hérissées de paillettes, requièrent des semaines de travail minutieux, au point que certains en ont perdu le sommeil.",
-      notes: [
-        { word: "diaprées", rule: "Diaprer : parsemer de couleurs variées. Famille de diapré : di-a-pr-, avec accord au féminin pluriel.", rare: true, d: 3, piege: "i-a, pr, accord" },
-        { word: "brocarts", rule: "Brocart : tissu de soie brodé. Finale en -t muet, avec c devant a.", rare: true, d: 3, piege: "c, t muet (et non brocard)" },
-        { word: "chatoiements", rule: "Reflets changeants. Famille de chatoyer : -oi- sans e, puis -ements.", rare: true, d: 3, piege: "oi, pas de e muet" },
-        { word: "cousues", rule: "Le COD « que » (les tenues) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "hérissées", rule: "Le participe s'accorde avec le nom qu'il qualifie (les tenues : féminin pluriel)." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", text: "Elle à chanté devant des milliers de fans.", wrong: "à", right: "a", choices: ["a", "as", "à"], rule: "« A » est le verbe avoir : on peut dire « elle avait chanté ». Pas d'accent.", type: "homophone" },
     { level: "apprenti", text: "Ma sœur et ses copines sont allé voir le concert.", wrong: "allé", right: "allées", choices: ["allées", "allés", "allez"], rule: "Avec l'auxiliaire être, le participe s'accorde avec le sujet : féminin pluriel.", type: "participe" },
@@ -254,6 +81,26 @@
     { level: "grand-scribe", type: "participe", notion: "5e.accords.pp-avoir-cod-antepose", text: "Des refrains, le groupe en a composés des dizaines, et les chanteurs, pressés par le temps, les ont enregistrés au premier jet.", wrong: "composés", right: "composé", choices: ["composé","composés","composées"], rule: "Le pronom « en » est un COD qui n'impose aucun accord : le participe reste invariable. « Les », au contraire, est un COD antéposé, d'où « enregistrés »." },
     { level: "grand-scribe", type: "accord", notion: "5e.accords.sujet-separe", text: "Plus d'un admirateur, venu de province par le train de nuit, ont patienté sous la pluie devant les grilles de la salle, une pancarte peinte à la main.", wrong: "ont", right: "a", choices: ["a","ont","as"], rule: "Après « plus d'un », le verbe reste au singulier : « plus d'un admirateur a patienté ». Le pluriel n'apparaît qu'avec un verbe réciproque." },
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Les techniciens, que la direction artistique pressait depuis l'aube, ont réglé diligamment les éclairages, les écrans et les passerelles avant que les premières portes s'ouvrent au public.", wrong: "diligamment", right: "diligemment", choices: ["diligemment","diligamment","diligement"], rule: "Diligent est un adjectif en -ent : l'adverbe se forme en -emment, avec deux m (diligemment)." },
-    { level: "grand-scribe", type: "homophone", notion: "3e.homo.lexicaux", text: "Le groupe a choisi de tourner son clip dans un entrepôt désaffecté, dans le dessin de renouer avec les décors bruts de ses débuts, que ses admirateurs regrettaient.", wrong: "dessin", right: "dessein", choices: ["dessein","dessin","dessain"], rule: "Un dessein est un projet, une intention (dans le dessein de) ; un dessin est une image tracée. Le mot se termine en -ein, comme « sein »." }
+    { level: "grand-scribe", type: "homophone", notion: "3e.homo.lexicaux", text: "Le groupe a choisi de tourner son clip dans un entrepôt désaffecté, dans le dessin de renouer avec les décors bruts de ses débuts, que ses admirateurs regrettaient.", wrong: "dessin", right: "dessein", choices: ["dessein","dessin","dessain"], rule: "Un dessein est un projet, une intention (dans le dessein de) ; un dessin est une image tracée. Le mot se termine en -ein, comme « sein »." },
+    { level: "maitre", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Le dernier soir de la tournée, le stade entier a chanté en chœur et offert aux artistes un apothéose que ni eux ni les organisateurs n'avaient osé espérer.", wrong: "un", right: "une", choices: ["une","un","cette"], rule: "Apothéose est un nom féminin : on écrit « une apothéose »." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le chorégraphe exigeait que chaque danseuse sut sa partie par cœur avant la répétition générale, et que personne ne lui demandât de la répéter.", wrong: "sut", right: "sût", choices: ["sût","sut","sache"], rule: "Après « exigeait que », le subjonctif se met à l'imparfait : « sût », avec un accent circonflexe, comme « demandât » dans la même phrase." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le manager craignait que la jeune recrue ne tint pas le rythme des tournées et ne s'épuisât en quelques semaines.", wrong: "tint", right: "tînt", choices: ["tînt","tint","tienne"], rule: "Après « craignait que », le subjonctif imparfait de tenir est « tînt », avec un accent circonflexe, à distinguer du passé simple « tint »." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Dans la salle plongée dans le noir, les bâtons lumineux des admirateurs dessinaient de grands arc-en-ciels mouvants qui suivaient le rythme du refrain.", wrong: "arc-en-ciels", right: "arcs-en-ciel", choices: ["arcs-en-ciel","arc-en-ciels","arcs-en-ciels"], rule: "Dans arc-en-ciel, « en ciel » est un complément : seul « arc » prend la marque du pluriel, des arcs-en-ciel." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Dans les coulisses, les costumières rangent les tenues de scène dans de vastes gardes-robes avant chaque passage sur le plateau.", wrong: "gardes-robes", right: "garde-robes", choices: ["garde-robes","gardes-robes","garde-robe"], rule: "Dans garde-robe, « garde » est le verbe garder : il reste invariable, et seul « robe » prend le s du pluriel." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Dans les gradins, des milliers de fans fredonent le refrain avant même que la chanteuse ait ouvert la bouche, tant le titre est connu depuis sa sortie.", wrong: "fredonent", right: "fredonnent", choices: ["fredonnent","fredonent","fredonnes"], rule: "Fredonner garde le double n de « fredon » à toutes les formes : ils fredonnent." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Au dernier accord, un tonère d'applaudissements a déferlé sur le stade, couvrant les dernières notes que les musiciens, debout, jouaient encore.", wrong: "tonère", right: "tonnerre", choices: ["tonnerre","tonère","tonnère"], rule: "Tonnerre s'écrit avec deux n et deux r, comme « tonner » et « terre »." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "Dans les coulisses, les danseuses chuchottent leur trac à l'oreille de la chorégraphe, tandis que la régie compte à rebours les dernières secondes avant l'entrée en scène.", wrong: "chuchottent", right: "chuchotent", choices: ["chuchotent","chuchottent","chuchottes"], rule: "Chuchoter s'écrit avec un seul t : ils chuchotent." },
+    { level: "grand-scribe", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Entre le dernier refrain et le bis, le groupe a laissé s'installer une hiatus que la foule, d'abord surprise, a vite comblé par des cris et des applaudissements nourris.", wrong: "une", right: "un", choices: ["un","une","cet"], rule: "Hiatus est un nom masculin : on écrit « un hiatus », et le participe « comblé » reste au masculin." },
+    { level: "grand-scribe", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Au moment du rappel, des milliers de pétales de papier, lâchées depuis les cintres par des techniciens invisibles, retombaient en tourbillonnant sur la scène, et les danseuses, ravies, en jetaient des poignées vers la fosse.", wrong: "lâchées", right: "lâchés", choices: ["lâchés","lâchées","lâché"], rule: "Pétale est un nom masculin : des pétales lâchés depuis les cintres." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le groupe tenait à ce que chaque admirateur reçut, à la sortie de la salle, une carte signée, et que nul ne repartît les mains vides après avoir patienté sous la pluie.", wrong: "reçut", right: "reçût", choices: ["reçût","reçut","reçoive"], rule: "Après « tenait à ce que », le subjonctif se met à l'imparfait : « reçût », avec un accent circonflexe, comme « repartît » dans la même phrase." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Bien que la chanteuse dut donner trois concerts en quatre jours, elle voulait que chaque soir parût unique, et que nul ne pût deviner sa fatigue derrière le sourire.", wrong: "dut", right: "dût", choices: ["dût","dut","doive"], rule: "Après « bien que », le subjonctif imparfait de devoir est « dût », avec un accent circonflexe, comme « parût » et « pût » dans la même phrase." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Sur la passerelle qui surplombe la fosse, des gardes-corps de métal brillant, que les techniciens ont vérifiés avant l'ouverture des portes, protègent le public contre toute chute.", wrong: "gardes-corps", right: "garde-corps", choices: ["garde-corps","gardes-corps","garde-corp"], rule: "Dans garde-corps, « garde » est le verbe garder et « corps » prend déjà un s au singulier : le mot reste identique au pluriel." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Dans les premiers rangs du stade, des familles entières avaient fait le déplacement, et l'on voyait des grand-parents agiter des bâtons lumineux au côté de leurs petits-enfants, ravis de partager la fête.", wrong: "grand-parents", right: "grands-parents", choices: ["grands-parents","grand-parents","grands-parent"], rule: "Grand-parent associe un adjectif et un nom : les deux éléments prennent la marque du pluriel, des grands-parents." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Lors des balances, avant l'arrivée du public, une cacofonie de guitares, de synthétiseurs et de voix qui s'essaient emplit la salle, jusqu'à ce que le régisseur, d'un geste sec, rétablisse le calme.", wrong: "cacofonie", right: "cacophonie", choices: ["cacophonie","cacofonie","cacophonnie"], rule: "Cacophonie vient du grec « kakos » (mauvais) et « phônê » (son) : ph, comme dans « téléphone »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Quoique sa tesiture soit celle d'une mezzo-soprano, la chanteuse, que ses producteurs poussaient vers le registre aigu, atteint sans effort des hauteurs réservées d'ordinaire aux sopranos.", wrong: "tesiture", right: "tessiture", choices: ["tessiture","tesiture","tessiturre"], rule: "Tessiture vient de l'italien « tessitura » : on écrit deux s, car un seul s entre deux voyelles se prononcerait [z]." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Avant d'entrer en scène, le guitariste, comme chaque soir, fait vibrer son diapazon contre son genou pour accorder, à l'oreille, les six cordes de son instrument.", wrong: "diapazon", right: "diapason", choices: ["diapason","diapazon","diapasson"], rule: "Diapason s'écrit avec un seul s, qui se prononce [z] entre deux voyelles, comme dans « raison » et « saison » ; jamais z dans ce mot." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Sous les projecteurs, les costumes de scène, brodés de fils métalliques, offraient un chatoiant mélange de rouges et d'ors que les caméras captaient à peine.", wrong: "chatoiant", right: "chatoyant", choices: ["chatoyant","chatoiant","chatoyent"], rule: "Chatoyant dérive de « chatoyer » (verbe en -oyer) : le y reste devant -ant, comme dans « rayonnant » et « employant »." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Dans l'euforie générale, les fans, qui avaient patienté des heures devant les grilles, se sont précipités vers la fosse sans que le service d'ordre puisse les retenir.", wrong: "euforie", right: "euphorie", choices: ["euphorie","euforie","euphorrie"], rule: "Euphorie vient du grec « eu » (bien) et « pherein » (porter) : ph, comme dans « euphonie »." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.lex.morphologie", text: "Même les mélomânes les plus exigeants, pourtant peu enclins à l'indulgence envers la musique de variété, ont reconnu que les arrangements de ce dernier album étaient d'une précision remarquable.", wrong: "mélomânes", right: "mélomanes", choices: ["mélomanes","mélomânes","mellomanes"], rule: "Mélomane (amateur de musique) vient du grec « melos » (chant) et « mania » : pas d'accent circonflexe, comme dans « maniaque »." }
   ]
 };

@@ -1,19 +1,17 @@
 # Brief d'extension d'un thème (à lire en entier)
 
-Cadre : jeu de dictées en français, projet personnel hors OCTO, dossier du projet Dictées. Appliquer le skill `.claude/skills/ecrire-theme/SKILL.md` (mode extension) et `docs/redaction-contenu.md` en entier (règles dures, quotas de mots rares et de difficulté D avec champs `rare`, `d`, `piege`, noms propres, ancrage local pour les villes). Modèles de format récents : `content/escrime.js`, `content/cuisine.js`.
+Cadre : jeu « Trouve l'erreur » en français, projet personnel hors OCTO, dossier du projet Dictées. Appliquer le skill `.claude/skills/ecrire-theme/SKILL.md` (mode extension) et `docs/redaction-contenu.md` en entier (règles dures, rareté et difficulté des mots, noms propres, ancrage local pour les villes). Modèles de format récents : `content/escrime.js`, `content/cuisine.js`.
 
 ## Mission
 
-Étendre le fichier du thème **sans modifier les items existants**. Ajouter à la fin des tableaux, pour chacun des quatre niveaux (`apprenti`, `compagnon`, `maitre`, `grand-scribe`), le nombre de dictées et de phrases à erreur demandé dans ta consigne, afin d'atteindre **4 dictées et 8 phrases à erreur par niveau** au total.
+Étendre le fichier du thème **sans modifier les items existants**. Ajouter à la fin des tableaux, pour chacun des quatre niveaux (`apprenti`, `compagnon`, `maitre`, `grand-scribe`), le nombre de phrases à erreur demandé dans ta consigne, afin d'atteindre le volume cible par niveau.
 
-- Chaque nouvelle dictée a un angle, un champ lexical précis et des mécanismes différents de celles qui existent déjà dans le fichier (lis-les d'abord pour ne pas les répéter) et des autres ajouts.
-- 25 à 60 mots, 3 à 5 notes. Niveaux `apprenti` et `compagnon` : chaque `notes[].word` est un mot entier du texte (il devient un trou du texte à trous).
-- Quotas par dictée : rareté et difficulté D (voir `docs/redaction-contenu.md`, section « Mots rares et difficulté »). Chaque mot rare est une note `rare: true` avec `d` et `piege`.
+- Chaque nouvelle phrase a un angle, un champ lexical précis et un mécanisme différents de celles qui existent déjà dans le fichier (les lire d'abord) et des autres ajouts.
 - Phrases à erreur : une seule faute, `wrong` unique comme mot entier, 3 `choices` plausibles dont `right`, règle exacte.
 
 ## Noms propres (mode perso)
 
-Les noms propres sont bienvenus. Toute personne réelle, tout personnage, toute marque ou œuvre sous droits s'écrit en marqueur `{{Nom|périphrase}}` avec une périphrase de même genre, nombre et élision, correcte dans les deux modes. Lieux et personnages du domaine public en clair. Un nom propre n'est jamais le piège (ni mot fautif, ni mot de notes, ni bonne réponse). Pour une personne réelle : seulement le nom et un rôle certain et stable, jamais de statistique, de transfert, de score, de rumeur ni de jugement. En cas de doute sur un fait ou une graphie, ne pas l'utiliser, vérifier par recherche web (WebSearch, WebFetch) ou le signaler.
+Les noms propres sont bienvenus. Toute personne réelle, tout personnage, toute marque ou œuvre sous droits s'écrit en marqueur `{{Nom|périphrase}}` avec une périphrase de même genre, nombre et élision, correcte dans les deux modes. Lieux et personnages du domaine public en clair. Un nom propre n'est jamais le piège (ni mot fautif, ni bonne réponse). Pour une personne réelle : seulement le nom et un rôle certain et stable, jamais de statistique, de transfert, de score, de rumeur ni de jugement. En cas de doute sur un fait ou une graphie, ne pas l'utiliser, vérifier par recherche web (WebSearch, WebFetch) ou le signaler.
 
 ## Règles de fond rappelées
 
@@ -21,15 +19,15 @@ Orthographe irréprochable, relue deux fois. Zéro débat : pas de double graphi
 
 ## Contrôles avant de rendre
 
-`node tools/rarete.mjs check <id>` (tous OK) et `node tools/noms.mjs` (structure OK dans les deux modes), plus ton propre contrôle : `wrong` unique, `right` dans `choices`, notes présentes dans le texte. Ne touche à aucun autre fichier (ni index.html, ni metas.js, ni app.js, ni clips, ni git).
+`node tools/erreurs.mjs`, `node tools/rarete-erreurs.mjs` et `node tools/noms.mjs` (structure OK dans les deux modes), plus ton propre contrôle : `wrong` unique, `right` dans `choices`, notes présentes dans le texte. Ne touche à aucun autre fichier (ni index.html, ni metas.js, ni app.js, ni git).
 
 ## Rapport (court)
 
-Items ajoutés par niveau, mots rares avec D, noms propres utilisés, faits à vérifier, points de doute, liste des dictées ajoutées.
+Items ajoutés par niveau, mots rares avec D, noms propres utilisés, faits à vérifier, points de doute.
 
 ## Niveau Expert (`grand-scribe`) : standard championnat, à appliquer sans exception
 
-Lis `docs/niveau-expert.md`. Les phrases à erreur Expert sont des phrases longues (18 à 35 mots) qui croisent plusieurs règles et dont la faute est de préférence un mot rare à graphie opaque ou un accord difficile, avec trois choix vraiment plausibles. Les dictées Expert font 90 à 140 mots et portent au moins 8 difficultés notées. Les anciens items Expert de ce fichier, trop simples, seront remplacés dans une passe dédiée ; pour tes ajouts Expert, applique déjà le standard.
+Lis `docs/niveau-expert.md`. Les phrases à erreur Expert sont des phrases longues (18 à 35 mots) qui croisent plusieurs règles et dont la faute est de préférence un mot rare à graphie opaque ou un accord difficile, avec trois choix vraiment plausibles. Pour tes ajouts Expert, applique ce standard.
 
 ## Densité des phrases Trouve l'erreur, par niveau (décidé le 15/11/2026)
 
@@ -45,7 +43,6 @@ Les phrases à erreur doivent monter en densité d'un niveau à l'autre, pas seu
 - Les choix (`choices`) sont trois graphies ou accords vraiment plausibles, plus subtils à chaque niveau.
 - Sur les 8 phrases d'un thème à un même niveau : au plus 2 dont la faute est un accord de participe, au moins 5 mécanismes différents (5 à tous les niveaux : 4 phrases lexique laissent 4 types pour les autres).
 - La règle (`rule`) explique le raisonnement en deux phrases au plus.
-- Les dictées ne sont pas concernées par cette échelle (périmètre limité aux phrases Trouve l'erreur).
 
 ## Répartition des types d'erreur et vocabulaire (décidée le 15/11/2026)
 
@@ -64,7 +61,7 @@ Chaque phrase à erreur porte un champ `type` parmi : `lexique`, `pronominal`, `
 
 ## Volume cible par sous-thème (décidé le 15/11/2026)
 
-L'utilisateur veut du volume : un joueur ne doit pas revoir la même phrase après quelques parties. Cible par sous-thème et par niveau : **20 phrases à erreur** et **6 dictées** (80 phrases à erreur et 24 dictées par sous-thème). Les règles de répartition passent en proportions pour n phrases : `lexique` au moins 25 % (Facile), 37,5 % (Moyen et Difficile), 50 % (Expert) ; `pronominal` au plus 12,5 % ; `participe` et `homophone` chacun au plus 25 % ; au moins 5 types. Chaque nouvelle phrase respecte la densité et le niveau (tableau de densité), les marqueurs, l'ancrage local pour les villes, et ne répète ni une phrase, ni un mot fautif, ni une règle déjà présents dans le thème. Contrôle : `node tools/erreurs.mjs`.
+L'utilisateur veut du volume : un joueur ne doit pas revoir la même phrase après quelques parties. Cible par sous-thème et par niveau : **20 phrases à erreur** (80 phrases par sous-thème). Les règles de répartition passent en proportions pour n phrases : `lexique` au moins 25 % (Facile), 37,5 % (Moyen et Difficile), 50 % (Expert) ; `pronominal` au plus 12,5 % ; `participe` et `homophone` chacun au plus 25 % ; au moins 5 types. Chaque nouvelle phrase respecte la densité et le niveau (tableau de densité), les marqueurs, l'ancrage local pour les villes, et ne répète ni une phrase, ni un mot fautif, ni une règle déjà présents dans le thème. Contrôle : `node tools/erreurs.mjs`.
 
 ## Phrases « Trouve l'erreur » intéressantes, sans divulgâchage (décidé le 15/11/2026)
 

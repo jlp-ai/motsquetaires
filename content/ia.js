@@ -1,197 +1,6 @@
 (window.THEMES = window.THEMES || {}).ia = {
   name: "Intelligence artificielle",
   emoji: "🤖",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Ce matin, ma sœur a posé une question à son assistant vocal. Les réponses sont arrivées en quelques secondes. Elle les a comparées avec soin, puis elle a vérifié ses sources dans deux livres de la bibliothèque.",
-      notes: [
-        { word: "arrivées", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les réponses : féminin pluriel)." },
-        { word: "comparées", rule: "Le COD « les » (les réponses) est placé avant le verbe avoir : le participe s'accorde au féminin pluriel." },
-        { word: "posé", rule: "Avec l'auxiliaire avoir, le participe reste invariable quand le COD (une question) est placé après." },
-        { word: "ses", rule: "« Ses » est un déterminant possessif (les siennes) ; « ces » montrerait les sources." },
-        { word: "vocal", rare: true, rule: "Qui fonctionne avec la voix. Adjectif en -al : un assistant vocal, des assistants vocaux.", d: 1, piege: "c et non k, finale -al" }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les données que les chercheurs ont rassemblées servent à entraîner un algorithme. Celui-ci repère peu à peu des régularités, mais il ne comprend pas vraiment ce qu'il traite. Quant aux résultats, il faut les vérifier soigneusement avant de s'y fier.",
-      notes: [
-        { word: "rassemblées", rule: "Le COD « que » (les données) est placé avant le verbe : accord au féminin pluriel." },
-        { word: "entraîner", rule: "Après la préposition « à », le verbe se met à l'infinitif : on peut le remplacer par « à construire » (et non « construit »)." },
-        { word: "quant", rule: "« Quant à » signifie « en ce qui concerne » et s'écrit avec un t." },
-        { word: "soigneusement", rule: "Adverbe formé sur le féminin de l'adjectif : soigneuse + ment." },
-        { word: "algorithme", rare: true, rule: "Suite d'instructions qui résout un problème. Un i après le r, puis « th » : al-go-ri-thme (jamais « algorythme »).", d: 2, piege: "th pour [t], i après le r, finale -me" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Quelles que soient les prouesses des modèles de langage, il convient de garder l'esprit critique. Les réponses qu'on a crues infaillibles se sont parfois révélées fausses ; maintes affabulations, que l'algorithme avait présentées avec aplomb, ont échappé aux lecteurs pressés.",
-      notes: [
-        { word: "quelles", rule: "« Quel que » suivi du verbe être au subjonctif : « quel » s'accorde avec le sujet (les prouesses)." },
-        { word: "crues", rule: "Le COD « que » (les réponses) précède le participe de croire, suivi d'un attribut : accord au féminin pluriel." },
-        { word: "révélées", rule: "Se révéler : le « se » est COD, le participe s'accorde avec le sujet (les réponses)." },
-        { word: "maintes affabulations", rare: true, rule: "« Maint » est un déterminant variable : il s'accorde avec le nom qu'il précède (maintes, féminin pluriel). Affabulations : récits inventés, avec deux f et un seul b.", d: 3, piege: "ff (famille fable), un seul b, maintes accordé" },
-        { word: "algorithme", rare: true, rule: "Un i après le r, puis « th » : al-go-ri-thme (jamais « algorythme »).", d: 2, piege: "th pour [t], i après le r, finale -me" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les algorithmes se sont succédé à un rythme tel que les plus aguerris, d'ordinaire circonspects, se sont fait séduire par ces oracles conversationnels. Quelque convaincantes que paraissent leurs réponses, il sied de les confronter aux sources, sans s'en remettre aveuglément à des machines qui, faute de discernement, ne doutent jamais.",
-      notes: [
-        { word: "succédé", rule: "Se succéder : le « se » est COI (succéder à), le participe reste invariable." },
-        { word: "aguerris", rule: "Endurcis par l'expérience. Famille de guerre : gu devant e, deux r, accord au masculin pluriel.", rare: true, d: 3, piege: "gu, rr (famille guerre), s du pluriel" },
-        { word: "circonspects", rule: "Prudents, réservés. Le t final, muet, se retrouve dans circonspection ; s au masculin pluriel.", rare: true, d: 3, piege: "sp, ct final muet (famille circonspection)" },
-        { word: "fait", rule: "« Fait » suivi d'un infinitif reste toujours invariable, y compris à la forme pronominale." },
-        { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est adverbe (si) et reste invariable." },
-        { word: "aveuglément", rare: true, rule: "Sans réflexion ni contrôle. Cet adverbe prend un accent aigu avant le suffixe : aveuglé + ment.", d: 3, piege: "é de l'adverbe (et non -ement), famille aveugle" },
-        { word: "conversationnels", rare: true, rule: "Qui dialoguent avec l'utilisateur. Formé sur conversation : deux n devant le suffixe -el, et un s au masculin pluriel (ces oracles).", d: 2, piege: "nn (-ionnel), finale -els" }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "À l'école, la classe a construit un petit robot avec des briques. Il avance, tourne et s'arrête devant un obstacle. Les élèves ont écrit des instructions précises, puis ils les ont testées plusieurs fois. Chaque erreur leur a appris quelque chose.",
-      notes: [
-        { word: "construit", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable quand le COD (un petit robot) est placé après." },
-        { word: "précises", rule: "Adjectif qui s'accorde avec « instructions » : féminin pluriel." },
-        { word: "testées", rule: "Le COD « les » (les instructions) est placé avant le verbe avoir : accord au féminin pluriel." },
-        { word: "appris", rule: "Avec l'auxiliaire avoir, le participe reste invariable : le COD « quelque chose » est placé après." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Hier, mon frère a demandé à un programme de dessiner un chat sur la lune. L'image qu'il a obtenue était amusante, mais les pattes avaient six doigts. Il a donc compris que les images créées par un ordinateur ne sont pas toujours fidèles à la réalité.",
-      notes: [
-        { word: "demandé", rule: "Avec l'auxiliaire avoir, le participe reste invariable : aucun COD n'est placé avant." },
-        { word: "obtenue", rule: "Le COD « que » (l'image) est placé avant le verbe avoir : accord au féminin singulier." },
-        { word: "doigts", rule: "Le g est muet, comme dans « doigt » au singulier ; le s marque le pluriel." },
-        { word: "créées", rule: "Participe employé comme adjectif : il s'accorde avec « images » (féminin pluriel)." },
-        { word: "fidèles", rule: "Adjectif au féminin pluriel, accordé avec « images » ; accent grave sur le è." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Avant de croire une information trouvée en ligne, il faut se demander qui l'a écrite. Les élèves de la classe comparent plusieurs sites, relisent les dates et cherchent une preuve. Une réponse rapide n'est pas toujours une réponse exacte.",
-      notes: [
-        { word: "croire", rule: "Après la préposition « de », le verbe se met à l'infinitif : on peut le remplacer par « vendre »." },
-        { word: "trouvée", rule: "Participe employé comme adjectif : il s'accorde avec « information » (féminin singulier)." },
-        { word: "écrite", rule: "Le COD « l' » (l'information) est placé avant le verbe avoir : accord au féminin singulier." },
-        { word: "relisent", rule: "Verbe relire au présent, 3e personne du pluriel : relis-ent." },
-        { word: "exacte", rule: "Adjectif au féminin, accordé avec « réponse » : exact + e." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Grâce à la traduction automatique, un voyageur comprend en quelques instants un panneau écrit dans une langue qu'il n'a jamais apprise. Pourtant, certaines expressions idiomatiques perdent leur sens quand on les traduit mot à mot. Il vaut mieux relire la phrase obtenue et, au besoin, demander l'avis d'un traducteur.",
-      notes: [
-        { word: "quelques", rule: "Déterminant indéfini au pluriel : « quelques instants » (plusieurs instants)." },
-        { word: "apprise", rule: "Le COD « que » (une langue) est placé avant le verbe avoir : accord au féminin singulier." },
-        { word: "idiomatiques", rule: "Qui appartient à une langue précise (une expression idiomatique). Commence par id-i-o-m, finale en -tique, s du pluriel.", rare: true, d: 2, piege: "id-i-o-m, finale -tique" },
-        { word: "obtenue", rule: "Participe employé comme adjectif : il s'accorde avec « phrase » (féminin singulier)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Un système qui apprend à partir de photographies reproduit les défauts de ses exemples. Si la plupart des images proviennent d'un seul pays, les résultats semblent moins fiables ailleurs. Les concepteurs ont donc diversifié les données qu'ils avaient collectées, afin que chacun soit représenté équitablement.",
-      notes: [
-        { word: "proviennent", rule: "Après « la plupart des images », le verbe s'accorde au pluriel : proviennent." },
-        { word: "collectées", rule: "Le COD « que » (les données) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "soit", rule: "« Afin que » est suivi du subjonctif : que chacun soit (et non « soi » ni « soie »)." },
-        { word: "équitablement", rule: "Adverbe formé sur l'adjectif équitable : équitable + ment, avec un seul t.", rare: true, d: 2, piege: "qu, un seul t, e muet gardé devant -ment" }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Dans la classe de troisième, le professeur a demandé aux élèves de rédiger un résumé, puis de le comparer à celui que proposait un assistant conversationnel. Certains ont découvert que des phrases pourtant fluides contenaient des faits inexacts. Ils se sont rendu compte qu'une rédaction personnelle exige du temps, mais qu'elle forme le jugement.",
-      notes: [
-        { word: "rédiger", rule: "Après la préposition « de », le verbe se met à l'infinitif : on peut le remplacer par « vendre »." },
-        { word: "conversationnel", rule: "Qui dialogue avec l'utilisateur. Formé sur conversation : deux n devant le suffixe -el.", rare: true, d: 2, piege: "nn (-ionnel)" },
-        { word: "inexacts", rule: "Adjectif masculin pluriel, accordé avec « faits » : le x de exact se garde, puis un s." },
-        { word: "rendu", rule: "Se rendre compte : le « se » est COI (rendre compte à soi-même), le participe reste invariable." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Les illustrations que ce logiciel a fabriquées de toutes pièces sont parfois indiscernables d'une photographie. Nombre d'internautes s'y sont donc trompés. Les spécialistes recommandent de scruter les ombres, les reflets et les mains, où persistent souvent des anomalies, et de se méfier des légendes mensongères.",
-      notes: [
-        { word: "fabriquées", rule: "Le COD « que » (les illustrations) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "indiscernables", rule: "Qu'on ne peut distinguer. Famille de discerner : le groupe sc se garde ; finale -ables.", rare: true, d: 3, piege: "sc (famille discerner), finale -ables" },
-        { word: "trompés", rule: "Après « nombre de », le verbe et le participe s'accordent au pluriel ; se tromper : « se » est COD, accord avec le sujet (masculin pluriel)." },
-        { word: "scruter", rule: "Examiner avec attention. Le groupe sc devant r, puis -uter.", d: 2, piege: "sc devant r" },
-        { word: "persistent", rule: "Le sujet inversé « des anomalies » est au pluriel : le verbe se termine par -ent." },
-        { word: "mensongères", rule: "Adjectif dérivé de mensonge : le g reste, accent grave au féminin, s du pluriel (légendes).", rare: true, d: 3, piege: "g (famille mensonge), è au féminin" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Dans l'entrepôt, des robots mobiles circulent entre les rayonnages, guidés par des capteurs et des cartes mémorisées. Les ingénieurs, quelque ingénieux que soient leurs algorithmes, restent attentifs : une panne qu'on n'avait pas prévue peut paralyser tous les engins. Plusieurs d'entre eux se sont donc relayés cette nuit.",
-      notes: [
-        { word: "rayonnages", rule: "Étagères d'un entrepôt. Dérivé de rayon : y, puis deux n devant -age.", rare: true, d: 3, piege: "y, nn (famille rayon)" },
-        { word: "mémorisées", rule: "Participe employé comme adjectif, accordé avec « cartes » (féminin pluriel) ; accents aigus sur les deux é.", rare: true, d: 2, piege: "é-é, -isées" },
-        { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est adverbe (si) et reste invariable." },
-        { word: "soient", rule: "Après « quelque... que », le verbe est au subjonctif ; le sujet (leurs algorithmes) est au pluriel : soient." },
-        { word: "prévue", rule: "Le COD « que » (une panne) est placé avant le verbe avoir : accord au féminin singulier." },
-        { word: "paralyser", rule: "Rendre incapable de bouger. Du grec : y après le l, puis -iser ; famille de paralysie.", d: 2, piege: "y (famille paralysie), -iser" },
-        { word: "relayés", rule: "Se relayer : « se » est COD, le participe s'accorde avec le sujet (plusieurs, masculin pluriel).", d: 2, piege: "y, accord pronominal" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Un modèle de langage apprend en repérant des régularités dans d'immenses corpus de textes. Il prédit le mot le plus probable, sans toujours distinguer le vrai du plausible. D'aucuns s'étonnent qu'il puisse se tromper avec tant d'aplomb ; c'est pourtant la conséquence de sa méthode, qui récompense la vraisemblance plus que l'exactitude.",
-      notes: [
-        { word: "corpus", rule: "Ensemble de textes réunis pour une étude. Nom invariable au pluriel : des corpus.", rare: true, d: 2, piege: "finale -us, pluriel invariable" },
-        { word: "D'aucuns", rule: "Pronom indéfini pluriel (certains) : toujours avec un s, et le verbe est au pluriel.", d: 3, piege: "d'aucuns avec s, apostrophe" },
-        { word: "puisse", rule: "Après « s'étonner que », le verbe est au subjonctif : qu'il puisse." },
-        { word: "aplomb", rule: "Assurance. Le b final est muet ; famille de plomb (à plomb, droit comme un fil à plomb).", d: 3, piege: "b final muet (famille plomb)" },
-        { word: "vraisemblance", rule: "Caractère de ce qui paraît vrai : vrai + semblance, avec -ance et non -ence.", rare: true, d: 3, piege: "vrai-sem-blance, -ance (famille sembler)" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Longtemps cantonnée aux dictionnaires bilingues, la traduction s'est muée en un art que les machines pratiquent désormais à une vitesse vertigineuse. Quelque prodigieux que paraissent les résultats, les erreurs de sens guettent : une locution, un proverbe, un jeu de mots exigent une oreille que nul algorithme ne s'est encore formée. Les linguistes relèvent des calques, des paronymes, des ambiguïtés syntaxiques, autant de pièges que les traducteurs chevronnés repèrent sans peine et que les débutants ne soupçonnent guère. Aucune version, si perfectionnée soit-elle, ne dispense donc de la relecture d'un esprit vigilant, qui demeure le dernier rempart contre l'approximation.",
-      notes: [
-        { word: "cantonnée", rule: "Cantonner : cantonn-ée, avec deux n comme dans canton ; accord avec « traduction ».", d: 3, piege: "nn (famille canton), accord fém." },
-        { word: "muée", rule: "Se muer : « se » est COD, le participe s'accorde avec le sujet (la traduction).", d: 3, piege: "u-é-e, accord pronominal" },
-        { word: "vertigineuse", rule: "Qui donne le vertige : vertige + -ineuse, avec g puis i, accord au féminin.", d: 2, piege: "g (famille vertige), -ineuse" },
-        { word: "Quelque", rule: "Devant un adjectif suivi de « que », « quelque » est adverbe (si) et reste invariable, même avec un sujet pluriel." },
-        { word: "formée", rule: "Le COD « que » (une oreille) est placé avant l'auxiliaire : accord au féminin ; « se » est COI (se former à soi).", d: 3, piege: "pronominal, COI + COD antéposé" },
-        { word: "calques", rule: "Tournure copiée mot à mot d'une autre langue : le groupe -qu- plutôt que « k ».", rare: true, d: 2, piege: "qu, s du pluriel" },
-        { word: "paronymes", rule: "Mots proches par la forme, différents par le sens : paronyme, avec un y après le r (du grec).", rare: true, d: 3, piege: "y (grec para-onuma), nymes" },
-        { word: "ambiguïtés", rule: "Caractère de ce qui a plusieurs sens : le tréma sur le i de gu-ï.", rare: true, d: 3, piege: "gu-ï, tréma, finale -ités" },
-        { word: "chevronnés", rule: "Expérimentés. Dérivé de chevron : deux n devant le suffixe -é.", rare: true, d: 3, piege: "nn (famille chevron)" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Sur les réseaux sociaux se sont multipliées des images fabriquées par des programmes, si abouties que même les yeux les plus exercés s'y sont mépris. Face à cette déferlante, quelques indices subsistent pourtant : des doigts surnuméraires, des ombres discordantes, des reflets que la lumière n'explique pas. Il importe donc que chacun contrôle la provenance d'un cliché avant de le partager, et qu'il ne se fie ni à l'apparence, ni à la légende, ni au nombre de personnes qui l'ont déjà relayé. Une vérification minutieuse demande quelques minutes ; elle épargne bien des malentendus.",
-      notes: [
-        { word: "multipliées", rule: "Sujet inversé « des images » : se multiplier, « se » est COD, accord au féminin pluriel.", d: 2, piege: "sujet inversé, accord pronominal" },
-        { word: "abouties", rule: "Qui ont atteint leur terme : abouti, abouties (-ties, finale -ies au féminin pluriel).", rare: true, d: 2, piege: "ab-ou-ti, accord" },
-        { word: "même", rule: "Devant un nom précédé de l'article, « même » est adverbe (jusqu'aux) : il reste invariable.", d: 3, piege: "invariable déguisé" },
-        { word: "mépris", rule: "Se méprendre : « se » est COD, accord avec le sujet (les yeux) ; le participe mépris est identique au masculin pluriel.", d: 3, piege: "participe en -is, accord pronominal" },
-        { word: "surnuméraires", rule: "En surplus, au-delà du nombre normal. Dérivé de numéraire : un seul n, sur + numéraire.", rare: true, d: 4, piege: "sur-nu-méraire, un seul n, é, -aires" },
-        { word: "discordantes", rule: "Qui ne s'accordent pas : adjectif en -ant (famille discorder), avec le groupe sc, féminin pluriel -antes.", rare: true, d: 3, piege: "sc, -ant (famille discorder)" },
-        { word: "déferlante", rule: "Qui déferle, vague d'images : dé + ferler, un seul f, puis -ante.", rare: true, d: 3, piege: "un seul f (déferler), -ante" },
-        { word: "provenance", rule: "Origine. Dérivé de provenir : -ance, avec le e de ven-.", d: 3, piege: "-ance (provenir), v-e-n" },
-        { word: "apparence", rule: "Aspect extérieur : deux p, un seul r, finale -ence (famille apparent).", d: 3, piege: "pp, un r, -ence" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les concepteurs ont veillé à la diversité des exemples qu'ils soumettaient à leur système, de crainte qu'il ne reproduise des préjugés cachés dans les archives. Aussi les équipes se sont-elles astreintes à relire, à trier, à rééquilibrer des milliers d'enregistrements, tâche fastidieuse que les plus consciencieux ont menée jusqu'au bout. Les mêmes équipes ont ensuite publié un rapport détaillé et méthodique, afin que quiconque puisse reproduire leurs vérifications, en discuter les limites et signaler d'éventuelles lacunes. Quelles qu'aient été les difficultés, nulle d'entre elles ne s'est dérobée, et toutes se sont félicitées d'avoir tenu bon.",
-      notes: [
-        { word: "astreintes", rule: "S'astreindre à : « se » est COD, accord avec le sujet inversé (les équipes). Finale -eintes (astreindre).", rare: true, d: 3, piege: "-eintes (astreindre), accord inversé" },
-        { word: "rééquilibrer", rule: "Rendre de nouveau équilibré : ré + équilibrer, deux é consécutifs, un seul l et un seul b.", rare: true, d: 3, piege: "é-é consécutifs, qu" },
-        { word: "fastidieuse", rule: "Ennuyeuse par sa longueur : f-a-s-t-i-d-i-euse, avec un d (famille fastidieux).", rare: true, d: 3, piege: "-tidieuse, d (famille fastidieux)" },
-        { word: "consciencieux", rule: "Qui fait son travail avec soin : sc, puis -ci-eux, comme conscience.", rare: true, d: 3, piege: "sc, -ci-eux (famille conscience)" },
-        { word: "Quelles", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (les difficultés)." },
-        { word: "dérobée", rule: "Se dérober : « se » est COD, accord avec le sujet (nulle, féminin singulier).", d: 2, piege: "accord pronominal" },
-        { word: "félicitées", rule: "Se féliciter (quelqu'un) : « se » est COD, accord avec le sujet « toutes » (féminin pluriel).", d: 3, piege: "accord pronominal, é-i-ées" },
-        { word: "quiconque", rule: "Pronom indéfini (n'importe qui) : q-u-i-c-o-n-q-u-e, avec deux qu ; suivi du subjonctif après « afin que ».", d: 3, piege: "deux qu, c-o-n" },
-        { word: "bon", rule: "Dans « tenir bon », « bon » est adverbial et reste invariable.", d: 3, piege: "invariable déguisé" }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "accord", text: "Les ordinateurs calcule très vite, mais ils peuvent se tromper.", wrong: "calcule", right: "calculent", choices: ["calculent", "calcules", "calculer"], rule: "Le sujet « les ordinateurs » est à la 3e personne du pluriel : ils calculent." },
     { level: "apprenti", type: "homophone", text: "La réponse de l'assistant et rapide, mais elle n'est pas toujours juste.", wrong: "et", right: "est", choices: ["est", "es", "ait"], rule: "On peut dire « était rapide » : c'est le verbe être, qui s'écrit « est »." },
@@ -272,6 +81,26 @@
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Les consignes ont été reformulées plusieurs fois, et le modèle, qui avait précédament refusé de répondre, fournit désormais une réponse complète, mais prudente.", wrong: "précédament", right: "précédemment", choices: ["précédemment","précédament","précèdement"], rule: "L'adverbe dérive de l'adjectif « précédent » : les adjectifs en -ent donnent des adverbes en -emment." },
     { level: "grand-scribe", type: "accord", text: "Des tâches tels que la traduction, la synthèse de documents ou la détection de fraudes relèvent désormais de systèmes que les entreprises exploitent chaque jour.", wrong: "tels", right: "telles", choices: ["telles","tels","telle"], rule: "« Tel que » s'accorde avec le nom qui précède : « des tâches », féminin pluriel." },
     { level: "grand-scribe", type: "temps", text: "Il eut fallu davantage de données pour que le modèle généralisât correctement ; l'équipe, faute de temps, a préféré le publier tel quel, avec des réserves.", wrong: "eut", right: "eût", choices: ["eût","eut","eu"], rule: "« Il eût fallu » est un plus-que-parfait du subjonctif à valeur de conditionnel passé, avec accent circonflexe. « Eut » est le passé simple d'« avoir »." },
-    { level: "grand-scribe", type: "homophone", text: "Le défaut que les chercheurs ont relevé dans les traductions est du à un corpus déséquilibré, où certaines langues, trop rares, se trouvent à peine représentées.", wrong: "du", right: "dû", choices: ["dû","du","dut"], rule: "Le participe passé de « devoir » s'écrit « dû » au masculin singulier, avec un accent circonflexe qui le distingue de « du »." }
+    { level: "grand-scribe", type: "homophone", text: "Le défaut que les chercheurs ont relevé dans les traductions est du à un corpus déséquilibré, où certaines langues, trop rares, se trouvent à peine représentées.", wrong: "du", right: "dû", choices: ["dû","du","dut"], rule: "Le participe passé de « devoir » s'écrit « dû » au masculin singulier, avec un accent circonflexe qui le distingue de « du »." },
+    { level: "maitre", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Le chercheur a constaté une hiatus entre les performances du modèle en laboratoire et son comportement réel face aux utilisateurs.", wrong: "une", right: "un", choices: ["un","une","cet"], rule: "Hiatus est un nom masculin : on écrit « un hiatus »." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Les ingénieurs redoutaient que l'assistant, même lorsqu'il se trompait, ne parut trop sûr de lui, et l'on dut corriger ses formulations.", wrong: "parut", right: "parût", choices: ["parût","parut","paraisse"], rule: "Après « redoutaient que », le subjonctif se met à l'imparfait : « ne parût », avec un accent circonflexe à la 3e personne du singulier." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "L'équipe voulait que le programme connût ses propres limites et qu'il sut répondre qu'il ignorait un fait plutôt que d'en inventer un.", wrong: "sut", right: "sût", choices: ["sût","sut","sache"], rule: "Après « voulait que », le subjonctif imparfait de savoir est « sût », avec un accent circonflexe, comme « connût » dans la même phrase." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Sur le prototype de voiture autonome, le logiciel déclenche seul les essuies-glaces dès que les capteurs détectent les premières gouttes sur la vitre.", wrong: "essuies-glaces", right: "essuie-glaces", choices: ["essuie-glaces","essuies-glaces","essuie-glace"], rule: "Dans essuie-glace, « essuie » est le verbe essuyer : il reste invariable, et seul « glace » prend le s du pluriel." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "L'équipe a rassemblé des milliers de photographies d'oiseaux-mouche pour apprendre au programme à reconnaître les espèces en plein vol.", wrong: "oiseaux-mouche", right: "oiseaux-mouches", choices: ["oiseaux-mouches","oiseaux-mouche","oiseau-mouches"], rule: "Oiseau-mouche associe deux noms : les deux éléments prennent la marque du pluriel, des oiseaux-mouches." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Avant la mise en service, chaque paramêtre du réseau a été réglé par ajustements successifs, car la moindre dérive aurait faussé les réponses de l'assistant.", wrong: "paramêtre", right: "paramètre", choices: ["paramètre","paramêtre","paramettre"], rule: "Paramètre prend un accent grave sur le è, comme « mètre » et « diamètre »." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Le réseau récurent relit chaque mot en tenant compte de ceux qui précèdent, ce qui lui permet de suivre le fil d'une phrase longue et nuancée.", wrong: "récurent", right: "récurrent", choices: ["récurrent","récurent","récurrant"], rule: "Récurrent vient du latin « recurrere » (courir en arrière) : le double r, comme dans « concurrent » et « occurrence »." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "Le jeu de données, trop homogène, a introduit un biait que les évaluateurs ont mis des semaines à repérer, puis à corriger dans les réponses du modèle.", wrong: "biait", right: "biais", choices: ["biais","biait","biai"], rule: "Biais prend un s final muet, même au singulier : un biais." },
+    { level: "grand-scribe", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Pour clore la conférence, la démonstration en direct fut un véritable apothéose, que l'assistance, pourtant sceptique, ovationna debout pendant de longues minutes.", wrong: "un", right: "une", choices: ["une","un","cette"], rule: "Apothéose est un nom féminin : on écrit « une apothéose »." },
+    { level: "grand-scribe", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Dans les premières semaines, le lancement du modèle s'est déroulé dans un atmosphère de curiosité mêlée de scepticisme, et les premiers essais publics n'ont dissipé ce scepticisme qu'en partie.", wrong: "un", right: "une", choices: ["une","un","cette"], rule: "Atmosphère est un nom féminin : on écrit « une atmosphère »." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Les concepteurs avaient exigé que le modèle ne fit jamais passer une conjecture pour un fait établi et qu'il citât systématiquement les documents dont il s'inspirait.", wrong: "fit", right: "fît", choices: ["fît","fit","fasse"], rule: "Après « avaient exigé que », le subjonctif se met à l'imparfait : « ne fît », avec un accent circonflexe, comme « citât » dans la même phrase." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Bien qu'il eût été nourri de millions de textes, le modèle exigeait encore que l'on prit soin de formuler chaque consigne avec précision, faute de quoi il répondait de travers.", wrong: "prit", right: "prît", choices: ["prît","prit","prenne"], rule: "Après « exigeait que », le subjonctif imparfait de prendre est « prît », avec un accent circonflexe, à distinguer du passé simple « prit »." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Pour doter son module de lecture automatique d'exemples variés, le laboratoire a numérisé des milliers de lettres anciennes, dont les timbres-postes, parfois à demi effacés, servent de repères pour dater les envois.", wrong: "timbres-postes", right: "timbres-poste", choices: ["timbres-poste","timbres-postes","timbre-poste"], rule: "Dans timbre-poste, « poste » est un complément du nom : seul « timbre » prend la marque du pluriel." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Le système de cartographie a localisé sans erreur les chef-lieux de département sur des cartes anciennes, malgré des graphies d'époque que l'équipe n'avait pas prévues.", wrong: "chef-lieux", right: "chefs-lieux", choices: ["chefs-lieux","chef-lieux","chefs-lieu"], rule: "Chef-lieu associe deux noms : les deux éléments prennent la marque du pluriel, des chefs-lieux." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Depuis quelques années, la croissance des modèles, mesurée en milliards de paramètres, suit une courbe quasi exponencielle que les ingénieurs ont peine à soutenir, faute de puces assez nombreuses.", wrong: "exponencielle", right: "exponentielle", choices: ["exponentielle","exponencielle","exponantielle"], rule: "Exponentiel se termine par -tiel, comme « potentiel » et « essentiel »." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Les assistants proposent parfois, pour mémoriser une longue liste, un procédé némonique que les élèves adoptent aussitôt, tant il est ludique et efficace.", wrong: "némonique", right: "mnémonique", choices: ["mnémonique","némonique","mémonique"], rule: "Mnémonique vient du grec « mnêmê » (mémoire) : le mot commence par mn, groupe qu'on retrouve dans « amnésie »." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Le correcteur grammatical analyse l'arbre sintaxique de chaque phrase avant de proposer une réécriture, ce qui lui permet de repérer, par exemple, un accord oublié.", wrong: "sintaxique", right: "syntaxique", choices: ["syntaxique","sintaxique","synthaxique"], rule: "Syntaxique vient du grec « suntaxis » : y après le s initial, comme dans « syllabe »." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.lex.morphologie", text: "Avant d'être comptés, les mots sont ramenés à leur forme canonique par une étape de lématisation, qui regroupe « chantait » et « chanterons » sous l'infinitif « chanter ».", wrong: "lématisation", right: "lemmatisation", choices: ["lemmatisation","lématisation","lemattisation"], rule: "Lemmatisation dérive de « lemme » : on garde le double m de la base." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Pour que l'assistant s'oriente dans le domaine médical, les spécialistes ont bâti une antologie, vaste réseau de concepts reliés entre eux par des liens de parenté ou de cause.", wrong: "antologie", right: "ontologie", choices: ["ontologie","antologie","anthologie"], rule: "Ontologie vient du grec « on, ontos » (l'être) ; elle désigne ici une description organisée des concepts d'un domaine. Une anthologie est un recueil de textes choisis." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Dire d'un modèle qu'il réussit parce qu'il est performant relève de la totologie, et les évaluateurs, qui se méfient de ces raisonnements circulaires, exigent des mesures indépendantes du résultat.", wrong: "totologie", right: "tautologie", choices: ["tautologie","totologie","tautollogie"], rule: "Tautologie vient du grec « tauto » (le même) et « logos » (discours) : on garde tau-, comme dans « automatique »." }
   ]
 };

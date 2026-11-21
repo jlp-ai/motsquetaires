@@ -1,104 +1,6 @@
 (window.THEMES = window.THEMES || {}).chevaux = {
   name: "Chevaux et équitation",
   emoji: "🐴",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Samedi matin, la cavalière a sellé sa jument dans l'écurie. Elle a serré la sangle, puis elle a réglé les étriers. Sur le manège, les poneys marchent au pas, trottent, puis partent au galop. Les élèves, fatigués mais heureux, ont brossé leurs montures.",
-      notes: [
-        { word: "sellé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « sa jument » est placé après)." },
-        { word: "étriers", rule: "Pièces où le cavalier pose les pieds. Étrier se termine par -er, avec un s au pluriel." },
-        { word: "trottent", rule: "Verbe trotter au présent, 3e personne du pluriel : -ent, avec deux t." },
-        { word: "galop", rule: "Le p final ne se prononce pas : on le retrouve dans galoper." },
-        { word: "fatigués", rule: "L'adjectif s'accorde avec le nom qu'il qualifie (les élèves : masculin pluriel)." },
-        { word: "heureux", rule: "Adjectif en -x : il ne change pas au masculin pluriel." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Chaque soir, le palefrenier nettoie les stalles et remplit les mangeoires de foin. Le poulain hennit dès qu'il voit sa mère. Régulièrement, le maréchal-ferrant arrive avec son tablier de cuir et pose de nouveaux fers. Les chevaux restent calmes pendant qu'il travaille.",
-      notes: [
-        { word: "nettoie", rule: "Verbe nettoyer au présent, 3e personne du singulier : le y devient i devant un e muet." },
-        { word: "mangeoires", rule: "On garde le e après le g devant le o pour faire le son [j] : mangeoire, comme dans manger." },
-        { word: "hennit", rule: "Verbe hennir (2e groupe) au présent, 3e personne du singulier : -it, avec deux n." },
-        { word: "maréchal-ferrant", rule: "Nom composé avec un trait d'union : maréchal avec un accent aigu, ferrant avec deux r comme dans ferrer." },
-        { word: "fers", rule: "Le s final marque le pluriel : de nouveaux fers." },
-        { word: "calmes", rule: "L'adjectif s'accorde avec le sujet (les chevaux : masculin pluriel) ; le e est déjà là, on ajoute s." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les deux chevaux que la jeune cavalière a montés ce matin sont un alezan et un gris. Elle les a longuement pansés avant de les rentrer à l'écurie. Les éleveurs, qui se sont réjouis de leurs robes luisantes, l'ont félicitée.",
-      notes: [
-        { word: "montés", rule: "Le COD « que » (les deux chevaux) est placé avant l'auxiliaire avoir : le participe s'accorde au masculin pluriel." },
-        { word: "alezan", rule: "Robe fauve à crins de même teinte. Un seul z, et la finale -an (et non -ant) : on la retrouve au féminin, alezane.", rare: true, d: 2, piege: "z, finale -an (pas -ant)" },
-        { word: "pansés", rule: "Panser, c'est soigner et brosser un animal (à ne pas confondre avec penser). Le COD « les » est placé avant l'auxiliaire : accord au masculin pluriel.", rare: true, d: 2, piege: "panser et non penser, accord" },
-        { word: "réjouis", rule: "Verbe pronominal se réjouir : le participe s'accorde avec le sujet (les éleveurs)." },
-        { word: "luisantes", rule: "Adjectif tiré du verbe luire : il s'accorde avec le nom (robes : féminin pluriel)." },
-        { word: "félicitée", rule: "Le COD « l' » (la cavalière) est placé avant l'auxiliaire avoir : le participe s'accorde au féminin singulier." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Dans la sellerie, les cavalières ont nettoyé les mors et les étriers, puis les ont accrochés au mur. Leurs montures, sorties du box, attendaient déjà dans la cour. Quelle belle matinée pour un galop !",
-      notes: [
-        { word: "sellerie", rule: "Pièce où l'on range selles et harnais. Dérivé de selle : deux l, puis -erie.", rare: true, d: 2, piege: "ll (famille selle), -erie" },
-        { word: "mors", rule: "Pièce de métal placée dans la bouche du cheval. Le s final est muet et le mot ne change pas au pluriel (on retrouve le s dans « morsure »).", rare: true, d: 2, piege: "s muet final (pas t), invariable" },
-        { word: "nettoyé", rule: "Avec l'auxiliaire avoir, le participe reste invariable ici (le COD « les mors et les étriers » est placé après). Nettoyer garde son y devant la terminaison -é." },
-        { word: "accrochés", rule: "Le COD « les » (les mors et les étriers) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "sorties", rule: "Participe passé employé comme adjectif : il s'accorde avec le nom (montures : féminin pluriel)." },
-        { word: "quelle", rule: "Ici « quelle » est un déterminant exclamatif qui accompagne « matinée » : il s'écrit en un mot, avec deux l (à distinguer de qu'elle)." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Bien que le vétérinaire eût d'abord redouté une fourbure, l'étalon qu'on lui avait amené guérit en quelques semaines. La ferrure adaptée que posa le maréchal-ferrant et les longues heures de repos firent le reste, si bien que le cheval retrouva l'allure souple qu'on lui connaissait.",
-      notes: [
-        { word: "eût", rule: "« Bien que » appelle le subjonctif ; après un passé simple, le plus-que-parfait du subjonctif est admis : eût redouté, avec un accent circonflexe." },
-        { word: "fourbure", rule: "Affection douloureuse du pied du cheval. Dérivé de fourbu : ou, puis -ure.", rare: true, d: 1, piege: "ou, -ure" },
-        { word: "maréchal-ferrant", rule: "Artisan qui ferre les chevaux. Nom composé avec trait d'union ; maréchal prend un accent aigu et un ch, ferrant prend deux r comme fer, et la finale est -ant.", rare: true, d: 3, piege: "é, ch, trait d'union, rr (famille fer), -ant" },
-        { word: "ferrure", rule: "Ensemble des fers d'un cheval, ou manière de le ferrer. Famille de fer : deux r, puis -ure.", rare: true, d: 2, piege: "rr (famille fer), -ure" },
-        { word: "firent", rule: "Passé simple de faire, 3e personne du pluriel : -irent. Le sujet est formé de deux groupes de noms." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "À peine la cavalière avait-elle rassemblé sa jument alezane que celle-ci, d'abord ombrageuse, se mit à piaffer sur place avant de s'élancer au petit galop. Les écuyers qui l'observaient, quoique peu enclins aux compliments, s'accordèrent à reconnaître qu'ils n'avaient jamais vu cheval mieux dressé.",
-      notes: [
-        { word: "alezane", rule: "Robe fauve à crins de même teinte. Alezan prend un e au féminin : alezane (un seul z, finale -an et non -ant).", rare: true, d: 2, piege: "z, finale -an (pas -ant), e au féminin" },
-        { word: "ombrageuse", rule: "Se dit d'un cheval craintif, qui s'effraie d'un rien. Formé sur ombrage : ombrageux, ombrageuse.", rare: true, d: 2, piege: "-geu- (e après g), -euse" },
-        { word: "piaffer", rule: "Trépigner sur place en levant les antérieurs. Deux f, comme dans piaffe.", rare: true, d: 3, piege: "ff (opaque), -er" },
-        { word: "quoique", rule: "Conjonction qui signifie « bien que » : un seul mot (à distinguer de quoi que)." },
-        { word: "enclins", rule: "Adjectif qui s'accorde avec le nom (les écuyers : masculin pluriel) ; finale -ins." },
-        { word: "s'accordèrent", rule: "Passé simple, 3e personne du pluriel : -èrent, avec un accent grave sur le è." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Au retour du manège, le palefrenier suspendit le caparaçon brodé, puis les étrivières et la gourmette qu'on avait astiquées la veille. Quoique rétive, la pouliche se laissa étriller sans qu'il fallût la contraindre.",
-      notes: [
-        { word: "caparaçon", rule: "Housse d'apparat dont on couvrait un cheval. Un seul p, un seul r, et le ç avant le o ; dérivé en caparaçonner.", rare: true, d: 3, piege: "un seul p, un seul r, ç devant o" },
-        { word: "étrivières", rule: "Courroies qui soutiennent les étriers. Accent aigu, tr, puis v ; finale -ières, avec s au pluriel.", rare: true, d: 3, piege: "é, tr, v (pas étrier), -ière" },
-        { word: "gourmette", rule: "Chaînette placée sous la ganache du cheval, fixée au mors. Un seul r, deux t.", rare: true, d: 2, piege: "ou, un r, tt" },
-        { word: "astiquées", rule: "Le COD « que » (les étrivières et la gourmette : féminin pluriel) est placé avant l'auxiliaire avoir : accord." },
-        { word: "rétive", rule: "Féminin de rétif : f devient v, rétive.", rare: true, d: 1, piege: "f devient v au féminin" },
-        { word: "étriller", rule: "Frotter le poil du cheval avec une étrille. Accent aigu, puis deux l précédés de i : étrille, étriller (à ne pas confondre avec étrier).", rare: true, d: 3, piege: "é, ill (pas étrier), -er" },
-        { word: "fallût", rule: "« Sans que » appelle le subjonctif ; après un passé simple (se laissa), l'imparfait du subjonctif est admis : fallût, avec un accent circonflexe." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les hongres et les juments que le jury avait retenus pour la reprise de dressage décrivirent, au trot puis au galop, des voltes d'une régularité telle qu'aucun spectateur n'osa tousser. Seul un gris pommelé, la muserolle de travers, poussa un hennissement sonore que sa cavalière ne put étouffer.",
-      notes: [
-        { word: "hongres", rule: "Chevaux mâles castrés. Le h initial est aspiré (pas de liaison : « les hongres ») ; il ne s'entend pas mais s'écrit, comme dans Hongrie ; puis -ongre, avec s au pluriel.", rare: true, d: 3, piege: "h aspiré (famille Hongrie), on, -gre" },
-        { word: "retenus", rule: "Le COD « que » représente les hongres et les juments (masculin l'emporte) : accord au masculin pluriel." },
-        { word: "voltes", rule: "Figures de manège : cercles que le cheval décrit. Un seul l, puis t et e muet ; s au pluriel.", rare: true, d: 2, piege: "o (pas au), lt, e final" },
-        { word: "pommelé", rule: "Se dit d'une robe grise marquée de taches rondes comme des pommes. Dérivé de pomme : deux m, un seul l.", rare: true, d: 2, piege: "mm (famille pomme), un seul l" },
-        { word: "muserolle", rule: "Partie de la bride qui passe sur le nez du cheval. Le s se prononce [z] comme dans « museau », puis la finale -olle avec deux l.", rare: true, d: 3, piege: "s (pas z), -olle" },
-        { word: "hennissement", rule: "Cri du cheval. Le h initial est aspiré (« le hennissement »), puis deux n, comme dans hennir ; ss de la finale -issement, qui garde le e muet.", rare: true, d: 3, piege: "h aspiré, nn, ss, e muet devant -ment" }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", text: "À la tombée de la nuit, les chevaux du centre mange leur foin.", wrong: "mange", right: "mangent", choices: ["mangent", "mange", "manges"], rule: "Le sujet est « les chevaux » (nom au pluriel), pas « le centre » : le verbe se termine par -ent.", type: "accord", notion: "cm1.accords.sujet-verbe-nom-noyau" },
     { level: "apprenti", text: "Ma cousine brosse sont poney avant chaque leçon, puis lui cure les sabots.", wrong: "sont", right: "son", choices: ["son", "sont", "sons"], rule: "On peut dire « mon poney » : c'est le déterminant « son ». « Sont » est le verbe être.", type: "homophone", notion: "cm1.homo.son-sont" },
@@ -179,6 +81,24 @@
     { level: "grand-scribe", text: "À quatre-vingt ans passés, l'ancien maréchal-ferrant du village forge encore ses fers à la main, tandis que les chevaux de trait attendent leur tour dans la cour, calmes et indifférents au bruit des marteaux.", wrong: "quatre-vingt", right: "quatre-vingts", choices: ["quatre-vingts", "quatre-vingt", "quatre vingts"], rule: "Quatre-vingts prend un s quand il n'est suivi d'aucun autre nombre : quatre-vingts ans.", type: "compose" },
     { level: "grand-scribe", text: "Au terme d'un barrage serré que la foule suivit debout, le cavalier et sa jument vainquèrent d'un dixième de seconde des rivaux pourtant réputés imbattables.", wrong: "vainquèrent", right: "vainquirent", choices: ["vainquirent", "vainquèrent", "vainquerent"], rule: "Le passé simple de vaincre se forme sur le radical vainqu- avec les terminaisons -is, -irent : ils vainquirent.", type: "temps" },
     { level: "grand-scribe", text: "Après une heure et demi de dressage sous un soleil de plomb, la jument, ruisselante de sueur, fut ramenée à l'écurie où le palefrenier l'attendait avec une couverture sèche.", wrong: "demi", right: "demie", choices: ["demie", "demi", "demis"], rule: "Placé après le nom et joint par « et », « demi » s'accorde en genre avec lui : une heure et demie (heure est féminin).", type: "invariable" },
-    { level: "grand-scribe", text: "Les deux hongres, arrivés le même jour au haras, se sont plus dès l'abreuvoir et restent inséparables depuis, au grand soulagement du palefrenier.", wrong: "plus", right: "plu", choices: ["plu", "plus", "plue"], rule: "Dans « se plaire », « se » est COI (plaire à quelqu'un) : le participe reste invariable, ils se sont plu.", type: "pronominal" }
+    { level: "grand-scribe", text: "Les deux hongres, arrivés le même jour au haras, se sont plus dès l'abreuvoir et restent inséparables depuis, au grand soulagement du palefrenier.", wrong: "plus", right: "plu", choices: ["plu", "plus", "plue"], rule: "Dans « se plaire », « se » est COI (plaire à quelqu'un) : le participe reste invariable, ils se sont plu.", type: "pronominal" },
+    { level: "maitre", type: "lexique", text: "Au haras, un effluve musquée de cuir, de foin et de crottin chaud accueille le palefrenier dès qu'il ouvre la porte de l'écurie.", wrong: "musquée", right: "musqué", choices: ["musqué","musquée","musqués"], rule: "Effluve est un nom masculin, malgré son e final : un effluve. L'adjectif s'accorde au masculin singulier : musqué." },
+    { level: "maitre", type: "lexique", text: "Entre les deux obstacles du double, un intervalle exiguë ne laisse à la jument qu'une seule foulée pour se réceptionner et rebondir.", wrong: "exiguë", right: "exigu", choices: ["exigu","exiguë","exigus"], rule: "Intervalle est un nom masculin, malgré son e final : un intervalle. L'adjectif s'accorde au masculin singulier : exigu, sans le tréma qui marque le féminin exiguë." },
+    { level: "maitre", type: "temps", text: "Le vieil écuyer exigeait que le jeune cavalier connut chaque cheval du manège avant de le monter, et qu'il lui parlât d'une voix posée.", wrong: "connut", right: "connût", choices: ["connût","connut","connu"], rule: "Après « exigeait que », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « connaître » donne « connût », avec un accent circonflexe ; « connut » est le passé simple." },
+    { level: "maitre", type: "temps", text: "Le maître de manège redoutait que ses élèves, trop pressés, ne prîssent le galop avant la fin de l'échauffement.", wrong: "prîssent", right: "prissent", choices: ["prissent","prîssent","prisent"], rule: "Le circonflexe du subjonctif imparfait ne marque que la 3e personne du singulier (qu'il prît). À la 3e personne du pluriel, la terminaison est -ssent, sans accent : qu'ils prissent." },
+    { level: "maitre", type: "compose", text: "Sur la piste du manège, la cavalière enchaîne deux demis-voltes au galop, la main légère et le dos droit, sous l'œil de l'écuyer en chef.", wrong: "demis-voltes", right: "demi-voltes", choices: ["demi-voltes","demis-voltes","demi-volte"], rule: "Placé devant le nom et joint par un trait d'union, « demi » est invariable : seul le nom prend la marque du pluriel, des demi-voltes." },
+    { level: "maitre", type: "compose", text: "Le maréchal-ferrant cloue quatre fers à chevaux au-dessus de sa forge, branches vers le haut, pour que la chance, dit-on, ne s'en échappe pas.", wrong: "chevaux", right: "cheval", choices: ["cheval","chevaux","chevals"], rule: "Dans « fer à cheval », le complément « cheval » reste au singulier : c'est un fer qui a la forme du sabot d'un cheval. Seul « fer » prend la marque du pluriel." },
+    { level: "maitre", type: "participe", text: "Débourrer un poulain rétif est une tâche fatiguante, que seuls les écuyers les plus patients mènent à bien sans jamais hausser la voix.", wrong: "fatiguante", right: "fatigante", choices: ["fatigante","fatiguante","fatigeante"], rule: "L'adjectif verbal tiré de « fatiguer » s'écrit sans u : fatigant, fatigante. Le u ne se garde que dans le participe présent « fatiguant »." },
+    { level: "maitre", type: "lexique", text: "Le vétérinaire mesure la taille du poney au garot, point le plus haut de l'épaule, à l'aide d'une toise graduée.", wrong: "garot", right: "garrot", choices: ["garrot","garot","garo"], rule: "Garrot s'écrit avec deux r, comme « carrosse » ou « sarrasin » ; c'est la saillie située entre l'encolure et le dos." },
+    { level: "grand-scribe", type: "lexique", text: "Au terme d'un barrage que la foule suivit debout, le concours s'acheva sur une apothéose incandescent, le cavalier saluant les tribunes, que plus personne ne songeait à quitter.", wrong: "incandescent", right: "incandescente", choices: ["incandescente","incandescent","incandescentes"], rule: "Apothéose est un nom féminin : une apothéose incandescente. L'adjectif s'accorde au féminin singulier." },
+    { level: "grand-scribe", type: "lexique", text: "Dans le manège couvert, où la reprise dure depuis une heure, l'atmosphère saturé de poussière fine et de sueur de cheval devient presque irrespirable pour les spectateurs.", wrong: "saturé", right: "saturée", choices: ["saturée","saturé","saturés"], rule: "Atmosphère est un nom féminin : une atmosphère saturée. L'adjectif s'accorde au féminin." },
+    { level: "grand-scribe", type: "temps", text: "Le jury tolérait mal que le cavalier tint les rênes si longues dans le dernier tour, quoique sa jument, fort docile, ne s'en offusquât point.", wrong: "tint", right: "tînt", choices: ["tînt","tint","tînd"], rule: "Après « tolérait que », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « tenir » donne « tînt », avec un accent circonflexe ; « tint » est le passé simple." },
+    { level: "grand-scribe", type: "temps", text: "Le vétérinaire craignait que les deux hongres, excités par l'orage, ne se blessâssent en se heurtant aux cloisons du van avant l'arrivée au concours.", wrong: "blessâssent", right: "blessassent", choices: ["blessassent","blessâssent","blessacent"], rule: "Le circonflexe du subjonctif imparfait ne marque que la 3e personne du singulier (qu'il se blessât). À la 3e personne du pluriel, la terminaison est -ssent, sans accent : qu'ils se blessassent." },
+    { level: "grand-scribe", type: "compose", text: "Dans la sellerie, le palefrenier suspend deux couvre-rein de laine, que les cavaliers posent sur le dos des chevaux tondus pour les sorties d'hiver, afin qu'ils ne prennent pas froid.", wrong: "couvre-rein", right: "couvre-reins", choices: ["couvre-reins","couvre-rein","couvres-reins"], rule: "Dans ce nom composé verbe + nom, le verbe « couvre » reste invariable et le nom prend un s au pluriel : des couvre-reins." },
+    { level: "grand-scribe", type: "compose", text: "Les ingénieurs du XIXe siècle mesuraient la puissance des machines en chevaux-vapeurs, une unité née de la comparaison avec le cheval de trait et que l'on emploie encore aujourd'hui.", wrong: "chevaux-vapeurs", right: "chevaux-vapeur", choices: ["chevaux-vapeur","chevaux-vapeurs","cheval-vapeur"], rule: "Dans « cheval-vapeur », le second nom joue le rôle d'un complément (un cheval de machine à vapeur) et reste invariable : seul « cheval » prend la marque du pluriel, des chevaux-vapeur." },
+    { level: "grand-scribe", type: "pronominal", text: "Surprise par un écart de sa monture, la cavalière s'est faite désarçonner au premier obstacle, mais elle est remontée aussitôt en selle, sous les applaudissements des tribunes.", wrong: "faite", right: "fait", choices: ["fait","faite","faites"], rule: "Suivi d'un infinitif, le participe passé « fait » reste invariable, même avec un sujet féminin : elle s'est fait désarçonner." },
+    { level: "grand-scribe", type: "lexique", text: "Le cheval, comme l'âne et le zèbre, appartient aux solipédes, ces mammifères dont chaque membre se termine par un seul doigt, protégé par un sabot de corne.", wrong: "solipédes", right: "solipèdes", choices: ["solipèdes","solipédes","solypèdes"], rule: "Solipède se termine par -pède (du latin « pes », le pied), avec un accent grave sur le è, comme « quadrupède » et « palmipède »." },
+    { level: "grand-scribe", type: "lexique", text: "Le cheval gagne la piste, le poitrai couvert d'écume, tandis que le jockey, penché sur l'encolure, le retient d'une main ferme et que la tribune se tait.", wrong: "poitrai", right: "poitrail", choices: ["poitrail","poitrai","poitrale"], rule: "Poitrail se termine par -ail, comme « gouvernail » et « portail » ; le l final est muet." },
+    { level: "grand-scribe", type: "lexique", text: "Pour le jeune poulain, le débourreur choisit un bridont à canons brisés, plus doux qu'un mors de bride, et le règle de façon qu'il ne pince jamais les lèvres de l'animal.", wrong: "bridont", right: "bridon", choices: ["bridon","bridont","brydon"], rule: "Bridon se termine par -on, sans t : c'est la bride légère, de la famille de « bride »." }
   ]
 };

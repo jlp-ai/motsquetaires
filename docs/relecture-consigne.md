@@ -1,21 +1,20 @@
 # Consigne de la relecture orthographique indépendante (avant publication)
 
-Applique le skill `.claude/skills/relire-orthographe/SKILL.md` (lis-le en entier) et `docs/redaction-contenu.md` (zéro débat orthographique, quotas, noms propres en marqueurs), ainsi que `docs/niveau-expert.md` pour le standard championnat. Relecteur indépendant, niveau correcteur de championnat : ne fais confiance à aucun rédacteur. Corrige directement dans les fichiers.
+Applique le skill `.claude/skills/relire-orthographe/SKILL.md` (lis-le en entier) et `docs/redaction-contenu.md` (zéro débat orthographique, noms propres en marqueurs), ainsi que `docs/niveau-expert.md` pour le standard championnat. Relecteur indépendant, niveau correcteur de championnat : ne fais confiance à aucun rédacteur. Corrige directement dans les fichiers.
 
 ## Ce qu'il faut relire, pour chaque thème demandé
 
-1. **Toutes les dictées** (4 par niveau) : orthographe, accords, ponctuation, élisions, traits d'union, concordance des temps (pas de subjonctif imparfait après un passé composé), faits, absence de double graphie admise (marron, paraît, entraîneur, maîtresse, voûte, clé/clef, laissé + infinitif, durer + complément de durée, accord de proximité), pas de tiret cadratin ni demi-cadratin, 25 à 140 mots selon le niveau.
-2. **Toutes les phrases à erreur** (8 par niveau) : une fois `wrong` remplacé par `right`, la phrase est irréprochable ; une seule faute ; `wrong` unique comme mot entier (avec ou sans élision collée) ; `right` dans `choices` ; trois choix distincts et plausibles ; règle exacte en deux phrases au plus ; champ `type` présent et juste (lexique, pronominal, participe, homophone, invariable, temps, accord, adverbe, compose, sens). **Priorité aux phrases Expert (`grand-scribe`)** : 18 à 35 mots, 4 difficultés correctes autour de la faute, 4 phrases `lexique` sur 8, au moins 5 types, au plus 1 pronominal, 2 participe, 2 homophone. Les graphies rares des phrases `lexique` doivent être exactes (dictionnaire de référence) ; remplace tout mot dont la graphie est incertaine ou admet une variante.
-3. **Marqueurs** `{{Nom|périphrase}}` : lire les deux versions (perso et commercial) ; genre, nombre, élision et contractions corrects dans les deux. `node tools/noms.mjs` doit rester OK.
-4. **Faits** : rien de douteux, aucun chiffre ni date contestée ; en cas de doute, rendre générique ou retirer.
+1. **Toutes les phrases à erreur** : une fois `wrong` remplacé par `right`, la phrase est irréprochable ; une seule faute ; `wrong` unique comme mot entier (avec ou sans élision collée) ; `right` dans `choices` ; trois choix distincts et plausibles ; règle exacte en deux phrases au plus ; champ `type` présent et juste (lexique, pronominal, participe, homophone, invariable, temps, accord, adverbe, compose, sens). **Priorité aux phrases Expert (`grand-scribe`)** : 18 à 35 mots, 4 difficultés correctes autour de la faute, 4 phrases `lexique` sur 8, au moins 5 types, au plus 1 pronominal, 2 participe, 2 homophone. Les graphies rares des phrases `lexique` doivent être exactes (dictionnaire de référence) ; remplace tout mot dont la graphie est incertaine ou admet une variante.
+2. **Marqueurs** `{{Nom|périphrase}}` : lire les deux versions (perso et commercial) ; genre, nombre, élision et contractions corrects dans les deux. `node tools/noms.mjs` doit rester OK.
+3. **Faits** : rien de douteux, aucun chiffre ni date contestée ; en cas de doute, rendre générique ou retirer.
 
 ## Contrôles finaux
 
-`node tools/rarete.mjs check <ids>` (tout OK), `node tools/erreurs.mjs` (les niveaux Expert OK), `node tools/noms.mjs` (structure OK). Ne casse aucun quota (champs `rare`, `d`, `piege` des notes ; notes des niveaux `apprenti` et `compagnon` = mots entiers du texte). Ne touche ni à `app.js`, ni aux clips, ni à git, ni à `index.html`, ni à `metas.js`, ni aux thèmes qui ne sont pas les tiens.
+`node tools/rarete-erreurs.mjs` (tout OK), `node tools/erreurs.mjs` (les niveaux Expert OK), `node tools/noms.mjs` (structure OK). Ne touche ni à `app.js`, ni à git, ni à `index.html`, ni à `metas.js`, ni aux thèmes qui ne sont pas les tiens.
 
 ## Rapport (court)
 
-Corrections (fichier, avant, après, raison), points discutables laissés, **liste exacte des dictées dont le texte a changé** (leurs clips seront régénérés).
+Corrections (fichier, avant, après, raison), points discutables laissés.
 
 ## Phrases « Trouve l'erreur » intéressantes, sans divulgâchage (décidé le 15/11/2026)
 

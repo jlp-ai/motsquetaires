@@ -1,100 +1,6 @@
 (window.THEMES = window.THEMES || {}).metro = {
   name: "Le métro de Paris",
   emoji: "🚇",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Ce matin, Léa a pris le métro à la station Bastille. Elle a passé le tourniquet, puis elle est descendue sur le quai de la ligne 1. Quand la rame est arrivée, les voyageurs sont montés sans se bousculer. Léa est restée debout jusqu'à Châtelet.",
-      notes: [
-        { word: "passé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « le tourniquet » est placé après)." },
-        { word: "descendue", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (Léa : féminin singulier)." },
-        { word: "arrivée", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (la rame : féminin singulier)." },
-        { word: "montés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les voyageurs : masculin pluriel)." },
-        { word: "restée", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (Léa : féminin singulier)." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Dimanche, la famille de Paul a visité Montmartre. Pour y monter, elle a pris la ligne 12 jusqu'à la station Abbesses. L'entrée de style Art nouveau, avec sa verrière, a beaucoup plu aux enfants. Ils ont pris des photos avant de remonter à l'air libre.",
-      notes: [
-        { word: "visité", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « Montmartre » est placé après)." },
-        { word: "pris", rule: "Participe passé de prendre : il se termine par un s, comme le féminin « prise » le laisse entendre." },
-        { word: "plu", rule: "Participe passé de plaire : il s'écrit sans s ni t et reste invariable." },
-        { word: "photos", rule: "« Photo » est l'abréviation de « photographie » : au pluriel, un s final." },
-        { word: "remonter", rule: "Après la préposition « de », le verbe se met à l'infinitif : remonter." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Aux heures de pointe, la station Châtelet devient un véritable labyrinthe. Les voyageurs que le flot a portés jusqu'aux couloirs de correspondance se sont frayé un passage entre les portillons et les escaliers. Plusieurs sont arrivés en retard à leur rendez-vous.",
-      notes: [
-        { word: "labyrinthe", rule: "Réseau de couloirs où l'on se perd : y après le l, puis -inthe avec th et e final." },
-        { word: "portés", rule: "Le COD « que » (les voyageurs) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "frayé", rule: "Se frayer un passage : « se » est COI, le COD « un passage » est placé après. Le participe reste invariable." },
-        { word: "portillons", rule: "Petite porte à battant qui barre un passage : -ill- avant la finale -on, comme dans « portail » ; s au pluriel.", rare: true, d: 2, piege: "ill, finale -on" },
-        { word: "arrivés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (plusieurs : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Sur la ligne 14, qui dessert la gare Saint-Lazare et la gare de Lyon, les rames circulent sans conducteur. Les voyageurs attendent derrière des portes vitrées, qui s'ouvrent quand le train s'est arrêté. Dans les couloirs, la foule s'est écoulée sans bousculade devant les tourniquets.",
-      notes: [
-        { word: "dessert", rule: "Desservir : le verbe se termine par un t et prend deux s. Il s'écrit comme le nom « dessert » (le dernier plat du repas) et se distingue de « désert »." },
-        { word: "vitrées", rule: "L'adjectif s'accorde avec « portes » : féminin pluriel." },
-        { word: "arrêté", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (le train : masculin singulier)." },
-        { word: "tourniquets", rule: "Appareil à barres tournantes qui filtre le passage : finale en -quet avec un t muet, et s au pluriel.", rare: true, d: 2, piege: "qu et non k, finale -et muette" },
-        { word: "écoulée", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (la foule : féminin singulier)." },
-        { word: "bousculade", rule: "Nom formé sur « bousculer » : un seul l, puis -ade." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Sous les voûtes de la station Concorde, des carreaux disposés en mosaïque composent les lettres d'un texte célèbre. Quelque patience qu'aient eue les passants, rares sont ceux qui l'ont lu en entier. Les voyageurs claustrophobes, eux, pressent le pas jusqu'à la correspondance sans lever les yeux.",
-      notes: [
-        { word: "disposés", rule: "Participe passé employé comme adjectif : il s'accorde avec « carreaux » (masculin pluriel)." },
-        { word: "mosaïque", rule: "Assemblage de petits carreaux : tréma sur le i, puis -que.", rare: true, d: 2, piege: "s et non z, tréma, -que" },
-        { word: "quelque", rule: "« Quelque » est un adjectif devant un nom : il s'accorde en nombre avec lui (quelque patience, quelques efforts)." },
-        { word: "eue", rule: "Le COD « que » (la patience) est placé avant l'auxiliaire avoir : le participe « eu » s'accorde et prend un e au féminin." },
-        { word: "claustrophobes", rule: "Qui craint les lieux clos. Formé sur « claustrum » : claustro- avec au, puis -phobes avec ph.", rare: true, d: 3, piege: "au, ph, famille claustro-" },
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Entre Passy et Bir-Hakeim, la ligne 6 franchit la Seine sur un viaduc. Les rames, qui roulent sur des pneumatiques, filent sans le fracas qu'on imaginait. Les voyageurs, que la vue du fleuve a surpris, se sont tus un instant, puis se sont souri en reconnaissant la tour Eiffel.",
-      notes: [
-        { word: "viaduc", rule: "Pont portant une voie : via- comme dans « voie », puis -duc avec un c final muet.", rare: true, d: 2, piege: "c final muet, via-" },
-        { word: "pneumatiques", rule: "Pneu : le p initial est muet et pn- se prononce n ; puis -eu-, -ma-, -tiques.", rare: true, d: 3, piege: "p muet, pn-, eu, -tiques" },
-        { word: "imaginait", rule: "Imparfait, 3e personne du singulier : -ait. Le sujet est « on »." },
-        { word: "surpris", rule: "Le COD « que » (les voyageurs) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "tus", rule: "Se taire : « se » est COD, le participe s'accorde avec le sujet (les voyageurs). Il s'écrit sans accent circonflexe : tu, tus." },
-        { word: "souri", rule: "Se sourire : « se » est COI (sourire à quelqu'un), le participe reste invariable." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "À Montmartre, l'entrée de la station Abbesses est un édicule de style Art nouveau, coiffé d'une verrière aux courbes végétales. Autrefois, des poinçonneurs, postés derrière un portillon, contrôlaient chaque ticket, et leurs gestes se reflétaient dans les carreaux biseautés des couloirs. Les voyageurs d'aujourd'hui, que nul poinçonneur n'arrête plus, passent sans y songer.",
-      notes: [
-        { word: "édicule", rule: "Petite construction en surface, ici l'abri d'une entrée de station : é initial, un seul d, puis -icule avec c.", rare: true, d: 3, piege: "é initial, un seul d, c et non qu" },
-        { word: "coiffé", rule: "Participe employé comme adjectif : il s'accorde avec « édicule » (masculin singulier)." },
-        { word: "poinçonneurs", rule: "Employés qui perçaient les tickets avec un poinçon : -oin-, cédille sous le c, puis -onn- avec deux n et -eurs.", rare: true, d: 4, piege: "oin, ç, deux n, -eur" },
-        { word: "postés", rule: "Participe employé comme adjectif : il s'accorde avec « poinçonneurs » (masculin pluriel)." },
-        { word: "biseautés", rule: "Taillés en biseau, comme les bords de ces carreaux : le son [z] s'écrit s (comme dans « biseau »), puis -eau- et -tés au masculin pluriel.", rare: true, d: 3, piege: "s et non z, eau, -té accordé" },
-        { word: "songer", rule: "Après la préposition « sans », le verbe se met à l'infinitif : songer." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "À Châtelet, la signalétique, aussi complète soit-elle, ne dispense pas le voyageur de s'orienter dans un dédale de couloirs. Aux heures d'affluence, les pas résonnent sous les voûtes, et les parois laissent perler un léger suintement, tandis que les rames, en franchissant les aiguillages, crissent à tout rompre. Les voyageurs s'y sont toujours sentis un peu perdus.",
-      notes: [
-        { word: "signalétique", rule: "Ensemble des panneaux et pictogrammes d'orientation. Famille de « signal » : signal- puis -étique, avec un é accentué et un seul t.", rare: true, d: 3, piege: "gn, é, un seul t, -ique" },
-        { word: "soit", rule: "Dans « aussi complète soit-elle », le verbe être est au subjonctif présent, inversé, avec un trait d'union avant le pronom." },
-        { word: "affluence", rule: "Arrivée en grand nombre : deux f, puis -luence. Famille de « affluer ».", rare: true, d: 2, piege: "ff, -uence" },
-        { word: "suintement", rule: "Écoulement lent de gouttelettes. Formé sur « suinter » : sui-, n, t, puis -ement avec e muet.", rare: true, d: 3, piege: "ui, n devant t, e muet devant -ment" },
-        { word: "aiguillages", rule: "Dispositif qui dirige les rames d'une voie à l'autre. Famille d'« aiguille » : ai-, gu, -ill-, puis -ages au pluriel.", rare: true, d: 3, piege: "ai, gu, ill (famille aiguille)" },
-        { word: "sentis", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (les voyageurs : masculin pluriel)." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "homophone", notion: "cm1.homo.on-ont", text: "À Nation, Inès et son frère on pris la rame pour l'Étoile.", wrong: "on", right: "ont", choices: ["ont", "on", "ons"], rule: "On peut dire « avaient » : c'est le verbe avoir, avec un t final." },
     { level: "apprenti", type: "participe", notion: "cm1.accords.pp-etre", text: "La rame est arrivé à la station Concorde et les portes se sont ouvertes.", wrong: "arrivé", right: "arrivée", choices: ["arrivée", "arrivés", "arrivé"], rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet « la rame » : féminin singulier." },
@@ -175,6 +81,27 @@
     { level: "grand-scribe", type: "homophone", text: "C'est à tord que les voyageurs pestent contre le conducteur quand la rame tarde à entrer en gare, car c'est le poste de commande qui règle la marche des convois.", wrong: "tord", right: "tort", choices: ["tort", "tord", "tors"], rule: "« À tort » est une locution adverbiale (à raison est son contraire) ; « tord » est une forme du verbe tordre." },
     { level: "grand-scribe", type: "participe", text: "Les efforts qu'il leur a fallus pour remonter le flot des voyageurs dans la correspondance de Montparnasse, ils les ont vite oubliés dès que la rame est arrivée.", wrong: "fallus", right: "fallu", choices: ["fallu", "fallus", "fallue"], rule: "Falloir est un verbe impersonnel : son participe « fallu » est toujours invariable, même avec un COD placé avant (« que »)." },
     { level: "grand-scribe", type: "accord", text: "Plus d'un voyageur égaré dans les couloirs de Saint-Lazare ont fini par suivre le premier panneau venu, sans même vérifier la direction de sa rame.", wrong: "ont", right: "a", choices: ["a", "ont", "à"], rule: "« Plus d'un » est suivi d'un nom au singulier : le verbe s'accorde au singulier (a fini)." },
-    { level: "grand-scribe", type: "compose", text: "À la station Gare de Lyon, le vas-et-vient des voyageurs chargés de valises, que les agents regardent d'un œil las, ne s'interrompt jamais.", wrong: "vas-et-vient", right: "va-et-vient", choices: ["va-et-vient", "vas-et-vient", "va-et-viens"], rule: "Ce nom composé associe « va » et « vient », deux formes du verbe aller et venir à la 3e personne du singulier : va-et-vient, sans s." }
+    { level: "grand-scribe", type: "compose", text: "À la station Gare de Lyon, le vas-et-vient des voyageurs chargés de valises, que les agents regardent d'un œil las, ne s'interrompt jamais.", wrong: "vas-et-vient", right: "va-et-vient", choices: ["va-et-vient", "vas-et-vient", "va-et-viens"], rule: "Ce nom composé associe « va » et « vient », deux formes du verbe aller et venir à la 3e personne du singulier : va-et-vient, sans s." },
+    { level: "maitre", type: "accord", notion: "5e.accords.gn-raisonnement", text: "À la sortie de la station Concorde, un obélisque égyptien, couverte de hiéroglyphes, domine la place que les voyageurs traversent d'un pas pressé.", wrong: "couverte", right: "couvert", choices: ["couvert","couverte","couverts"], rule: "Obélisque est un nom masculin : on écrit un obélisque couvert de hiéroglyphes." },
+    { level: "maitre", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Entre le quai et la rame, l'interstice, aussi étroit qu'elle paraisse, suffit à avaler un ticket, un téléphone ou même un soulier.", wrong: "qu'elle", right: "qu'il", choices: ["qu'il","qu'elle","qu'ils"], rule: "Interstice est un nom masculin : le pronom qui le reprend est « il », aussi étroit qu'il paraisse." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le chef de station exigeait que chaque agent fut sur le quai à l'heure de pointe et que nul ne quittât son poste.", wrong: "fut", right: "fût", choices: ["fût","fut","soit"], rule: "Après « exigeait que », concordance au subjonctif imparfait : que chaque agent fût. Le circonflexe distingue cette forme du passé simple « fut »." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Quoiqu'il connut par cœur le plan du réseau, le jeune voyageur hésitait encore, à Châtelet, devant les panneaux de correspondance.", wrong: "connut", right: "connût", choices: ["connût","connut","connaisse"], rule: "Après « quoique » et un verbe principal à l'imparfait, le subjonctif est à l'imparfait : quoiqu'il connût. Le circonflexe le distingue du passé simple « connut »." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Sur le viaduc de Bir-Hakeim, de solides garde-fou courent le long des voies, et les voyageurs, le nez aux vitres, regardent la Seine.", wrong: "garde-fou", right: "garde-fous", choices: ["garde-fous","garde-fou","gardes-fous"], rule: "Dans « garde-fou », « garde » est un verbe invariable et « fou » est un nom : il prend la marque du pluriel, des garde-fous." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Du matin au soir, les rames de la ligne 1 enchaînent les aller-retours entre La Défense et Château de Vincennes, sans conducteur à bord.", wrong: "aller-retours", right: "allers-retours", choices: ["allers-retours","aller-retours","allers-retour"], rule: "« Aller » et « retour » sont deux noms de même valeur : ils prennent tous deux la marque du pluriel, des allers-retours." },
+    { level: "maitre", type: "homophone", notion: "4e.homo.conjonctions", text: "Quoique vous fassiez, ne courez pas dans l'escalier en colimaçon de la station Abbesses : ses marches étroites sont traîtresses.", wrong: "Quoique", right: "Quoi que", choices: ["Quoi que","Quoique","Quoi-que"], rule: "« Quoi que » en deux mots signifie « quelle que soit la chose que » ; « quoique » en un mot signifie « bien que »." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Au bas de l'escalier, les voyageurs pressés poussent le portilon d'un geste machinal, sans un regard pour l'agent dans sa guérite.", wrong: "portilon", right: "portillon", choices: ["portillon","portilon","portillion"], rule: "Portillon, diminutif de « porte », se termine par -illon, comme « papillon » et « bataillon »." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "Au changement de ligne, la bouscullade devant les portes du quai de Châtelet est telle que les voyageurs descendent à reculons, portés par la foule.", wrong: "bouscullade", right: "bousculade", choices: ["bousculade","bouscullade","bousculate"], rule: "Bousculade vient de « bousculer », qui s'écrit avec un seul l, suivi du suffixe -ade." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "Aux heures de pointe, l'affluance sur les quais de Gare du Nord oblige parfois les agents à fermer un accès.", wrong: "affluance", right: "affluence", choices: ["affluence","affluance","affluense"], rule: "Affluence appartient à la famille d'« affluer » et prend -ence, comme « influence » et « confluence »." },
+    { level: "maitre", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Le passage soutterain qui relie la station Saint-Lazare à la gare sent le café brûlé, et ses murs carrelés renvoient les pas en écho.", wrong: "soutterain", right: "souterrain", choices: ["souterrain","soutterain","souterain"], rule: "Souterrain se forme sur « sous » et « terrain » : un seul t, et deux r comme dans « terrain »." },
+    { level: "grand-scribe", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Dans le cimetière voisin de la station Père-Lachaise, une épitaphe, ancien et presque illisible, résiste encore à la mousse, bien que la pierre ait été polie par les pluies d'innombrables hivers.", wrong: "ancien", right: "ancienne", choices: ["ancienne","ancien","anciennes"], rule: "Épitaphe est un nom féminin : on écrit une épitaphe ancienne." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Les concepteurs de la station auraient voulu que les voyageurs pussent traverser Châtelet sans jamais hésiter, mais ils n'imaginèrent pas qu'un tel dédale vint à lasser les habitués.", wrong: "vint", right: "vînt", choices: ["vînt","vint","vienne"], rule: "Après « n'imaginèrent pas que », le subjonctif imparfait s'impose par la concordance : qu'un dédale vînt. Le circonflexe le distingue du passé simple « vint »." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "À l'heure de pointe, l'exploitant eut aimé que les rames se succédassent à intervalles plus rapprochés, mais les voies de Bastille, saturées, ne le permettaient pas.", wrong: "eut", right: "eût", choices: ["eût","eut","eu"], rule: "« Eût aimé » est un plus-que-parfait du subjonctif employé à la place du conditionnel passé : il prend un accent circonflexe." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Du haut du viaduc de Bir-Hakeim, les voyageurs aperçoivent les bateaux-mouche qui glissent sur la Seine, chargés de touristes, tandis que la rame franchit le fleuve dans un grondement d'acier.", wrong: "bateaux-mouche", right: "bateaux-mouches", choices: ["bateaux-mouches","bateaux-mouche","bateau-mouches"], rule: "« Bateau » et « mouche » sont deux noms de même valeur : ils prennent tous deux la marque du pluriel, des bateaux-mouches." },
+    { level: "grand-scribe", type: "temps", notion: "4e.conj.conditionnel-passe", text: "Quand bien même les rames se succéderont toutes les deux minutes, les voyageurs de Châtelet courraient encore dans les couloirs, car l'habitude de se hâter ne se perd pas.", wrong: "succéderont", right: "succéderaient", choices: ["succéderaient","succéderont","succédaient"], rule: "La locution « quand bien même » appelle le conditionnel : quand bien même les rames se succéderaient." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Aux dernières stations de la ligne 13, la somnolance gagne les voyageurs, qui s'affaissent peu à peu sur leurs sièges, tandis qu'une adolescente, casque sur les oreilles, bat la mesure du bout du pied.", wrong: "somnolance", right: "somnolence", choices: ["somnolence","somnolance","somnolense"], rule: "Somnolence vient de « somnolent » : les noms tirés d'adjectifs en -ent s'écrivent en -ence." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Le matin, les habitués de la ligne 1, tasiturnes et pressés, n'échangent pas un mot ; pourtant, ils se reconnaissent à la seule manière de se tenir sur le quai.", wrong: "tasiturnes", right: "taciturnes", choices: ["taciturnes","tasiturnes","tacitturnes"], rule: "Taciturne vient du latin tacere, « se taire » : c devant i, un seul t, comme dans « tacite »." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Les soirs de match au Parc des Princes, les supporters finissent par s'aglutiner dans les couloirs de la station Porte de Saint-Cloud, et les agents canalisent la foule avec des barrières mobiles.", wrong: "s'aglutiner", right: "s'agglutiner", choices: ["s'agglutiner","s'aglutiner","s'agluttiner"], rule: "Agglutiner vient du latin gluten, « colle » : double g, car le préfixe ad- s'assimile devant gl." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Sur le plan du réseau, l'entrelas des lignes de la zone centrale ressemble à une toile d'araignée, que seuls les habitués parviennent à lire sans hésiter.", wrong: "entrelas", right: "entrelacs", choices: ["entrelacs","entrelas","entrelac"], rule: "Entrelacs s'écrit avec un c, comme « lacs » dont il dérive, et prend un s final dès le singulier." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.lex.morphologie", text: "Le soir, le fourmilement de la foule dans les couloirs de Châtelet donne le vertige, comme si le sol lui-même se déplaçait vers les escaliers.", wrong: "fourmilement", right: "fourmillement", choices: ["fourmillement","fourmilement","fourmillemant"], rule: "Fourmillement se forme sur « fourmiller », qui prend deux l : le nom suit le verbe." }
   ]
 };

@@ -1,201 +1,6 @@
 (window.THEMES = window.THEMES || {}).dessin = {
   name: "Dessin",
   emoji: "🎨",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Le mercredi, Léa ouvre son carnet de croquis. Elle taille ses crayons, puis elle dessine une pomme posée sur la table. Avec sa gomme, elle efface les traits inutiles et ajoute une ombre légère sous le fruit.",
-      notes: [
-        { word: "croquis", rule: "Le nom « croquis » se termine par un s muet, même au singulier." },
-        { word: "ses", rule: "« Ses » est un déterminant possessif : les crayons sont à elle (à ne pas confondre avec « ces »)." },
-        { word: "posée", rule: "Le participe passé employé comme adjectif s'accorde avec le nom : une pomme posée (féminin singulier)." },
-        { word: "inutiles", rule: "L'adjectif s'accorde avec le nom qu'il qualifie : les traits inutiles (pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les esquisses que le professeur avait demandées étaient posées sur les chevalets. Au fusain, chaque élève a tracé des hachures serrées pour suggérer les ombres, puis les a estompées du bout des doigts. Peu à peu, les volumes sont apparus sur le papier.",
-      notes: [
-        { word: "demandées", rule: "Le COD « que » (les esquisses) est placé avant le verbe : le participe passé s'accorde au féminin pluriel." },
-        { word: "fusain", rule: "Baguette de charbon de bois pour dessiner. Finale en -ain, comme dans « bain ».", rare: true, d: 2, piege: "s sonore [z], finale -ain" },
-        { word: "hachures", rule: "Traits parallèles qui figurent l'ombre. Le h est aspiré (pas de liaison : des / hachures) et le mot finit en -ure.", rare: true, d: 2, piege: "h aspiré, ch pour [ʃ]" },
-        { word: "chaque élève a", rule: "« Chaque » est toujours singulier : le verbe se conjugue à la 3e personne du singulier." },
-        { word: "estompées", rule: "Le COD « les » (les hachures) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "apparus", rule: "Apparaître se conjugue avec être : le participe s'accorde avec le sujet (les volumes : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Bien que l'aquarelle pardonne rarement les hésitations, elle s'y est essayée tout l'été. Les lavis d'outremer qu'elle a superposés sur le papier humide ont révélé, une fois secs, des transparences inattendues. Jamais elle n'aurait cru que l'eau seule conduirait si docilement le pigment, ni que de simples rehauts de gouache suffiraient à animer l'ensemble.",
-      notes: [
-        { word: "pardonne", rule: "« Bien que » est suivi du subjonctif : que l'aquarelle pardonne." },
-        { word: "essayée", rule: "« S'essayer à » est un verbe pronominal : le participe s'accorde avec le sujet (elle)." },
-        { word: "lavis", rule: "Teinte d'encre ou d'aquarelle étendue d'eau. Le s final est muet et le mot est invariable au pluriel.", rare: true, d: 2, piege: "s final muet" },
-        { word: "outremer", rule: "Bleu tiré à l'origine du lapis-lazuli. Le nom s'écrit en un seul mot, sans trait d'union.", rare: true, d: 2, piege: "un seul mot, mer et non mère" },
-        { word: "superposés", rule: "Le COD « que » (les lavis) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "pigment", rule: "Matière colorante en poudre. Finale en -ment, avec un g devant le m.", rare: true, d: 2, piege: "g muet devant m, finale -ent" },
-        { word: "rehauts", rule: "Touches claires posées sur un dessin pour le faire ressortir. Famille de rehausser et de haut : h après re-, -au-, t final muet, s au pluriel.", rare: true, d: 3, piege: "h après re-, au, t final muet (famille haut)" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les pochades qu'il a brossées sur le motif, au graphite rehaussé de craie, ne sont que des ébauches. Pourtant, quels que soient les repentirs dont elles sont émaillées, l'œil s'y arrête volontiers. Le camaïeu de sépia qu'il a ménagé dans chacune d'elles, jusque dans les glacis les plus ténus, témoigne d'une sûreté de main peu commune.",
-      notes: [
-        { word: "pochades", rule: "Peinture rapide faite sur le vif. Un seul c, finale en -ade.", rare: true, d: 1, piege: "un seul c, finale -ade" },
-        { word: "graphite", rule: "Carbone cristallisé qui forme la mine des crayons. Écrit avec ph, comme dans graphique et graphie, puis -ite.", rare: true, d: 3, piege: "ph et non f (famille graphie)" },
-        { word: "brossées", rule: "Le COD « que » (les pochades) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "rehaussé", rule: "Le participe s'accorde avec « le graphite » (masculin singulier) ; rehausser garde le h intérieur et prend deux s." },
-        { word: "quels que soient", rule: "« Quel que » + être au subjonctif : « quel » s'accorde avec le sujet (les repentirs : masculin pluriel)." },
-        { word: "émaillées", rule: "Le participe s'accorde avec « elles » (les pochades) ; émailler (parsemer) s'écrit avec un accent aigu et deux l.", rare: true, d: 2, piege: "é, ill, accord féminin pluriel" },
-        { word: "camaïeu", rule: "Peinture en tons d'une seule couleur. Tréma sur le i, finale en -eu.", rare: true, d: 3, piege: "tréma sur le i, finale -eu" },
-        { word: "glacis", rule: "Couche de peinture transparente posée sur une couche sèche. Nom masculin : c comme dans glace, s final muet, invariable au pluriel.", rare: true, d: 3, piege: "c (famille glace), s final muet" },
-        { word: "sépia", rule: "Brun tiré de l'encre de seiche. Accent aigu sur le e, finale en -a.", rare: true, d: 2, piege: "é et non e, finale -a" },
-        { word: "sûreté", rule: "Le nom garde l'accent circonflexe de « sûr »." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Pendant les vacances, Samir emporte un carnet de voyage dans son sac. Devant le port, il dessine les bateaux et les mouettes. Le soir, il colorie ses dessins avec des feutres et écrit quelques mots à côté.",
-      notes: [
-        { word: "bateaux", rule: "Les noms en -eau prennent un x au pluriel : un bateau, des bateaux." },
-        { word: "mouettes", rule: "Le nom « mouette » s'écrit avec ou et deux t, comme « fourchette »." },
-        { word: "colorie", rule: "Colorier est un verbe du 1er groupe : à la 3e personne du singulier, la terminaison est -e." },
-        { word: "dessins", rule: "Le nom « dessin » prend deux s ; le pluriel s'accorde avec « ses » et « des »." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Dans la classe, les élèves peignent un paysage à la gouache. Ils mélangent le bleu et le jaune pour obtenir un vert brillant. Les pinceaux trempent dans l'eau, puis ils sèchent sur un chiffon.",
-      notes: [
-        { word: "peignent", rule: "Le sujet « les élèves » est au pluriel : le verbe peindre prend -ent (gn dans le radical)." },
-        { word: "paysage", rule: "Le nom « paysage » s'écrit avec un y, comme « pays »." },
-        { word: "mélangent", rule: "Le verbe mélanger garde le e après le g devant -ent ; le sujet « ils » est au pluriel." },
-        { word: "pinceaux", rule: "Les noms en -eau prennent un x au pluriel : des pinceaux." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Hugo dessine le portrait de sa grand-mère. Il observe ses yeux, son sourire et ses cheveux gris. Quand le dessin est terminé, elle le regarde longtemps et le trouve très ressemblant.",
-      notes: [
-        { word: "portrait", rule: "Le t final de « portrait » est muet ; on l'entend dans « portraitiste »." },
-        { word: "yeux", rule: "Le pluriel de « œil » est irrégulier : des yeux." },
-        { word: "cheveux", rule: "Le nom « cheveu » prend un x au pluriel : des cheveux." },
-        { word: "ressemblant", rule: "Le mot s'écrit avec deux s et finit en -ant, comme « ressembler »." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Pour que la rue semble profonde, l'élève a prolongé les lignes jusqu'à un point de fuite placé sur l'horizon. Les immeubles qu'il avait dessinés paraissaient alors s'éloigner, et leurs façades, de plus en plus petites, convergeaient vers le centre de la feuille.",
-      notes: [
-        { word: "semble", rule: "Après « pour que », le verbe se met au subjonctif : que la rue semble." },
-        { word: "dessinés", rule: "Le COD « que » (les immeubles) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "façades", rule: "Le c prend une cédille devant a pour garder le son [s]." },
-        { word: "convergeaient", rule: "Converger garde le e après le g devant a et o pour conserver le son [ʒ] ; terminaison -aient à l'imparfait pluriel.", rare: true, d: 2, piege: "ge devant a, -aient" }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Cette semaine, Inès a découvert le pastel sec. Les bâtons friables laissent sur ses doigts une fine poussière colorée, qu'elle a étalée avec le pouce pour fondre les teintes. Quand les ciels se sont adoucis, elle a fixé le dessin avec un voile de fixatif, afin que les couleurs ne s'effacent pas.",
-      notes: [
-        { word: "friables", rule: "Qui s'effrite facilement. Le mot s'écrit avec ia (comme dans « variable ») et finit par -ables.", rare: true, d: 2, piege: "ia, finale -ables" },
-        { word: "étalée", rule: "Le COD « que » (la poussière) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "adoucis", rule: "Verbe pronominal : le « se » est COD, le participe s'accorde avec le sujet (les ciels : masculin pluriel)." },
-        { word: "fixatif", rule: "Vernis qui fixe un dessin. Le mot s'écrit avec x, comme « fixer ».", rare: true, d: 2, piege: "x (famille fixer), finale -if" }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Depuis que son oncle lui a offert une tablette graphique, Chloé dessine presque tous les soirs. Le stylet réagit à la pression de la main, si bien que les traits deviennent plus épais ou plus fins. Les calques qu'elle a superposés lui permettent de corriger une erreur sans jamais abîmer le reste de l'image.",
-      notes: [
-        { word: "tablette", rule: "Les noms en -ette prennent deux t : tablette, comme « baguette »." },
-        { word: "stylet", rule: "Petite tige pointue qui sert à dessiner sur une tablette. Il s'écrit avec un y, comme « style ».", rare: true, d: 2, piege: "y (famille style), t final muet" },
-        { word: "calques", rule: "Feuilles transparentes superposées. Le son [k] s'écrit qu devant e : calques.", rare: true, d: 2, piege: "qu pour [k], s du pluriel" },
-        { word: "superposés", rule: "Le COD « que » (les calques) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Quelle que soit l'époque, les peintres ont cherché à rendre la profondeur. Les perspectives que les maîtres de la Renaissance ont codifiées reposent sur un point de fuite unique, vers lequel convergent toutes les orthogonales. Encore faut-il que l'artiste, avant de poser la moindre touche, ait tracé avec une règle les lignes de construction.",
-      notes: [
-        { word: "quelle que soit", rule: "« Quel que » suivi de être au subjonctif s'écrit en deux mots, et « quel » s'accorde avec le sujet (l'époque : féminin singulier)." },
-        { word: "codifiées", rule: "Le participe s'accorde avec le COD « que » (les perspectives), placé avant l'auxiliaire. Un seul f : codifier, de « code ».", rare: true, d: 2, piege: "un seul f, accord féminin pluriel" },
-        { word: "convergent", rule: "Le sujet est inversé et pluriel (toutes les orthogonales) : le verbe s'accorde avec lui." },
-        { word: "orthogonales", rule: "Se dit de lignes qui se coupent à angle droit. Famille de « orthographe » : rth, puis o, g, o, n.", rare: true, d: 3, piege: "rth, g muet devant o, finale -ales" },
-        { word: "ait tracé", rule: "« Encore faut-il que » appelle le subjonctif ; l'action est antérieure, d'où le subjonctif passé : ait tracé." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Partis à l'aube, ils se sont arrêtés sur le quai, où deux pêcheurs raccommodaient leurs filets. Ils en ont croqué les gestes : des silhouettes à peine suggérées au crayon, puis hachurées à la sanguine. Les pages qu'ils ont noircies ce jour-là, ils les ont longtemps relues avec émotion.",
-      notes: [
-        { word: "arrêtés", rule: "Dans « se sont arrêtés », le « se » est COD : le participe s'accorde avec le sujet (ils : masculin pluriel)." },
-        { word: "raccommodaient", rule: "Remettre en état. Le verbe garde les deux c et les deux m de « accommoder » ; imparfait pluriel en -aient.", rare: true, d: 3, piege: "cc, mm, -aient" },
-        { word: "hachurées", rule: "Couvertes de traits parallèles. Le h est aspiré, ch note [ʃ] ; accord avec « silhouettes » (féminin pluriel).", rare: true, d: 2, piege: "h aspiré, ch, accord" },
-        { word: "noircies", rule: "Le COD « que » (les pages) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Le buste de plâtre, éclairé par une lumière rasante qui filtrait à travers la verrière, accusait chaque relief. Les élèves, si appliqués qu'ils fussent, peinaient à rendre les pénombres. Leurs frottis, trop lourds, ternissaient le papier, que le professeur, d'un coup de gomme, rendait aussitôt à sa clarté.",
-      notes: [
-        { word: "éclairé", rule: "Le participe, employé comme adjectif, s'accorde avec « le buste » (masculin singulier)." },
-        { word: "rasante", rule: "Qui rase la surface. Un seul s, entre deux voyelles il note [z] : rasant, rasante.", rare: true, d: 2, piege: "s simple pour [z], finale -ante" },
-        { word: "fussent", rule: "« Si ... que » exprime la concession et appelle le subjonctif ; après l'imparfait (peinaient), imparfait du subjonctif : qu'ils fussent." },
-        { word: "frottis", rule: "Mince couche de peinture frottée sur la toile. Famille de « frotter », avec deux t et un s final muet, invariable au pluriel.", rare: true, d: 3, piege: "tt, s final muet (invariable)" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Dès l'aube, l'atelier sentait l'essence de térébenthine, dont s'imprégnaient les blouses accrochées derrière la porte. Sur le chevalet se dressait une toile que le peintre avait enduite la veille d'un apprêt de céruse. Quelque maladroits que fussent ses premiers essais, il s'y était obstiné, jusqu'à ce que les carnations, longuement fondues au blaireau, prissent enfin la chaleur voulue. Pinceaux, brosses, spatules et couteaux, nettoyés à l'essence, séchaient pêle-mêle sur la table. Les élèves, entrés à la nuit tombée, se sont tus, tout émerveillés par le résultat, devant la toile encore fraîche.",
-      notes: [
-        { word: "térébenthine", rule: "Résine de conifère dont on tire l'essence qui dilue la peinture à l'huile. Deux é, puis b, en, th et -ine : le th suit le n.", rare: true, d: 4, piege: "é-é, th, finale -ine" },
-        { word: "s'imprégnaient", rule: "Sujet inversé (les blouses), pluriel : imparfait en -aient. Le verbe garde l'accent aigu de « imprégner »." },
-        { word: "enduite", rule: "Le COD « que » (la toile) est placé avant l'auxiliaire avoir : enduire fait enduit au masculin, enduite au féminin singulier." },
-        { word: "céruse", rule: "Blanc de plomb, pigment des anciens apprêts. Initiale par c et accent aigu, un seul s sonore entre voyelles : [z].", rare: true, d: 3, piege: "c pour [s], é, s entre voyelles pour [z]" },
-        { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est un adverbe (si, aussi) : invariable." },
-        { word: "fussent", rule: "« Quelque ... que » appelle le subjonctif ; sujet « essais » au pluriel : fussent, imparfait après le plus-que-parfait." },
-        { word: "carnations", rule: "Teintes de la chair en peinture. Famille de « chair » et du latin caro : carn-, puis -ation.", rare: true, d: 2, piege: "carn-, finale -ations" },
-        { word: "blaireau", rule: "Pinceau en poils de l'animal du même nom. Ai pour [ɛ], finale en -eau.", rare: true, d: 3, piege: "ai pour [ɛ], finale -eau" },
-        { word: "prissent", rule: "« Jusqu'à ce que » appelle le subjonctif ; après le plus-que-parfait (s'était obstiné), imparfait du subjonctif : prissent." },
-        { word: "pêle-mêle", rule: "Adverbe invariable, avec deux accents circonflexes et un trait d'union." },
-        { word: "se sont tus", rule: "Dans « se sont tus », le « se » est COD de taire : le participe s'accorde avec le sujet (les élèves : masculin pluriel)." },
-        { word: "tout émerveillés", rule: "Devant un adjectif masculin, « tout » est un adverbe invariable, même au pluriel." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Dans la nature morte accrochée au fond de la galerie, tout rappelle la fuite du temps : un crâne, des roses déjà fanées, un sablier dont s'écoulent les derniers grains. Au premier plan se détachent un couteau, un citron à demi pelé et une coupe de faïence. Les fruits que le peintre a disposés sur la nappe, coings, coloquintes, raisins et figues, brillent d'un éclat que le vernis n'a pas terni. Quant aux craquelures qui sillonnent la toile, elles se sont creusées au fil des siècles, et aucun restaurateur, quelque habile qu'il soit, ne saurait les effacer.",
-      notes: [
-        { word: "s'écoulent", rule: "Sujet inversé et pluriel (les derniers grains) : le verbe s'accorde avec lui, même placé avant." },
-        { word: "à demi", rule: "Devant un adjectif ou un participe, « demi » est invariable et lié par à : à demi pelé." },
-        { word: "faïence", rule: "Poterie d'argile émaillée. Tréma sur le i : le a et le ï se prononcent séparément." },
-        { word: "disposés", rule: "Le COD « que » (les fruits) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "coings", rule: "Fruits proches de la poire. Le son [wɛ̃] s'écrit oin, avec un g muet au singulier (un coing), puis s du pluriel.", rare: true, d: 4, piege: "oin pour [wɛ̃], g muet, s" },
-        { word: "coloquintes", rule: "Petites courges décoratives. Un seul l après le premier o, puis qu pour [k] : colo-quinte.", rare: true, d: 4, piege: "qu pour [k], un seul l, -inte" },
-        { word: "terni", rule: "Le COD « que » est « éclat » (masculin singulier) : le participe reste au masculin singulier." },
-        { word: "craquelures", rule: "Fines fentes qui couvrent une peinture ancienne. Famille de « craquer » : qu, puis e, l, ures.", rare: true, d: 3, piege: "qu, un seul l, -ures" },
-        { word: "sillonnent", rule: "Traversent de traits. Deux l et deux n, comme dans « sillon » ; terminaison -ent." },
-        { word: "creusées", rule: "Dans « elles se sont creusées », le « se » est COD : le participe s'accorde avec le sujet (elles : féminin pluriel)." },
-        { word: "quelque", rule: "Devant un adjectif suivi de « que », « quelque » est un adverbe : invariable, avec le subjonctif (soit)." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Rien ne distinguait ce modèle des visages anonymes que le pastelliste avait croqués à la hâte, sinon la physionomie, saisie d'un trait à la fois sûr et léger. Aux arcades sourcilières saillantes, aux méplats creusés, au front barré de deux rides et aux lèvres d'un carmin à peine appuyé s'ajoutait un regard dont se dégageait une douceur inattendue. Les visiteurs, même pressés, se sont succédé devant le pastel, dont le grain mat, jamais fixé, buvait la lumière de la salle, sans que personne parvienne à s'en détacher avant la fermeture.",
-      notes: [
-        { word: "pastelliste", rule: "Artiste qui travaille au pastel. Un seul t, puis -elliste avec deux l, comme dans « violoncelliste ».", rare: true, d: 3, piege: "-elliste, deux l, finale -iste" },
-        { word: "croqués", rule: "Le COD « que » (les visages) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "physionomie", rule: "Ensemble des traits du visage. Ph et y, comme dans « physique » et « physiologie »." },
-        { word: "sourcilières", rule: "Qui concerne les sourcils : arcades sourcilières. Famille de « sourcil » : -ier, -ière, avec un accent grave au féminin.", rare: true, d: 3, piege: "-ière, accent grave, ill" },
-        { word: "méplats", rule: "Surfaces presque planes d'un visage. Accent aigu, p muet devant l, t muet, s du pluriel.", rare: true, d: 3, piege: "é, p muet, t muet" },
-        { word: "carmin", rule: "Rouge vif tiré de la cochenille. Un seul r, un seul m, finale en -in comme dans « jasmin ».", rare: true, d: 2, piege: "finale -in, un seul m" },
-        { word: "s'ajoutait", rule: "Sujet inversé et singulier (un regard) : le verbe reste au singulier, même s'il suit une énumération de compléments." },
-        { word: "même", rule: "Devant un adjectif ou un participe (pressés), « même » est un adverbe, invariable : même pressés." },
-        { word: "succédé", rule: "Se succéder : le « se » est COI (succéder à), le participe reste invariable." },
-        { word: "parvienne", rule: "« Sans que » appelle le subjonctif : que personne parvienne." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "accord", text: "Les enfants dessine un arbre sur une grande feuille.", wrong: "dessine", right: "dessinent", choices: ["dessinent", "dessines", "dessinez"], rule: "Le sujet « les enfants » est à la 3e personne du pluriel : ils dessinent." },
     { level: "apprenti", type: "participe", text: "Elle a prit sa gomme pour effacer le trait.", wrong: "prit", right: "pris", choices: ["pris", "prise", "prie"], rule: "Après l'auxiliaire avoir, on utilise le participe passé de prendre : pris." },
@@ -276,6 +81,24 @@
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Le portraitiste, qui souhaitait ardament que l'œil du modèle semble vivant, y dépose en dernier un point de blanc que la lumière réfléchit.", wrong: "ardament", right: "ardemment", choices: ["ardemment","ardament","ardement"], rule: "L'adverbe dérive de l'adjectif « ardent » : les adjectifs en -ent donnent des adverbes en -emment." },
     { level: "grand-scribe", type: "accord", text: "Sur le mur nord de la chapelle subsiste encore des fragments que des restaurateurs patients ont sauvés au terme de longues années de soins.", wrong: "subsiste", right: "subsistent", choices: ["subsistent","subsiste","subsistes"], rule: "Le sujet est inversé : « des fragments » est au pluriel, donc le verbe se met au pluriel." },
     { level: "grand-scribe", type: "temps", text: "Bien que le portrait fut presque achevé, le peintre exigea que le modèle revînt poser une dernière fois, afin qu'il pût rectifier l'ombre portée du nez.", wrong: "fut", right: "fût", choices: ["fût","fut","fusse"], rule: "Après « bien que », le subjonctif imparfait de « être » à la 3e personne s'écrit « fût », avec un accent circonflexe. « Fut » est le passé simple." },
-    { level: "grand-scribe", type: "homophone", text: "Le peintre, sur de son trait mais déçu de sa couleur, retouche encore le ciel que l'aquarelle avait rendu trop pâle.", wrong: "sur", right: "sûr", choices: ["sûr","sur","sure"], rule: "« Sûr de » signifie « certain de » et garde son accent circonflexe, qui le distingue de la préposition « sur »." }
+    { level: "grand-scribe", type: "homophone", text: "Le peintre, sur de son trait mais déçu de sa couleur, retouche encore le ciel que l'aquarelle avait rendu trop pâle.", wrong: "sur", right: "sûr", choices: ["sûr","sur","sure"], rule: "« Sûr de » signifie « certain de » et garde son accent circonflexe, qui le distingue de la préposition « sur »." },
+    { level: "maitre", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "L'élève reporte sur le calque son épure rigoureux, puis la repasse à l'encre de Chine, à la règle et à l'équerre.", wrong: "rigoureux", right: "rigoureuse", choices: ["rigoureuse","rigoureux","rigoureuses"], rule: "Épure est un nom féminin : une épure rigoureuse. L'adjectif s'accorde au féminin singulier." },
+    { level: "maitre", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Dans l'atmosphère poussiéreux de l'atelier, le sculpteur et le dessinateur travaillent côte à côte, les doigts gris de fusain et de plâtre.", wrong: "poussiéreux", right: "poussiéreuse", choices: ["poussiéreuse","poussiéreux","poussiéreuses"], rule: "Atmosphère est un nom féminin : une atmosphère poussiéreuse. L'adjectif s'accorde au féminin." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le maître d'atelier exigeait que l'apprenti fit dix croquis du même modèle avant de toucher au moindre pinceau, afin que son œil s'exerçât.", wrong: "fit", right: "fît", choices: ["fît","fit","fis"], rule: "Après « exigeait que », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « faire » donne « fît », avec un accent circonflexe ; « fit » est le passé simple." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le copiste craignait que ses couleurs, trop diluées, ne coulâssent le long de la toile avant que l'huile eût commencé à sécher.", wrong: "coulâssent", right: "coulassent", choices: ["coulassent","coulâssent","coulacent"], rule: "Le circonflexe du subjonctif imparfait ne marque que la 3e personne du singulier (qu'elle coulât). À la 3e personne du pluriel, la terminaison est -ssent, sans accent : qu'elles coulassent." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Sur la table à dessin, trois porte-mine de calibres différents côtoient une gomme, une équerre et un compas aux branches usées.", wrong: "porte-mine", right: "porte-mines", choices: ["porte-mines","porte-mine","portes-mines"], rule: "Dans un nom composé verbe + nom, le verbe reste invariable et le nom prend la marque du pluriel : des porte-mines." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Au musée, la salle hollandaise rassemble des natures morte où brillent un citron pelé, une coupe d'argent et un verre de vin à demi vide.", wrong: "morte", right: "mortes", choices: ["mortes","morte","mort"], rule: "Dans « nature morte », le nom et l'adjectif prennent tous deux la marque du pluriel : des natures mortes." },
+    { level: "maitre", type: "participe", notion: "4e.lex.regularites-exceptions", text: "Sur la toile, un rouge provoquant tranche avec le bleu glacé du fond, et l'œil du visiteur ne sait plus où se poser.", wrong: "provoquant", right: "provocant", choices: ["provocant","provoquant","provocante"], rule: "L'adjectif qualificatif tiré de « provoquer » s'écrit « provocant », avec c ; le qu ne se garde que dans le participe présent « provoquant »." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Le racourci du bras tendu vers le spectateur est le point le plus délicat de ce portrait, car le moindre écart de proportion le trahit.", wrong: "racourci", right: "raccourci", choices: ["raccourci","racourci","raccourcit"], rule: "Raccourci s'écrit avec deux c, comme « raccourcir » dont il dérive : on y retrouve « accourcir », rendre plus court." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Au bas de la médaille que le graveur burine, un exergue immaculée accueille la date, gravée en lettres minuscules que seule une loupe permet de lire sans effort.", wrong: "immaculée", right: "immaculé", choices: ["immaculé","immaculée","immaculés"], rule: "Exergue est un nom masculin : un exergue immaculé. L'adjectif s'accorde au masculin singulier." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Sur la palette de marbre, le peintre broie le pigment avec l'huile de lin jusqu'à obtenir un amalgame onctueuse, que la molette étale en une pâte lisse et brillante.", wrong: "onctueuse", right: "onctueux", choices: ["onctueux","onctueuse","onctueuses"], rule: "Amalgame est un nom masculin : un amalgame onctueux. L'adjectif s'accorde au masculin singulier." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le conservateur redoutait que la toile, déjà fragile, ne souffrit d'un nettoyage trop vif, quoique la restauratrice eût pris toutes les précautions d'usage.", wrong: "souffrit", right: "souffrît", choices: ["souffrît","souffrit","soufrît"], rule: "Après « redoutait que », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « souffrir » donne « souffrît », avec un accent circonflexe ; « souffrit » est le passé simple." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.identifier-tous-temps", text: "Quand le jour baissa sur les toits de l'atelier, nous vimes la lumière rosir les façades, et vous fîtes remarquer que le bleu du ciel virait au gris.", wrong: "vimes", right: "vîmes", choices: ["vîmes","vimes","vîment"], rule: "Au passé simple, les 1re et 2e personnes du pluriel portent un accent circonflexe sur la voyelle du radical : nous vîmes, vous vîtes." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Le dessinateur industriel plonge ses tire-ligne dans l'encre de Chine, puis trace d'un seul geste des filets d'une finesse que le crayon n'atteint jamais.", wrong: "tire-ligne", right: "tire-lignes", choices: ["tire-lignes","tire-ligne","tires-lignes"], rule: "Dans un nom composé verbe + nom, le verbe reste invariable et le nom prend la marque du pluriel : des tire-lignes." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Le paysagiste traite les arrières-plans en bleus dégradés pour que les collines semblent reculer, tandis que les premiers plans gardent des teintes chaudes et des contrastes vifs.", wrong: "arrières-plans", right: "arrière-plans", choices: ["arrière-plans","arrières-plans","arrière-plan"], rule: "Dans « arrière-plan », « arrière » est un élément invariable qui précède le nom : seul « plan » prend la marque du pluriel, des arrière-plans." },
+    { level: "grand-scribe", type: "invariable", notion: "3e.accords.adjectif-epithete-attribut", text: "Pendant des heures, le modèle de l'atelier pose nus-pieds sur l'estrade glacée, une draperie bleue jetée sur l'épaule, tandis que les élèves croquent son attitude.", wrong: "nus-pieds", right: "nu-pieds", choices: ["nu-pieds","nus-pieds","nu pieds"], rule: "Placé devant le nom, « nu » est invariable et lié par un trait d'union : nu-pieds, nu-tête. Il ne s'accorde que lorsqu'il suit le nom : pieds nus." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Le peintre module en grizaille un seul ton, du blanc le plus clair au noir le plus profond, pour simuler le relief d'une sculpture sur le mur d'une chapelle.", wrong: "grizaille", right: "grisaille", choices: ["grisaille","grizaille","grisaile"], rule: "Grisaille dérive de « gris » : le s se garde, comme dans « grisâtre », et la finale est -aille." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Pour rendre la carnassion d'un visage, le portraitiste mêle l'ocre, le blanc et une pointe de terre de Sienne, puis glace la joue d'un voile de rose.", wrong: "carnassion", right: "carnation", choices: ["carnation","carnassion","carnasion"], rule: "Carnation, la teinte de la chair, s'écrit avec -tion, comme « nation » et « création »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Le décorateur couvre le mur de larges aplas de couleur franche, cernés d'un trait noir, comme le font les maîtres du vitrail et de l'affiche.", wrong: "aplas", right: "aplats", choices: ["aplats","aplas","aplâts"], rule: "Aplat garde un t final muet, comme « plat » dont il dérive : des aplats de couleur." }
   ]
 };

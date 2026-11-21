@@ -1,204 +1,6 @@
 (window.THEMES = window.THEMES || {}).montpellier = {
   name: "Montpellier",
   emoji: "☀️",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Le matin, nous prenons le tramway pour aller au marché. Les étalages sont remplis de pêches, de melons et d'olives. Ensuite, nous marchons sous les platanes jusqu'à la place de la Comédie. Le soleil brille déjà sur les terrasses.",
-      notes: [
-        { word: "prenons", rule: "Avec le sujet « nous », le verbe se termine par -ons : nous prenons, nous marchons." },
-        { word: "remplis", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les étalages : masculin pluriel)." },
-        { word: "olives", rule: "Après « de » dans une énumération de produits, le nom se met au pluriel : des olives." },
-        { word: "jusqu'à", rule: "« Jusque » s'élide devant une voyelle : jusqu'à, avec une apostrophe." },
-        { word: "déjà", rule: "« Déjà » prend un accent aigu sur le e et un accent grave sur le a." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les étudiants qui étaient arrivés en septembre ont vite découvert l'Écusson, ses ruelles étroites et ses hôtels particuliers. Un dimanche, ils se sont promenés au Peyrou, d'où l'on aperçoit l'aqueduc. Certains sont même partis jusqu'à la garrigue, qu'ils ont trouvée sèche mais parfumée.",
-      notes: [
-        { word: "arrivés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les étudiants : masculin pluriel)." },
-        { word: "découvert", rule: "Avec l'auxiliaire avoir, le COD (l'Écusson) est placé après le verbe : pas d'accord." },
-        { word: "promenés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet « ils »." },
-        { word: "aqueduc", rule: "Mot rare : ouvrage qui conduit l'eau. On écrit aque- (et non aqua-) et il se termine par un c.", rare: true, d: 2, piege: "qu, c final muet" },
-        { word: "garrigue", rule: "Mot rare : lande sèche du Midi, couverte de buissons et de plantes odorantes. Deux r, et la finale -gue.", rare: true, d: 2, piege: "rr, gu, e final" },
-        { word: "trouvée", rule: "Le COD « qu' » (la garrigue) est placé avant l'auxiliaire avoir : accord au féminin singulier." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Fondé jadis pour instruire les futurs médecins, le jardin des plantes jouxte la vieille faculté de médecine. Les simples qu'on y cultivait servaient aux apothicaires, qui en tiraient onguents et tisanes. Aujourd'hui, bien que la ville se soit beaucoup étendue, ce jardin ombragé demeure un havre de fraîcheur où les étudiants viennent réviser.",
-      notes: [
-        { word: "fondé", rule: "Participe passé apposé : il s'accorde avec le nom qu'il qualifie (le jardin : masculin singulier)." },
-        { word: "jouxte", rule: "Mot rare : « jouxter » signifie être voisin de. Il s'écrit avec -ou- puis -xt-, et non -ct-.", rare: true, d: 3, piege: "x (famille juxtaposer), finale -te" },
-        { word: "apothicaires", rule: "Mot rare : ancien nom du pharmacien. Un seul p, -th- au milieu, finale -aire.", rare: true, d: 3, piege: "th, c, finale -aires" },
-        { word: "onguents", rule: "Mot rare : pommade à base de plantes ou de graisses. On écrit -guent, avec un u après le g.", rare: true, d: 2, piege: "gu devant e, finale -ents" },
-        { word: "soit", rule: "« Bien que » appelle le subjonctif : qu'elle se soit étendue (subjonctif passé)." },
-        { word: "étendue", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (la ville : féminin singulier)." },
-        { word: "havre", rule: "Mot rare : refuge, lieu abrité. Il commence par un h aspiré et ne prend pas d'accent.", rare: true, d: 2, piege: "h muet, v, finale -re" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Autour du pic Saint-Loup, la garrigue, hérissée d'euphorbes, est tout embaumée de thym et de sarriette ; au sud de Montpellier, des flamants roses se mirent dans les étangs. Alentour ondulent des vignobles que les vents marins ont maintes fois battus. Quelque fourbus qu'ils soient, les vendangeurs ne se sont jamais résolus à délaisser ces coteaux, dont ils vantent les cépages.",
-      notes: [
-        { word: "tout embaumée", rule: "« Tout » adverbe (tout à fait) reste invariable devant un adjectif féminin commençant par une voyelle." },
-        { word: "euphorbes", rule: "Plantes à latex blanc de la garrigue. Famille d'euphorie : eu, ph, puis -orbe ; nom féminin.", rare: true, d: 3, piege: "eu-ph (famille euphorie), -orbes" },
-        { word: "sarriette", rule: "Plante aromatique de la garrigue, proche du thym. Deux r et deux t : sar-riet-te.", rare: true, d: 3, piege: "rr, tt, finale -e" },
-        { word: "thym", rule: "Mot rare : plante aromatique de la garrigue. Il s'écrit th-, avec un y et un m final muet.", rare: true, d: 4, piege: "th, y, m final : trois points opaques sans indice" },
-        { word: "flamants", rule: "Mot rare : oiseau échassier des étangs. Il se termine par -ant, à ne pas confondre avec « flamand » (de Flandre).", rare: true, d: 2, piege: "finale -ant et non -and" },
-        { word: "mirent", rule: "Présent de « se mirer » (se refléter), à ne pas confondre avec le passé simple de « mettre »." },
-        { word: "battus", rule: "Le COD « que » (les vignobles) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "quelque fourbus", rule: "« Quelque » devant un adjectif signifie « si » : adverbe invariable, suivi du subjonctif." },
-        { word: "vendangeurs", rule: "Mot rare : ceux qui récoltent le raisin. On écrit -geur, avec un e après le g pour garder le son doux.", rare: true, d: 1, piege: "-geur, e conservé" },
-        { word: "résolus", rule: "« Se résoudre à » : verbe pronominal, le participe s'accorde avec le sujet (les vendangeurs)." },
-        { word: "cépages", rule: "Mot très rare : variété de vigne. Il prend un accent aigu et s'écrit avec un c.", rare: true, d: 1, piege: "é, c" }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Chaque samedi, mes cousins vont place de la Comédie pour regarder les jongleurs. Devant la fontaine des Trois Grâces, une foule joyeuse s'est rassemblée. Les enfants applaudissent, puis ils achètent des glaces et mangent assis sur les marches de l'Opéra.",
-      notes: [
-        { word: "cousins", rule: "Nom commun au pluriel : on ajoute un s (mes cousins)." },
-        { word: "vont", rule: "Le verbe aller au présent, 3e personne du pluriel : ils vont, avec un t." },
-        { word: "rassemblée", rule: "Verbe pronominal : le participe s'accorde avec le sujet (une foule : féminin singulier)." },
-        { word: "applaudissent", rule: "Verbe du 2e groupe au présent, 3e personne du pluriel : applaud-issent." },
-        { word: "assis", rule: "Participe passé de s'asseoir, attribut du sujet « ils » : masculin pluriel, il s'écrit avec un s." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Au Peyrou, nous montons les escaliers jusqu'au château d'eau. De là-haut, on voit l'aqueduc et les toits rouges de la ville. Mes parents ont pris des photos pendant que je courais autour du bassin.",
-      notes: [
-        { word: "montons", rule: "Avec le sujet « nous », le verbe se termine par -ons : nous montons." },
-        { word: "toits", rule: "Nom pluriel : les toits, avec un s." },
-        { word: "pris", rule: "Avec l'auxiliaire avoir, le participe reste invariable quand le COD (des photos) est placé après." },
-        { word: "courais", rule: "À l'imparfait, avec « je », la terminaison est -ais : je courais." },
-        { word: "aqueduc", rule: "Ouvrage qui conduit l'eau : aque- (et non aqua-) et un c final." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Les enfants visitent le jardin des plantes avec leur classe. Ils découvrent de grands arbres, des fleurs rares et une allée pleine de plantes vertes. La guide leur demande de dessiner la fleur qu'ils ont préférée.",
-      notes: [
-        { word: "visitent", rule: "Verbe du 1er groupe au présent, 3e personne du pluriel : -ent." },
-        { word: "grands", rule: "L'adjectif s'accorde avec le nom (arbres : masculin pluriel) : grands." },
-        { word: "pleine", rule: "L'adjectif s'accorde avec le nom (une allée : féminin singulier) : pleine." },
-        { word: "vertes", rule: "L'adjectif s'accorde avec le nom (plantes : féminin pluriel) : vertes." },
-        { word: "préférée", rule: "Le COD « que » (la fleur) est placé avant l'auxiliaire avoir : accord au féminin singulier." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les terrasses qu'on avait réservées donnaient sur la fontaine des Trois Grâces, au cœur de la place de la Comédie. Nous nous y sommes attardés jusqu'à ce que les candélabres s'allument. Il fallait que chacun rentre, mais personne n'osait quitter ce lieu animé.",
-      notes: [
-        { word: "réservées", rule: "Le COD « qu' » (les terrasses) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "attardés", rule: "Verbe pronominal : « nous » est COD, le participe s'accorde avec le sujet (masculin pluriel)." },
-        { word: "allument", rule: "« Jusqu'à ce que » appelle le subjonctif : qu'ils s'allument, terminaison -ent." },
-        { word: "candélabres", rule: "Mot rare : grands chandeliers ou lampadaires à plusieurs branches. Accent aigu sur le e, puis -labres, avec un b.", rare: true, d: 2, piege: "é, finale -abres" },
-        { word: "rentre", rule: "« Il fallait que » appelle le subjonctif : que chacun rentre, sans s." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les promeneurs qui ont gravi les marches du Peyrou s'arrêtent devant le château d'eau, où aboutit l'aqueduc. Les arcades, que des maçons ont bâties en pierre claire, alignent leurs deux étages sous le ciel. Quelle idée ingénieuse d'avoir amené l'eau jusqu'ici : ils ont raison de s'émerveiller !",
-      notes: [
-        { word: "gravi", rule: "Avec l'auxiliaire avoir, le COD (les marches) est placé après le verbe : pas d'accord." },
-        { word: "aboutit", rule: "Verbe du 2e groupe, 3e personne du singulier (sujet « l'aqueduc » placé après le verbe) : aboutit, avec un t." },
-        { word: "arcades", rule: "Suite d'arches : un seul c, avec -ades à la fin." },
-        { word: "bâties", rule: "Le COD « que » (les arcades) est placé avant l'auxiliaire avoir : accord au féminin pluriel, avec un accent circonflexe." },
-        { word: "ingénieuse", rule: "Adjectif en -eux : féminin -euse. Il vient de « ingénieur » et prend deux accents aigus.", rare: true, d: 2, piege: "é, finale -euse (famille ingénieur)" }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Accolée à la faculté de médecine, la cathédrale Saint-Pierre étonne par son porche massif, soutenu par deux piliers cylindriques. Les visiteurs qui l'ont découvert par hasard restent bouche bée. Les étudiants, eux, passent devant sans se retourner, absorbés par leurs révisions.",
-      notes: [
-        { word: "accolée", rule: "Mot rare : adjacente, collée à. Deux c et un seul l, comme dans « colle ».", rare: true, d: 2, piege: "cc, l simple" },
-        { word: "soutenu", rule: "Participe passé qui qualifie « porche » : masculin singulier." },
-        { word: "cylindriques", rule: "Adjectif de « cylindre » : un y après le c, puis -ques." },
-        { word: "découvert", rule: "Le COD « l' » (le porche) est placé avant l'auxiliaire avoir : accord au masculin singulier." },
-        { word: "absorbés", rule: "Participe passé apposé : il s'accorde avec « les étudiants » (masculin pluriel)." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Dessiné d'un seul tenant, le quartier Antigone déploie ses pilastres et ses colonnes, qu'on dirait empruntés à quelque cité antique. Les passants s'y sont longtemps étonnés de cet ordonnancement, quoique les riverains s'y soient vite accoutumés. Non loin de là, le Lez coule paisiblement.",
-      notes: [
-        { word: "dessiné", rule: "Participe passé apposé : il s'accorde avec le nom qu'il qualifie (le quartier : masculin singulier)." },
-        { word: "pilastres", rule: "Mot rare : pilier plat engagé dans un mur. Un seul l, un seul s, puis -tres : pilastre, comme « astre ».", rare: true, d: 2, piege: "l simple, s muet, finale -tres" },
-        { word: "empruntés", rule: "Participe qui s'accorde avec « pilastres et colonnes » (masculin pluriel) ; on écrit emp-, avec un m devant p." },
-        { word: "étonnés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (les passants : masculin pluriel)." },
-        { word: "ordonnancement", rule: "Mot rare : agencement. Deux n, puis -ance : ordonn-ancement, et non -ence.", rare: true, d: 3, piege: "nn (famille ordonner), -ance" },
-        { word: "soient", rule: "« Quoique » appelle le subjonctif : que les riverains soient accoutumés." },
-        { word: "accoutumés", rule: "Habitués. Deux c, -ou-, et un seul m : accoutumer." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Du haut de l'esplanade du Peyrou, l'on contemple l'aqueduc, dont les arcades, superposées sur deux étages, acheminaient jadis l'eau jusqu'au château d'eau. Bien que son concepteur se soit inspiré des ouvrages romains, il a su lui donner une élégance singulière. Les Montpelliérains le tiennent pour un joyau.",
-      notes: [
-        { word: "aqueduc", rule: "Mot rare : ouvrage qui conduit l'eau. On écrit aque- (et non aqua-) et il se termine par un c.", rare: true, d: 2, piege: "qu, c final muet" },
-        { word: "superposées", rule: "Participe qui s'accorde avec « arcades » (féminin pluriel) ; un seul s entre deux voyelles dans -poser." },
-        { word: "acheminaient", rule: "Faisaient parvenir. On écrit ach-e-min-aient (famille de chemin), avec -aient à l'imparfait." },
-        { word: "soit", rule: "« Bien que » appelle le subjonctif : que son concepteur se soit inspiré (subjonctif passé)." },
-        { word: "inspiré", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (le concepteur : masculin singulier)." },
-        { word: "singulière", rule: "Adjectif féminin singulier qui qualifie « élégance » : -ière, avec un accent grave." },
-        { word: "joyau", rule: "Mot rare : bijou, chose précieuse. La finale se prononce -o mais s'écrit -yau ; le pluriel est joyaux.", rare: true, d: 3, piege: "oy, finale -au" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Sur le littoral voisin de Palavas, les étangs, séparés de la mer par un cordon de sable, abritent aigrettes et hérons. Les promeneurs qui s'y sont aventurés à l'aube ont aperçu des échassiers pêcher en silence. Les eaux, peu profondes, y sont si calmes qu'on les dirait figées.",
-      notes: [
-        { word: "séparés", rule: "Participe qui s'accorde avec « les étangs » (masculin pluriel)." },
-        { word: "aigrettes", rule: "Mot rare : petits hérons blancs. Un seul g, deux t : ai-gret-tes.", rare: true, d: 2, piege: "tt, finale -ettes" },
-        { word: "aventurés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (les promeneurs : masculin pluriel)." },
-        { word: "aperçu", rule: "Avec l'auxiliaire avoir, le COD (des échassiers) est placé après le verbe : pas d'accord." },
-        { word: "échassiers", rule: "Mot rare : oiseaux aux longues pattes. Il vient d'« échasse » : é, -ch-, puis -ss-, et -iers.", rare: true, d: 3, piege: "é, ch, ss, finale -iers" },
-        { word: "figées", rule: "Le COD « les » (les eaux) est placé avant le verbe : le participe s'accorde au féminin pluriel." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Dans l'Écusson, les ruelles que des siècles de piétons ont polies serpentent entre des hôtels particuliers dont les portails de pierre sont surmontés de linteaux et d'architraves. Les curieux qui se sont fourvoyés dans ce dédale n'ont jamais regretté de s'y être égarés. Seuls y résonnent les pas des flâneurs.",
-      notes: [
-        { word: "polies", rule: "Le COD « que » (les ruelles) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "architraves", rule: "Mot très rare : poutres de pierre posées sur les colonnes. Archi- comme architecte (ch = k), puis -traves.", rare: true, d: 3, piege: "ch = k, finale -traves" },
-        { word: "linteaux", rule: "Mot rare : pièce horizontale au-dessus d'une porte ou d'une fenêtre. Finale -eaux au pluriel (un linteau).", rare: true, d: 3, piege: "-eaux, t muet devant e" },
-        { word: "fourvoyés", rule: "Mot rare : égarés. Verbe pronominal : accord avec le sujet. On écrit fourv-oy-és (famille de voie).", rare: true, d: 3, piege: "ou, oy (famille voie), é" },
-        { word: "dédale", rule: "Labyrinthe. Deux accents aigus, un seul l, finale -e." },
-        { word: "égarés", rule: "« S'être égarés » : le participe s'accorde avec le sujet (les curieux : masculin pluriel)." },
-        { word: "résonnent", rule: "Résonner prend deux n (famille de son), et -ent à la 3e personne du pluriel." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Sur la place de la Comédie, que les Montpelliérains surnomment l'Œuf à cause de sa forme, la fontaine des Trois Grâces bruisse devant l'Opéra. Des escamoteurs et des saltimbanques s'y produisent parfois ; des curieux, assis sur la margelle, s'y sont donné rendez-vous.",
-      notes: [
-        { word: "surnomment", rule: "Surnommer prend deux n (famille de nom) et -ent à la 3e personne du pluriel." },
-        { word: "bruisse", rule: "Mot rare : faire un bruit léger, comme l'eau. Un seul s entre u et i : bru-i-sse, avec deux s devant e muet.", rare: true, d: 3, piege: "ui, ss devant e muet" },
-        { word: "escamoteurs", rule: "Mot très rare : prestidigitateurs, ceux qui font disparaître des objets. Es-c-a-moteur : s muet, c, puis -eurs.", rare: true, d: 3, piege: "sc, finale -eurs" },
-        { word: "saltimbanques", rule: "Mot rare : artistes de rue. Sal-tim-ban-ques : -tim- avec un m, finale -ques.", rare: true, d: 3, piege: "m devant b, finale -ques" },
-        { word: "margelle", rule: "Mot rare : rebord d'un bassin ou d'un puits. Un seul r, un g doux écrit avec -elle : mar-gelle.", rare: true, d: 3, piege: "g (et non j), ll" },
-        { word: "donné", rule: "« Se donner rendez-vous » : le « se » est COI, le participe reste invariable." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Dès qu'on franchit le porche de la cathédrale Saint-Pierre, sorte de baldaquin que soutiennent deux énormes piliers cylindriques, l'on mesure d'emblée la puissance de l'édifice. Sous les ogives, entre voussoirs et chapiteaux, nombre d'étudiants de la faculté voisine viennent chercher le silence, et beaucoup s'y recueillent, absorbés dans leurs fiches.",
-      notes: [
-        { word: "cylindriques", rule: "Adjectif de « cylindre » : un y après le c, puis -ques.", rare: true, d: 3, piege: "y, finale -ques" },
-        { word: "baldaquin", rule: "Mot rare : dais qui couvre un porche, un lit ou un autel. Q-u devant -in : balda-quin, avec un q et pas un c.", rare: true, d: 3, piege: "qu, finale -in" },
-        { word: "voussoirs", rule: "Mot très rare : pierres taillées en coin qui forment un arc. Vouss- avec deux s, finale -oirs.", rare: true, d: 3, piege: "ou, ss, finale -oirs" },
-        { word: "ogives", rule: "Mot rare : arcs qui se croisent dans une voûte gothique. Un seul g, o initial, finale -ives.", rare: true, d: 2, piege: "o, g doux" },
-        { word: "chapiteaux", rule: "Mot rare : sommet d'une colonne. Ch-, p muet devant i, finale -eaux au pluriel.", rare: true, d: 3, piege: "ch, p muet, -eaux" },
-        { word: "viennent", rule: "Avec « nombre de » suivi d'un nom pluriel, le verbe se met au pluriel." },
-        { word: "recueillent", rule: "Verbe recueillir : le groupe -cueill- garde le u devant -ill, et la 3e personne du pluriel prend -ent." },
-        { word: "absorbés", rule: "Participe apposé : il s'accorde avec « beaucoup » et « étudiants » (masculin pluriel)." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "accord", text: "Les arcades de l'aqueduc du Peyrou domine les toits de la ville.", wrong: "domine", right: "dominent", choices: ["dominent", "domines", "dominé"], rule: "Le sujet « les arcades » est au pluriel : le verbe prend la terminaison -ent." },
     { level: "apprenti", type: "temps", text: "Nous somme allés flâner dans le quartier Antigone cet après-midi.", wrong: "somme", right: "sommes", choices: ["sommes", "somes", "sont"], rule: "Avec « nous », le verbe être s'écrit « sommes »." },
@@ -279,6 +81,27 @@
     { level: "grand-scribe", type: "accord", notion: "5e.accords.sujet-separe", text: "Avec les premiers beaux jours revient, sur les berges du Lez, les cyclistes, les coureurs et les pêcheurs qui profitent de la lumière.", wrong: "revient", right: "reviennent", choices: ["reviennent","revient","revenait"], rule: "Le sujet est inversé : « les cyclistes, les coureurs et les pêcheurs », placé après le verbe. Le verbe s'accorde avec lui, au pluriel." },
     { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Dans la cour d'un hôtel particulier de l'Écusson, des lauriers-rose plantés en caisses ont fleuri tard, et leur parfum embaume l'escalier de pierre jusqu'à la loggia.", wrong: "lauriers-rose", right: "lauriers-roses", choices: ["lauriers-roses","lauriers-rose","laurier-roses"], rule: "Dans « laurier-rose », nom et adjectif prennent tous deux la marque du pluriel : des lauriers-roses." },
     { level: "grand-scribe", type: "homophone", notion: "3e.homo.lexicaux", text: "À la faculté de médecine de Montpellier, la chair d'anatomie, créée il y a des siècles, a vu défiler des professeurs que leurs élèves citaient encore longtemps après.", wrong: "chair", right: "chaire", choices: ["chaire","chair","chère"], rule: "Une chaire est un poste de professeur dans l'enseignement supérieur, ainsi que le siège d'où l'on enseignait ; la chair est la viande ou la peau." },
-    { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Les orages d'automne arrosent abondemment les garrigues autour du pic Saint-Loup, et le Lez, gonflé par la pluie, rejoint la mer en grondant.", wrong: "abondemment", right: "abondamment", choices: ["abondamment","abondemment","abondament"], rule: "Abondant se termine en -ant : l'adverbe est en -amment, avec deux m (abondamment)." }
+    { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Les orages d'automne arrosent abondemment les garrigues autour du pic Saint-Loup, et le Lez, gonflé par la pluie, rejoint la mer en grondant.", wrong: "abondemment", right: "abondamment", choices: ["abondamment","abondemment","abondament"], rule: "Abondant se termine en -ant : l'adverbe est en -amment, avec deux m (abondamment)." },
+    { level: "maitre", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Dans la grotte des Demoiselles, au nord de Montpellier, une stalactite, fin comme une aiguille, pend du plafond depuis des millénaires, goutte après goutte.", wrong: "fin", right: "fine", choices: ["fine","fin","fins"], rule: "Stalactite est un nom féminin : l'adjectif s'accorde, une stalactite fine." },
+    { level: "maitre", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Au cœur de la ville, le jardin des plantes est une oasis discret et ombragée, où les étudiants en médecine viennent réviser.", wrong: "discret", right: "discrète", choices: ["discrète","discret","discrets"], rule: "Oasis est un nom féminin : l'adjectif s'accorde, une oasis discrète." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le professeur de botanique exigeait que chacun connût le nom latin des plantes avant qu'il ne les cueillit pour son herbier.", wrong: "cueillit", right: "cueillît", choices: ["cueillît","cueillit","cueille"], rule: "Après « avant que » et un verbe principal à l'imparfait, le subjonctif est à l'imparfait : qu'il les cueillît. Le circonflexe le distingue du passé simple « cueillit »." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Les Montpelliérains redoutaient que l'orage ne fit déborder le Lez, dont la crue, quoique rare, inonde parfois les berges et les prairies voisines.", wrong: "fit", right: "fît", choices: ["fît","fit","fasse"], rule: "Après « redoutaient que », concordance au subjonctif imparfait : que l'orage ne fît déborder. Le circonflexe le distingue du passé simple « fit »." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Sous les arches de l'aqueduc Saint-Clément, le marché des Arceaux étale ses choux-fleur, ses poireaux et ses fromages de chèvre.", wrong: "choux-fleur", right: "choux-fleurs", choices: ["choux-fleurs","choux-fleur","chou-fleurs"], rule: "Dans « chou-fleur », les deux noms prennent la marque du pluriel : des choux-fleurs." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Chaque été, les sapeurs-pompier de l'Hérault surveillent les garrigues autour du pic Saint-Loup, où un simple mégot peut déclencher un incendie.", wrong: "sapeurs-pompier", right: "sapeurs-pompiers", choices: ["sapeurs-pompiers","sapeurs-pompier","sapeur-pompiers"], rule: "Dans « sapeur-pompier », les deux noms de même valeur prennent la marque du pluriel : des sapeurs-pompiers." },
+    { level: "maitre", type: "participe", notion: "5e.accords.pp-avoir-cod-antepose", text: "Les heures que les randonneurs ont marchées jusqu'au sommet du pic Saint-Loup leur ont paru courtes, tant la vue récompense l'effort.", wrong: "marchées", right: "marché", choices: ["marché","marchées","marchés"], rule: "Dans « les heures que les randonneurs ont marché », « que » exprime une durée et non un COD : le participe reste invariable." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Au bout de la promenade du Peyrou, le château d'eau s'entoure d'une colonade aux chapiteaux corinthiens, qui se découpent sur le ciel du soir.", wrong: "colonade", right: "colonnade", choices: ["colonnade","colonade","collonade"], rule: "Colonnade se forme sur « colonne », qui prend deux n, avec le suffixe -ade." },
+    { level: "maitre", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Dès la fin du printemps, les cygales chantent dans les platanes de l'Esplanade Charles-de-Gaulle, et leur crissement rythme les journées chaudes.", wrong: "cygales", right: "cigales", choices: ["cigales","cygales","sigales"], rule: "Cigale s'écrit avec un i, comme « cigare » : le y n'a pas sa place dans ce mot." },
+    { level: "maitre", type: "lexique", notion: "3e.lex.morphologie", text: "Au bord des étangs de Palavas, les anciens cabannons de pêcheurs abritent aujourd'hui des filets, des cannes et quelques chaises longues.", wrong: "cabannons", right: "cabanons", choices: ["cabanons","cabannons","cabanonts"], rule: "Cabanon dérive de « cabane », qui prend un seul n ; le suffixe -on ne double pas la consonne." },
+    { level: "maitre", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Dans les cours des hôtels particuliers de l'Écusson, des glicines grimpent le long des façades et parfument au printemps les escaliers de pierre.", wrong: "glicines", right: "glycines", choices: ["glycines","glicines","glysines"], rule: "Glycine vient du grec glukus, « doux » : le y vient du grec, comme dans « glycémie »." },
+    { level: "grand-scribe", type: "accord", notion: "5e.accords.gn-raisonnement", text: "Les troubadours reçus à la cour des seigneurs de Montpellier chantaient en langue d'oc des amours impossibles, sous l'égide bienveillant de leurs hôtes, avant de reprendre la route vers d'autres cours.", wrong: "bienveillant", right: "bienveillante", choices: ["bienveillante","bienveillant","bienveillants"], rule: "Égide est un nom féminin : on écrit sous l'égide bienveillante." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Il eut été étonnant que les étudiants, qui descendent de la faculté de médecine vers la place de la Comédie, ne fissent pas halte à la terrasse d'un café avant de rentrer.", wrong: "eut", right: "eût", choices: ["eût","eut","eu"], rule: "« Il eût été » est un plus-que-parfait du subjonctif employé à la place du conditionnel passé : il prend un accent circonflexe." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Les ingénieurs d'autrefois avaient voulu que l'eau de la source Saint-Clément put couler jusqu'au château d'eau du Peyrou sans pompe, grâce à la seule pente de l'aqueduc.", wrong: "put", right: "pût", choices: ["pût","put","puisse"], rule: "Après « avaient voulu que », concordance au subjonctif imparfait : que l'eau pût couler. Le circonflexe le distingue du passé simple « put »." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Au crépuscule, sur les berges du Lez, des chauve-souris sillonnent le ciel en frôlant les saules, tandis que les derniers coureurs, haletants, regagnent le quartier d'Antigone.", wrong: "chauve-souris", right: "chauves-souris", choices: ["chauves-souris","chauve-souris","chauves-souri"], rule: "Dans « chauve-souris », l'adjectif et le nom prennent la marque du pluriel : des chauves-souris." },
+    { level: "grand-scribe", type: "accord", notion: "5e.accords.sujet-separe", text: "Sur la place de la Comédie, autour de la fontaine des Trois Grâces, s'étend chaque soir les terrasses des cafés, où les étudiants refont le monde jusqu'à la nuit.", wrong: "s'étend", right: "s'étendent", choices: ["s'étendent","s'étend","s'étendait"], rule: "Le sujet est inversé, placé après le verbe : « les terrasses des cafés » s'étendent. Le verbe se met au pluriel." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Sur les rives des étangs de Palavas, où l'eau salée s'évapore l'été, la salycorne rougit en automne et dessine des tapis sombres que les promeneurs évitent de piétiner.", wrong: "salycorne", right: "salicorne", choices: ["salicorne","salycorne","sallicorne"], rule: "Salicorne s'écrit avec un i et un seul l, comme « saline » et « salière » : aucun y." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Dans les eaux de l'étang de Thau, que les ostréiculteurs de Bouzigues connaissent par cœur, on aperçoit parfois, accroché à une herbe, un hyppocampe immobile.", wrong: "hyppocampe", right: "hippocampe", choices: ["hippocampe","hyppocampe","hipocampe"], rule: "Hippocampe vient du grec hippos, « cheval » : un i, puis deux p, comme dans « hippodrome »." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Autour de l'étang de Thau, la conchiliculture fait vivre des centaines de familles, qui élèvent huîtres et moules sur des tables immergées que l'on distingue de loin dans la brume du matin.", wrong: "conchiliculture", right: "conchyliculture", choices: ["conchyliculture","conchiliculture","conchylliculture"], rule: "Conchyliculture vient du grec konkhulion, « coquillage » : y après ch, comme dans « conchyliologie »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Au musée Fabre, les dessins au fusin, fragiles comme des ailes de papillon, ne sortent des réserves que pour de brèves expositions, sous une lumière tamisée.", wrong: "fusin", right: "fusain", choices: ["fusain","fusin","fuzain"], rule: "Fusain se termine par -ain, comme « grain » ; il désigne d'abord le bois du fusain, dont on fait les crayons." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Devant un paysage à l'encre du musée Fabre, le visiteur devine la méthode du peintre : un lavi gris, posé d'un trait large, relevé ensuite de hachures fines.", wrong: "lavi", right: "lavis", choices: ["lavis","lavi","lavy"], rule: "Lavis est un nom masculin qui prend un s final dès le singulier, comme « avis » et « tapis »." }
   ]
 };

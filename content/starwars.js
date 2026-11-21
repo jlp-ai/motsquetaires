@@ -1,159 +1,6 @@
 (window.THEMES = window.THEMES || {}).starwars = {
   name: "{{Star Wars|Space opera}}",
   emoji: "🚀",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Ce soir, les enfants ont transformé le salon en vaisseau spatial. Ils ont fabriqué des boutons en carton et dessiné des étoiles sur les fenêtres. Leur petit frère jouait le rôle du droïde de bord. Ensemble, ils sont partis vers des planètes lointaines.",
-      notes: [
-        { word: "transformé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « le salon » est placé après)." },
-        { word: "leur", rule: "« Leur » est un déterminant singulier : il accompagne un seul nom (leur petit frère)." },
-        { word: "droïde", rule: "Le tréma sur le i indique qu'on prononce séparément le o et le i : dro-ïde." },
-        { word: "partis", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (ils : masculin pluriel)." },
-        { word: "lointaines", rule: "L'adjectif s'accorde avec le nom qu'il qualifie (des planètes : féminin pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Les pilotes que la rébellion avait recrutés se sont préparés pendant des semaines. Dans le hangar, ils vérifiaient patiemment chaque écoutille et chaque propulseur. Quand l'alerte a retenti, ils se sont élancés vers leurs chasseurs, prêts à décoller.",
-      notes: [
-        { word: "recrutés", rule: "Le COD « que » (les pilotes) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "préparés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (les pilotes)." },
-        { word: "patiemment", rule: "Adjectif en -ent (patient) : l'adverbe se termine en -emment, qui se prononce « a-man »." },
-        { word: "écoutille", rule: "Ouverture qui permet d'entrer dans un vaisseau ou un navire. Nom féminin en -ille, avec deux l.", rare: true, d: 2, piege: "é, ill, e final" },
-        { word: "propulseur", rule: "Moteur qui fait avancer l'engin. Nom masculin en -eur, sans e final." },
-        { word: "élancés", rule: "Verbe pronominal : « se » est COD, accord avec le sujet « ils »." },
-        { word: "prêts", rule: "Adjectif accordé avec « ils » (masculin pluriel) ; accent circonflexe sur le e." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Accoudés au comptoir d'une cantina enfumée, deux mercenaires comptaient leurs gains. Bien qu'ils n'eussent jamais juré allégeance à quiconque, ils hésitèrent lorsque des rebelles leur proposèrent une cargaison périlleuse. La somme qu'on leur avait promise les convainquit ; ils s'engagèrent sans plus attendre.",
-      notes: [
-        { word: "accoudés", rule: "Participe employé comme adjectif, accordé avec « deux mercenaires » : masculin pluriel, deux c." },
-        { word: "mercenaires", rule: "Soldats qui combattent pour de l'argent. C devant e, un seul n, finale -aire.", rare: true, d: 2, piege: "c devant e, finale -aires" },
-        { word: "eussent", rule: "« Bien que » appelle le subjonctif ; plus-que-parfait du subjonctif, admis après un récit au passé simple." },
-        { word: "allégeance", rule: "Fidélité jurée à un chef ou à une cause. Accent aigu sur le premier e, et e après le g pour garder le son « j » devant a : -geance.", rare: true, d: 3, piege: "ll, é, -geance" },
-        { word: "hésitèrent", rule: "Passé simple, 3e personne du pluriel du 1er groupe : -èrent." },
-        { word: "promise", rule: "Le COD « qu' » (la somme) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "convainquit", rule: "Passé simple de convaincre : le c devient qu devant i, « il convainquit »." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Des années durant, l'apprenti s'était astreint à une ascèse que peu de chevaliers auraient endurée. Les doutes qui l'avaient assailli, il les avait vaincus un à un ; mais le moindre vacillement de sa lame trahissait une prescience encore imparfaite. Quelque aguerri qu'il parût, il savait que la maîtrise ne s'acquiert qu'au prix d'une longue abnégation.",
-      notes: [
-        { word: "astreint", rule: "S'astreindre : « se » est COD, accord avec le sujet (l'apprenti, masculin singulier) ; finale -eint." },
-        { word: "ascèse", rule: "Discipline de vie rigoureuse. Groupe sc au milieu du mot, accent grave sur le e, nom féminin.", rare: true, d: 3, piege: "sc, è" },
-        { word: "endurée", rule: "Le COD « que » (une ascèse) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "assailli", rule: "Le COD « l' » (l'apprenti) est placé avant l'auxiliaire : accord au masculin singulier, deux s et deux l." },
-        { word: "vaincus", rule: "Le COD « les » (les doutes) est placé avant l'auxiliaire : accord au masculin pluriel." },
-        { word: "vacillement", rule: "Fait de trembler, de perdre son assurance. Un seul c, deux l, suffixe -ement.", rare: true, d: 2, piege: "ill, -ement" },
-        { word: "abnégation", rule: "Renoncement à soi-même. Accent aigu, g, puis -ation avec t : ab-né-ga-tion.", rare: true, d: 3, piege: "bn, é, -gation" },
-        { word: "prescience", rule: "Connaissance de ce qui va arriver. Pre + science : le groupe sc est conservé et, piège, le e du préfixe ne prend pas d'accent.", rare: true, d: 3, piege: "sc (famille science)" },
-        { word: "quelque", rule: "Devant un adjectif, « quelque » signifie « si » : adverbe invariable, sans s." },
-        { word: "aguerri", rule: "Endurci par l'expérience. Famille de guerre : gu devant e, deux r ; singulier avec « il ».", rare: true, d: 3, piege: "gu, rr (famille guerre)" },
-        { word: "parût", rule: "Subjonctif imparfait après « quelque... que », admis dans un récit à l'imparfait : accent circonflexe, « qu'il parût »." },
-        { word: "acquiert", rule: "Présent d'acquérir, 3e personne du singulier : un seul r, « il acquiert »." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Sur {{Tatooine|la planète des deux soleils}}, {{Luke Skywalker|le jeune fermier}} regardait le ciel chaque soir. Il rêvait de quitter le désert et de piloter un vaisseau. Un jour, deux droïdes sont arrivés près de sa maison. Ils avaient voyagé pendant des heures.",
-      notes: [
-        { word: "regardait", rule: "Verbe regarder à l'imparfait, 3e personne du singulier : -ait." },
-        { word: "quitter", rule: "Après la préposition « de », le verbe reste à l'infinitif : quitter (on peut le remplacer par « partir »)." },
-        { word: "arrivés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (deux droïdes : masculin pluriel)." },
-        { word: "voyagé", rule: "Avec l'auxiliaire avoir et sans COD, le participe passé reste invariable." },
-        { word: "heures", rule: "Le h est muet, et le nom prend un s au pluriel." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "{{R2-D2|Le petit droïde}} est très courageux. Il a réparé les circuits du vaisseau, et ses amis l'ont remercié. {{C-3PO|Le droïde doré}} parle toutes les langues, mais il a souvent peur. {{Chewbacca|Le grand copilote}} les écoute attentivement.",
-      notes: [
-        { word: "courageux", rule: "Adjectif en -eux : courageux, courageuse. Il s'accorde avec le sujet." },
-        { word: "réparé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « les circuits » est placé après)." },
-        { word: "ses", rule: "« Ses » est un déterminant pluriel (les amis de lui) ; « ces » sert à désigner." },
-        { word: "ont", rule: "Verbe avoir au présent, 3e personne du pluriel : « ils ont » (on peut dire « ils avaient »). Ne pas confondre avec « on »." },
-        { word: "langues", rule: "Le u après le g garde le son dur : langue, langues." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "{{Han Solo|Le contrebandier}} avait si souvent réparé la carlingue du {{Faucon Millenium|vieux cargo}} qu'il en connaissait chaque soudure. Les pièces qu'il s'était procurées étaient d'occasion. Malgré les moqueries, ce vaisseau, que beaucoup prenaient pour une épave, filait plus vite que tous ses poursuivants.",
-      notes: [
-        { word: "réparé", rule: "Avec l'auxiliaire avoir, le COD « la carlingue » est placé après : le participe reste invariable." },
-        { word: "carlingue", rule: "Partie intérieure d'un avion ou d'un vaisseau où se tiennent les occupants. Finale -ingue, avec u après le g.", rare: true, d: 2, piege: "ing, gu, e final" },
-        { word: "procurées", rule: "Le COD « que » (les pièces) est placé avant l'auxiliaire : accord au féminin pluriel ; le « se » est COI." },
-        { word: "moqueries", rule: "Nom féminin pluriel : moquerie prend un s, et le qu devant e garde le son k." },
-        { word: "poursuivants", rule: "Nom masculin pluriel, formé sur poursuivre : -ants." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "{{Leia|La princesse}} a glissé un hologramme dans la mémoire d'un droïde avant que les soldats l'arrêtent. Bien qu'elle ait été capturée, elle espérait que ce message parviendrait jusqu'à ses alliés. Les quelques heures qui ont suivi lui ont paru interminables.",
-      notes: [
-        { word: "hologramme", rule: "Image en relief enregistrée par un faisceau lumineux. Le h est muet, et « gramme » prend deux m (famille de télégramme).", rare: true, d: 2, piege: "h muet, mm" },
-        { word: "ait", rule: "« Bien que » appelle le subjonctif : qu'elle ait été (avoir au subjonctif présent)." },
-        { word: "capturée", rule: "Avec l'auxiliaire être, le participe s'accorde avec le sujet « elle » : féminin singulier." },
-        { word: "parviendrait", rule: "Verbe parvenir au conditionnel (futur dans le passé) : -drait, avec le r du futur." },
-        { word: "quelques", rule: "Devant un nom pluriel, « quelques » signifie « un petit nombre de » : déterminant avec un s." },
-        { word: "paru", rule: "Paraître avec l'auxiliaire avoir, sans COD placé avant : le participe reste invariable." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Les disciples que {{Yoda|le vieux maître}} avait instruits se sont longtemps interrogés sur {{la Force|l'énergie mystérieuse}}. La sagacité du maître et sa mansuétude les frappaient ; il leur enseignait qu'elle unissait tous les êtres vivants, quelles que fussent leurs différences.",
-      notes: [
-        { word: "disciples", rule: "Élèves d'un maître. Groupe sc au milieu : dis-ci-ples, comme discipline." },
-        { word: "instruits", rule: "Le COD « que » (les disciples) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "interrogés", rule: "Verbe pronominal : « se » est COD, accord avec le sujet (les disciples : masculin pluriel)." },
-        { word: "sagacité", rule: "Finesse d'esprit, flair. Famille de sagace : g, puis un seul c (sa-ga-ci-té), accent aigu final.", rare: true, d: 3, piege: "g, c/ss, é" },
-        { word: "mansuétude", rule: "Douceur et indulgence d'un caractère. Man- avec an (et non en), puis -suétude : u, é, puis -tude.", rare: true, d: 3, piege: "an, ué, -tude" },
-        { word: "quelles", rule: "Dans « quelles que fussent », « quel » est un adjectif qui s'accorde avec « différences » : féminin pluriel, en deux mots." },
-        { word: "fussent", rule: "Subjonctif imparfait après « quelles que », admis dans un récit à l'imparfait." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Cuirassé de noir, {{Dark Vador|le seigneur sombre}} s'avançait entre deux haies d'affidés. Sa respiration, que nul n'avait entendue sans frémir, précédait chacun de ses pas. Les officiers, tant ceux de la flotte que ceux de la garde, se turent ; aucun n'osa soutenir son regard.",
-      notes: [
-        { word: "cuirassé", rule: "Protégé par une cuirasse. Cui-r avec ui, deux s, é final.", rare: true, d: 2, piege: "ui, ss" },
-        { word: "haies", rule: "Rangées de personnes ou d'arbustes. Le h est aspiré, et la graphie -aies (comme dans « haie ») est à retenir.", d: 2, piege: "h, aie" },
-        { word: "affidés", rule: "Partisans dévoués à un chef, souvent pour des desseins obscurs. Deux f, un seul d, finale -és.", rare: true, d: 3, piege: "ff, d unique, -és" },
-        { word: "entendue", rule: "Le COD « que » (sa respiration) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "turent", rule: "Passé simple de taire (se taire) à la 3e personne du pluriel : se turent, sans accent." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Sénatrice et rebelle, {{Leia|la princesse}} savait que la persuasion est moins l'apanage de la force que celui de la patience. Les conciliabules qu'elle tint dans l'ombre, les escarmouches qu'elle sut éviter, tous ces efforts, tout discrets qu'ils étaient, préparaient la riposte. Elle y mit une équanimité que ses pairs lui enviaient.",
-      notes: [
-        { word: "apanage", rule: "Ce qui revient en propre à quelqu'un. Un seul p, un seul n, finale -age.", rare: true, d: 3, piege: "p simple, n simple" },
-        { word: "conciliabules", rule: "Réunions discrètes. Con-cil-ia-bule : c devant i, puis -abule.", rare: true, d: 3, piege: "c, ia, -bule" },
-        { word: "tint", rule: "Passé simple de tenir à la 3e personne du singulier : « elle tint », avec un t final et sans accent circonflexe (celui-ci marque le subjonctif imparfait, « qu'elle tînt »)." },
-        { word: "escarmouches", rule: "Combats brefs entre petits groupes. Groupe sc, puis -mouche : es-car-mouche.", rare: true, d: 3, piege: "sc, ou, ch" },
-        { word: "sut", rule: "Passé simple de savoir à la 3e personne du singulier : « elle sut », sans accent circonflexe (celui-ci marque le subjonctif imparfait, « qu'elle sût »)." },
-        { word: "tout", rule: "Devant un adjectif masculin pluriel (discrets), « tout » est un adverbe invariable : tout discrets qu'ils étaient." },
-        { word: "équanimité", rule: "Égalité d'âme, calme inébranlable. É, puis qu devant a, puis -nimité : é-qua-ni-mi-té.", rare: true, d: 3, piege: "é, qu, i" },
-        { word: "pairs", rule: "Égaux, semblables, membres d'une même assemblée : homophone de paire, père, perds ; le s final se retient avec « pair »." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Sur {{Tatooine|la planète des deux soleils}}, {{Luke Skywalker|le jeune fermier}} ne connaissait que l'âpreté d'un désert caillouteux. Les corvées qu'il avait dû accomplir, la sécheresse qu'il avait subie et la menace de l'ensablement n'avaient pas éteint ses rêves : chaque soir, il levait les yeux vers les étoiles.",
-      notes: [
-        { word: "âpreté", rule: "Rudesse, caractère rude. Accent circonflexe sur le a, un seul p, puis -eté (famille de âpre).", rare: true, d: 3, piege: "â, p simple, -eté" },
-        { word: "caillouteux", rule: "Plein de cailloux. Famille de caillou : ill, puis -outeux (adjectif en -eux).", rare: true, d: 3, piege: "ill, -eux" },
-        { word: "dû", rule: "Devant un infinitif sous-entendu ou exprimé, « dû » reste invariable ; accent circonflexe au masculin singulier." },
-        { word: "sécheresse", rule: "Absence de pluie. Accent aigu, ch, accent grave : sé-che-resse, avec deux s.", d: 3, piege: "é, ch, è/e, ss" },
-        { word: "subie", rule: "Le COD « que » (la sécheresse) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "ensablement", rule: "Fait de se couvrir de sable. Famille de sable : en-sable-ment, avec e devant -ment.", rare: true, d: 3, piege: "ens, sable, -ement" },
-        { word: "éteint", rule: "Participe de éteindre : le COD « ses rêves » est placé après, donc invariable ; finale -eint." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "participe", text: "Le droïde a réparer le moteur du vaisseau.", wrong: "réparer", right: "réparé", choices: ["réparé", "réparés", "réparez"], rule: "Après l'auxiliaire avoir, on utilise le participe passé : réparé." },
     { level: "apprenti", type: "accord", text: "Les deux soleils se couche lentement derrière les dunes.", wrong: "couche", right: "couchent", choices: ["couchent", "couches", "couchant"], rule: "Le sujet « les deux soleils » est au pluriel : ils se couchent." },
@@ -234,6 +81,24 @@
     { level: "grand-scribe", type: "homophone", notion: "3e.homo.lexicaux", text: "Sur le plateau rocailleux, des carcasses de vaisseaux, que le vent et le sable avaient rongées jusqu'au métal, gisaient ça et là comme les os d'un animal géant.", wrong: "ça", right: "çà", choices: ["çà", "ça", "sa"], rule: "Dans la locution « çà et là » (ici et là), « çà » est un adverbe de lieu qui prend un accent grave. « Ça » est un pronom démonstratif." },
     { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Les chasseurs gris perles, que la poussière du désert avait tachés de rouille, s'alignaient devant le hangar comme les pièces d'un échiquier.", wrong: "perles", right: "perle", choices: ["perle", "perles", "perlés"], rule: "Quand un nom précise une couleur (gris perle), l'adjectif composé reste invariable : des chasseurs gris perle." },
     { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Pour peu que le réglage des propulseurs est approximatif, le vieux cargo, que tant de réparations de fortune ont épuisé, n'atteindra jamais la bordure, quoi qu'en pense son capitaine.", wrong: "est", right: "soit", choices: ["soit", "est", "sera"], rule: "La locution « pour peu que » est suivie du subjonctif : pour peu que le réglage soit approximatif." },
-    { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Nul, même parmi les marchands de la bordure les plus audacieux, ne défiait impunement les inspecteurs du régime, qui consignaient chaque infraction dans leurs registres.", wrong: "impunement", right: "impunément", choices: ["impunément", "impunement", "impunnément"], rule: "Impuni donne l'adverbe « impunément », avec un accent aigu : l'adverbe se forme sur l'adjectif en -i par -ément, comme « aisément »." }
+    { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Nul, même parmi les marchands de la bordure les plus audacieux, ne défiait impunement les inspecteurs du régime, qui consignaient chaque infraction dans leurs registres.", wrong: "impunement", right: "impunément", choices: ["impunément", "impunement", "impunnément"], rule: "Impuni donne l'adverbe « impunément », avec un accent aigu : l'adverbe se forme sur l'adjectif en -i par -ément, comme « aisément »." },
+    { level:"maitre",type:"accord",text:"Dans la cantine du spatioport, l'atmosphère, enfumé par les pipes et les moteurs en surchauffe, rendait chaque conversation plus confidentielle.",wrong:"enfumé",right:"enfumée",choices:["enfumée","enfumé","enfumés"],rule:"Atmosphère est un nom féminin : le participe enfumée s'accorde au féminin singulier." },
+    { level:"maitre",type:"accord",text:"Entre deux plaques de blindage, un interstice, large à peine d'un doigt et profonde de plusieurs centimètres, suffisait à laisser fuir l'air du cargo.",wrong:"profonde",right:"profond",choices:["profond","profonde","profonds"],rule:"Interstice est un nom masculin : l'adjectif profond reste au masculin singulier." },
+    { level:"maitre",type:"temps",text:"{{Han Solo|Le contrebandier}} exigeait que son copilote tint le cap malgré la pluie d'astéroïdes, quitte à frôler les roches de très près.",wrong:"tint",right:"tînt",choices:["tînt","tint","tienne"],rule:"Après « exigeait que » (imparfait), on emploie le subjonctif imparfait de tenir : qu'il tînt, avec un accent circonflexe." },
+    { level:"maitre",type:"compose",text:"Deux escadrons de chasseur-bombardiers ont décollé du spatioport avant l'aube, chargés de protéger le convoi jusqu'au prochain point de saut.",wrong:"chasseur-bombardiers",right:"chasseurs-bombardiers",choices:["chasseurs-bombardiers","chasseur-bombardiers","chasseurs-bombardier"],rule:"Dans un nom composé de deux noms, les deux prennent la marque du pluriel : des chasseurs-bombardiers." },
+    { level:"maitre",type:"compose",text:"Dans la cale du cargo, {{Han Solo|le contrebandier}} dissimule ses marchandises dans de faux coffre-forts soudés au plancher, que les douaniers ne songent jamais à ouvrir.",wrong:"coffre-forts",right:"coffres-forts",choices:["coffres-forts","coffre-forts","coffres-fort"],rule:"Coffre-fort associe un nom et un adjectif : les deux prennent la marque du pluriel (coffres-forts)." },
+    { level:"maitre",type:"lexique",text:"Sous le chasseur, la tuyaire de gauche crachait des flammes bleues, tandis que celle de droite, noircie, ne répondait plus qu'à moitié.",wrong:"tuyaire",right:"tuyère",choices:["tuyère","tuyaire","tuyere"],rule:"Tuyère (conduit d'éjection des gaz) est de la famille de « tuyau » : on garde le y, puis -ère avec un accent grave." },
+    { level:"maitre",type:"lexique",text:"Dans l'abitacle exigu du chasseur, le pilote, plaqué au siège, ne distinguait plus que les voyants rouges du tableau de bord.",wrong:"abitacle",right:"habitacle",choices:["habitacle","abitacle","habittacle"],rule:"Habitacle vient du latin habitare : le h initial est muet mais s'écrit, comme dans « habiter »." },
+    { level:"maitre",type:"lexique",text:"La coque du vieux cargo, forgée dans un aliage de titane et d'acier, avait résisté à bien des tirs avant de céder sous la rouille.",wrong:"aliage",right:"alliage",choices:["alliage","aliage","alliege"],rule:"Alliage vient d'allier : deux l, comme dans le verbe." },
+    { level:"grand-scribe",type:"accord",text:"L'hémisphère nord de cette planète aride, que les cartographes de la bordure avaient laissé en blanc, est balayée en permanence par des vents de sable.",wrong:"balayée",right:"balayé",choices:["balayé","balayée","balayés"],rule:"Hémisphère est un nom masculin : le participe balayé reste au masculin singulier." },
+    { level:"grand-scribe",type:"accord",text:"L'armistice, conclue à la hâte entre les deux clans de contrebandiers, ne tenait que par la crainte d'un voisin plus puissant, et nul ne s'y fiait.",wrong:"conclue",right:"conclu",choices:["conclu","conclue","conclus"],rule:"Armistice est un nom masculin : le participe conclu reste au masculin singulier." },
+    { level:"grand-scribe",type:"temps",text:"Le capitaine de la corvette attendit que l'escadrille se fut ralliée autour du vaisseau amiral avant de donner l'ordre de plonger dans l'hyperespace.",wrong:"fut",right:"fût",choices:["fût","fut","soit"],rule:"Après « attendit que » (passé simple), on emploie le subjonctif plus-que-parfait : qu'elle se fût ralliée, avec un accent circonflexe." },
+    { level:"grand-scribe",type:"compose",text:"Tapis dans la cale, les contrebandiers comptaient les demies-heures qui les séparaient du point de saut, tandis que les patrouilles balayaient le secteur de leurs projecteurs.",wrong:"demies-heures",right:"demi-heures",choices:["demi-heures","demies-heures","demi-heure"],rule:"Placé devant le nom et joint à lui par un trait d'union, demi reste invariable : seul heures prend la marque du pluriel." },
+    { level:"grand-scribe",type:"compose",text:"Sur les terres-pleins du spatioport, des droïdes de manutention déplacent les caisses entre les quais, tandis que les pilotes inspectent leurs appareils.",wrong:"terres-pleins",right:"terre-pleins",choices:["terre-pleins","terres-pleins","terre-plein"],rule:"Dans terre-plein, terre reste invariable : seul l'adjectif plein prend la marque du pluriel." },
+    { level:"grand-scribe",type:"lexique",text:"Un tir avait arraché l'empenage du chasseur, ces ailerons de queue qui assurent la stabilité, et le pilote luttait pour garder le cap.",wrong:"empenage",right:"empennage",choices:["empennage","empenage","emppenage"],rule:"Empennage vient de penne (plume) : deux n, comme dans « empenner »." },
+    { level:"grand-scribe",type:"lexique",text:"Dans la soute froide, le système de criogénie maintient la cargaison à des températures extrêmement basses, si bien que les mécaniciens n'y entrent qu'en combinaison épaisse.",wrong:"criogénie",right:"cryogénie",choices:["cryogénie","criogénie","cryogénnie"],rule:"Cryogénie (grec kruos, froid) s'écrit avec un y, comme « cryothérapie »." },
+    { level:"grand-scribe",type:"lexique",text:"Harnaché d'un exosquelete de métal, le docker de la station soulevait sans effort des caisses que deux hommes n'auraient pas déplacées.",wrong:"exosquelete",right:"exosquelette",choices:["exosquelette","exosquelete","exosquellette"],rule:"Exosquelette s'écrit comme « squelette » : deux t et un e final." },
+    { level:"grand-scribe",type:"lexique",text:"Penché au-dessus de l'écoutile ouverte, le mécanicien tendit une lampe à son collègue resté dans la soute, avant de refermer le panneau.",wrong:"écoutile",right:"écoutille",choices:["écoutille","écoutile","écouttille"],rule:"Écoutille (ouverture d'un pont) s'écrit avec deux l, comme « grille » et « famille »." },
+    { level:"grand-scribe",type:"lexique",text:"L'oxidation, lente mais inexorable, rongeait la coque du vieux cargo, et les soudures cédaient les unes après les autres.",wrong:"oxidation",right:"oxydation",choices:["oxydation","oxidation","oxydasion"],rule:"Oxydation vient d'oxyde (grec oxus, acide) : y, comme dans « oxygène »." }
   ]
 };

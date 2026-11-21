@@ -1,152 +1,6 @@
 (window.THEMES = window.THEMES || {}).harrypotter = {
   name: "{{Harry Potter|Sorciers}}",
   emoji: "🧙",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Le premier soir, les nouveaux élèves sont entrés dans la grande salle. Des bougies flottaient au-dessus des longues tables. Chacun se demandait dans quelle maison il serait réparti. Les plus timides se sont assis tout au bout des bancs.",
-      notes: [
-        { word: "entrés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les nouveaux élèves : masculin pluriel)." },
-        { word: "flottaient", rule: "Imparfait, 3e personne du pluriel : le sujet est « des bougies », terminaison -aient." },
-        { word: "au-dessus", rule: "« Au-dessus » s'écrit avec un trait d'union." },
-        { word: "quelle", rule: "« Quelle » s'accorde avec le nom qu'il accompagne : maison est féminin singulier." },
-        { word: "assis", rule: "Verbe pronominal : le participe s'accorde avec le sujet (les plus timides : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Penchés sur leurs chaudrons, les élèves ont suivi les consignes de leur vieux grimoire. La potion qu'ils avaient préparée a soudain changé de couleur. Quelques cornues se sont brisées sur le carrelage, mais aucun d'eux n'a été blessé.",
-      notes: [
-        { word: "penchés", rule: "Le participe employé seul s'accorde avec le nom auquel il se rapporte (les élèves : masculin pluriel)." },
-        { word: "grimoire", rule: "Livre de formules magiques. Nom masculin terminé par -oire, comme « répertoire ».", rare: true, d: 1, piege: "finale -oire (comme répertoire)" },
-        { word: "préparée", rule: "Le COD « qu' » (la potion) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "cornues", rule: "Récipient de verre à col courbe servant à distiller. Nom féminin terminé par -ue, comme dans « cornu ».", rare: true, d: 2, piege: "finale -ue (comme cornu)" },
-        { word: "brisées", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (quelques cornues : féminin pluriel)." },
-        { word: "blessé", rule: "« Aucun d'eux » est singulier : le verbe et le participe restent au singulier." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Penchée sur un parchemin jauni, l'élève recopiait, à la lueur diaphane d'une chandelle, des sortilèges qu'aucun professeur n'avait encore enseignés. Les escaliers, qui changeaient de direction à leur guise, l'obligèrent maintes fois à rebrousser chemin. Quoiqu'elle fût épuisée, elle ne referma son encrier qu'à l'aube.",
-      notes: [
-        { word: "parchemin", rule: "Peau préparée pour l'écriture. Finale en -in, nom masculin.", rare: true, d: 2, piege: "ch pour [ʃ], finale -in" },
-        { word: "diaphane", rule: "Qui laisse passer la lumière sans être transparent. Ph et non f, finale -ane : dia-pha-ne.", rare: true, d: 3, piege: "ph et non f, finale -ane" },
-        { word: "sortilèges", rule: "Formules magiques. Accent grave sur le e, nom masculin malgré sa finale en -ège.", rare: true, d: 2, piege: "è, g doux, -ège masculin" },
-        { word: "enseignés", rule: "Le COD « qu' » (des sortilèges) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "maintes", rule: "« Maintes fois » : maint s'accorde avec fois, féminin pluriel." },
-        { word: "obligèrent", rule: "Passé simple, 3e personne du pluriel du 1er groupe : -èrent." },
-        { word: "fût", rule: "« Quoique » appelle le subjonctif ; dans un récit au passé simple, imparfait du subjonctif avec accent circonflexe : fût." },
-        { word: "encrier", rule: "Petit récipient à encre. Dérivé de encre, finale en -ier.", rare: true, d: 2, piege: "en- et non an-, finale -ier (famille encre)" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Des générations de lecteurs se sont succédé sur ces pages, ont rêvé de s'incliner devant un hippogriffe et de rempoter des mandragores aux cris stridents. Quel qu'ait été leur âge, tous se sont plu à imaginer les philtres, un phénix et les centaures scrutant le ciel ; la plupart s'en sont souvenus bien après avoir refermé le dernier tome.",
-      notes: [
-        { word: "succédé", rule: "On succède à quelqu'un : le « se » est COI, le participe reste invariable." },
-        { word: "hippogriffe", rule: "Créature mi-cheval, mi-aigle. Deux p après hi, deux f, finale en -e.", rare: true, d: 3, piege: "pp (comme hippopotame), ff (comme griffe), -e final" },
-        { word: "mandragores", rule: "Plante aux racines de forme humaine. Nom féminin, finale en -ore suivie d'un e.", rare: true, d: 1, piege: "finale -ore" },
-        { word: "quel", rule: "« Quel que » + être au subjonctif : quel s'accorde avec le sujet (leur âge : masculin singulier)." },
-        { word: "plu", rule: "Le participe passé de se plaire reste invariable (le « se » est COI)." },
-        { word: "philtres", rule: "Breuvages magiques. Ph initial et finale en -tre, comme « filtre » mais avec ph.", rare: true, d: 3, piege: "ph et non f, finale -tre" },
-        { word: "phénix", rule: "Oiseau fabuleux qui renaît de ses cendres. Ph initial, accent aigu, finale en -x ; le mot ne change pas au pluriel.", rare: true, d: 3, piege: "ph, é, x final muet" },
-        { word: "centaures", rule: "Êtres mi-hommes, mi-chevaux. Finale en -aure, écrite avec « au ».", rare: true, d: 2, piege: "c devant e, -au-" },
-        { word: "souvenus", rule: "Se souvenir est essentiellement pronominal : le participe s'accorde avec le sujet (la plupart des lecteurs : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Ce matin, {{Hagrid|le garde-chasse}} a frappé à la porte de la classe. {{Harry|Le jeune sorcier}} et {{Hermione|son amie}} sont sortis dans le potager. {{Hedwige|La chouette}} les a suivis du regard, puis ils ont ramassé des citrouilles et les ont portées jusqu'à la cuisine.",
-      notes: [
-        { word: "frappé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (aucun COD placé avant)." },
-        { word: "sortis", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (un garçon et une fille : masculin pluriel)." },
-        { word: "suivis", rule: "Le COD « les » (le garçon et son amie) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "ramassé", rule: "Le COD « des citrouilles » est placé après le verbe : le participe reste invariable." },
-        { word: "portées", rule: "Le COD « les » (les citrouilles) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Samedi, tout {{Poudlard|le château}} s'est rassemblé autour du terrain de {{Quidditch|jeu}}. Les joueurs ont filé dans le ciel gris sur leurs balais. {{Harry|Le jeune attrapeur}} a aperçu {{le Vif d'or|le petit objet doré}} près des tribunes et il a foncé. Les spectateurs se sont levés pour l'acclamer.",
-      notes: [
-        { word: "rassemblé", rule: "Verbe pronominal : le participe s'accorde avec le sujet (tout le château : masculin singulier)." },
-        { word: "filé", rule: "Le participe passé de filer, avec avoir, reste invariable ici (aucun COD placé avant)." },
-        { word: "aperçu", rule: "Apercevoir prend une cédille devant o et u : aperçu." },
-        { word: "foncé", rule: "Avec l'auxiliaire avoir et sans COD, le participe reste invariable : foncé." },
-        { word: "levés", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (les spectateurs : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Quelques élèves de {{Gryffondor|la maison du lion}} cherchaient une salle discrète. Ils avaient arpenté tout le septième étage, observé les gargouilles de pierre et soulevé les tapisseries. Puis {{la Salle sur demande|une pièce secrète}} s'est dévoilée, et le plus hésitant d'entre eux est entré le premier, ravi d'avoir enfin trouvé la porte qu'ils avaient tant cherchée.",
-      notes: [
-        { word: "arpenté", rule: "Avec avoir, le COD « tout le septième étage » est placé après : le participe reste invariable." },
-        { word: "gargouilles", rule: "Sculptures de pierre servant de gouttières. Gar-gou-ille, avec un « ou » et la finale -ouille.", rare: true, d: 2, piege: "ou, finale -ouille" },
-        { word: "dévoilée", rule: "Verbe pronominal : « se » est COD, le participe s'accorde avec le sujet (la pièce : féminin singulier)." },
-        { word: "entré", rule: "Avec l'auxiliaire être, le participe s'accorde avec le sujet (le plus hésitant : masculin singulier)." },
-        { word: "cherchée", rule: "Le COD « que » (la porte) est placé avant l'auxiliaire avoir : accord au féminin singulier." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "En première année, les élèves de {{Serpentard|la maison du serpent}} et de {{Gryffondor|celle du lion}} descendaient chaque semaine dans les cachots. {{Le professeur Rogue|L'enseignant}} y surveillait les chaudrons d'un œil sévère. Les cornues qu'il avait alignées sur l'étagère tintaient dès qu'un élève maladroit renversait un flacon.",
-      notes: [
-        { word: "descendaient", rule: "Imparfait, 3e personne du pluriel : le sujet est « les élèves », terminaison -aient." },
-        { word: "cachots", rule: "Cellules obscures en sous-sol. Nom masculin terminé par un t muet, comme dans « cacher »." },
-        { word: "cornues", rule: "Récipient de verre à col courbe servant à distiller. Finale -ue, comme dans « cornu ».", rare: true, d: 2, piege: "finale -ue (comme cornu)" },
-        { word: "alignées", rule: "Le COD « que » (les cornues) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "tintaient", rule: "Tinter (produire un son clair) s'écrit avec « in » : tintaient ; il ne faut pas le confondre avec teinter (colorer)." },
-        { word: "renversait", rule: "Imparfait, 3e personne du singulier : le sujet est « un élève maladroit », terminaison -ait." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Chaque matin, {{Hedwige|la fidèle messagère}} s'engouffrait dans la grande salle, déposait son courrier et réclamait, d'un claquement de bec, quelque friandise. Les missives que {{Harry|le jeune sorcier}} décachetait avec fébrilité, nul ne les eût imaginées si longues. Il les parcourait d'un trait, puis les relisait posément, comme pour retenir chaque phrase.",
-      notes: [
-        { word: "friandise", rule: "Petite gourmandise. Fri-and-ise : « ian » puis « d » devant le suffixe -ise, de friand.", rare: true, d: 2, piege: "-ian-, d de friand" },
-        { word: "décachetait", rule: "Ouvrir ce qui était cacheté. Un seul t : décachetait, comme cachet, avec -ait à l'imparfait.", rare: true, d: 3, piege: "un seul t, è/e, -ait" },
-        { word: "fébrilité", rule: "État d'agitation nerveuse. Accent aigu sur le é, finale -ilité.", rare: true, d: 2, piege: "é, b, finale -ilité" },
-        { word: "eût", rule: "Conditionnel passé, 2e forme : plus-que-parfait du subjonctif avec accent circonflexe, « nul ne les eût imaginées »." },
-        { word: "imaginées", rule: "Le COD « les » (les missives) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Entre {{Serdaigle|la maison de l'aigle}} et {{Poufsouffle|celle du blaireau}}, l'émulation ne faiblissait jamais. Chaque point gagné faisait tomber des gemmes dans les sabliers de la grande salle, et nul n'eût osé tricher, fût-ce d'une once. {{Minerva McGonagall|L'enseignante}}, que les élèves redoutaient autant qu'ils l'admiraient, veillait au grain avec une rigueur intraitable.",
-      notes: [
-        { word: "émulation", rule: "Sentiment qui pousse à égaler ou à surpasser autrui. Accent aigu, un seul m.", rare: true, d: 2, piege: "é, un seul m, -ation" },
-        { word: "gemmes", rule: "Pierres précieuses. Deux m, finale -e : gemmes.", rare: true, d: 3, piege: "mm, finale -e, g doux" },
-        { word: "sabliers", rule: "Instruments qui mesurent le temps avec du sable. Dérivé de sable, finale -ier.", rare: true, d: 2, piege: "famille de sable, finale -ier" },
-        { word: "eût", rule: "« Nul n'eût osé » : conditionnel passé, 2e forme, accent circonflexe." },
-        { word: "fût-ce", rule: "Locution figée « fût-ce » : subjonctif imparfait de être avec accent circonflexe, suivi d'un trait d'union." },
-        { word: "intraitable", rule: "Qui ne cède pas. Famille de traiter : in-trait-able, avec un seul t après le i.", rare: true, d: 2, piege: "in-, trait-, -able" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Penché sur son herbier, l'apprenti énumérait de mémoire les ingrédients de ses premières potions : asphodèle, aconit, armoise, et ce bézoard que l'on tire, dit-on, de l'estomac d'une chèvre. {{Le professeur Rogue|Son enseignant}}, pourtant avare de louanges, ne put cacher sa surprise devant les fioles que l'apprenti avait agrémentées d'étiquettes aussi soignées que lisibles.",
-      notes: [
-        { word: "asphodèle", rule: "Plante à fleurs blanches, nom masculin. Ph, accent grave sur le è, finale -èle.", rare: true, d: 4, piege: "ph, è, finale -èle" },
-        { word: "aconit", rule: "Plante vénéneuse. Un seul n, un c, finale en -it avec un t muet.", rare: true, d: 3, piege: "c, un seul n, t final muet" },
-        { word: "armoise", rule: "Plante aromatique. Finale en -oise, comme « framboise ».", rare: true, d: 2, piege: "finale -oise" },
-        { word: "bézoard", rule: "Concrétion qu'on trouve dans l'estomac de certains animaux. Accent aigu, z, finale -oard.", rare: true, d: 4, piege: "é, z, oa, d final" },
-        { word: "avare", rule: "Avare de louanges : adjectif, sans accent, qui s'accorde avec le sujet (masculin singulier)." },
-        { word: "agrémentées", rule: "Le COD « que » (les fioles) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Sitôt la nuit tombée, les frondaisons de {{la Forêt interdite|la forêt voisine}} paraissaient s'unir en une sylve impénétrable. Les élèves, auxquels il était défendu de s'y aventurer, n'en devinaient que la lisière, d'où perçaient parfois les lueurs d'une lanterne : {{Hagrid|le garde-chasse}}, familier de la futaie, y faisait sa ronde sous la ramée.",
-      notes: [
-        { word: "sitôt", rule: "« Sitôt » en un mot, avec un accent circonflexe sur le ô ; la construction « sitôt la nuit tombée » est une proposition participiale." },
-        { word: "tombée", rule: "Dans « sitôt la nuit tombée », le participe s'accorde avec le sujet (la nuit : féminin singulier)." },
-        { word: "frondaisons", rule: "Feuillages des arbres. Dérivé de fronde, finale -aison, au pluriel ici.", rare: true, d: 3, piege: "famille de fronde, -aison" },
-        { word: "auxquels", rule: "Pronom relatif contracté, masculin pluriel : à + lesquels, soit auxquels." },
-        { word: "sylve", rule: "Forêt, dans la langue littéraire. Y et non i, finale -e : famille de sylvestre.", rare: true, d: 3, piege: "y et non i, finale -e" },
-        { word: "ramée", rule: "Ensemble des branches feuillues d'un arbre. Famille de rame et de ramure, accent aigu final, nom féminin.", rare: true, d: 3, piege: "é final, famille de rame" }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", text: "Le hibou a apporter une lettre ce matin.", wrong: "apporter", right: "apporté", choices: ["apporté", "apportée", "apportés"], type: "participe", rule: "Après l'auxiliaire avoir, on utilise le participe passé : apporté." },
     { level: "apprenti", text: "Les élèves rangent leur baguettes avant le dîner.", wrong: "leur", right: "leurs", choices: ["leurs", "leur", "l'heure"], type: "accord", rule: "Devant un nom pluriel (baguettes), le déterminant prend un s : leurs." },
@@ -213,7 +67,7 @@
     { level: "maitre", type: "adverbe", notion: "5e.lex.derivation", text: "Les élèves de {{Gryffondor|la maison du lion}} quittèrent bruyement la salle, et {{Minerva McGonagall|l'enseignante}}, excédée, dut réclamer le silence d'un claquement de mains.", wrong: "bruyement", right: "bruyamment", choices: ["bruyamment", "bruyement", "bruiamment"], rule: "Bruyant se termine en -ant : l'adverbe s'écrit -amment, avec deux m." },
     { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Au crépuscule, des centaines de chauve-souris quittent les tours du château pour voleter au-dessus du lac, que les élèves contemplent depuis les fenêtres.", wrong: "chauve-souris", right: "chauves-souris", choices: ["chauves-souris", "chauve-souris", "chauves-sourris"], rule: "Dans « chauve-souris », l'adjectif et le nom prennent la marque du pluriel : des chauves-souris." },
     { level: "maitre", type: "pronominal", notion: "4e.accords.pp-pronominaux", text: "Les élèves de première année se sont imaginés mille dangers avant d'entrer dans la forêt, mais {{Hagrid|le garde-chasse}} les a rassurés d'un sourire.", wrong: "imaginés", right: "imaginé", choices: ["imaginé", "imaginés", "imaginées"], rule: "Dans « se sont imaginé mille dangers », « se » est complément indirect et le COD « mille dangers » suit le verbe : le participe reste invariable." },
-    { level: "maitre", type: "sens", notion: "3e.homo.lexicaux", text: "Les élèves se perdaient en conjonctures sur l'origine de la lueur étrange qui filtrait sous la porte du cachot, sans oser aller vérifier.", wrong: "conjonctures", right: "conjectures", choices: ["conjectures", "conjonctures", "conjoncturs"], rule: "Une conjecture est une supposition ; une conjoncture est un ensemble de circonstances. On se perd en conjectures." },
+    { level: "maitre", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Le soir, la jeune sorcière glisse dans sa bezace de cuir un parchemin, une plume d'oie et quelques friandises, puis rejoint ses camarades au pied de l'escalier.", wrong: "bezace", right: "besace", choices: ["besace", "bezace", "bessace"], rule: "Besace (sac à deux poches) s'écrit avec un s sonore entre deux voyelles, sans double s et sans z." },
     { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "{{Rogue|L'enseignant}} tient à ce que chaque élève reçoit sa copie corrigée avant la fin du cours, sans quoi il retiendra des points.", wrong: "reçoit", right: "reçoive", choices: ["reçoive", "reçoit", "reçoivent"], rule: "« Tenir à ce que » exprime une exigence et appelle le subjonctif : à ce que chaque élève reçoive." },
     { level: "maitre", type: "homophone", notion: "3e.homo.lexicaux", text: "Le couloir était si sombre que personne ni voyait rien, et les élèves avançaient à tâtons, une main sur la paroi.", wrong: "ni", right: "n'y", choices: ["n'y", "ni", "ny"], rule: "« N'y » associe la négation « ne » au pronom « y » : personne n'y voyait rien. « Ni » coordonne des éléments niés (ni l'un ni l'autre)." },
     { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Le bestiaire que {{Hermione|la jeune élève}} avait emprunté consacrait une page entière au licanthrope, cet homme que la pleine lune métamorphose, et ses conseils de prudence, nul élève ne se risquait à les discuter.", wrong: "licanthrope", right: "lycanthrope", choices: ["lycanthrope", "licanthrope", "lycantrope"], rule: "Lycanthrope vient du grec lykos (loup) et anthrôpos (homme) : y après le l, puis th, comme dans « anthropologie »." },
@@ -227,6 +81,26 @@
     { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Au-dessus du lac, la brume matinale dessinait de minces arc-en-ciel que les élèves, à peine éveillés, ne prenaient pas le temps d'admirer.", wrong: "arc-en-ciel", right: "arcs-en-ciel", choices: ["arcs-en-ciel", "arc-en-ciel", "arcs-en-ciels"], rule: "Dans « arc-en-ciel », seul le premier nom prend la marque du pluriel : des arcs-en-ciel. « Ciel » reste au singulier." },
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "{{Minerva McGonagall|L'enseignante}} protesta véhémemment ce soir-là contre la décision du conseil, que ses collègues, pourtant d'ordinaire conciliants, avaient approuvée sans réserve.", wrong: "véhémemment", right: "véhémentement", choices: ["véhémentement", "véhémemment", "véhémment"], rule: "Véhément fait exception à la règle des adverbes en -emment : on écrit véhémentement, comme « lentement »." },
     { level: "grand-scribe", type: "accord", notion: "5e.accords.sujet-separe", text: "Plus d'un élève de première année ont tenté, sans permission, de franchir le passage dissimulé derrière la tapisserie, et plus d'un a payé cette audace d'une retenue.", wrong: "ont", right: "a", choices: ["a", "ont", "ait"], rule: "Après « plus d'un », le verbe se met au singulier : plus d'un élève a tenté." },
-    { level: "grand-scribe", type: "homophone", notion: "3e.homo.lexicaux", text: "Les élèves, que la veillée avait laissés sans forces, maudirent la cloche qui sonna sitôt, bien avant l'aube.", wrong: "sitôt", right: "si tôt", choices: ["si tôt", "sitôt", "si-tôt"], rule: "« Si tôt » (si de bonne heure) s'écrit en deux mots. « Sitôt » est une conjonction qui s'emploie avec « que » ou « après »." }
+    { level: "grand-scribe", type: "homophone", notion: "3e.homo.lexicaux", text: "Les élèves, que la veillée avait laissés sans forces, maudirent la cloche qui sonna sitôt, bien avant l'aube.", wrong: "sitôt", right: "si tôt", choices: ["si tôt", "sitôt", "si-tôt"], rule: "« Si tôt » (si de bonne heure) s'écrit en deux mots. « Sitôt » est une conjonction qui s'emploie avec « que » ou « après »." },
+    { level: "maitre", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Au fond des cachots de {{Poudlard|l'école}}, une goutte d'eau tombe sans relâche de la pointe d'un stalactite vers les dalles humides.", wrong: "d'un", right: "d'une", choices: ["d'une","d'un","de"], rule: "Stalactite est un nom féminin : on écrit « une stalactite »." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "{{Rogue|L'enseignant}} ordonna que chaque chaudron fut vidé et rincé avant que la cloche ne sonnât la fin du cours.", wrong: "fut", right: "fût", choices: ["fût","fut","soit"], rule: "Après « ordonna que », le subjonctif se met à l'imparfait : « qu'il fût », avec accent circonflexe à la 3e personne du singulier." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Bien que la reliure du grimoire fût rongée par l'humidité, la jeune sorcière souhaitait que le texte put encore livrer son secret.", wrong: "put", right: "pût", choices: ["pût","put","puisse"], rule: "Après « souhaitait que », le subjonctif imparfait de pouvoir est « pût », avec un accent circonflexe, comme « fût » plus haut." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Dans la tour, les escaliers qui pivotent sans prévenir n'ont ni rampe ni gardes-fous, si bien que les nouveaux élèves y marchent avec prudence.", wrong: "gardes-fous", right: "garde-fous", choices: ["garde-fous","gardes-fous","garde-fou"], rule: "Dans garde-fou, « garde » est le verbe garder : il reste invariable, et seul « fou » prend le s du pluriel." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Sur le chemin des sorciers, les marchands rangent leurs chaudrons les plus fragiles dans de sombres arrières-boutiques, loin des regards.", wrong: "arrières-boutiques", right: "arrière-boutiques", choices: ["arrière-boutiques","arrières-boutiques","arrière-boutique"], rule: "Dans arrière-boutique, « arrière » est un élément invariable accolé au nom : seul « boutique » prend la marque du pluriel." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Sur son parchemain jauni, l'élève avait tracé la recette du philtre avec une plume d'oie, en veillant à ne pas faire de taches.", wrong: "parchemain", right: "parchemin", choices: ["parchemin","parchemain","parchemein"], rule: "Parchemin se termine par -in, comme « jardin » et « chemin »." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Au sommet de la tourèle, la volière abritait des dizaines de hiboux qui dormaient le jour et s'éveillaient au crépuscule.", wrong: "tourèle", right: "tourelle", choices: ["tourelle","tourèle","tourrelle"], rule: "Tourelle, diminutif de « tour », s'écrit avec deux l, comme « ruelle » et « poubelle »." },
+    { level: "maitre", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Selon les légendes, le fénix revient à la vie dans ses cendres après s'être embrasé, et nul sorcier ne songerait à le capturer, tant il est rare.", wrong: "fénix", right: "phénix", choices: ["phénix","fénix","fénixe"], rule: "Phénix vient du grec « phoinix » : ph, comme dans « phénomène », et x final." },
+    { level: "grand-scribe", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Le professeur de sortilèges exigeait que la formule coulât d'un trait, sans qu'une hiatus ne vînt s'installer entre les deux mots, car l'hésitation seule eût gâché l'enchantement.", wrong: "qu'une", right: "qu'un", choices: ["qu'un","qu'une","qu'unes"], rule: "Hiatus est un nom masculin : « un hiatus ». Les subjonctifs « coulât » et « vînt » portent l'accent circonflexe de la 3e personne du singulier." },
+    { level: "grand-scribe", type: "accord", notion: "4e.voc.sens-en-contexte", text: "Dès le seuil de la serre de botanique, une plante grimpante tendait vers les élèves de longues tentacules visqueux, tandis que le professeur, imperturbable, distribuait les gants en peau de dragon.", wrong: "longues", right: "longs", choices: ["longs","longues","long"], rule: "Tentacule est un nom masculin : de longs tentacules visqueux." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le couloir étant plongé dans l'obscurité, la jeune élève tenait à ce que personne ne la vit rôder près de la bibliothèque, et elle avança sans lanterne, la main contre le mur.", wrong: "vit", right: "vît", choices: ["vît","vit","voie"], rule: "Après « tenait à ce que », le subjonctif se met à l'imparfait : « ne la vît », avec un accent circonflexe, à distinguer du passé simple « vit »." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le vieux maître de sortilèges estimait que, pour que la formule fit effet, il fallait que chaque syllabe fût articulée avec netteté et que le poignet suivît le geste.", wrong: "fit", right: "fît", choices: ["fît","fit","fasse"], rule: "Après « pour que », le subjonctif imparfait de faire est « fît », avec un accent circonflexe, comme « fût » et « suivît » dans la même phrase." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Dès les premiers beaux jours, les élèves de {{Poudlard|l'école}} organisent sur la pelouse du lac des piques-niques interminables, au grand dam des professeurs qui voudraient les voir réviser.", wrong: "piques-niques", right: "pique-niques", choices: ["pique-niques","piques-niques","pique-nique"], rule: "Dans pique-nique, « pique » est le verbe piquer : il reste invariable, et seul « nique » prend le s du pluriel." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Dans les dortoirs de {{Poudlard|l'école}}, d'immenses gardes-robes en chêne sculpté abritent les uniformes, les chapeaux pointus et les capes noires que l'on enfile pour les cours de la matinée.", wrong: "gardes-robes", right: "garde-robes", choices: ["garde-robes","gardes-robes","garde-robe"], rule: "Dans garde-robe, « garde » est le verbe garder : il reste invariable, et seul « robe » prend le s du pluriel." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.lex.morphologie", text: "Les élèves de première année, que la sorcelerie fascinait autant qu'elle les effrayait, ne s'aventuraient qu'en groupe dans les couloirs, de crainte que quelque piège ne se refermât sur eux.", wrong: "sorcelerie", right: "sorcellerie", choices: ["sorcellerie","sorcelerie","sorcèlerie"], rule: "Sorcellerie dérive de « sorcier » : on double le l devant -erie, comme dans « ensorceler » (il ensorcelle)." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Au pied des serres de {{Poudlard|l'école}}, un épouvantaille ensorcelé, que les élèves croisaient chaque matin, semblait remuer dès que la brume se levait sur la pelouse.", wrong: "épouvantaille", right: "épouvantail", choices: ["épouvantail","épouvantaille","épouvantaile"], rule: "Épouvantail se termine par -ail, comme « portail » et « éventail », avec un seul l." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Dans la forêt voisine de {{Poudlard|l'école}}, les sentaures, qui lisent l'avenir dans le ciel, tolèrent mal que des élèves viennent troubler leurs conciliabules.", wrong: "sentaures", right: "centaures", choices: ["centaures","sentaures","santaures"], rule: "Centaure vient du grec « kentauros » : on écrit c, comme dans « centre », puis -aure." },
+    { level: "grand-scribe", type: "lexique", notion: "5e.voc.etymologie-latin-grec", text: "Dans la bibliothèque, la section réservée, que ferme une simple corde, regorge d'ouvrages ésothériques que seuls les élèves munis d'une autorisation signée par un professeur peuvent consulter.", wrong: "ésothériques", right: "ésotériques", choices: ["ésotériques","ésothériques","esotériques"], rule: "Ésotérique vient du grec « esôterikos » (intérieur) : pas de h, contrairement à « thérapie »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Sous les combles de la tour, le vieux hibou dormait dans une mensarde étroite, dont la lucarne laissait filtrer à l'aube un rai de lumière pâle, et les plumes tombées couvraient le plancher.", wrong: "mensarde", right: "mansarde", choices: ["mansarde","mensarde","mansard"], rule: "Mansarde vient du nom de l'architecte Mansart : on écrit -an-, pas -en-." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.lex.morphologie", text: "Au comptoir de l'auberge du village voisin, les sorciers les plus âgés trinquaient à l'idromel, boisson dorée que l'on servait chaude les soirs d'hiver, avec une pincée de cannelle.", wrong: "idromel", right: "hydromel", choices: ["hydromel","idromel","hydromèl"], rule: "Hydromel vient du grec « hudôr » (eau) et du latin « mel » (miel) : h et y, comme dans « hydraulique »." }
   ]
 };

@@ -1,100 +1,6 @@
 (window.THEMES = window.THEMES || {}).cuisine = {
   name: "Cuisine",
   emoji: "🍳",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Samedi, ma sœur et ma grand-mère ont épluché des carottes et des pommes de terre pour la soupe. Les légumes cuisent doucement dans la marmite. Quand l'odeur envahit la cuisine, toute la famille se met à table.",
-      notes: [
-        { word: "épluché", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « des carottes » est placé après)." },
-        { word: "grand-mère", rule: "Nom composé avec un trait d'union ; « mère » prend un accent grave." },
-        { word: "cuisent", rule: "Verbe cuire au présent, 3e personne du pluriel : cuis-ent, avec la terminaison -ent." },
-        { word: "envahit", rule: "Verbe du 2e groupe au présent, 3e personne du singulier : envahit, avec un t final." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Le pâtissier a sorti ses moules du placard. Il mélange la farine, le sucre et le beurre, puis il verse la pâte. Les gâteaux sont si bons que les clients font la queue devant sa boutique.",
-      notes: [
-        { word: "pâtissier", rule: "Accent circonflexe sur le a, comme dans « pâte » et « pâtisserie »." },
-        { word: "ses", rule: "« Ses » (les moules lui appartiennent) peut se remplacer par « mes » ou « tes » : déterminant possessif, avec un s." },
-        { word: "sont", rule: "« Sont » est le verbe être : on peut le remplacer par « étaient »." },
-        { word: "font", rule: "Verbe faire au présent, 3e personne du pluriel : « font la queue »." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Pour la sauce, le cuisinier a fait fondre du beurre dans une casserole, puis il y a ajouté les échalotes qu'il avait ciselées. Il a ensuite déglacé le fond avec un peu de vin blanc et a baissé le feu pour que l'ensemble mijote doucement.",
-      notes: [
-        { word: "échalotes", rule: "Légume de la famille de l'oignon : accent aigu initial, un seul l, un seul t, et s au pluriel.", rare: true, d: 2, piege: "ch, un seul l, un seul t" },
-        { word: "ciselées", rule: "Le COD « que » (les échalotes) est placé avant l'auxiliaire avoir : accord au féminin pluriel. Ciseler s'écrit avec un c, comme « ciseaux ».", rare: true, d: 2, piege: "c et non s, accord COD antéposé" },
-        { word: "déglacé", rule: "Déglacer : dissoudre les sucs de cuisson avec un liquide. Famille de « glace » : un seul l, un c (sans cédille devant é), participe en -é.", rare: true, d: 2, piege: "c (famille glace), é final" },
-        { word: "baissé", rule: "Participe passé du verbe baisser, avec un double s ; sans COD placé avant, il reste invariable." },
-        { word: "mijote", rule: "Après « pour que », le subjonctif présent de mijoter garde la forme en -e de la 3e personne du singulier." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Pour des crêpes réussies, mes sœurs passent la farine au tamis, battent le mélange au fouet, puis versent la pâte dans la poêle bien chaude. Quelques minutes suffisent : toutes les crêpes sortent dorées. Elles les servent aussitôt, avant qu'elles refroidissent.",
-      notes: [
-        { word: "réussies", rule: "Employé comme adjectif, le participe s'accorde avec le nom (les crêpes : féminin pluriel)." },
-        { word: "tamis", rule: "Passoire fine pour la farine : s final muet, même au singulier, et un seul m.", rare: true, d: 2, piege: "s final muet, un seul m" },
-        { word: "battent", rule: "Verbe battre au présent, 3e personne du pluriel : deux t, puis -ent." },
-        { word: "quelques", rule: "« Quelques » (un petit nombre de) s'écrit en un mot, avec un s au pluriel." },
-        { word: "suffisent", rule: "Verbe suffire au présent, 3e personne du pluriel : suffis-ent, avec -ent." },
-        { word: "toutes", rule: "« Tout » est ici un déterminant qui s'accorde avec le nom (les crêpes : féminin pluriel)." },
-        { word: "refroidissent", rule: "Après « avant que », le subjonctif présent de refroidir : refroidiss-ent, avec un double s." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Bien que la bouillabaisse exige de la patience, les cuisiniers marseillais n'y renonceraient pour rien au monde. Les poissons qu'ils ont vu pêcher le matin même cuisent dans un bouillon safrané. Il faut que la rouille, sauce pimentée à l'ail, soit prête avant qu'on les serve.",
-      notes: [
-        { word: "bouillabaisse", rule: "Soupe de poissons provençale. On retient -ill- comme dans « bouillir », puis -abaisse, avec -ai- et deux s.", rare: true, d: 3, piege: "ou, ill, ai, ss" },
-        { word: "exige", rule: "Après « bien que », le subjonctif présent d'exiger a la forme de l'indicatif : exige, avec un g suivi d'un e." },
-        { word: "vu", rule: "Participe suivi d'un infinitif : « que » (les poissons) est COD de pêcher, pas de voir. Le participe reste invariable." },
-        { word: "safrané", rule: "Parfumé au safran : un seul f, un seul n, participe en -é.", rare: true, d: 2, piege: "un seul f, un seul n" },
-        { word: "soit", rule: "Après « il faut que », le subjonctif présent d'être à la 3e personne : soit, avec un t final." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Quelles que soient les recettes, la fricassée de volaille demande une cuisson patiente. La cuisinière fait rissoler les morceaux dans une sauteuse, puis les mouille d'un peu de bouillon. Les sauces qu'elle s'est appliquée à réussir sont toujours restées onctueuses.",
-      notes: [
-        { word: "quelles", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (les recettes : féminin pluriel)." },
-        { word: "fricassée", rule: "Plat de viande en morceaux mijotée dans une sauce. Famille de « fricasser » : un seul c, deux s, et la finale -ée du nom féminin.", rare: true, d: 3, piege: "c simple, ss, finale -ée" },
-        { word: "rissoler", rule: "Faire dorer à feu vif. Famille de « rissole » : deux s, un seul l, puis la finale -er de l'infinitif.", rare: true, d: 2, piege: "ss, un seul l" },
-        { word: "sauteuse", rule: "Poêle à bords hauts : au, puis -euse, avec un s qui se prononce z.", rare: true, d: 2, piege: "au, eu, s sonore" },
-        { word: "appliquée", rule: "S'appliquer : « se » est COD, le participe s'accorde avec le sujet (elle : féminin singulier)." },
-        { word: "restées", rule: "Avec l'auxiliaire être, le participe s'accorde avec le sujet (les sauces : féminin pluriel)." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Le commis taille les carottes en brunoise, puis roule les feuilles de basilic pour les détailler en chiffonnade. Pendant que le beurre fond au bain-marie, le chef exige qu'on déglace la poêle avec un trait de vinaigre. Quelque précis que soient ces gestes, ils ne s'acquièrent qu'après des mois de répétition.",
-      notes: [
-        { word: "brunoise", rule: "Dés très fins de légumes. Le son /wa/ s'écrit -oi-, et le s se prononce [z] comme dans « framboise ».", rare: true, d: 3, piege: "oi pour /wa/, s sonore, finale -e" },
-        { word: "chiffonnade", rule: "Feuilles roulées et coupées en fins rubans. Famille de « chiffon » : deux f, deux n, puis -ade.", rare: true, d: 3, piege: "ff, nn (famille chiffon), -ade" },
-        { word: "bain-marie", rule: "Mode de cuisson dans un récipient d'eau chaude : trait d'union entre « bain » et « marie », finale en -ie.", rare: true, d: 3, piege: "ain, trait d'union, finale -ie" },
-        { word: "exige", rule: "Après « le chef exige que » : verbe exiger, avec un g suivi d'un e devant -e." },
-        { word: "déglace", rule: "Déglacer : la cédille ne s'emploie pas devant e, le c suffit ; famille de « glace ».", rare: true, d: 2, piege: "c (famille glace)" },
-        { word: "quelque", rule: "Devant un adjectif, « quelque » est un adverbe (« si ») et reste invariable, en un seul mot." },
-        { word: "soient", rule: "Subjonctif présent d'être après « quelque... que » : soient, à la 3e personne du pluriel (gestes)." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Dans la cuisine du restaurant, la béarnaise veut qu'on la monte sans hâte : trop chaude, elle tourne ; trop froide, elle se fige. Les ramequins, lavés et relavés toute la soirée par les plongeurs, attendent près du poêlon de cuivre, où le beurre noisette achève de blondir.",
-      notes: [
-        { word: "béarnaise", rule: "Sauce au beurre, nommée d'après le Béarn : é, ea, puis -aise, avec un s sonore.", rare: true, d: 3, piege: "é, ea, ai, s sonore (famille Béarn)" },
-        { word: "hâte", rule: "Nom féminin avec un accent circonflexe sur le a, comme dans « hâter »." },
-        { word: "ramequins", rule: "Petits plats individuels allant au four. Un seul m, -qu- devant i, finale en -in, et s au pluriel.", rare: true, d: 3, piege: "un seul m, qu, finale -in" },
-        { word: "lavés", rule: "Participe employé comme adjectif : il s'accorde avec le nom (les ramequins : masculin pluriel)." },
-        { word: "toute", rule: "Devant un nom féminin singulier précédé d'un article, « tout » est un déterminant qui s'accorde : toute la soirée." },
-        { word: "poêlon", rule: "Petite casserole à manche : famille de « poêle », avec ê, puis -lon sans e.", rare: true, d: 3, piege: "oê (famille poêle), finale -on" }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "homophone", notion: "cm1.homo.a-a", text: "Au marché, le maraîcher à posé ses cageots de tomates dès six heures.", wrong: "à", right: "a", choices: ["a", "à", "as"], rule: "« A » est le verbe avoir : on peut le remplacer par « avait ». La préposition « à » ne se remplace pas." },
     { level: "apprenti", type: "lexique", notion: "cm1.lex.morphologie", text: "Dès l'aube, le parfum du pain chaud embaume toute la boulangrie du village.", wrong: "boulangrie", right: "boulangerie", choices: ["boulangerie", "boulangrie", "boulengerie"], rule: "Boulangerie se construit sur « boulanger » : on garde le e de la famille de mots, puis la finale -rie." },
@@ -175,6 +81,24 @@
     { level: "grand-scribe", type: "lexique", text: "Le zeste de pamplemouse, les quartiers d'orange sanguine et les rondelles de citron vert, que la cheffe dresse en verrines, relèvent la salade d'agrumes d'une note acidulée.", wrong: "pamplemouse", right: "pamplemousse", choices: ["pamplemousse", "pamplemouse", "pamplemouce"], rule: "Pamplemousse se termine par -mousse, avec deux s, comme le nom « mousse ». Le mot contient deux m : pample-mousse." },
     { level: "grand-scribe", type: "adverbe", text: "Les cuisinières de ce petit relais de montagne accommodent indifférament le lièvre, le chevreuil et le sanglier, que les chasseurs du village leur rapportent chaque automne avant la première neige.", wrong: "indifférament", right: "indifféremment", choices: ["indifféremment", "indifférament", "indifférément"], rule: "Les adverbes dérivés d'adjectifs en -ent se terminent par -emment : indifférent donne indifféremment. Les adjectifs en -ant donnent -amment." },
     { level: "grand-scribe", type: "lexique", text: "Dans les vieux livres de cuisine, le fricando, noix de veau piquée de lardons et braisée longtemps, côtoie des plats que les restaurants d'aujourd'hui ne servent presque plus.", wrong: "fricando", right: "fricandeau", choices: ["fricandeau", "fricando", "fricandau"], rule: "Fricandeau se termine en -eau, comme « veau », la viande qui le compose. La finale -o est exclue." },
-    { level: "grand-scribe", type: "accord", text: "Les commis, eux-même incapables de déchiffrer le carnet du chef, reconnaissent pourtant chaque sauce à la seule odeur du beurre noisette qui monte des casseroles.", wrong: "eux-même", right: "eux-mêmes", choices: ["eux-mêmes", "eux-même", "eux-mèmes"], rule: "Après un pronom pluriel (eux, nous, vous), « même » s'écrit avec s et un trait d'union : eux-mêmes. Il s'accorde parce qu'il est joint au pronom." }
+    { level: "grand-scribe", type: "accord", text: "Les commis, eux-même incapables de déchiffrer le carnet du chef, reconnaissent pourtant chaque sauce à la seule odeur du beurre noisette qui monte des casseroles.", wrong: "eux-même", right: "eux-mêmes", choices: ["eux-mêmes", "eux-même", "eux-mèmes"], rule: "Après un pronom pluriel (eux, nous, vous), « même » s'écrit avec s et un trait d'union : eux-mêmes. Il s'accorde parce qu'il est joint au pronom." },
+    { level: "maitre", type: "lexique", text: "La bigarade, l'orange de Séville, est un agrume amère dont les confituriers anglais tirent leur marmelade et les cuisiniers la sauce du canard à l'orange.", wrong: "amère", right: "amer", choices: ["amer","amère","amers"], rule: "Agrume est un nom masculin : un agrume. L'adjectif s'accorde au masculin singulier : amer." },
+    { level: "maitre", type: "lexique", text: "Quand le pâtissier ouvre la porte du four, un effluve capiteuse de vanille et de caramel brun envahit toute l'arrière-boutique.", wrong: "capiteuse", right: "capiteux", choices: ["capiteux","capiteuse","capiteuses"], rule: "Effluve est un nom masculin, malgré son e final : un effluve. L'adjectif s'accorde au masculin singulier : capiteux." },
+    { level: "maitre", type: "temps", text: "Le chef de brigade exigeait que le commis sut ciseler finement l'échalote avant de toucher à la moindre sauce.", wrong: "sut", right: "sût", choices: ["sût","sut","su"], rule: "Après « exigeait que », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « savoir » donne « sût », avec un accent circonflexe ; « sut » est le passé simple." },
+    { level: "maitre", type: "temps", text: "Ce soir-là, vous fites revenir les oignons dans le beurre, puis vous ajoutâtes le vin blanc, et la sauce prit une belle teinte ambrée.", wrong: "fites", right: "fîtes", choices: ["fîtes","fites","fistes"], rule: "Au passé simple, la 2e personne du pluriel porte un accent circonflexe : vous fîtes, vous prîtes, vous ajoutâtes." },
+    { level: "maitre", type: "compose", text: "Dans la cave de l'auberge, le sommelier range trois tire-bouchon à levier près des carafes, que la serveuse remplit à la demande.", wrong: "tire-bouchon", right: "tire-bouchons", choices: ["tire-bouchons","tire-bouchon","tires-bouchons"], rule: "Dans un nom composé verbe + nom, le verbe reste invariable et le nom prend la marque du pluriel : des tire-bouchons." },
+    { level: "maitre", type: "compose", text: "Pour la tartiflette, le cuisinier épluche des pommes de terres à chair ferme, puis les fait revenir avec des lardons et des oignons.", wrong: "terres", right: "terre", choices: ["terre","terres","tere"], rule: "Dans « pomme de terre », le complément « terre » reste au singulier : seul « pomme » prend la marque du pluriel, des pommes de terre." },
+    { level: "maitre", type: "euphonie", text: "Le soufflé a-t'il assez monté ? se demande la cuisinière, penchée vers la vitre du four, sans oser ouvrir la porte avant la dixième minute.", wrong: "a-t'il", right: "a-t-il", choices: ["a-t-il","a-t'il","a t-il"], rule: "Entre le verbe et le pronom sujet inversé, le t euphonique s'écrit entre deux traits d'union, sans apostrophe : a-t-il." },
+    { level: "maitre", type: "lexique", text: "Pour déglasser la poêle, le cuisinier verse un trait de vin blanc, puis gratte les sucs à la cuillère de bois avant de lier le jus.", wrong: "déglasser", right: "déglacer", choices: ["déglacer","déglasser","déglaçer"], rule: "Déglacer vient de « glace » (le jus réduit prend l'aspect d'une glace) : il s'écrit avec c, comme « glacer »." },
+    { level: "grand-scribe", type: "lexique", text: "Entre deux feuillets de pâte, chaque couche de beurre ménage un interstice ténue où la vapeur s'engouffre à la cuisson, et c'est elle qui fait lever le feuilletage.", wrong: "ténue", right: "ténu", choices: ["ténu","ténue","ténus"], rule: "Interstice est un nom masculin : un interstice ténu. L'adjectif s'accorde au masculin singulier." },
+    { level: "grand-scribe", type: "lexique", text: "Dans la cuisine du restaurant, en plein coup de feu, l'atmosphère embué de vapeur et de graisse oblige les commis à s'essuyer le front entre deux commandes.", wrong: "embué", right: "embuée", choices: ["embuée","embué","embuées"], rule: "Atmosphère est un nom féminin : une atmosphère embuée. L'adjectif s'accorde au féminin." },
+    { level: "grand-scribe", type: "temps", text: "Le jury souhaitait que le candidat vint présenter lui-même sa terrine de canard, et la salle, déjà comble, était prête à l'applaudir.", wrong: "vint", right: "vînt", choices: ["vînt","vint","vin"], rule: "Après « souhaitait que », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « venir » donne « vînt », avec un accent circonflexe ; « vint » est le passé simple." },
+    { level: "grand-scribe", type: "temps", text: "Le maître queux craignait que les sauces, laissées sans surveillance, ne tournâssent avant l'arrivée des convives, si nombreux ce soir-là.", wrong: "tournâssent", right: "tournassent", choices: ["tournassent","tournâssent","tournacent"], rule: "Le circonflexe du subjonctif imparfait ne marque que la 3e personne du singulier (qu'elle tournât). À la 3e personne du pluriel, la terminaison est -ssent, sans accent : qu'elles tournassent." },
+    { level: "grand-scribe", type: "compose", text: "Au banquet, le maître d'hôtel présente des chaud-froids de volaille nappés d'une sauce blanche, que les convives, intrigués, hésitent à entamer.", wrong: "chaud-froids", right: "chauds-froids", choices: ["chauds-froids","chaud-froids","chauds-froid"], rule: "Chaud-froid est formé de deux adjectifs devenus noms : tous deux prennent la marque du pluriel, des chauds-froids." },
+    { level: "grand-scribe", type: "compose", text: "Dans la cuisine, chaque commis a deux essuie-main glissés dans la ceinture de son tablier, l'un pour les plats chauds, l'autre pour les assiettes.", wrong: "essuie-main", right: "essuie-mains", choices: ["essuie-mains","essuie-main","essuies-mains"], rule: "Dans ce nom composé verbe + nom, le verbe « essuie » reste invariable et le nom prend un s au pluriel : des essuie-mains." },
+    { level: "grand-scribe", type: "invariable", text: "Les soi-disants amateurs éclairés, qui jugent un fond de veau à sa couleur, ignorent qu'il doit frémir à feu doux pendant des heures.", wrong: "soi-disants", right: "soi-disant", choices: ["soi-disant","soi-disants","soi disant"], rule: "Devant un nom, « soi-disant » est invariable : il s'agit d'un adjectif figé qui ne s'accorde pas, des soi-disant amateurs." },
+    { level: "grand-scribe", type: "lexique", text: "Penché sur la marmite de bouillon, le commis retire les impuretés avec une écumoir, puis passe le liquide au chinois avant que le chef vienne le goûter.", wrong: "écumoir", right: "écumoire", choices: ["écumoire","écumoir","écumoîre"], rule: "Écumoire est un nom féminin qui se termine par -oire, avec un e final, comme « passoire » et « bouilloire »." },
+    { level: "grand-scribe", type: "lexique", text: "Le chef façonne les quennelles de brochet avec deux cuillères, puis les pose délicatement dans l'eau frémissante où elles gonflent avant d'être nappées d'une sauce onctueuse.", wrong: "quennelles", right: "quenelles", choices: ["quenelles","quennelles","quénelles"], rule: "Quenelle s'écrit avec un seul n et deux l, comme « nacelle » et « jouvencelle » : la double consonne est le l." },
+    { level: "grand-scribe", type: "lexique", text: "Râpé fin et lié d'une mayonnaise bien moutardée, le céleri-rave devient un céleri rémoullade, que les bistrots servent en entrée avec quelques tranches de jambon.", wrong: "rémoullade", right: "rémoulade", choices: ["rémoulade","rémoullade","rémoulate"], rule: "Rémoulade s'écrit avec un seul l, comme « limonade » et « salade » : la terminaison est -ade." }
   ]
 };

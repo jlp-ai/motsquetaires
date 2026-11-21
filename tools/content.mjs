@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const Names = createRequire(import.meta.url)(path.join(root, "names.js"));
-const NON_THEME = ["metas.js", "pronunciations.js"];
+const NON_THEME = ["metas.js", "types.js"];
 
 export function currentMode() {
   if (process.env.NAMES_MODE) return process.env.NAMES_MODE;
@@ -28,9 +28,8 @@ export function loadContent(mode = currentMode()) {
     Object.assign(themes, run("content/" + f).THEMES);
   }
   const metas = run("content/metas.js").METAS;
-  const pron = run("content/pronunciations.js").PRON || {};
   if (mode !== "raw") { Names.resolveDeep(themes, mode); Names.resolveDeep(metas, mode); }
-  return { themes, metas, pron, mode };
+  return { themes, metas, mode };
 }
 
 export { Names, root };

@@ -1,194 +1,6 @@
 (window.THEMES = window.THEMES || {}).cherbourg = {
   name: "Cherbourg",
   emoji: "⚓",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Au bout du Cotentin, sous la Montagne du Roule, Cherbourg regarde la mer. Les ferries partent du port et les bateaux de pêche rentrent le soir. Sur le quai, les enfants observent les mouettes. Quand le vent souffle fort, ils remontent leur capuche et ouvrent leurs parapluies.",
-      notes: [
-        { word: "rentrent", rule: "Le sujet « les bateaux » est au pluriel : le verbe se termine par -ent, qui ne s'entend pas." },
-        { word: "quand", rule: "« Quand » marque le moment (lorsque) : il s'écrit avec un d." },
-        { word: "leurs parapluies", rule: "« Leur » s'accorde avec le nom qu'il accompagne : leur capuche (une par enfant), leurs parapluies (pluriel)." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Depuis la Montagne du Roule, les promeneurs découvrent la rade tout entière. La digue, que des générations d'ouvriers ont bâtie au large, protège les navires des tempêtes. Les embruns salés fouettent le visage de ceux qui se sont aventurés jusqu'au bout de la jetée.",
-      notes: [
-        { word: "tout entière", rule: "Devant un adjectif féminin commençant par une voyelle, l'adverbe « tout » reste invariable." },
-        { word: "bâtie", rule: "Le COD « que » (la digue) est placé avant l'auxiliaire avoir : accord au féminin singulier." },
-        { word: "embruns", rule: "Pluie fine d'eau de mer soulevée par le vent. Nom masculin, souvent au pluriel, écrit avec « em » devant le b.", rare: true, d: 2, piege: "em et non an, finale -uns, s du pluriel" },
-        { word: "aventurés", rule: "Verbe pronominal (s'aventurer) : le participe s'accorde avec le sujet « ceux »." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Les chalutiers, partis avant l'aube, contournèrent les écueils de la rade de Cherbourg et regagnèrent le bassin à la nuit tombée. Sur les quais, des goélands affamés tournoyaient au-dessus des caisses, bien qu'aucun pêcheur ne leur eût jeté le moindre poisson. Quant à l'arsenal voisin, il veillait, silencieux, sur ses sous-marins en construction.",
-      notes: [
-        { word: "chalutiers", rule: "Bateaux qui pêchent au chalut, un grand filet : le t final de chalut se retrouve dans chalutier.", rare: true, d: 1, piege: "t de chalut, finale -ier" },
-        { word: "écueils", rule: "Récif ou rocher à fleur d'eau, danger pour les navires. Écrit é, puis -cueil comme dans accueil et recueil, avec un s au pluriel.", rare: true, d: 3, piege: "é, -cueil et non -queil ni -euil" },
-        { word: "goélands", rule: "Grand oiseau marin : accent aigu sur le é, d final muet (goéland).", rare: true, d: 2, piege: "é, d final muet" },
-        { word: "eût", rule: "« Bien que » appelle le subjonctif : plus-que-parfait du subjonctif, « eût jeté », avec accent circonflexe." },
-        { word: "quant à", rule: "« Quant à » (en ce qui concerne) s'écrit avec un t, à distinguer de « quand » (lorsque)." },
-        { word: "regagnèrent", rule: "Passé simple, 3e personne du pluriel du 1er groupe : -èrent." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Au Nez de Jobourg, des falaises escarpées surplombent un ressac que les rafales rendent plus furieux encore. Les marins, qui se sont maintes fois fiés au balisage de ces parages, savent combien les courants s'y sont montrés traîtres et les écueils nombreux. Quelque aguerris qu'ils soient, ils ne s'y aventurent qu'avec un accastillage irréprochable.",
-      notes: [
-        { word: "escarpées", rule: "Très raides, d'accès difficile : accord au féminin pluriel avec « falaises ».", rare: true, d: 1, piege: "sc, un seul p" },
-        { word: "ressac", rule: "Retour violent des vagues sur elles-mêmes : nom masculin, deux s, finale en -ac.", rare: true, d: 2, piege: "ss, c final" },
-        { word: "balisage", rule: "Ensemble des balises qui signalent les dangers en mer : un seul l, finale en -age.", rare: true, d: 1, piege: "s sonore comme dans balise, -age" },
-        { word: "aguerris", rule: "Endurcis par l'expérience : deux r, et accord au masculin pluriel avec « ils ».", rare: true, d: 3, piege: "gu, rr (famille guerre), s du pluriel" },
-        { word: "fiés", rule: "Se fier est essentiellement pronominal : le participe s'accorde avec le sujet (les marins)." },
-        { word: "montrés", rule: "Se montrer : le « se » est COD, le participe s'accorde avec « les courants »." },
-        { word: "écueils", rule: "Récif ou rocher à fleur d'eau, danger pour les navires. Écrit é, puis -cueil comme dans accueil et recueil, avec un s au pluriel.", rare: true, d: 3, piege: "é, -cueil et non -queil ni -euil" },
-        { word: "quelque aguerris", rule: "« Quelque » devant un adjectif signifie « si » : c'est un adverbe, invariable." },
-        { word: "accastillage", rule: "Ensemble des équipements d'un navire (poulies, taquets, cordages). Deux c, un s muet devant le t, puis -illage : ac-cas-til-lage.", rare: true, d: 3, piege: "cc, st, ill : aucun indice à l'oreille" }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Dans la gare maritime de Cherbourg, la Cité de la Mer attire beaucoup de visiteurs. Ils descendent dans un grand sous-marin et regardent les poissons dans les aquariums. Le soir, ils sont fatigués, mais ils ont découvert mille choses.",
-      notes: [
-        { word: "attire", rule: "Le sujet « la Cité de la Mer » est au singulier : le verbe attirer se termine par -e." },
-        { word: "aquariums", rule: "Nom masculin d'origine latine, écrit -um, qui prend un s au pluriel : des aquariums." },
-        { word: "fatigués", rule: "L'adjectif s'accorde avec le sujet « ils » : masculin pluriel, donc -és." },
-        { word: "ont", rule: "« Ont » est le verbe avoir : on peut le remplacer par « avaient »." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Au port de plaisance de Cherbourg, les voiliers dorment sur l'eau calme. Chaque matin, des familles montent à bord et préparent leurs sorties en mer. Les mâts bougent doucement, et les cordes claquent quand le vent se lève.",
-      notes: [
-        { word: "mâts", rule: "Le mât du voilier s'écrit avec un accent circonflexe, comme dans mâtin ou mâcher." },
-        { word: "préparent", rule: "Le sujet « des familles » est au pluriel : le verbe se termine par -ent." },
-        { word: "leurs", rule: "« Leur » s'accorde avec le nom qu'il accompagne : plusieurs sorties, donc leurs." },
-        { word: "quand", rule: "« Quand » marque le moment (lorsque) : il s'écrit avec un d." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Le dimanche, des promeneurs marchent sur les falaises du Nez de Jobourg, au bout du Cotentin. Le sentier est étroit, mais la vue est magnifique. Des oiseaux blancs volent au-dessus des vagues, et l'on aperçoit parfois les îles au loin.",
-      notes: [
-        { word: "falaises", rule: "Le nom est au pluriel après « les » : falaises prend un s." },
-        { word: "étroit", rule: "Le t final ne s'entend pas : on le retrouve dans le féminin étroite." },
-        { word: "volent", rule: "Le sujet « des oiseaux » est au pluriel : le verbe se termine par -ent." },
-        { word: "îles", rule: "Île s'écrit avec un accent circonflexe sur le i." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Inaugurée avant la guerre, la gare maritime transatlantique de Cherbourg accueillait jadis des voyageurs venus d'Amérique. Les paquebots, ancrés dans la rade, repartaient chargés d'émigrants impatients. Aujourd'hui, la Cité de la Mer occupe ces halls que tant de passagers ont traversés.",
-      notes: [
-        { word: "Inaugurée", rule: "Le participe, employé comme adjectif, s'accorde avec « la gare » : féminin singulier." },
-        { word: "chargés", rule: "Participe employé comme adjectif : il s'accorde avec « les paquebots »." },
-        { word: "émigrants", rule: "Celui qui quitte son pays s'écrit é-m (émigrer), à distinguer d'immigrant, celui qui arrive.", rare: true, d: 2, piege: "é et non im, g muet devant r" },
-        { word: "traversés", rule: "Le COD « que » (ces halls) est placé avant l'auxiliaire avoir : accord au masculin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Sur la digue de Cherbourg, un crachin froid tombe par rafales. Les marins, qui se sont réfugiés au port, attendent que la houle faiblisse. Ils guettent l'instant où les ferries pourront enfin quitter la rade.",
-      notes: [
-        { word: "crachin", rule: "Pluie fine et froide : crachin s'écrit ch, puis in, sans e final.", rare: true, d: 2, piege: "ch, finale -in" },
-        { word: "réfugiés", rule: "Verbe pronominal (se réfugier) : le « se » est COD, le participe s'accorde avec « les marins »." },
-        { word: "attendent", rule: "Le sujet « les marins » est au pluriel : le verbe se termine par -ent." },
-        { word: "pourront", rule: "Futur de pouvoir : pourr- avec deux r, comme dans « il pourrait »." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "À l'arsenal de Cherbourg, les ouvriers assemblent les coques d'acier dans de vastes ateliers. Les sous-marins, dont les carènes sont encore luisantes de peinture, glissent lentement dans le bassin. Des spectateurs émus, venus nombreux sur les quais, applaudissent.",
-      notes: [
-        { word: "carènes", rule: "Partie immergée de la coque d'un navire : accent grave sur le è, un seul n, e final.", rare: true, d: 2, piege: "è, un seul n" },
-        { word: "luisantes", rule: "Adjectif qui s'accorde avec « les carènes » : féminin pluriel." },
-        { word: "venus", rule: "Participe employé comme adjectif : il s'accorde avec « des spectateurs »." },
-        { word: "applaudissent", rule: "Applaudir prend deux p et, au présent, -issent à la 3e personne du pluriel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Dans la Cité de la Mer, le Redoutable, sous-marin retiré du service depuis longtemps, accueille des visiteurs qui s'y sont engouffrés en nombre. Ils parcourent les coursives, scrutent les manomètres, puis ressortent éblouis, comme s'ils avaient vécu des semaines dans cet espace confiné.",
-      notes: [
-        { word: "engouffrés", rule: "Verbe pronominal (s'engouffrer) : le participe s'accorde avec « qui », donc « des visiteurs » ; deux f, puis -ouffrer.", d: 2, piege: "deux f, ng" },
-        { word: "coursives", rule: "Couloir étroit à l'intérieur d'un navire : s sonore après le r, un seul s, finale -ive.", rare: true, d: 3, piege: "s et non c, un seul s" },
-        { word: "manomètres", rule: "Instrument qui mesure la pression : un seul m, accent grave, finale -mètres.", rare: true, d: 2, piege: "un seul m, è" },
-        { word: "éblouis", rule: "Participe employé comme adjectif, accordé avec « ils » : masculin pluriel, avec un s." },
-        { word: "confiné", rule: "Participe employé comme adjectif, accordé avec « espace » : masculin singulier." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Il fallut des décennies pour édifier la digue qui ferme la rade de Cherbourg. Les blocs de pierre, que l'on immergeait au large, formaient peu à peu un rempart contre lequel se brisaient les lames. Sur cet ouvrage, des forts, sentinelles de pierre, gardent encore l'arsenal.",
-      notes: [
-        { word: "décennies", rule: "Période de dix ans : décade n'est pas décennie ; décennie s'écrit avec deux n (du latin decem et annus).", rare: true, d: 3, piege: "nn, finale -ies" },
-        { word: "immergeait", rule: "Immerger prend un e après le g devant a pour garder le son [j] ; deux m, terminaison -ait de l'imparfait.", rare: true, d: 3, piege: "mm, ge devant a, -ait" },
-        { word: "fallut", rule: "Passé simple de falloir : 3e personne du singulier, avec un t final." },
-        { word: "contre lequel", rule: "Le pronom relatif s'accorde avec « un rempart » : masculin singulier, donc lequel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Le ferry, chargé de camions et de voyageurs, longe la digue et cingle vers le large, l'étrave haute. Derrière lui, les mouettes rieuses, lassées de le poursuivre, regagnent les quais de Cherbourg avant que la bruine tombe.",
-      notes: [
-        { word: "cingle", rule: "Cingler (naviguer vers) s'écrit avec un c, comme « cingler » un coup de fouet, jamais avec s.", d: 3, piege: "c et non s, gl" },
-        { word: "étrave", rule: "Partie avant de la coque, qui fend l'eau : accent aigu, puis tr, finale -ave.", rare: true, d: 3, piege: "é, tr, finale -ave" },
-        { word: "rieuses", rule: "Adjectif au féminin pluriel, accordé avec « les mouettes » : -euses.", rare: true, d: 1, piege: "ie, -euses" },
-        { word: "lassées", rule: "Participe employé comme adjectif : il s'accorde avec « les mouettes »." },
-        { word: "bruine", rule: "Pluie très fine : u puis i, e final, famille de bruiner.", rare: true, d: 2, piege: "ui, e final" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "À l'arsenal de Cherbourg, là où se sont succédé tant de générations d'ouvriers, les soudeurs, les chaudronniers et les scaphandriers regagnent, l'aube venue, les cales que le brouillard a rendues glissantes. Quelque nombreuses que soient les équipes, tous se taisent quand une coque glisse vers le bassin. Les cabestans grincent, les bossoirs oscillent, les soudures crépitent, les chaînes claquent contre les carènes, et, depuis la Montagne du Roule, les promeneurs devinent à peine cette fourmilière que la rade enveloppe de brume, tandis qu'au loin les ferries regagnent la gare maritime et que les goélands, indifférents, guettent les caisses des chalutiers.",
-      notes: [
-        { word: "succédé", rule: "Se succéder : le « se » est COI (succéder à), le participe reste invariable, malgré le sujet inversé.", d: 3, piege: "participe invariable" },
-        { word: "chaudronniers", rule: "Artisans qui travaillent le métal en feuilles : chaudron prend un n de plus devant -ier.", rare: true, d: 3, piege: "au, nn, -ier" },
-        { word: "scaphandriers", rule: "Plongeurs en scaphandre : sc, puis ph, finale -ier.", rare: true, d: 3, piege: "sc, ph, -ier" },
-        { word: "venue", rule: "Dans la construction absolue « l'aube venue », le participe s'accorde avec « l'aube » : féminin singulier." },
-        { word: "rendues", rule: "Le COD « que » (les cales) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "quelque", rule: "Devant un adjectif, « quelque » signifie « si » : adverbe invariable, suivi du subjonctif.", d: 3, piege: "quelque invariable, subjonctif" },
-        { word: "cabestans", rule: "Treuil à axe vertical qui sert à lever l'ancre ou à haler : c, st muet, finale -an, s du pluriel.", rare: true, d: 3, piege: "c, st, finale -an" },
-        { word: "bossoirs", rule: "Potences qui supportent une embarcation : deux s, finale -oir, s du pluriel.", rare: true, d: 3, piege: "ss, finale -oir" },
-        { word: "carènes", rule: "Partie immergée de la coque d'un navire : accent grave, un seul n.", rare: true, d: 2, piege: "è, un seul n" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Jadis, dans la rade de Cherbourg, les caboteurs se faufilaient entre les grands paquebots transatlantiques, qui mouillaient à l'abri de la digue tandis que des embarcations ramenaient les voyageurs à terre. Les émigrants, qu'on avait vus s'entasser contre le bastingage, descendaient, hâves et transis, cependant que les passagères de première classe, quelque lasses qu'elles fussent, gagnaient d'un pas léger le train qui les attendait. Sur le quai, les porteurs, dont le dos s'était courbé sous les malles, se hâtaient, car l'heure du train pressait. Tous ces voyageurs, que l'attente avait lassés, devinaient déjà les toits de la ville, au pied de la Montagne du Roule.",
-      notes: [
-        { word: "caboteurs", rule: "Navires qui font du cabotage le long des côtes : un seul t, finale -eur.", rare: true, d: 3, piege: "un seul t, finale -eurs" },
-        { word: "transatlantiques", rule: "Préfixe trans- puis atlantique : un seul t après le n, et -ques au pluriel.", rare: true, d: 3, piege: "trans-, atlantique, qu" },
-        { word: "mouillaient", rule: "Mouiller prend ill ; à l'imparfait, 3e personne du pluriel : -aient.", d: 2, piege: "ill, -aient" },
-        { word: "émigrants", rule: "Celui qui quitte son pays s'écrit é-m, à distinguer d'immigrant.", rare: true, d: 2, piege: "é et non im, g muet" },
-        { word: "vus", rule: "Le COD « que » (les émigrants) est placé avant l'auxiliaire et fait l'action de l'infinitif (ils s'entassent) : accord au masculin pluriel.", d: 3, piege: "participe + infinitif, COD sujet" },
-        { word: "bastingage", rule: "Garde-corps d'un navire : st, puis -ingage avec un g doux.", rare: true, d: 3, piege: "st, -ingage" },
-        { word: "hâves", rule: "Maigres et pâles : accent circonflexe sur le a, h muet, finale -ves.", rare: true, d: 3, piege: "h, â, finale -ve" },
-        { word: "transis", rule: "Participe employé comme adjectif : il s'accorde avec « les émigrants » ; transi prend un s au pluriel." },
-        { word: "quelque", rule: "Devant un adjectif, « quelque » est un adverbe invariable (= si), suivi du subjonctif.", d: 3, piege: "quelque invariable" },
-        { word: "lassés", rule: "Le COD « que » (ces voyageurs) est placé avant l'auxiliaire avoir : accord au masculin pluriel.", d: 2, piege: "COD antéposé" },
-        { word: "fussent", rule: "Après un imparfait de la principale, la subordonnée concessive prend le subjonctif imparfait : qu'elles fussent.", d: 2, piege: "ss, -ent" }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Le fort de la Montagne du Roule, auquel mènent des chemins raides, domine la ville du haut d'un escarpement de roche. Ses casemates et ses galeries, que des soldats ont parcourues, abritent aujourd'hui le musée de la Libération. Du sommet, véritable belvédère où se sont hissés tant de promeneurs malgré le vent, l'œil embrasse les toits, l'arsenal, la digue, les appontements du port et la rade, que le soleil, dès qu'il perce, couvre de reflets argentés. Les jours de brume, la rade s'efface, et ne parviennent aux visiteurs que les appels sourds des sirènes. Quelque fatigués qu'ils soient, tous s'y attardent.",
-      notes: [
-        { word: "mènent", rule: "Sujet inversé : le verbe s'accorde avec « des chemins », pluriel, et non avec « auquel ».", d: 3, piege: "sujet inversé" },
-        { word: "escarpement", rule: "Pente raide d'un terrain : sc, puis rp, finale -ement.", rare: true, d: 3, piege: "sc, rp, -ement" },
-        { word: "belvédère", rule: "Lieu d'où l'on voit au loin : accents aigu puis grave, d final muet devant -ère.", rare: true, d: 3, piege: "é, è, -dère" },
-        { word: "parviennent", rule: "Sujet inversé : le verbe s'accorde avec « les appels », pluriel ; parviennent s'écrit comme viennent.", d: 3, piege: "sujet inversé" },
-        { word: "casemates", rule: "Abris voûtés d'une fortification : un seul m, s sonore, finale -mates.", rare: true, d: 2, piege: "s sonore, un seul m" },
-        { word: "parcourues", rule: "Le COD « que » (ses casemates et ses galeries) est placé avant l'auxiliaire : accord au féminin pluriel.", d: 2, piege: "COD antéposé" },
-        { word: "hissés", rule: "Verbe pronominal à sujet inversé : le participe s'accorde avec « tant de promeneurs », masculin pluriel.", d: 3, piege: "pronominal, sujet inversé" },
-        { word: "appontements", rule: "Quais de bois ou de béton où s'amarrent les bateaux : deux p, finale -ements.", rare: true, d: 3, piege: "pp, -ement" },
-        { word: "argentés", rule: "Adjectif accordé avec « reflets » : masculin pluriel." },
-        { word: "quelque", rule: "Devant un adjectif, « quelque » est un adverbe invariable (= si), suivi du subjonctif.", d: 3, piege: "quelque invariable" }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "accord", text: "Les bateaux de pêche rentre dans la rade de Cherbourg, devant la digue, avant la nuit.", wrong: "rentre", right: "rentrent", choices: ["rentrent", "rentres", "rentrer"], rule: "Le sujet « les bateaux » est au pluriel : ils rentrent." },
     { level: "apprenti", type: "homophone", text: "Depuis la gare maritime de Cherbourg, le ferry part a midi pour l'Angleterre.", wrong: "a", right: "à", choices: ["à", "a", "as"], rule: "« À » est ici une préposition (on ne peut pas dire « avait midi ») : accent grave." },
@@ -269,6 +81,24 @@
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Quand la tempête se lève sur la Hague, les vagues frappent violament le phare de Goury, dont la lanterne, que l'écume voile, éclaire quand même la nuit.", wrong: "violament", right: "violemment", choices: ["violemment","violament","violement"], rule: "L'adverbe dérive de l'adjectif « violent » : les adjectifs en -ent donnent des adverbes en -emment." },
     { level: "grand-scribe", type: "accord", text: "La plupart des chalutiers que le port abrite l'hiver prend la mer avant l'aube, quand le phare de la jetée fait encore briller son feu au-dessus de l'avant-port.", wrong: "prend", right: "prennent", choices: ["prennent","prend","prends"], rule: "Après « la plupart » suivi d'un nom pluriel, le verbe se met au pluriel : les chalutiers prennent." },
     { level: "grand-scribe", type: "temps", text: "Voyant la rade noyée de brume, le capitaine résolu d'attendre l'étale, bien que l'armateur eût réclamé un départ immédiat et que les passagers s'impatientassent.", wrong: "résolu", right: "résolut", choices: ["résolut","résolu","résolût"], rule: "Le passé simple de « résoudre » est « il résolut ». « Résolu » est le participe passé, qui ne peut pas former le verbe de la phrase." },
-    { level: "grand-scribe", type: "homophone", text: "Le remorqueur, près à quitter l'avant-port dès que le pilote de la rade lui en donnera l'ordre, attend sous la grue qui domine le quai de l'arsenal.", wrong: "près", right: "prêt", choices: ["prêt","près","prés"], rule: "« Prêt à » + infinitif signifie « disposé à ». « Près de » indique la proximité." }
+    { level: "grand-scribe", type: "homophone", text: "Le remorqueur, près à quitter l'avant-port dès que le pilote de la rade lui en donnera l'ordre, attend sous la grue qui domine le quai de l'arsenal.", wrong: "près", right: "prêt", choices: ["prêt","près","prés"], rule: "« Prêt à » + infinitif signifie « disposé à ». « Près de » indique la proximité." },
+    { level: "maitre", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Par vent d'ouest, un effluve iodée monte de la rade jusqu'au fort du Roule, où le gardien ne le remarque même plus.", wrong: "iodée", right: "iodé", choices: ["iodé","iodée","iodés"], rule: "Effluve est un nom masculin, malgré son e final : un effluve. L'adjectif s'accorde au masculin singulier : iodé." },
+    { level: "maitre", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "À la Cité de la Mer, la descente dans le Redoutable s'achève sur une apothéose feutré : la salle des missiles, où nul ne parle.", wrong: "feutré", right: "feutrée", choices: ["feutrée","feutré","feutrées"], rule: "Apothéose est un nom féminin : une apothéose. L'adjectif s'accorde au féminin singulier : feutrée." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le préfet maritime exigea que chaque bâtiment de Cherbourg quittât l'arsenal avant l'aube et que nul patron ne prit la mer sans prévenir.", wrong: "prit", right: "prît", choices: ["prît","prit","prisse"], rule: "Après « exigea », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « prendre » donne « prît », avec un accent circonflexe, alors que « prit » est le passé simple." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Les armateurs de Cherbourg redoutaient que les tempêtes d'équinoxe ne fûssent fatales aux chalutiers restés au mouillage devant la digue.", wrong: "fûssent", right: "fussent", choices: ["fussent","fûssent","fusent"], rule: "Le circonflexe du subjonctif imparfait ne marque que la 3e personne du singulier (qu'il fût). À la 3e personne du pluriel, la terminaison est -ssent, sans accent : qu'ils fussent." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Après l'averse, deux arc-en-ciel enjambent la rade de Cherbourg, et les promeneurs de la digue, trempés d'embruns, lèvent tous les yeux.", wrong: "arc-en-ciel", right: "arcs-en-ciel", choices: ["arcs-en-ciel","arc-en-ciel","arcs-en-ciels"], rule: "Dans un nom composé de la forme nom + préposition + nom, seul le premier nom prend la marque du pluriel : des arcs-en-ciel." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "À l'entrée de la rade de Cherbourg, les bateau-pilotes guettent les cargos pour déposer à leur bord les marins qui les guideront jusqu'au quai.", wrong: "bateau-pilotes", right: "bateaux-pilotes", choices: ["bateaux-pilotes","bateau-pilotes","bateaux-pilote"], rule: "Bateau-pilote associe deux noms : tous deux prennent la marque du pluriel, des bateaux-pilotes." },
+    { level: "maitre", type: "accord", notion: "4e.voc.glissements-locutions", text: "Nul part ailleurs que sur la Montagne du Roule on n'embrasse d'un seul regard l'arsenal, la digue et toute la rade de Cherbourg.", wrong: "Nul", right: "Nulle", choices: ["Nulle","Nul","Nulles"], rule: "Nulle part est une locution adverbiale où « nulle » s'accorde avec le nom féminin « part » : nulle part, jamais « nul part »." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "En sortant de l'avant-port de Cherbourg, le pilote garde la digue à tribor, puis porte le cap vers le large dès la passe franchie.", wrong: "tribor", right: "tribord", choices: ["tribord","tribor","tribbord"], rule: "Tribord se termine par un d muet, comme « bord », dont il dérive : le côté droit du navire." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Au pied du Nez de Jobourg, les pêcheurs de la Hague glissent la main dans un interstice exiguë entre deux rochers, à la recherche des étrilles que la marée basse a laissées.", wrong: "exiguë", right: "exigu", choices: ["exigu","exiguë","exigue"], rule: "Interstice est un nom masculin : un interstice exigu. Le tréma de « exiguë » est la marque du féminin." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Dans la coque du Redoutable, que les visiteurs de la Cité de la Mer parcourent à pas lents, l'atmosphère, confiné et sourde à la fois, rappelle que les équipages vivaient des semaines sous l'eau.", wrong: "confiné", right: "confinée", choices: ["confinée","confiné","confinées"], rule: "Atmosphère est un nom féminin : une atmosphère confinée. L'adjectif s'accorde au féminin." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Il eût fallu que la tempête cessat avant l'aube pour que le ferry de Cherbourg, que l'armateur s'était obstiné à maintenir, pût quitter la rade sans risque.", wrong: "cessat", right: "cessât", choices: ["cessât","cessat","cessa"], rule: "Après « il eût fallu que », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « cesser » donne « cessât », avec un accent circonflexe ; « cessat » n'existe pas." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.identifier-tous-temps", text: "Quand la brume se leva sur la digue de Cherbourg, nous primes enfin la mesure du danger que les pilotes affrontent chaque nuit, et vous fûtes les premiers à le reconnaître.", wrong: "primes", right: "prîmes", choices: ["prîmes","primes","prîmmes"], rule: "Au passé simple, les 1re et 2e personnes du pluriel portent un accent circonflexe sur la voyelle du radical : nous prîmes, vous prîtes. « Primes » est le pluriel du nom « prime »." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Depuis le CROSS de Jobourg, perché sur la falaise, les veilleurs surveillent le rail des Casquets, où les porte-conteneur et les pétroliers se croisent sans relâche, au large de la Hague.", wrong: "porte-conteneur", right: "porte-conteneurs", choices: ["porte-conteneurs","porte-conteneur","portes-conteneurs"], rule: "Dans ce nom composé verbe + nom, le verbe « porte » reste invariable et le nom prend un s, puisque le navire porte plusieurs conteneurs : des porte-conteneurs." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Les maraîchers du Cotentin apportent au marché, avant la levée de la brume, des poireaux, des carottes des sables et des choux-fleur que les restaurateurs du port de Cherbourg viennent choisir à l'aube.", wrong: "choux-fleur", right: "choux-fleurs", choices: ["choux-fleurs","choux-fleur","chou-fleurs"], rule: "Chou-fleur associe deux noms : tous deux prennent la marque du pluriel, des choux-fleurs." },
+    { level: "grand-scribe", type: "participe", notion: "3e.accords.pp-avoir-cod-relatif", text: "Malgré les tempêtes qu'il y a eus cet hiver, le phare de Goury, dont la lanterne domine les rochers de la Hague, n'a jamais cessé de tourner.", wrong: "eus", right: "eu", choices: ["eu","eus","eues"], rule: "Dans « il y a », le sujet « il » est impersonnel : le participe « eu » reste invariable, même si le pronom « que » reprend un nom pluriel." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Sur le pont du chalutier amarré à l'avant-port, l'eau de mer s'écoule par le dallot, petite ouverture percée au pied du bastingage pour évacuer les paquets de mer.", wrong: "dallot", right: "dalot", choices: ["dalot","dallot","dalo"], rule: "Dalot s'écrit avec un seul l et un t final muet, que la prononciation ne laisse pas deviner : c'est l'orifice d'écoulement du pont." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Sous la brise, le hoban du grand mât chante dans le gréement d'un voilier amarré au port de Chantereyne, et son propriétaire le vérifie chaque printemps avant la première sortie.", wrong: "hoban", right: "hauban", choices: ["hauban","hoban","hobant"], rule: "Hauban s'écrit avec au, comme « haut », et sans t final ; c'est le câble qui retient le mât." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Pour la fête de la mer, les chalutiers de Cherbourg arborent le grand pavoi, longue guirlande de pavillons hissée de la proue à la poupe.", wrong: "pavoi", right: "pavois", choices: ["pavois","pavoi","pavoit"], rule: "Pavois garde un s final muet, comme « bois » et « mois » ; « grand pavois » désigne l'ensemble des pavillons hissés un jour de fête." }
   ]
 };

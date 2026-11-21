@@ -1,102 +1,6 @@
 (window.THEMES = window.THEMES || {}).odyssee = {
   name: "Odyssée",
   emoji: "⛵",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Après dix ans de guerre, Ulysse a repris la mer pour rentrer à Ithaque. Ses compagnons ont navigué pendant des jours. Les vagues étaient hautes, mais le roi gardait son calme. Il avait promis à Pénélope de revenir.",
-      notes: [
-        { word: "navigué", rule: "Avec l'auxiliaire avoir, le participe passé de naviguer reste invariable : -é, avec le u gardé devant le é." },
-        { word: "étaient", rule: "Verbe être à l'imparfait, 3e personne du pluriel : -aient." },
-        { word: "hautes", rule: "L'adjectif s'accorde avec le nom « vagues » : féminin pluriel." },
-        { word: "gardait", rule: "Verbe garder à l'imparfait, 3e personne du singulier : -ait." },
-        { word: "promis", rule: "Avec l'auxiliaire avoir, le participe passé de promettre reste invariable ici : promis, avec un s final." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Pour ne pas céder au chant des sirènes, Ulysse a bouché les oreilles de ses marins avec de la cire. Lui, il s'est fait attacher au mât du navire. Ses compagnons ont ramé de toutes leurs forces, et le bateau est passé sans danger.",
-      notes: [
-        { word: "bouché", rule: "Avec l'auxiliaire avoir, le COD « les oreilles » est placé après : le participe passé reste invariable." },
-        { word: "mât", rule: "Grand poteau qui porte la voile : « mât » prend un accent circonflexe sur le a." },
-        { word: "ramé", rule: "Avec l'auxiliaire avoir et sans COD placé avant, le participe passé reste invariable." },
-        { word: "passé", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (le bateau : masculin singulier)." },
-        { word: "forces", rule: "« Toutes leurs forces » : nom féminin pluriel, avec un s final." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Aveuglé par un pieu brûlant, le cyclope a poussé un cri terrible. Ses voisins, accourus devant la grotte, lui ont demandé qui le blessait. Il a répondu que c'était Personne, et ils sont repartis sans l'aider.",
-      notes: [
-        { word: "aveuglé", rule: "Participe passé employé comme adjectif : il s'accorde avec « le cyclope » (masculin singulier). Famille d'« aveugle » : -gl-, puis la finale -é du participe." },
-        { word: "cyclope", rule: "Géant à un seul œil : cyclope s'écrit avec un y, comme dans « cycle », et un e final.", rare: true, d: 2, piege: "y et non i, e final" },
-        { word: "accourus", rule: "Participe passé de accourir, employé comme adjectif : il s'accorde avec « ses voisins » (masculin pluriel). Deux c, un seul r." },
-        { word: "répondu", rule: "Avec l'auxiliaire avoir et sans COD placé avant, le participe passé reste invariable." },
-        { word: "repartis", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet « ils » : masculin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "La magicienne Circé a changé en pourceaux les compagnons d'Ulysse venus jusqu'à son palais. Grâce à une herbe offerte par un dieu, le héros a échappé au sortilège. Pendant un an, il a profité de l'hospitalité de la déesse avant de reprendre la mer.",
-      notes: [
-        { word: "pourceaux", rule: "Pourceau (le porc) : finale en -eau, avec un c devant -eau ; pluriel en -x.", rare: true, d: 3, piege: "c et non s, finale -eau, pluriel en x" },
-        { word: "venus", rule: "Participe passé employé comme adjectif : il s'accorde avec « les compagnons » (masculin pluriel)." },
-        { word: "offerte", rule: "Participe passé employé comme adjectif : il s'accorde avec « une herbe » (féminin singulier)." },
-        { word: "échappé", rule: "Avec l'auxiliaire avoir et sans COD placé avant, le participe passé reste invariable." },
-        { word: "hospitalité", rule: "Nom de la famille d'« hôte » : le h initial est muet, et le mot se termine en -té." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Au détroit de Charybde et Scylla, Ulysse ordonna au timonier de serrer le rocher du monstre, car mieux valait perdre six hommes que le navire entier. Les compagnons, que le mugissement des flots avait glacés d'effroi, ramèrent de toutes leurs forces.",
-      notes: [
-        { word: "timonier", rule: "Celui qui tient la barre du navire. Un seul n, comme dans « timon » (la barre), puis -ier.", rare: true, d: 2, piege: "un seul n, finale -ier" },
-        { word: "valait", rule: "Mieux vaut : valoir à l'imparfait, 3e personne du singulier, -ait ; le verbe reste au singulier devant « perdre »." },
-        { word: "mugissement", rule: "Cri sourd, long et puissant. Le g se prononce [ʒ] devant i, ss entre voyelles, et le e muet est gardé devant -ment.", rare: true, d: 3, piege: "g devant i, ss, e muet devant -ment" },
-        { word: "glacés", rule: "Le COD « que » (les compagnons) est placé avant l'auxiliaire avoir : accord au masculin pluriel." },
-        { word: "ramèrent", rule: "Passé simple du verbe ramer, 3e personne du pluriel : -èrent, avec un accent grave." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Pénélope, qu'assiégeaient les prétendants, déclara qu'elle choisirait un époux dès qu'elle aurait achevé le linceul du vieux Laërte. Chaque nuit, elle défaisait l'ouvrage tissé le jour. Cette ruse dura trois ans, jusqu'à ce qu'une servante la trahît.",
-      notes: [
-        { word: "prétendants", rule: "Ceux qui prétendent à sa main : accent aigu sur le é, -tend-, finale -ants au pluriel.", rare: true, d: 2, piege: "é, -end- et non -and-, -ants" },
-        { word: "aurait", rule: "Après un verbe au passé simple (déclara), le futur du discours direct devient conditionnel : elle aurait achevé (conditionnel passé)." },
-        { word: "linceul", rule: "Drap dont on enveloppe un mort. La finale [sœl] s'écrit -ceul : c devant -eul, sans i.", rare: true, d: 3, piege: "c et non s, finale -eul" },
-        { word: "tissé", rule: "Participe passé employé comme adjectif, accordé avec « l'ouvrage » (masculin singulier)." },
-        { word: "trahît", rule: "« Jusqu'à ce que » appelle le subjonctif ; après un passé simple, l'imparfait du subjonctif est admis : trahît, avec un accent circonflexe." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Nausicaa, fille du roi des Phéaciens, recueillit sur le rivage un naufragé harassé que la tempête avait rejeté sur les écueils. Ce peuple de marins aguerris, dont les navires fendaient les flots sans pilote, le ramena jusqu'à Ithaque pendant son sommeil. Quand il s'éveilla, la brume dont Athéna avait voilé l'île l'empêcha de reconnaître sa patrie.",
-      notes: [
-        { word: "recueillit", rule: "Recueillir : le groupe [œj] s'écrit -ueill-, comme dans « cueillir » ; passé simple en -it, sans accent." },
-        { word: "naufragé", rule: "Personne qui a fait naufrage : la diphtongue [o] s'écrit au, puis -fr-, et la finale est -agé.", rare: true, d: 2, piege: "au, finale -agé" },
-        { word: "rejeté", rule: "Le COD « que » (le naufragé) est placé avant l'auxiliaire avoir : accord au masculin singulier, donc aucune marque. Rejeter : un j, un seul t." },
-        { word: "écueils", rule: "Rochers contre lesquels un navire se brise. Le son [œj] s'écrit -ueil, comme dans « accueil » et « recueil » ; s au pluriel.", rare: true, d: 3, piege: "é, -ueil et non -euil, s final" },
-        { word: "harassé", rule: "Harasser : épuiser de fatigue. Un h initial, un seul r (à ne pas confondre avec « harceler »), puis deux s et la finale -é du participe.", rare: true, d: 3, piege: "h, un seul r, ss" },
-        { word: "aguerris", rule: "Aguerri : rendu courageux par l'épreuve. Formé sur guerre : a, gu, deux r, et un s final au pluriel.", rare: true, d: 3, piege: "gu, rr (famille guerre), s final" },
-        { word: "fendaient", rule: "Fendre à l'imparfait, 3e personne du pluriel : -aient." },
-        { word: "dont", rule: "Pronom relatif complément du nom (les navires de ce peuple) : dont, avec un t final, à ne pas confondre avec « donc »." },
-        { word: "éveilla", rule: "Passé simple du verbe s'éveiller, 3e personne du singulier : -a, sans accent circonflexe." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Le retour d'Ulysse est un périple semé de pièges : les lotophages, dont le fruit fait oublier la patrie ; Polyphème, géant anthropophage qui dévora six compagnons ; Calypso, qui offrit l'immortalité ; les stratagèmes à inventer pour survivre. Ce héros, que tant d'épreuves ont exténué, n'a jamais cessé de rêver à sa terre.",
-      notes: [
-        { word: "périple", rule: "Long voyage par mer. Accent aigu sur le é initial, puis -ple, sans e muet intermédiaire.", rare: true, d: 1, piege: "é, finale -ple" },
-        { word: "semé", rule: "Participe passé employé comme adjectif, accordé avec « périple » (masculin singulier)." },
-        { word: "lotophages", rule: "Mangeurs de lotus (peuple de l'Odyssée). Formé sur « lotus » et -phage, avec ph comme dans « œsophage » et « anthropophage ».", rare: true, d: 3, piege: "ph et non f, finale -ages" },
-        { word: "anthropophage", rule: "Qui mange de la chair humaine. Formé sur le grec : anthrop- (th) puis -phage (ph).", rare: true, d: 3, piege: "th, ph, finale -age" },
-        { word: "dévora", rule: "Passé simple du verbe dévorer, 3e personne du singulier : -a." },
-        { word: "stratagèmes", rule: "Ruse de guerre. Un accent grave sur le è de -gème, comme dans « problème » ; s au pluriel.", rare: true, d: 3, piege: "g doux devant è, accent grave" },
-        { word: "exténué", rule: "Le COD « que » (ce héros) est placé avant l'auxiliaire avoir : accord au masculin singulier. Exténuer : ex- puis -ténu-, avec x et un accent aigu." }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "homophone", notion: "cm1.homo.a-a", text: "Après la tempête, le vent à poussé le navire vers le rivage.", wrong: "à", right: "a", choices: ["a", "as", "à"], rule: "On peut dire « avait poussé » : c'est le verbe avoir, sans accent." },
     { level: "apprenti", type: "temps", notion: "cm1.conj.futur-g3-liste", text: "Au lever du soleil, les rameurs irons vers le cap rocheux qui ferme la baie.", wrong: "irons", right: "iront", choices: ["iront", "irons", "iraient"], rule: "Au futur, aller se conjugue iront à la 3e personne du pluriel, avec la marque -ont comme « feront » et « seront »." },
@@ -177,6 +81,24 @@
     { level: "grand-scribe", type: "temps", text: "Les compagnons comprirent bientôt que, faute de brise, il leur faudrait ramer jusqu'au mouillage voisin, car aucun souffle ne se lèvera avant l'aube.", wrong: "lèvera", right: "lèverait", choices: ["lèverait", "lèvera", "levait"], rule: "Dans une subordonnée dépendant d'un verbe au passé simple (comprirent), le futur devient conditionnel : ne se lèverait." },
     { level: "grand-scribe", type: "sens", text: "Pour palier l'absence de vent, les rameurs se relaient sans répit sur leurs bancs, bras tendus, dos courbés, tandis que le pilote, debout à la poupe, scande la cadence et surveille la côte.", wrong: "palier", right: "pallier", choices: ["pallier", "palier", "paillier"], rule: "Pallier signifie remédier provisoirement à un manque et se construit avec un COD : pallier l'absence de vent. Un palier est une plateforme, ou une étape." },
     { level: "grand-scribe", type: "compose", text: "Il fallut ramer deux heures et demi pour doubler le cap, puis chercher à tâtons l'anse que l'on devinait derrière un rideau de pins.", wrong: "demi", right: "demie", choices: ["demie", "demi", "demies"], rule: "Après un nom (heures), « demi » s'accorde en genre : deux heures et demie. Devant le nom, il reste invariable : une demi-heure." },
-    { level: "grand-scribe", type: "pronominal", text: "Les compagnons, qui s'étaient plus à l'ombre des oliviers pendant la halte, repartirent à regret, une branche de laurier pendue à la proue.", wrong: "plus", right: "plu", choices: ["plu", "plus", "plue"], rule: "Se plaire : « se » est COI (plaire à quelqu'un), donc le participe reste invariable. On écrit s'étaient plu, sans s." }
+    { level: "grand-scribe", type: "pronominal", text: "Les compagnons, qui s'étaient plus à l'ombre des oliviers pendant la halte, repartirent à regret, une branche de laurier pendue à la proue.", wrong: "plus", right: "plu", choices: ["plu", "plus", "plue"], rule: "Se plaire : « se » est COI (plaire à quelqu'un), donc le participe reste invariable. On écrit s'étaient plu, sans s." },
+    { level:"maitre",type:"accord",text:"Dans la caverne qui lui sert de bergerie, le cyclope avance entre de longues stalactites luisants d'humidité, que ses brebis frôlent sans jamais les heurter.",wrong:"luisants",right:"luisantes",choices:["luisantes","luisants","luisante"],rule:"Stalactite est un nom féminin : l'adjectif luisantes s'accorde au féminin pluriel." },
+    { level:"maitre",type:"accord",text:"Un interstice ouverte entre deux planches de la coque laissait suinter l'eau de mer ; le charpentier de bord le colmata à la hâte avec de l'étoupe.",wrong:"ouverte",right:"ouvert",choices:["ouvert","ouverte","ouverts"],rule:"Interstice est un nom masculin : le participe ouvert reste au masculin singulier." },
+    { level:"maitre",type:"temps",text:"Le patron du navire exigeait qu'au premier rayon de l'aube chaque rameur fut à son banc, l'aviron en main, sans une plainte.",wrong:"fut",right:"fût",choices:["fût","fut","fusse"],rule:"Après « exigeait que » (imparfait), le verbe se met au subjonctif imparfait : qu'il fût, avec un accent circonflexe à la 3e personne du singulier." },
+    { level:"maitre",type:"compose",text:"Quand la pluie cessa enfin au-dessus du détroit, les rameurs aperçurent deux arc-en-ciels qui enjambaient la baie d'une colline à l'autre.",wrong:"arc-en-ciels",right:"arcs-en-ciel",choices:["arcs-en-ciel","arc-en-ciels","arcs-en-ciels"],rule:"Dans un nom composé nom + préposition + nom, seul le premier nom prend la marque du pluriel : des arcs-en-ciel." },
+    { level:"maitre",type:"compose",text:"Dans les bas-cours du palais, les servantes plument des volailles et lavent les corbeilles, tandis que les cuisiniers rôtissent un bœuf entier.",wrong:"bas-cours",right:"basses-cours",choices:["basses-cours","bas-cours","basses-cour"],rule:"Basse-cour associe un adjectif et un nom : les deux prennent la marque du pluriel (basses-cours)." },
+    { level:"maitre",type:"lexique",text:"Chaque aviron pivote sur son tollet, une cheville de bois enduite de graisse, et grince à chaque coup de rame comme une porte mal huilée.",wrong:"tollet",right:"tolet",choices:["tolet","tollet","tolé"],rule:"Tolet (cheville qui sert de point d'appui à l'aviron) s'écrit avec un seul l et un t final muet." },
+    { level:"maitre",type:"lexique",text:"Les charpentiers, penchés sous la carêne du navire tiré sur le sable, enduisent de poix chaque joint de la coque avant la remise à l'eau.",wrong:"carêne",right:"carène",choices:["carène","carêne","carenne"],rule:"Carène (la partie immergée de la coque) s'écrit avec un accent grave, sans circonflexe, comme « scène »." },
+    { level:"maitre",type:"lexique",text:"Au centre de la salle du festin, un esclave remplit le cratére de vin coupé d'eau, puis chaque convive y puise à tour de rôle avec une louche.",wrong:"cratére",right:"cratère",choices:["cratère","cratére","crataire"],rule:"Cratère (grand vase où l'on mélangeait le vin et l'eau) se termine par -ère, avec un accent grave, comme « sphère »." },
+    { level:"grand-scribe",type:"accord",text:"Debout à la poupe, le vieux marin lança aux vagues, que le vent creusait en sillons noirs, une apostrophe véhément, où perçait moins de colère que de lassitude.",wrong:"véhément",right:"véhémente",choices:["véhémente","véhément","véhéments"],rule:"Apostrophe est un nom féminin : l'adjectif s'accorde au féminin singulier (véhémente)." },
+    { level:"grand-scribe",type:"accord",text:"Du fond de la cale montaient des effluves de suif et de poisson séché, lourdes et tenaces, que les rameurs, penchés sur leurs avirons, respiraient en grimaçant.",wrong:"lourdes",right:"lourds",choices:["lourds","lourdes","lourde"],rule:"Effluve est un nom masculin (un effluve, des effluves) : l'adjectif lourds s'accorde au masculin pluriel." },
+    { level:"grand-scribe",type:"temps",text:"Ulysse eût préféré attendre l'aube, mais le vent, qui forcissait de minute en minute, exigeait que l'on prit la mer sans tarder.",wrong:"prit",right:"prît",choices:["prît","prit","prenne"],rule:"Après « exigeait que » (imparfait), on emploie le subjonctif imparfait : que l'on prît, avec un accent circonflexe." },
+    { level:"grand-scribe",type:"compose",text:"Sur le pont, de simples gardes-corps de cordage retenaient les rameurs que les embruns et la houle menaçaient d'emporter à chaque lame.",wrong:"gardes-corps",right:"garde-corps",choices:["garde-corps","gardes-corps","garde-cors"],rule:"Garde-corps (verbe garder + nom corps) est invariable : le nom corps se termine déjà par un s, au singulier comme au pluriel." },
+    { level:"grand-scribe",type:"compose",text:"Dix années durant, les guerriers grecs, campés sur la plage devant les murailles de Troie, tinrent leurs avants-postes sous le soleil et la poussière.",wrong:"avants-postes",right:"avant-postes",choices:["avant-postes","avants-postes","avant-poste"],rule:"Dans avant-poste, avant est invariable (adverbe) : seul le nom prend la marque du pluriel." },
+    { level:"grand-scribe",type:"lexique",text:"À la veillée, l'aéde, que les convives écoutaient sans bouger, accordait sa lyre avant d'entonner les exploits des héros partis devant Troie.",wrong:"aéde",right:"aède",choices:["aède","aéde","aîde"],rule:"Aède (chanteur d'épopées) s'écrit avec un accent grave sur le deuxième e : [ɛ] devant le d et le e muet final." },
+    { level:"grand-scribe",type:"lexique",text:"Faute de pouvoir rapporter le corps, les Grecs élevaient parfois un cénotafe, tombeau vide, à ceux que la mer avait gardés sans retour.",wrong:"cénotafe",right:"cénotaphe",choices:["cénotaphe","cénotafe","cénothaphe"],rule:"Cénotaphe (grec kenos, vide, et taphos, tombeau) s'écrit avec ph, comme « épitaphe »." },
+    { level:"grand-scribe",type:"lexique",text:"Le jeune archer, que son père avait équipé pour la chasse, laissait pendre à son épaule un carcois de cuir garni de flèches soigneusement empennées.",wrong:"carcois",right:"carquois",choices:["carquois","carcois","carquoi"],rule:"Carquois s'écrit avec qu et garde son s final muet, y compris au singulier." },
+    { level:"grand-scribe",type:"lexique",text:"Au palais, le ginécée, partie du logis réservée aux femmes, occupait l'étage où les servantes cardaient la laine et préparaient les bains des hôtes.",wrong:"ginécée",right:"gynécée",choices:["gynécée","ginécée","gynécé"],rule:"Gynécée vient du grec gunê (femme) : y après le g, puis -écée avec deux e." },
+    { level:"grand-scribe",type:"lexique",text:"Pour quitter la grotte sans éveiller la colère du géant, il fallut imaginer un stratagême, que le prudent capitaine prépara dans le plus grand secret.",wrong:"stratagême",right:"stratagème",choices:["stratagème","stratagême","stratagéme"],rule:"Stratagème s'écrit avec un accent grave sur le dernier è, comme « problème » et « système »." }
   ]
 };

@@ -1,202 +1,6 @@
 (window.THEMES = window.THEMES || {}).escrime = {
   name: "Escrime",
   emoji: "🤺",
-  dictees: [
-    {
-      level: "apprenti",
-      text: "Mercredi, chaque élève du club a enfilé son masque et sa veste blanche. Sur la piste, les tireurs se saluent avant l'assaut. Quand l'arbitre annonce une touche, les parents applaudissent. Les enfants sont repartis fiers de leurs progrès.",
-      notes: [
-        { word: "enfilé", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « son masque » est placé après)." },
-        { word: "saluent", rule: "Verbe saluer au présent, 3e personne du pluriel : -ent, sans oublier le e après le u." },
-        { word: "applaudissent", rule: "Verbe du 2e groupe au présent, 3e personne du pluriel : applaud-issent." },
-        { word: "repartis", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les enfants : masculin pluriel)." },
-        { word: "progrès", rule: "« Progrès » s'écrit avec un s final, même au singulier, et un accent grave." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Armée de son fleuret, la tireuse s'est fendue d'un geste vif, mais son adversaire a paré l'attaque et a riposté aussitôt. Les touches qu'elles ont échangées ont tenu le public en haleine. Finalement, la plus jeune l'a emporté.",
-      notes: [
-        { word: "fleuret", rule: "Arme d'escrime à lame fine et souple : finale en -et, avec un t muet.", rare: true, d: 2, piege: "eu, finale -et muette" },
-        { word: "fendue", rule: "Se fendre (allonger la jambe avant pour toucher) : verbe pronominal, le participe s'accorde avec le sujet (la tireuse)." },
-        { word: "riposté", rule: "Avec l'auxiliaire avoir et sans COD placé avant, le participe passé reste invariable." },
-        { word: "échangées", rule: "Le COD « que » (les touches) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "emporté", rule: "Dans la locution « l'emporter », le pronom « l' » est neutre : le participe reste invariable." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Avant que l'assaut reprît, le maître d'armes vérifia le plastron de son élève. Les feintes qu'il lui avait vu exécuter la veille avaient achevé de le convaincre : elle était prête. Quelles qu'aient été ses craintes, la jeune tireuse enchaîna parades, dégagements et estocades avec un sang-froid remarquable.",
-      notes: [
-        { word: "reprît", rule: "« Avant que » appelle le subjonctif ; après un passé simple, l'imparfait du subjonctif est admis : reprît, avec un accent circonflexe." },
-        { word: "plastron", rule: "Protection rembourrée portée sous la veste : finale en -on, sans e.", rare: true, d: 1, piege: "finale -on, sans e" },
-        { word: "vu", rule: "Participe suivi d'un infinitif : « que » (les feintes) est COD d'exécuter, pas de voir. Le participe reste invariable." },
-        { word: "quelles", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (ses craintes : féminin pluriel)." },
-        { word: "dégagements", rule: "Mouvements de lame qui passent de l'autre côté de celle de l'adversaire. Accent aigu sur le premier é, e muet gardé devant -ment, s au pluriel.", rare: true, d: 2, piege: "é, e muet devant -ment" },
-        { word: "estocades", rule: "Coups portés de la pointe de l'épée. Dérivé d'estoc : es-, puis -toc- avec un seul c, et la finale -ade.", rare: true, d: 3, piege: "un seul c (famille estoc), -ade" },
-        { word: "sang-froid", rule: "Nom composé avec trait d'union ; « sang » garde son g final muet." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Les bretteurs d'antan ferraillaient d'estoc et de taille. Les escrimeurs d'aujourd'hui, le visage protégé par un masque grillagé, ont fait de ces gestes une science subtile. Parades de quarte ou de septime, dégagements, battements : autant de finesses que les maîtres d'armes ont toujours voulu transmettre, et que leurs élèves se sont efforcés de parfaire.",
-      notes: [
-        { word: "bretteurs", rule: "Bretteur : amateur de duels à l'épée. Deux t, comme dans « brette », l'ancienne épée longue.", rare: true, d: 1, piege: "deux t (famille brette)" },
-        { word: "ferraillaient", rule: "Ferrailler : se battre à l'épée. Formé sur fer, avec deux r et -ill-, puis -aient à l'imparfait.", rare: true, d: 3, piege: "rr (famille fer), ill, -aient" },
-        { word: "estoc", rule: "Frapper d'estoc, c'est frapper de la pointe. Finale en -oc, avec un c prononcé.", rare: true, d: 3, piege: "es-, c final prononcé" },
-        { word: "escrimeurs", rule: "Dérivé d'escrime : un seul m, et pas d'accent sur le e initial.", rare: true, d: 1, piege: "un seul m, pas d'accent" },
-        { word: "quarte", rule: "Position de parade (la quatrième) : nom féminin, avec le groupe -qu-.", rare: true, d: 2, piege: "qu et non c (carte), e final" },
-        { word: "septime", rule: "Septième position de parade. Formé sur sept : le p se garde sans se prononcer ; nom féminin.", rare: true, d: 3, piege: "p muet (famille sept), finale -ime" },
-        { word: "voulu", rule: "Participe suivi d'un infinitif : « que » (les finesses) est COD de transmettre. Le participe reste invariable." },
-        { word: "efforcés", rule: "S'efforcer est essentiellement pronominal : le participe s'accorde avec le sujet (leurs élèves)." },
-        { word: "d'antan", rule: "« D'antan » (d'autrefois) : locution invariable, finale en -an." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Avant le cours, les élèves rangent leurs sacs dans le vestiaire. Chacun enfile sa veste, son pantalon blanc et ses gants. Le masque est lourd, mais il protège bien le visage. Le maître vérifie que les fils sont bien branchés.",
-      notes: [
-        { word: "rangent", rule: "Verbe ranger au présent, 3e personne du pluriel : on garde le e après le g, puis -ent." },
-        { word: "gants", rule: "« Gants » prend un s au pluriel, et le t reste muet (comme dans « gantelet »)." },
-        { word: "protège", rule: "Verbe protéger au présent : le é devient è devant la terminaison muette -e." },
-        { word: "branchés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les fils : masculin pluriel)." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Sur la piste, l'arbitre lève la main : le combat commence. Les deux tireuses se mettent en garde. Quand la lampe s'allume, la touche est comptée. La plus petite a gagné le premier match, mais elle regrette sa défense.",
-      notes: [
-        { word: "mettent", rule: "Verbe mettre au présent, 3e personne du pluriel : deux t, puis -ent." },
-        { word: "comptée", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (la touche : féminin singulier)." },
-        { word: "gagné", rule: "Avec l'auxiliaire avoir, le participe passé reste invariable ici (le COD « le premier match » est placé après)." },
-        { word: "regrette", rule: "Verbe regretter au présent : deux t, puis le e muet de la 3e personne du singulier." }
-      ]
-    },
-    {
-      level: "apprenti",
-      text: "Au fond de la salle, les débutantes se placent face à un grand mur. Chacune y répète la fente pendant un quart d'heure, le bras tendu devant elle. Elles se concentrent sur la jambe arrière. Leur maître les corrige avec patience.",
-      notes: [
-        { word: "placent", rule: "Verbe placer au présent, 3e personne du pluriel : le c s'écrit sans cédille devant -ent." },
-        { word: "répète", rule: "Verbe répéter au présent : le deuxième é devient è devant la terminaison muette -e." },
-        { word: "tendu", rule: "Participe passé employé comme adjectif : il s'accorde avec le nom (le bras : masculin singulier)." },
-        { word: "concentrent", rule: "Verbe se concentrer au présent, 3e personne du pluriel : concentr-ent, avec -ent." },
-        { word: "corrige", rule: "Verbe corriger au présent : on garde le e après le g, puis le e muet de la 3e personne du singulier." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Une arme d'escrime se compose de plusieurs éléments. La coquille protège la main du tireur, tandis que le pommeau équilibre la lame. Les armes que le maître a soigneusement vérifiées ne coupent pas : elles servent à toucher l'adversaire sans le blesser.",
-      notes: [
-        { word: "coquille", rule: "Pièce qui protège la main : -qu-, puis -ill-, puis le e muet final (comme « coquillage »)." },
-        { word: "pommeau", rule: "Extrémité de la poignée d'une arme. Famille de « pomme » : deux m, puis la finale -eau.", rare: true, d: 2, piege: "mm (famille pomme), finale -eau" },
-        { word: "tandis", rule: "« Tandis que » (pendant que) : s final, comme dans « jadis »." },
-        { word: "soigneusement", rule: "Adverbe formé sur « soigneux » : e, puis -ment, sans doubler le m." },
-        { word: "vérifiées", rule: "Le COD « que » (les armes) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Au fleuret, un lamé recouvre le torse du tireur. Dès que la pointe touche cette surface, une lampe de couleur s'allume et l'arbitre arrête l'assaut. Les tireuses, que l'arbitre a invitées à reprendre la garde, regagnent aussitôt leur place, quelquefois sans un mot.",
-      notes: [
-        { word: "lamé", rule: "Tissu métallique conducteur, qui enregistre la touche. Famille de « lame » : un seul m, accent aigu final.", rare: true, d: 2, piege: "un seul m, é final (famille lame)" },
-        { word: "torse", rule: "Nom masculin, avec un s devant le e final : torse." },
-        { word: "invitées", rule: "Le COD « que » (les tireuses) est placé avant l'auxiliaire avoir : accord au féminin pluriel." },
-        { word: "aussitôt", rule: "Adverbe en un seul mot, avec un double s et un accent circonflexe sur le o final." },
-        { word: "quelquefois", rule: "« Quelquefois » (parfois) s'écrit en un seul mot ; « quelques fois » en deux mots signifie « un petit nombre de fois »." }
-      ]
-    },
-    {
-      level: "compagnon",
-      text: "Dans un match par équipes, les tireurs se succèdent sur la piste, et le total des touches désigne l'équipe victorieuse. Chacun encourage ses coéquipiers depuis le bord de la piste. Les remplaçants se tiennent prêts, car un seul changement peut tout bouleverser.",
-      notes: [
-        { word: "succèdent", rule: "Verbe succéder au présent : le deuxième é devient è devant la terminaison -ent, qui se prononce comme un e muet." },
-        { word: "désigne", rule: "Verbe désigner : le groupe -gn- est suivi du e muet de la 3e personne du singulier." },
-        { word: "coéquipiers", rule: "Ceux qui font équipe avec soi : co-, puis é, puis -qu- devant i, finale -iers.", rare: true, d: 3, piege: "é, qu, -iers" },
-        { word: "remplaçants", rule: "Famille de « remplacer » : le c prend une cédille devant a (remplaçant)." },
-        { word: "prêts", rule: "Adjectif qui s'accorde avec le sujet (les remplaçants : masculin pluriel). Il se distingue de la préposition « près » par l'accent circonflexe." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Autrefois, les gentilshommes réglaient leurs querelles en duel, bien que le roi lui-même l'ait interdit. Armés de rapières à la lame longue, les spadassins, ces bretteurs de métier, laissaient souvent à leurs adversaires une balafre au visage. Les témoins, eux, se tenaient à l'écart, l'épée au côté.",
-      notes: [
-        { word: "gentilshommes", rule: "Pluriel irrégulier : « gentilhomme » prend le s sur les deux éléments, « gentilshommes », avec le h muet de homme." },
-        { word: "ait", rule: "Après « bien que », subjonctif passé du verbe avoir : « ait » interdit, avec un t final." },
-        { word: "rapières", rule: "Épées longues et fines d'autrefois. Un seul p, accent grave sur le e, finale -ière et s au pluriel.", rare: true, d: 2, piege: "un seul p, è, finale -ières" },
-        { word: "spadassins", rule: "Bretteurs à gages. Famille de l'italien spada (épée) : sp-, puis -ada-, puis deux s et -in.", rare: true, d: 3, piege: "ss, d simple, -in (famille spada)" },
-        { word: "balafre", rule: "Longue cicatrice au visage : un seul l, un seul f, finale en -e.", rare: true, d: 2, piege: "un seul l, un seul f" }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Quelques instants avant l'assaut, les tireuses ajustent leur masque grillagé, dont la bavette, solidement fixée, protège la gorge. Toutes les protections qu'elles ont enfilées sous la veste, à commencer par le plastron, sont vérifiées par l'arbitre, qui s'assure que rien ne dépasse.",
-      notes: [
-        { word: "quelques", rule: "Devant un nom pluriel (instants), « quelques » prend un s." },
-        { word: "grillagé", rule: "Garni d'un grillage. Famille de « grille » : -ill-, puis -agé, avec un seul l après le a.", rare: true, d: 3, piege: "ill (famille grille), -agé" },
-        { word: "bavette", rule: "Pièce du masque qui protège la gorge : un seul v, deux t, finale -ette.", rare: true, d: 2, piege: "un seul v, tt" },
-        { word: "enfilées", rule: "Le COD « que » (les protections) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "maitre",
-      text: "Les huit parades classiques portent des noms de rang : prime, seconde, tierce, quarte, quinte, sixte, septime et octave. Un élève qui les a toutes apprises doit encore savoir les employer à propos.",
-      notes: [
-        { word: "quinte", rule: "Cinquième parade : -qu- devant i, puis -inte, et e final.", rare: true, d: 2, piege: "qu, in, e final" },
-        { word: "sixte", rule: "Sixième parade : x, puis t, puis e final. Le x se prononce [ks] et le t se garde dans l'écriture.", rare: true, d: 3, piege: "x, t, e final" },
-        { word: "octave", rule: "Huitième parade : -ct- (comme dans « octobre »), puis -ave.", rare: true, d: 1, piege: "ct" },
-        { word: "toutes", rule: "« Toutes » est ici un pronom qui reprend « les » (les parades) : il s'accorde au féminin pluriel." },
-        { word: "apprises", rule: "Le COD « les » (les parades) est placé avant l'auxiliaire avoir : accord au féminin pluriel." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Aucun assaut ne commence avant le signal de l'arbitre, pointilleux sur le salut : les adversaires doivent se saluer d'abord, le masque sous le bras. Dès qu'une pointe porte, l'appareil enregistre la touche et la lampe s'allume ; quelque rapides que soient les gestes, l'électronique tranche en une fraction de seconde. Qu'un tireur enfreigne le règlement, et voilà que se lève le carton : jaune pour avertir, rouge pour sanctionner d'une touche, noir pour exclure. Le chronométreur, impartial, veille sur le temps de combat. Ainsi se sont apaisées les contestations d'autrefois, quand les juges, faute d'instruments, peinaient à départager les adversaires ; ainsi s'est installée la confiance.",
-      notes: [
-        { word: "pointilleux", rule: "Attentif aux moindres détails. Famille de « pointe » : -ill-, puis la finale -eux.", rare: true, d: 3, piege: "ill, finale -eux" },
-        { word: "quelque", rule: "Devant un adjectif, « quelque » est un adverbe (« si ») et reste invariable, en un seul mot." },
-        { word: "soient", rule: "Subjonctif présent d'être après « quelque... que » : soient, à la 3e personne du pluriel (gestes)." },
-        { word: "enfreigne", rule: "Après « Qu'un tireur », subjonctif présent d'enfreindre : le radical prend -gn-, puis le e muet.", rare: true, d: 4, piege: "gn, ei, e final (enfreindre)" },
-        { word: "sanctionner", rule: "Punir. Famille de « sanction » : -c-, puis -tionn-, avec deux n devant -er.", rare: true, d: 3, piege: "c, tionn" },
-        { word: "chronométreur", rule: "Celui qui mesure le temps : chrono-, puis mètre avec é, puis -eur.", rare: true, d: 3, piege: "ch, é (famille mètre), -eur" },
-        { word: "impartial", rule: "Qui ne prend parti pour personne. Famille de « part » : -tial et non -cial.", rare: true, d: 3, piege: "-tial et non -cial (famille part)" },
-        { word: "apaisées", rule: "Sujet inversé (les contestations) : le participe d'un verbe pronominal s'accorde avec lui, féminin pluriel." },
-        { word: "départager", rule: "Famille de « partager » : dé-, puis partager, avec le e après le g devant -er.", rare: true, d: 2, piege: "é, ger (famille partager)" },
-        { word: "installée", rule: "Sujet inversé (la confiance) : le participe s'accorde avec lui, féminin singulier." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Avant que s'ouvre la compétition, les escrimeuses vérifient leur tenue avec un soin méticuleux. Sous la veste se sont glissées des protections rembourrées, et le masque, dont le treillis serré et la bavette défendent le visage et la gorge, a été examiné par l'arbitre. Aucune pointe, si fine soit-elle, ne doit pouvoir s'y engager. Quelques fils, quelques lampes, un gant épais : tout l'équipement concourt à la sécurité, et rien n'a été laissé au hasard, même les lacets les plus discrets. L'examen terminé, chacune rejoint la piste, le regard fixe, tandis que s'élève la rumeur du public.",
-      notes: [
-        { word: "escrimeuses", rule: "Dérivé d'escrime : e, puis le groupe sc, un seul m et la finale -euses.", rare: true, d: 3, piege: "sc, un seul m, -euses" },
-        { word: "glissées", rule: "Sujet inversé (des protections) : le participe d'un verbe pronominal s'accorde avec lui, féminin pluriel." },
-        { word: "rembourrées", rule: "Garnies de bourre : rem-, puis deux r (famille de « bourre »), et accord au féminin pluriel.", rare: true, d: 3, piege: "rr (famille bourre), -ées" },
-        { word: "treillis", rule: "Grillage à mailles serrées : -eill- puis -is, avec un s final muet même au singulier.", rare: true, d: 3, piege: "eill, s final muet" },
-        { word: "bavette", rule: "Pièce du masque qui protège la gorge : un seul v, deux t, finale -ette.", rare: true, d: 2, piege: "un seul v, tt" },
-        { word: "soit-elle", rule: "Subjonctif d'être dans « si fine soit-elle » : le pronom sujet est placé après le verbe, avec un trait d'union." },
-        { word: "quelques", rule: "Devant un nom pluriel, « quelques » prend un s : quelques fils, quelques lampes." },
-        { word: "concourt", rule: "Concourir à : la 3e personne du présent prend un t final (il concourt), et non un s (un concours).", rare: true, d: 3, piege: "t final et non s (concours)" },
-        { word: "même", rule: "Devant un groupe nominal (les lacets), « même » est un adverbe (« y compris ») et reste invariable." },
-        { word: "méticuleux", rule: "Qui porte un soin extrême aux détails : accent aigu sur le premier e, puis -ic-, puis -uleux." }
-      ]
-    },
-    {
-      level: "grand-scribe",
-      text: "Le match par équipes se joue en relais : chaque tireur, tour à tour, ajoute ses touches au total commun, et l'équipe qui a creusé l'écart l'emporte. Quelle que soit leur fatigue, les remplaçantes, tout émues d'avance, restent prêtes à entrer en lice. Aux premières touches, les supporters, banderoles au vent, se sont levés dans un tohu-bohu d'exultation ; il a fallu que l'arbitre, impassible, réclame le silence. Ainsi se sont succédé, dans une tension palpable, les relais les plus âpres des épéistes : parades, ripostes, remises, tout s'est joué à une touche près, et les vaincus ont quitté la piste sous l'ovation de leurs coéquipiers.",
-      notes: [
-        { word: "quelle", rule: "« Quel que » suivi du verbe être : « quel » s'accorde avec le sujet (leur fatigue : féminin singulier)." },
-        { word: "tout", rule: "Devant un adjectif féminin commençant par une voyelle (émues), « tout » adverbe reste invariable." },
-        { word: "lice", rule: "Entrer en lice : se lancer dans la compétition. Nom féminin écrit avec un c, comme dans « police », et non « lisse ».", rare: true, d: 3, piege: "c et non ss (lisse), e final" },
-        { word: "levés", rule: "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (les supporters : masculin pluriel)." },
-        { word: "tohu-bohu", rule: "Grand désordre bruyant : deux fois le h muet, et un trait d'union entre les deux éléments.", rare: true, d: 3, piege: "h muet répété, trait d'union" },
-        { word: "exultation", rule: "Joie très vive : x, puis -ult-, puis la finale -ation.", rare: true, d: 3, piege: "x, ult, -ation" },
-        { word: "succédé", rule: "Sujet inversé (les relais) : « succéder à » se construit avec un COI, le participe reste invariable malgré le pluriel." },
-        { word: "épéistes", rule: "Tireurs à l'épée : deux é, un seul p, puis la finale -istes.", rare: true, d: 3, piege: "é, p simple, é, -iste" },
-        { word: "ovation", rule: "Acclamation : un seul v, puis la finale -ation.", rare: true, d: 2, piege: "un seul v, -ation" },
-        { word: "coéquipiers", rule: "Ceux qui font équipe avec soi : co-, puis é, puis -qu- devant i, finale -iers.", rare: true, d: 3, piege: "é, qu, -iers" }
-      ]
-    }
-  ],
   erreurs: [
     { level: "apprenti", type: "homophone", text: "La tireuse à mis son masque avant l'assaut.", wrong: "à", right: "a", choices: ["a", "as", "à"], rule: "On peut dire « avait mis » : c'est le verbe avoir, sans accent." },
     { level: "apprenti", type: "temps", text: "Les tireurs saluent l'arbitre avant de commencé.", wrong: "commencé", right: "commencer", choices: ["commencer", "commencez", "commencé"], rule: "Après la préposition « de », le verbe se met à l'infinitif : commencer." },
@@ -277,6 +81,24 @@
     { level: "grand-scribe", type: "adverbe", notion: "5e.lex.derivation", text: "Pour tromper l'adversaire, la tireuse baisse innocament la pointe, comme si elle se lassait, puis relève la lame d'un geste sec dès que l'autre s'avance.", wrong: "innocament", right: "innocemment", choices: ["innocemment","innocament","innocement"], rule: "L'adverbe dérive de l'adjectif « innocent » : les adjectifs en -ent donnent des adverbes en -emment." },
     { level: "grand-scribe", type: "accord", text: "Parmi les tireurs retenus pour la finale figure deux gauchers redoutables, que le maître d'armes a longuement observés et dont la garde déroute les droitiers.", wrong: "figure", right: "figurent", choices: ["figurent","figure","figures"], rule: "Le sujet est inversé : « deux gauchers » est au pluriel, donc le verbe se met au pluriel." },
     { level: "grand-scribe", type: "temps", text: "Il fallait que le jeune sabreur vainquit son aîné pour accéder à la finale, et la salle retenait son souffle à chaque attaque que celui-ci préparait.", wrong: "vainquit", right: "vainquît", choices: ["vainquît","vainquit","vainque"], rule: "Après un imparfait, le subjonctif imparfait de « vaincre » s'écrit « vainquît », avec un accent circonflexe. « Vainquit » est le passé simple." },
-    { level: "grand-scribe", type: "homophone", text: "L'assaut final s'est joué à peu prêt à égalité jusqu'à la dernière minute, quand la sabreuse, que le public croyait vaincue, a placé une riposte foudroyante.", wrong: "prêt", right: "près", choices: ["près","prêt","prés"], rule: "« À peu près » signifie « environ » : l'adverbe « près » ne s'accorde pas, et « prêt » veut dire « disposé »." }
+    { level: "grand-scribe", type: "homophone", text: "L'assaut final s'est joué à peu prêt à égalité jusqu'à la dernière minute, quand la sabreuse, que le public croyait vaincue, a placé une riposte foudroyante.", wrong: "prêt", right: "près", choices: ["près","prêt","prés"], rule: "« À peu près » signifie « environ » : l'adverbe « près » ne s'accorde pas, et « prêt » veut dire « disposé »." },
+    { level: "maitre", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Dans la salle d'armes, avant la finale, l'atmosphère surchauffé empêche même les plus aguerris de rester immobiles sur leur banc.", wrong: "surchauffé", right: "surchauffée", choices: ["surchauffée","surchauffé","surchauffées"], rule: "Atmosphère est un nom féminin : une atmosphère surchauffée. L'adjectif s'accorde au féminin." },
+    { level: "maitre", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Une apostrophe lancée à voix haute dans une taverne, aussi brève que cinglant, suffisait au XVIIe siècle à déclencher un duel.", wrong: "cinglant", right: "cinglante", choices: ["cinglante","cinglant","cinglantes"], rule: "Apostrophe est un nom féminin : une apostrophe cinglante. L'adjectif s'accorde au féminin singulier." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le maître d'armes, après l'assaut, voulut que l'élève lui rendit son fleuret avant de quitter la salle, afin qu'il le vérifiât.", wrong: "rendit", right: "rendît", choices: ["rendît","rendit","rendis"], rule: "Après « voulut que », le verbe se met au subjonctif imparfait. À la 3e personne du singulier, « rendre » donne « rendît », avec un accent circonflexe ; « rendit » est le passé simple." },
+    { level: "maitre", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Le maître d'armes, jamais satisfait, voulait que ses élèves ripostâssent sans l'ombre d'une hésitation dès que la lame adverse avait dévié.", wrong: "ripostâssent", right: "ripostassent", choices: ["ripostassent","ripostâssent","ripostacent"], rule: "Le circonflexe du subjonctif imparfait ne marque que la 3e personne du singulier (qu'il ripostât). À la 3e personne du pluriel, la terminaison est -ssent, sans accent : qu'ils ripostassent." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Depuis l'édit de 1626, qui prohibait le duel, les bretteurs passaient pour des hors-la-lois, et nombre d'entre eux se battaient à l'aube, loin des regards.", wrong: "hors-la-lois", right: "hors-la-loi", choices: ["hors-la-loi","hors-la-lois","hors-les-lois"], rule: "Hors-la-loi est invariable : formé d'une préposition, d'un article et d'un nom, il ne prend jamais la marque du pluriel, des hors-la-loi." },
+    { level: "maitre", type: "compose", notion: "4e.voc.composition", text: "Les trois maître d'armes de la salle corrigent à tour de rôle la garde des débutants, qui apprennent à tenir le poignet souple.", wrong: "maître", right: "maîtres", choices: ["maîtres","maître","métres"], rule: "Dans « maître d'armes », le premier nom prend la marque du pluriel quand il désigne plusieurs personnes : des maîtres d'armes." },
+    { level: "maitre", type: "participe", notion: "5e.accords.pp-avoir-cod-antepose", text: "Les lames que le maître d'armes a faites forger par un armurier de Paris portent toutes le même poinçon, gravé près de la garde.", wrong: "faites", right: "fait", choices: ["fait","faites","faits"], rule: "Suivi d'un infinitif, le participe passé « fait » reste invariable : les lames qu'il a fait forger." },
+    { level: "maitre", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "La flêche est une attaque en course : le tireur se projette vers l'avant, la jambe arrière dépassant la jambe avant, et touche avant que l'adversaire puisse rompre.", wrong: "flêche", right: "flèche", choices: ["flèche","flêche","fleche"], rule: "Flèche s'écrit avec un accent grave sur le è, comme « mèche » et « crèche »." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Entre la touche portée et l'annonce de l'arbitre, un hiatus fugitive s'installe, durant lequel le tireur, bras tendu, attend le verdict sans respirer.", wrong: "fugitive", right: "fugitif", choices: ["fugitif","fugitive","fugitifs"], rule: "Hiatus est un nom masculin : un hiatus fugitif. L'adjectif s'accorde au masculin singulier." },
+    { level: "grand-scribe", type: "lexique", notion: "3e.accords.adjectif-epithete-attribut", text: "Le dernier assaut de la saison fut une apothéose fulgurant : trois touches enchaînées en quelques secondes, et la salle entière debout pour saluer les deux tireurs.", wrong: "fulgurant", right: "fulgurante", choices: ["fulgurante","fulgurant","fulgurantes"], rule: "Apothéose est un nom féminin : une apothéose fulgurante. L'adjectif s'accorde au féminin singulier." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Eut-il connu la botte secrète de son adversaire, le jeune sabreur n'aurait pas lancé l'attaque aussi tôt, et la finale lui serait revenue.", wrong: "Eut-il", right: "Eût-il", choices: ["Eût-il","Eut-il","Eu-t-il"], rule: "« Eût-il connu » est un plus-que-parfait du subjonctif inversé, équivalent de « s'il avait connu » : il s'écrit avec un accent circonflexe." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.identifier-tous-temps", text: "Longtemps, nous tinmes la pointe adverse à distance respectueuse, puis vous fîtes un pas décisif qui renversa le cours de l'assaut.", wrong: "tinmes", right: "tînmes", choices: ["tînmes","tinmes","tîmmes"], rule: "Au passé simple, les 1re et 2e personnes du pluriel portent un accent circonflexe : nous tînmes, vous tîntes." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Les échevins délivraient aux maîtres d'armes étrangers des saufs-conduits qui leur permettaient de traverser la ville, à condition qu'ils laissassent leurs lames au fourreau.", wrong: "saufs-conduits", right: "sauf-conduits", choices: ["sauf-conduits","saufs-conduits","sauf-conduit"], rule: "Dans « sauf-conduit », « sauf » est un élément invariable qui précède le nom : seul « conduit » prend la marque du pluriel, des sauf-conduits." },
+    { level: "grand-scribe", type: "compose", notion: "4e.voc.composition", text: "Dans les ruelles mal éclairées du vieux Paris, les coupe-jarret guettaient les bourgeois attardés, que seule l'escorte d'un gentilhomme armé protégeait vraiment.", wrong: "coupe-jarret", right: "coupe-jarrets", choices: ["coupe-jarrets","coupe-jarret","coupes-jarrets"], rule: "Dans un nom composé verbe + nom, le verbe reste invariable et le nom prend la marque du pluriel quand il y a plusieurs personnes : des coupe-jarrets." },
+    { level: "grand-scribe", type: "temps", notion: "3e.conj.subjonctif-apres-conjonctions", text: "Pas un tireur ne baissa sa garde, fut-ce pour une seconde, tant l'enjeu de la dernière touche pesait sur la salle entière.", wrong: "fut-ce", right: "fût-ce", choices: ["fût-ce","fut-ce","fusse"], rule: "« Fût-ce » est le subjonctif imparfait inversé de « être » (« même si c'était ») : il s'écrit avec un accent circonflexe, que « fut » (passé simple) n'a pas." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Le fourbiseur, qui polissait des lames depuis l'enfance, redonna au fleuret ancien son éclat, avant que le maître d'armes l'inspectât du regard.", wrong: "fourbiseur", right: "fourbisseur", choices: ["fourbisseur","fourbiseur","fourbiceur"], rule: "Fourbisseur s'écrit avec deux s, comme « bâtisseur » : on retrouve le radical « fourbiss- » de « nous fourbissons »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Longue et fine, la rapiére des duellistes du XVIe siècle frappait d'estoc plus que de taille, et elle exigeait un poignet souple autant qu'un œil sûr.", wrong: "rapiére", right: "rapière", choices: ["rapière","rapiére","rapiaire"], rule: "Rapière se termine par -ière, avec un accent grave sur le è, comme « fourrière » et « poussière »." },
+    { level: "grand-scribe", type: "lexique", notion: "4e.lex.regularites-exceptions", text: "Dans la farce, le soldat fanfaron se prend pour un pourfandeur de géants, mais il tremble à la moindre épée qui brille dans la pénombre.", wrong: "pourfandeur", right: "pourfendeur", choices: ["pourfendeur","pourfandeur","pourfendeure"], rule: "Pourfendeur dérive de « pourfendre » : on garde le e du radical « fend- » (« fendre »), et non un a." }
   ]
 };
